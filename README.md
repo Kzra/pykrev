@@ -1,2 +1,1 @@
-# pyKrev
-van Krevelen style analysis of elemental formulas
+# pyKrev: van Krevelen analysis and beyonf with Python
