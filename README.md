@@ -18,4 +18,6 @@ Currently the package works with only two input data sets: lists of atomic formu
 - create empirically dervied compound class polygons from the brite database to overlay on van Krevelen diagrams like in Brockman, Stephen A., Eric V. Roden, and Adrian D. Hegeman. "Van Krevelen diagram visualization of high resolution-mass spectrometry metabolomics data with OpenVanKrevelen." Metabolomics 14.4 (2018): 48.
 - create compound class polygons based on Feunang, Yannick Djoumbou, et al. "ClassyFire: automated chemical classification with a comprehensive, computable taxonomy." Journal of cheminformatics 8.1 (2016): 61. which are more sensible than biologically derived classifications. 
 - function to create upset plots and special upset plots based on compound classes, and compound class bar charts. 
+- improve the atom counts function so it can handle different styles of writing formula. 
+- improve error handling in all functions by checking the validity of input variables.
 - add package to python database as an importable package using https://packaging.python.org/tutorials/packaging-projects/
