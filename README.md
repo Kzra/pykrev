@@ -1,4 +1,4 @@
-# pyKrev: van Krevelen analysis and beyond
+# PyKrev: van Krevelen analysis and beyond
 
 # To do:
 - include compound classification function based on Rivas-Ubach, Albert, et al. "Moving beyond the van Krevelen diagram: A new stoichiometric approach for compound classification in organisms." Analytical chemistry 90.10 (2018): 6152-6160.
