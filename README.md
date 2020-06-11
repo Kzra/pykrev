@@ -3,7 +3,7 @@
 The aim of this package is to enable analysis of metabolomics or environmental chemistry mass-spec data in python. This includes conventional van Krevelen analysis and beyond - the package should include the most recent techniques used to analyse mass-spec data including adaptations on van-krevelen, and integrate methods used in metabolomics and environmental chemistry into one place enabling better cross-talk between the fields.
 
 # Usage: 
-See the PyKrev Examples .ipynb or .html file for examples on how the package can be used. Additionally, each function has a help doc string that can be accessed by calling help() in python. 
+See the PyKrev Examples .ipynb or .html file for examples on how the package can be used (note u must be inside the directory to import PyKrev). Additionally, each function has a help doc string that can be accessed by calling help() in python. 
 
 Currently the package works with only two input data sets: lists of atomic formula, and lists or numpy arrays containing corresponding peak intensities. 
 
