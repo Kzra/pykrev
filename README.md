@@ -22,3 +22,5 @@ Currently the package works with only two input data sets: lists of atomic formu
 - improve the atom counts function so it can handle different styles of writing formula. 
 - improve error handling in all functions by checking the validity of input variables.
 - add package to python database as an importable package using https://packaging.python.org/tutorials/packaging-projects/
+- parse report files produced by formularity 
+- add a GUI that can be used optionally. 
