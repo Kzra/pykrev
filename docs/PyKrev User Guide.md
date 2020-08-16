@@ -427,4 +427,4 @@ plt.title('PCoA Example')
 ![png](output_33_1.png)
 
 
-That's the end of the user guide. Thanks for reading and good luck! The package is still early development and i'd greatly appreciate any feedback. If you'd like to contribute code or feature ideas, that'd be awesome too. You can can contact me at ezra.kitson@ed.ac.uk. Last update:  16/08/2020
+That's the end of the user guide. Thanks for reading and good luck! The package is still early development and i'd greatly appreciate any feedback. If you'd like to contribute code or feature ideas, that'd be brill too. You can can contact me at ezra.kitson@ed.ac.uk. Last update:  16/08/2020
