@@ -1,3 +1,4 @@
+import numpy as np
 def double_bond_equivalent(count_list):
     
       
@@ -10,7 +11,7 @@ def double_bond_equivalent(count_list):
 	----
 	double_bond_equivalent(Y)
     
-	Returns a list of len(Y) in which each item is the double bond equivalent.  
+	Returns a numpy array of len(Y) in which each item is the double bond equivalent.  
     
 	Parameters
 	----------
@@ -29,7 +30,11 @@ def double_bond_equivalent(count_list):
     
     
     """    
-    DBE_list = []
+    assert isinstance(count_list,list),'supply a list of counts given by element_counts()'
+    assert all(isinstance(i,dict) for i in count_list), 'supply a list of counts given by element_counts()'
+   
+    DBE_array = np.array([])
+    warning = 0
     
     for count in count_list:
         Halogens = ['H','Cl','Br','I','F','At','Ts']
@@ -41,6 +46,14 @@ def double_bond_equivalent(count_list):
                 pass 
             
         DBE_counts = count['C'] - (Hal/2) + (count['N']/2) + 1 
-        DBE_list.append(DBE_counts)
+        
+        if DBE_counts < 0:
+            warning = 1
+            DBE_counts = 0
+        
+        DBE_array = np.append(DBE_array,DBE_counts)
     
-    return DBE_list 
+    if warning == 1:
+        print('Warning: negative dbe counts detected and set to zero.')
+            
+    return DBE_array

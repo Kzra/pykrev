@@ -1,3 +1,4 @@
+import numpy as np
 def aromaticity_index(count_list, index_type = 'mod'):
     
           
@@ -10,7 +11,7 @@ def aromaticity_index(count_list, index_type = 'mod'):
 	----
 	aromaticity_index(Y)
     
-	Returns a list of len(Y) in which each item is the aromaticity index.  
+	Returns a numpy array of len(Y) in which each item is the aromaticity index.  
     
 	Parameters
 	----------
@@ -27,7 +28,12 @@ def aromaticity_index(count_list, index_type = 'mod'):
 	rAImod: (1 + 1/2(2C - H - O - 2S - N - P))/C 
 	rAIstd: (1 + 1/2(2C - H - 2O - 2S - N - P))/C 
     """    
-    AI_list = []
+    
+    assert isinstance(count_list,list),'supply a list of counts given by element_counts()'
+    assert all(isinstance(i,dict) for i in count_list), 'supply a list of counts given by element_counts()'
+    
+    AI_array = np.array([])
+    warning = 0 
     
     for count in count_list: 
         try:
@@ -37,6 +43,13 @@ def aromaticity_index(count_list, index_type = 'mod'):
                 AI_counts = (1 + 1/2*((count['C']*2)-count['H']-(count['O']*2)-(count['S']*2)-count['N']-count['P']))/count['C']
         except KeyError:
             raise Exception('Make sure your counts include C,H,O,S,N,P')
-        AI_list.append(AI_counts)
-    
-    return AI_list
+        if AI_counts < 0: 
+            warning = 1 
+            AI_counts = 0
+            
+        AI_array = np.append(AI_array,AI_counts)
+        
+    if warning == 1:
+        print('Warning: negative ai counts detected and set to zero.')
+        
+    return AI_array

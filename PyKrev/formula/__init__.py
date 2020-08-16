@@ -6,3 +6,5 @@ from .missing_formula import missing_formula
 from .nominal_oxidation_state import nominal_oxidation_state
 from .standardize_formula import standardize_formula 
 from .unique_formula import unique_formula 
+from .find_intersections import find_intersections
+from .read_formularity import read_formularity

@@ -1,3 +1,4 @@
+import numpy as np
 def nominal_oxidation_state(count_list):
     
     """ 
@@ -9,7 +10,7 @@ def nominal_oxidation_state(count_list):
 	----
 	nominal_oxidation_state(Y)
     
-	Returns a list of len(Y) in which each item is the nominal oxidation state of C.  
+	Returns a numpy array of len(Y) in which each item is the nominal oxidation state of C.  
     
 	Parameters
 	----------
@@ -20,7 +21,7 @@ def nominal_oxidation_state(count_list):
 	Info
 	----------
 	This function derives the nominal oxidation state of C as described in LaRowe, Douglas E., and Philippe Van Cappellen. 
-	
+	"NOSC allows for computation of the average carbon oxidation state of an organic compound without writing out the oxidation half reaction."
 	"Degradation of natural organic matter: a thermodynamic analysis." 
 	Geochimica et Cosmochimica Acta 75.8 (2011): 2030-2042.       
 	
@@ -34,12 +35,13 @@ def nominal_oxidation_state(count_list):
  	f = S
         
     """      
+    assert isinstance(count_list,list),'supply a list of counts given by element_counts()'
+    assert all(isinstance(i,dict) for i in count_list), 'supply a list of counts given by element_counts()'
     
-    
-    NOSCs = []
+    NOSCs = np.array([])
         
     for i in count_list:
-        NOSCs.append(-((4*i['C'] + i['H'] - 3 * i['N'] - 2 * i['O'] + 5 * i['P'] - 2 * i['S'])/i['C']) + 4) #i assume no charge
-            
+        NOSCs = np.append(NOSCs,-((4*i['C'] + i['H'] - 3 * i['N'] - 2 * i['O'] + 5 * i['P'] - 2 * i['S'])/i['C']) + 4) 
     #still need to test this calculation is correct
+    
     return NOSCs

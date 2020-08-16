@@ -2,7 +2,7 @@ from ..formula import *
 from .relative_intensity import relative_intensity
 import numpy as np
 
-def diversity_indices (formula_list,intensity_list,indices = ['r','GS','SW','C','O','NOSC','DBE','rAI','HC','OC']):
+def diversity_indices (formula_list,intensity_list,indices = ['r','GS','SW','C','O','NOSC','DBE','rAI','HC','OC'],verbose = True):
     
     """ 
 	Docstring for function pyKrev.diversity_indices
@@ -14,7 +14,7 @@ def diversity_indices (formula_list,intensity_list,indices = ['r','GS','SW','C',
 	----
 	diversity_indices(Y,X)
     
-	Returns a list of len(Y) in which each item is a dictionary containing the values listed in 'indices'.   
+	Returns a dictionary containing the values listed in 'indices'.   
     
 	Parameters
 	----------
@@ -40,7 +40,9 @@ def diversity_indices (formula_list,intensity_list,indices = ['r','GS','SW','C',
 	Frontiers in Marine Science 4 (2017): 194.' 
         
     """      
-    
+    formula_set = set(formula_list)
+    if len(formula_set) != len(formula_list):
+        print('Warning: duplicates detected in formula list. Remove to avoid inaccuracies.')
     
     #calculate element counts, element ratios and other feature types for functional diversity metric
     count_list = element_counts(formula_list)
@@ -60,9 +62,10 @@ def diversity_indices (formula_list,intensity_list,indices = ['r','GS','SW','C',
     O_list = np.array(O_list)
     HC_list = np.array(HC_list)
     OC_list = np.array(OC_list)
-    AI_list = np.array(aromaticity_index(count_list,index_type='mod'))
-    DBE_list = np.array(double_bond_equivalent(count_list))
-    NOSC_s = np.array(nominal_oxidation_state(count_list))
+    
+    AI_list = aromaticity_index(count_list,index_type='mod')
+    DBE_list = double_bond_equivalent(count_list)
+    NOSC_s = nominal_oxidation_state(count_list)
         
     diversity_indices = dict()
     
@@ -72,29 +75,34 @@ def diversity_indices (formula_list,intensity_list,indices = ['r','GS','SW','C',
     #Molecular richness is just the count of molecular formula
     if 'r' in indices: 
         D_r = len([ i for i in rel_abundance if i!= 0])
-        print('Molecular richness:',D_r,'\n')
+        if verbose == True:
+            print('Molecular richness:',D_r,'\n')
         diversity_indices['D_r'] = D_r
     
     #Abundance based diversity 
-    print('Abundanced based diversity:')
+    if verbose == True:
+        print('Abundanced based diversity:')
         
     #Gini-Simpson index decribes the distribution of compounds across molecular formulas
     #The gene simpson index ranges from 0 to 1, where larger indiate higher diversity with a maximum value of 1 - 1/N for a uniform distribution. 
     
     if 'GS' in indices: 
         D_a_GS = 1 - sum(rel_abundance**2)
-        print('Gini-Simpson Index:', D_a_GS)
+        if verbose == True:
+            print('Gini-Simpson Index:', D_a_GS)
         diversity_indices['D_a_GS'] = D_a_GS
     
     #The Shannon Wiener Index accounts for the evenness of individual MFs in each sample.
     if 'SW' in indices: 
         D_a_SW = -sum(rel_abundance * np.log(rel_abundance,where=(rel_abundance!=0))) #where is useful because it stops us computing the natural log of 0 which is undefined
-        print('Shannon-Wiener Index:', D_a_SW,'\n')
+        if verbose == True:
+            print('Shannon-Wiener Index:', D_a_SW,'\n')
         diversity_indices['D_a_SW'] = D_a_SW
 
     
     #Rao's entropy uses 'absolute difference' of a chemical characteristic which can be defined as |x - y| or abs(x - y)
-    print('Functional based diversity:')
+    if verbose == True:
+        print('Functional based diversity:')
     
     #Calculate functional diversity based on C number, H/C ratio and oxidation state of C 
     #Include modified aromaticity index 
@@ -129,31 +137,38 @@ def diversity_indices (formula_list,intensity_list,indices = ['r','GS','SW','C',
         
     
     if 'C' in indices: 
-        print('Raos Quadratic Index (C Number): ', D_f_C)
+        if verbose == True:
+            print('Raos Quadratic Index (C Number): ', D_f_C)
         diversity_indices['D_f_C'] = D_f_C
     
     if 'O' in indices: 
-        print('Raos Quadratic Index (O Number): ', D_f_O)
+        if verbose == True:
+            print('Raos Quadratic Index (O Number): ', D_f_O)
         diversity_indices['D_f_O'] = D_f_O
     
     if 'HC' in indices: 
-        print('Raos Quadratic Index (HC Ratio): ', D_f_HC)
+        if verbose == True:
+            print('Raos Quadratic Index (HC Ratio): ', D_f_HC)
         diversity_indices['D_f_HC'] = D_f_HC
     
     if 'OC' in indices:
-        print('Raos Quadratic Index (OC Ratio): ', D_f_OC)
+        if verbose == True:
+            print('Raos Quadratic Index (OC Ratio): ', D_f_OC)
         diversity_indices['D_f_OC'] = D_f_OC
 
-    if 'NOSC' in indices:     
-        print('Raos Quadratic Index (NOSC): ', D_f_NOSC)
+    if 'NOSC' in indices: 
+        if verbose == True:
+            print('Raos Quadratic Index (NOSC): ', D_f_NOSC)
         diversity_indices['D_f_NOSC'] = D_f_NOSC
     
     if 'rAI' in indices: 
-        print('Raos Quadratic Index (MOD AI): ', D_f_MOD_AI)
+        if verbose == True:
+            print('Raos Quadratic Index (MOD AI): ', D_f_MOD_AI)
         diversity_indices['D_f_MOD_AI'] = D_f_MOD_AI
     
     if 'DBE' in indices: 
-        print('Raos Quadratic Index (DBE): ', D_f_DBE)
+        if verbose == True:
+            print('Raos Quadratic Index (DBE): ', D_f_DBE)
         diversity_indices['D_f_DBE'] = D_f_DBE
     
     return diversity_indices

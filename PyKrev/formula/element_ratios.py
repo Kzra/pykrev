@@ -18,7 +18,7 @@ def element_ratios(count_list, ratios = ['OC','HC']):
 	Y: A list of dictionary items containing atomic counts as produced by element_counts.
     
 	ratios: A list of atomic ratios to compute, calculated as first element divided by second element. 
-	Only single letter elements can be used. 
+	Only C,H,N,O,P & S can be used. 
     
         """            
     ratio_list = []
@@ -28,7 +28,7 @@ def element_ratios(count_list, ratios = ['OC','HC']):
         
         for atom in ratios:
             if len(atom) > 2:
-                raise Exception('Function can only handle single letter elements')
+                raise Exception('Only C,H,N,O,P & S can be used. ')
             
             ratio_counts[atom] = count[atom[0]]/count[atom[1]]
         ratio_list.append(ratio_counts)

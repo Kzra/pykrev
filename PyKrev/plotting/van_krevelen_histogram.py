@@ -1,8 +1,7 @@
 from matplotlib import pyplot as plt
 from scipy.stats import binned_statistic_2d
-from matplotlib import cm
 
-def van_krevelen_histogram (ratio_list,colourmap = 'CMRmap',xbins = 20, ybins = 20): 
+def van_krevelen_histogram (ratio_list,**kwargs): 
     
     
     """ 
@@ -14,21 +13,37 @@ def van_krevelen_histogram (ratio_list,colourmap = 'CMRmap',xbins = 20, ybins = 
 	----
 	van_krevelen_histogram(Y)
     
-	Returns figure, axes, and a density index score (see PyKrev.density_index).   
+	Returns a density index score if bins are provided as integers (see PyKrev.density_index).   
     
 	Parameters
 	----------
 	Y: A list of atom ratios (must contain H/C and O/C). See PyKrev.element_ratios.
     
-	colourmap: colours to map the density values to. See: https://matplotlib.org/3.2.1/tutorials/colors/colormaps.html
-    
-	xbins: number of x axis bins. See: https://matplotlib.org/api/_as_gen/matplotlib.pyplot.hist2d.html
-	ybins: number of y axis bins. 
+	**kwargs for pyplot.hist2d() See: https://matplotlib.org/api/_as_gen/matplotlib.pyplot.hist2d.html.
     
     """
     
-    figure = plt.figure()
-    
+    #check that a list of ratios have been given
+    assert isinstance(ratio_list,list), 'supply a list of ratios given by element_ratios()'
+    #check that each element of ratio list is a dictionary - this is called a generator expression 
+    assert all(isinstance(i,dict) for i in ratio_list), 'supply a list of ratios given by element_ratios()'
+        
+    if 'bins' not in kwargs: 
+        kwargs['bins'] = 20
+        xbins = 20
+        ybins = 20 
+        d_index = density_index(ratio_list,xbins,ybins)
+    elif isinstance(kwargs['bins'],int):
+        xbins = kwargs['bins']
+        ybins = kwargs['bins']
+        d_index = density_index(ratio_list,xbins,ybins)
+    elif isinstance(kwargs['bins'][0],int) and isinstance(kwargs['bins'][1],int):
+        xbins = kwargs['bins'][0]
+        ybins = kwargs['bins'][1]
+        d_index = density_index(ratio_list,xbins,ybins)
+    else: d_index = None
+
+     
     x_axis = []
     y_axis = []
     
@@ -36,16 +51,12 @@ def van_krevelen_histogram (ratio_list,colourmap = 'CMRmap',xbins = 20, ybins = 
         x_axis.append(ratios['OC'])
         y_axis.append(ratios['HC'])
    
-    histogram = plt.hist2d(x_axis,y_axis,(xbins,ybins), cmap = colourmap)
-    d_index = density_index(ratio_list,xbins,ybins)
-    
-    cbar = plt.colorbar()
-    cbar.set_label('Number of moelcular formula')
+    plt.hist2d(x_axis,y_axis,**kwargs)
     
     plt.xlabel('Atomic ratio of O/C')
     plt.ylabel('Atomic ratio of H/C')
     
-    return histogram, d_index
+    return d_index
         
     
 def density_index (ratio_list,xbins=20,ybins=20):
@@ -68,8 +79,6 @@ def density_index (ratio_list,xbins=20,ybins=20):
 	----------
 	Y: A list of atom ratios (must contain H/C and O/C). See PyKrev.element_ratios.
     
-	xbins: number of x axis bins. See: https://matplotlib.org/api/_as_gen/matplotlib.pyplot.hist2d.html
-	ybins: number of y axis bins. 
     
     """
     

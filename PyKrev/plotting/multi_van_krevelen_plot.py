@@ -1,10 +1,12 @@
 from matplotlib import pyplot as plt
-from matplotlib.lines import Line2D
 
-def multi_van_krevelen_plot(ratio_lists=[],group_labels = ['NA','NA','NA','NA','NA'],colours=['blue','green','red','purple','black'],
-                        symbols=['o','^','X','D','s'], marker_size = 20, transparency = [0.5,0.5,0.5,0.5,0.5],
-                        ref_compounds = ['lipid','condensed hydrocarbon', 'lignin', 'protein','cellulose'], 
-                        edge_colours = ['none','none','none','none','none'],subplot = None):
+def multi_van_krevelen_plot(*ratio_lists,
+                            group_labels = [],
+                            colours=[],
+                            symbols=[], 
+                            alphas = [],
+                            edge_colours = [],
+                            **kwargs):
     
      
     """ 
@@ -14,13 +16,13 @@ def multi_van_krevelen_plot(ratio_lists=[],group_labels = ['NA','NA','NA','NA','
     
 	Use
 	----
-	multi_van_krevelen_plot(Y1,Y2,Y3)
+	multi_van_krevelen_plot(*Y)
     
-	Returns figure, axes, and legend handles for a van krevelen plot.   
+	Returns None 
     
 	Parameters
 	----------
-	Y1..Yn: A list containing multiple nested ratio_lists (must contain H/C and O/C). See PyKrev.element_ratios.
+	*Y: multiple ratio_lists (must contain H/C and O/C). See PyKrev.element_ratios.
     
 	group_labels: A list of strings corresponding to each ratio_list in Y to be displayed in the legend. 
     
@@ -30,30 +32,37 @@ def multi_van_krevelen_plot(ratio_lists=[],group_labels = ['NA','NA','NA','NA','
 	symbol: A list of scatter plot symbols to use corresponding to each ratio_list in Y. 
 	See: https://matplotlib.org/3.2.1/api/markers_api.html
     
-	edge_colour: a list of strings providing marker edge colours corresponding to each ratio_list in Y.
-    
-	max_marker_size: list of floats providing marker size orresponding to each ratio_list in Y.
-    
-	trasparency: list of floats providing transparency of the marker points corresponding to each ratio_list in Y. 
+	edge_colours: a list of strings providing marker edge colours corresponding to each ratio_list in Y.
+        
+	alphas: list of floats providing transparency of the marker points corresponding to each ratio_list in Y. 
       
-	ref_compounds: a list of strings  
-
-             
     """ 
-    if len(ratio_lists > 5):
-        print('Warning: you must supply your own symbols, colours, group_labels and transparencies')
+    if len(ratio_lists) == 1: ratio_lists = ratio_lists[0] #this enables the user to pass a nested set of lists
+    assert 'alpha' not in kwargs, 'provide a list of alpha values, alphas = ...'
+    assert 'c' not in kwargs, 'provide a list of colour values, colours = ...'
+    assert 'color' not in kwargs, 'provide a list of color values, colours = ...'
+    assert 'marker' not in kwargs, 'provide a list of marker values, symbols = ...'
+    assert 'edgecolors' not in kwargs, 'provide a list of edgecolors, edge_colours = ...'
+    assert 'label' not in kwargs, 'provide a list of labels, group_labels = ...'
     
-    legend_handles= []
+    cols = ['red','green','blue','purple','orange','magenta','cyan','yellow','black']
+    sybls = ['o','X','s','D','+','1','^','v','8']
+    
+    
+    if not group_labels: 
+        group_labels = ['NA'] * len(ratio_lists)
+    if not colours:
+        colours = [cols[i] for i in range(0,len(ratio_lists))]
+    if not symbols: 
+        symbols = [sybls[i] for i in range(0,len(ratio_lists))]
+    if not alphas:
+        alphas = [0.5] * len(ratio_lists)
+    if not edge_colours:
+        edge_colours = ['None'] * len(ratio_lists)
+    
+    assert len(ratio_lists) == len(group_labels) == len(colours) == len(symbols) == len(alphas) == len(edge_colours), 'Input variables must all be the same length'
+
     i = 0 
-    
-    #If this is being used by the subplot function it needs to inherit a figure and ax 
-    if subplot == True:
-        fig = plt.gcf()
-        ax = plt.gca()
-    #otherwise just create new fig and ax 
-    else: 
-        fig,ax = plt.subplots()
-    
     for ratio_list in ratio_lists: 
 
         x_axis = []
@@ -63,19 +72,14 @@ def multi_van_krevelen_plot(ratio_lists=[],group_labels = ['NA','NA','NA','NA','
                 x_axis.append(ratios['OC'])
                 y_axis.append(ratios['HC'])
 
-        scatter = ax.scatter(x_axis, y_axis, alpha=transparency[i], 
-                             edgecolors=edge_colours[i], s=marker_size, c=colours[i], marker = symbols[i])
-        legend_handles.append(Line2D([],[],marker=symbols[i],ls ="",alpha = transparency[i],mfc = colours[i],mec = edge_colours[i]))
+        plt.scatter(x_axis, y_axis, alpha=alphas[i], edgecolors=edge_colours[i],c=colours[i], marker = symbols[i], label = group_labels[i], **kwargs)
         i += 1 
         
     #apply grid lines 
-    ax.grid(True) 
+    plt.grid(True) 
     
-    #set up legend
-    legend = ax.legend(handles = legend_handles, labels = group_labels[0:i],loc="upper right")
- 
+    #label axis
     plt.xlabel('Atomic ratio of O/C')
     plt.ylabel('Atomic ratio of H/C')
     
-    
-    return fig, ax, legend 
+    return 
