@@ -22,18 +22,18 @@ For all functionality PyKrev requires lists of molecular formula strings to work
 
 ```python
 #read a formularity file, and extract formula, peak intensities, mass charge ratios, and compound classes. 
-formularity_A = pk.read_formularity('../formularity_example_A.csv',pi_col = 'peak_intensity',pi = True, mz=True,cclass = True) #pi_col provides the column name for peak intensities.
+formularity_A = pk.read_formularity('formularity_example_A.csv',pi_col = 'peak_intensity',pi = True, mz=True,cclass = True) #pi_col provides the column name for peak intensities.
 A_formula, A_peak_intensity, A_mass_charge, A_compound_class = formularity_A #unpack the tuple, note the order
 #unpack the tuple directly into separate variables
-B_formula,B_peak_intensity, B_mass_charge, B_compound_class = pk.read_formularity('../formularity_example_B.csv',pi_col = 'peak_intensity',pi = True, mz=True,cclass = True)
-C_formula,C_peak_intensity, C_mass_charge, C_compound_class = pk.read_formularity('../formularity_example_C.csv',pi_col = 'peak_intensity',pi = True, mz=True,cclass = True)
+B_formula,B_peak_intensity, B_mass_charge, B_compound_class = pk.read_formularity('formularity_example_B.csv',pi_col = 'peak_intensity',pi = True, mz=True,cclass = True)
+C_formula,C_peak_intensity, C_mass_charge, C_compound_class = pk.read_formularity('formularity_example_C.csv',pi_col = 'peak_intensity',pi = True, mz=True,cclass = True)
 #A_formula is a list
 print(type(A_formula))
 #A_peak_intensity is an nd.array
 print(type(A_peak_intensity))
 
 #a separate way of loading formula
-brite_df = pd.read_excel('..\Brite_DF.xlsx',index_col = 0) #Load the BRITE Biological molecules excel file
+brite_df = pd.read_excel('Brite_DF.xlsx',index_col = 0) #Load the BRITE Biological molecules excel file
 brite_formula = brite_df['F'].to_list() #extract the formula
 brite_intensities = np.random.rand(len(brite_formula)) #generate a random array of peak intensities
 ```

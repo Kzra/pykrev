@@ -11,9 +11,9 @@ import pandas as pd
 
 
 ```python
-A_formula, A_peak_intensity, [], [] = pk.read_formularity('../formularity_example_A.csv',pi_col = 'peak_intensity',pi = True, mz=False,cclass = False) 
-B_formula,B_peak_intensity, [], [] = pk.read_formularity('../formularity_example_B.csv',pi_col = 'peak_intensity',pi = True, mz=False,cclass = False)
-C_formula,C_peak_intensity, [], [] = pk.read_formularity('../formularity_example_C.csv',pi_col = 'peak_intensity',pi = True, mz=False,cclass = False)
+A_formula, A_peak_intensity, [], [] = pk.read_formularity('formularity_example_A.csv',pi_col = 'peak_intensity',pi = True, mz=False,cclass = False) 
+B_formula,B_peak_intensity, [], [] = pk.read_formularity('formularity_example_B.csv',pi_col = 'peak_intensity',pi = True, mz=False,cclass = False)
+C_formula,C_peak_intensity, [], [] = pk.read_formularity('formularity_example_C.csv',pi_col = 'peak_intensity',pi = True, mz=False,cclass = False)
 ```
 
 There are two ways in which we can use PyKrev with UpSetPlot to produce upset plots based on our data. <br> Method 1 is simpler, but does not allow us to customise the plots as much.
