@@ -131,4 +131,4 @@ upset_returns['extra6'].set_ylabel('Unsaturated \nphenolic \ncompounds', fontsiz
 ![png](output_6_2.png)
 
 
-There you go! Of course you don't have to include compound class, oxygen counts or double bond equivalence, but whatever parameters are of interest. **Happy upsetting**. 
+There you go! Of course you don't have to include compound class, oxygen counts or double bond equivalence, but whatever variables are of interest. **Happy upsetting**. 
