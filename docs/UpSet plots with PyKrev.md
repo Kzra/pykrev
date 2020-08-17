@@ -48,7 +48,7 @@ counts = pk.element_counts(formula_to_analyse) #calculate the element counts for
 o_number = [c['O'] for c in counts] #calculate the oxygen number for all the formula
 dbe = pk.double_bond_equivalent(counts) #calculate the double bond equivalence for all the formula
 aimod = pk.aromaticity_index(counts) #calculate the modified aromaticity index for all the formula 
-ratios = pk.element_ratios(counts) #calculate the element 
+ratios = pk.element_ratios(counts) #calculate the element ratios for all formula
 
 
 #below we are going to calculate the compound class of all formula based on AI and HC ratio
@@ -131,4 +131,4 @@ upset_returns['extra6'].set_ylabel('Unsaturated \nphenolic \ncompounds', fontsiz
 ![png](output_6_2.png)
 
 
-There you go! Of course you don't have to include compund class, oxygen counts or double bond equivalence, but whatever parameters are of interest. **Happy upsetting**. 
+There you go! Of course you don't have to include compound class, oxygen counts or double bond equivalence, but whatever variables are of interest. **Happy upsetting**. 
