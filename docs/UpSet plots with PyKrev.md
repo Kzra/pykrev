@@ -3,17 +3,22 @@
 
 
 ```python
-import PyKrev as pk
+import os
 import upsetplot #the upsetplot implementation in python we are using to make upset plots
 import matplotlib.pyplot as plt
 import pandas as pd
+
+
+if os.getcwd()[-4::] == 'docs': #if user is in the docs folder
+    os.chdir('..') #navigate back to the root directory
+import PyKrev as pk
 ```
 
 
 ```python
-A_formula, A_peak_intensity, [], [] = pk.read_formularity('formularity_example_A.csv',pi_col = 'peak_intensity',pi = True, mz=False,cclass = False) 
-B_formula,B_peak_intensity, [], [] = pk.read_formularity('formularity_example_B.csv',pi_col = 'peak_intensity',pi = True, mz=False,cclass = False)
-C_formula,C_peak_intensity, [], [] = pk.read_formularity('formularity_example_C.csv',pi_col = 'peak_intensity',pi = True, mz=False,cclass = False)
+A_formula, A_peak_intensity, [], [] = pk.read_formularity('example_data/formularity_example_A.csv',pi_col = 'peak_intensity',pi = True, mz=False,cclass = False) 
+B_formula,B_peak_intensity, [], [] = pk.read_formularity('example_data/formularity_example_B.csv',pi_col = 'peak_intensity',pi = True, mz=False,cclass = False)
+C_formula,C_peak_intensity, [], [] = pk.read_formularity('example_data/formularity_example_C.csv',pi_col = 'peak_intensity',pi = True, mz=False,cclass = False)
 ```
 
 There are two ways in which we can use PyKrev with UpSetPlot to produce upset plots based on our data. <br> Method 1 is simpler, but does not allow us to customise the plots as much.
@@ -48,7 +53,7 @@ counts = pk.element_counts(formula_to_analyse) #calculate the element counts for
 o_number = [c['O'] for c in counts] #calculate the oxygen number for all the formula
 dbe = pk.double_bond_equivalent(counts) #calculate the double bond equivalence for all the formula
 aimod = pk.aromaticity_index(counts) #calculate the modified aromaticity index for all the formula 
-ratios = pk.element_ratios(counts) #calculate the element ratios for all formula
+ratios = pk.element_ratios(counts) #calculate the element ratios for all the formula
 
 
 #below we are going to calculate the compound class of all formula based on AI and HC ratio
@@ -120,6 +125,10 @@ upset_returns['extra6'].set_ylabel('Unsaturated \nphenolic \ncompounds', fontsiz
     Warning: negative ai counts detected and set to zero.
     
 
+    C:\Users\Ezra\Anaconda3\lib\site-packages\statsmodels\tools\_testing.py:19: FutureWarning: pandas.util.testing is deprecated. Use the functions in the public API at pandas.testing instead.
+      import pandas.util.testing as tm
+    
+
 
 
 
@@ -128,7 +137,7 @@ upset_returns['extra6'].set_ylabel('Unsaturated \nphenolic \ncompounds', fontsiz
 
 
 
-![png](output_6_2.png)
+![png](output_6_3.png)
 
 
-There you go! Of course you don't have to include compound class, oxygen counts or double bond equivalence, but whatever variables are of interest. **Happy upsetting**. 
+There you go! Of course you don't have to include compund class, oxygen counts or double bond equivalence, but whatever parameters are of interest. **Happy upsetting**. 

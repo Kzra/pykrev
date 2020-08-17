@@ -5,14 +5,18 @@
 **What is PyKrev?** PyKrev is a python package containing functions that make it easier to process mass spectrometry data in python. PyKrev is intended to be used in the final part of mass spectrometry data analysis, after the spectra have been calibrated and peaks have been assigned to molecular formula. <br> <br>
 **What data do I need to use PyKrev?** PyKrev was designed to analyse low weight molecular formula uncovered from high resolution mass spectra. The core data sets needed to use PyKrev are lists of molecular formula strings and corresponding numpy arrays of peak intensities. PyKrev can parse an output .csv file from the formularity software to generate these datasets for you. <br> <br>
 **PyKrev dependencies:** PyKrev is written in Python 3. To use PyKrev you must have the matplotlib, numpy and pandas packages installed. For additional functionality such as multivariate analysis, you will also need to install SciPy and scikit-bio. <br> <br>
-**Installing PyKrev:** To install PyKrev you need to download the entire repository from GitHub. Once downloaded, you can either run your analysis from inside the PyKrev repository, or [add PyKrev to your python path](https://bic-berkeley.github.io/psych-214-fall-2016/using_pythonpath.html).
+**Installing PyKrev:** To install PyKrev you need to download the entire repository from GitHub. Once downloaded, you can either run your analysis from inside the root directory of the PyKrev repository, or [add PyKrev to your python path](https://bic-berkeley.github.io/psych-214-fall-2016/using_pythonpath.html).
 
 
 ```python
-import PyKrev as pk
+import os
 import numpy as np
 import pandas as pd
 import matplotlib.pyplot as plt
+
+if os.getcwd()[-4::] == 'docs': #if user is in the docs folder
+    os.chdir('..') #navigate back to the root directory
+import PyKrev as pk
 ```
 
 <h3> Basic formula manipulation </h3>
@@ -22,18 +26,18 @@ For all functionality PyKrev requires lists of molecular formula strings to work
 
 ```python
 #read a formularity file, and extract formula, peak intensities, mass charge ratios, and compound classes. 
-formularity_A = pk.read_formularity('formularity_example_A.csv',pi_col = 'peak_intensity',pi = True, mz=True,cclass = True) #pi_col provides the column name for peak intensities.
+formularity_A = pk.read_formularity('example_data/formularity_example_A.csv',pi_col = 'peak_intensity',pi = True, mz=True,cclass = True) #pi_col provides the column name for peak intensities.
 A_formula, A_peak_intensity, A_mass_charge, A_compound_class = formularity_A #unpack the tuple, note the order
 #unpack the tuple directly into separate variables
-B_formula,B_peak_intensity, B_mass_charge, B_compound_class = pk.read_formularity('formularity_example_B.csv',pi_col = 'peak_intensity',pi = True, mz=True,cclass = True)
-C_formula,C_peak_intensity, C_mass_charge, C_compound_class = pk.read_formularity('formularity_example_C.csv',pi_col = 'peak_intensity',pi = True, mz=True,cclass = True)
+B_formula,B_peak_intensity, B_mass_charge, B_compound_class = pk.read_formularity('example_data/formularity_example_B.csv',pi_col = 'peak_intensity',pi = True, mz=True,cclass = True)
+C_formula,C_peak_intensity, C_mass_charge, C_compound_class = pk.read_formularity('example_data/formularity_example_C.csv',pi_col = 'peak_intensity',pi = True, mz=True,cclass = True)
 #A_formula is a list
 print(type(A_formula))
 #A_peak_intensity is an nd.array
 print(type(A_peak_intensity))
 
 #a separate way of loading formula
-brite_df = pd.read_excel('Brite_DF.xlsx',index_col = 0) #Load the BRITE Biological molecules excel file
+brite_df = pd.read_excel('example_data/Brite_DF.xlsx',index_col = 0) #Load the BRITE Biological molecules excel file
 brite_formula = brite_df['F'].to_list() #extract the formula
 brite_intensities = np.random.rand(len(brite_formula)) #generate a random array of peak intensities
 ```
@@ -318,6 +322,22 @@ sample_data_matrix.iloc[:,1:10]
 ```
 
 
+
+
+<div>
+<style scoped>
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
 <table border="1" class="dataframe">
   <thead>
     <tr style="text-align: right;">
@@ -427,4 +447,4 @@ plt.title('PCoA Example')
 ![png](output_33_1.png)
 
 
-That's the end of the user guide. Thanks for reading and good luck! The package is still early in development and i'd greatly appreciate any feedback. If you'd like to contribute code or feature ideas, that'd be brill too. You can can contact me at ezra.kitson@ed.ac.uk. Last update:  16/08/2020
+That's the end of the user guide. Thanks for reading and good luck! The package is still early development and i'd greatly appreciate any feedback. If you'd like to contribute code or feature ideas, that'd be awesome too. You can can contact me at ezra.kitson@ed.ac.uk. Last update:  16/08/2020
