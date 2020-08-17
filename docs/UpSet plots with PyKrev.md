@@ -125,14 +125,6 @@ upset_returns['extra6'].set_ylabel('Unsaturated \nphenolic \ncompounds', fontsiz
     Warning: negative ai counts detected and set to zero.
     
 
-    C:\Users\Ezra\Anaconda3\lib\site-packages\statsmodels\tools\_testing.py:19: FutureWarning: pandas.util.testing is deprecated. Use the functions in the public API at pandas.testing instead.
-      import pandas.util.testing as tm
-    
-
-
-
-
-    Text(0,0.5,'Unsaturated \nphenolic \ncompounds')
 
 
 
