@@ -75,7 +75,7 @@ A_nosc = pk.nominal_oxidation_state(A_counts) #the output is a numpy array of le
     Warning: negative ai counts detected and set to zero.
     
 
-PyKrev can also be used to compare several lists of molecular formula and give you the unique formula in each list, the missing formula in each list, or all the intersections between them.
+PyKrev can also be used to compare several lists of molecular formula and give you the unique formula in each list, the missing formula in each list, or the intersections between them.
 
 
 
