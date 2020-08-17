@@ -4,8 +4,8 @@ PyKrev is a Python 3 package to help with analysis of high resolution mass spect
 
 [**The User Guide can be accessed here**](https://github.com/Kzra/PyKrev/blob/master/docs/PyKrev%20User%20Guide.md)
 
-[**Making UpSet plots with PyKrev**]()
+[**Making UpSet plots with PyKrev**](https://github.com/Kzra/PyKrev/blob/master/docs/UpSet%20plots%20with%20PyKrev.md)
 
 Please send any feedback or comments to ezra.kitson@ed.ac.uk
 
-Last update: 16/08/2020
+Last update: 17/08/2020
