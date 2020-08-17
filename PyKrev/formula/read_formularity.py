@@ -64,8 +64,11 @@ def read_formularity(report_name,pi_col = [],pi = True, mz = True, cclass = True
                 temp_formula = temp_formula + 'S' + str(S[n])
             
             molecular_formula.append(temp_formula)
-            peak_intensities = np.append(peak_intensities,I[n])
-            mass_charge =  np.append(mass_charge,MZ[n])
-            compound_class.append(G[n])
+            if pi == True:
+                peak_intensities = np.append(peak_intensities,I[n])
+            if mz == True:
+                mass_charge =  np.append(mass_charge,MZ[n])
+            if cclass == True:
+                compound_class.append(G[n])
        
     return molecular_formula, peak_intensities, mass_charge, compound_class #return as a tuple, that can be unpacked if necessary
