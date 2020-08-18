@@ -405,7 +405,7 @@ We could perform PCA (Principal component analysis) directly on the relative int
 bray_curtis = pk.bray_curtis_matrix(ri_matrix) #note bray_curtis_matrix requires a numpy.array so won't work directly on sample_data_matrix
 ```
 
-Voila! To finish let's perform PCoA to compare our samples. To do this we are going to need the stats module of the skbio package.
+To finish let's perform PCoA to compare our samples. To do this we are going to need the stats module of the skbio package.
 
 
 ```python
