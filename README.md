@@ -1,6 +1,6 @@
 # PyKrev: van Krevelen analysis and beyond
 
-<img src="https://github.com/Kzra/PyKrev/blob/master/Pykrev_blue.png" alt="PyKrev" width="250"/>
+<img src="https://github.com/Kzra/PyKrev/blob/master/Pykrev_blue.png" alt="PyKrev" width="500"/>
 
 
 PyKrev is a Python 3 package to help with analysis of high resolution mass spectrometry data.
