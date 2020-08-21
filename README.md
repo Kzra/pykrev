@@ -10,4 +10,4 @@ Please send any feedback or comments to ezra.kitson@ed.ac.uk
 
 Last update: 17/08/2020
 
-<img src="https://github.com/Kzra/PyKrev/blob/master/Pykrev_blue.png" alt="PyKrev" width="450"/>
+<img src="https://github.com/Kzra/PyKrev/blob/master/Pykrev_blue.png" alt="PyKrev" width="650"/>
