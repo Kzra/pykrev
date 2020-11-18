@@ -1,4 +1,3 @@
-
 [**UpSet Plots**](https://caleydo.org/tools/upset/#:~:text=UpSet%20concept,the%20figure%20on%20the%20right.&text=The%20first%20row%20in%20the,B%20or%20C\)%2C%20etc.) are an effective way of visualising intersections of three or more sets. This is particularly useful when we want to compare high resolution mass spectrometry data between multiple samples. An implementation of UpSet plots in Python is [UpSetPlot](https://pypi.org/project/UpSetPlot/) which you will need to install before performing the following analysis.
 
 
@@ -7,11 +6,7 @@ import os
 import upsetplot #the upsetplot implementation in python we are using to make upset plots
 import matplotlib.pyplot as plt
 import pandas as pd
-
-
-if os.getcwd()[-4::] == 'docs': #if user is in the docs folder
-    os.chdir('..') #navigate back to the root directory
-import PyKrev as pk
+import pykrev as pk
 ```
 
 
@@ -35,7 +30,9 @@ title = plt.title('Method 1')
 ```
 
 
+    
 ![png](output_4_0.png)
+    
 
 
 Method 2 is a little more complex, but allows us to add additional catplots above each intersection to give more information about the formula in that intersection. In the example below, I use catplots to show the distribution of double bond equivalence and oxygen atom number, as well as the proportion of compound class types in each intersection based on AI mod and HC ratios (see [Kellerman et al. (2014)](https://www.nature.com/articles/ncomms4804)).
@@ -51,9 +48,9 @@ formula_to_analyse = sample_upset['id'] #a set of all the formula across all the
 
 counts = pk.element_counts(formula_to_analyse) #calculate the element counts for all the formula
 o_number = [c['O'] for c in counts] #calculate the oxygen number for all the formula
-dbe = pk.double_bond_equivalent(counts) #calculate the double bond equivalence for all the formula
-aimod = pk.aromaticity_index(counts) #calculate the modified aromaticity index for all the formula 
-ratios = pk.element_ratios(counts) #calculate the element ratios for all the formula
+dbe = pk.double_bond_equivalent(formula_to_analyse) #calculate the double bond equivalence for all the formula
+aimod = pk.aromaticity_index(formula_to_analyse) #calculate the modified aromaticity index for all the formula 
+ratios = pk.element_ratios(formula_to_analyse) #calculate the element ratios for all the formula
 
 
 #below we are going to calculate the compound class of all formula based on AI and HC ratio
@@ -128,8 +125,14 @@ upset_returns['extra6'].set_ylabel('Unsaturated \nphenolic \ncompounds', fontsiz
 
 
 
+    Text(0, 0.5, 'Unsaturated \nphenolic \ncompounds')
 
-![png](output_6_3.png)
+
+
+
+    
+![png](output_6_2.png)
+    
 
 
 There you go! Of course you don't have to include compund class, oxygen counts or double bond equivalence, but whatever parameters are of interest. **Happy upsetting**. 
