@@ -75,7 +75,7 @@ A_nosc = pk.nominal_oxidation_state(A_counts) #the output is a numpy array of le
     Warning: negative ai counts detected and set to zero.
     
 
-PyKrev can also be used to compare several lists of molecular formula and give you the unique formula in each list, the missing formula in each list, or all the intersections between them.
+PyKrev can also be used to compare several lists of molecular formula and give you the unique formula in each list, the missing formula in each list, or the intersections between them.
 
 
 
@@ -308,7 +308,7 @@ A_diversity['D_f_DBE']#functional diversity based on double bond equivalence
 
 
 
-In order to cross compare molecular formula datasets in multivariate analysis it is first required to construct a sample data matrix in which each column represents a molecular formula each row a different sample. The len(rows) is equal to len(samples) and the len(columns) is equal to the len(set(all_formula)), where all_formula is all formula found across the samples. \[row,col\] value is the peak intensity of a particular molecular formula in a particular sample. If the formula is not present in a sample the peak intensity is set as zero. We can construct this sample data matrix using pk.ordination_matrix.
+In order to cross compare molecular formula datasets in multivariate analysis it is first required to construct a sample data matrix in which each column represents a molecular formula and each row a different sample. The len(rows) is equal to len(samples) and the len(columns) is equal to the len(set(all_formula)), where all_formula is all formula found across the samples. \[row,col\] value is the peak intensity of a particular molecular formula in a particular sample. If the formula is not present in a sample the peak intensity is set as zero. We can construct this sample data matrix using pk.ordination_matrix.
 
 
 ```python
@@ -324,20 +324,7 @@ sample_data_matrix.iloc[:,1:10]
 
 
 
-<div>
-<style scoped>
-    .dataframe tbody tr th:only-of-type {
-        vertical-align: middle;
-    }
 
-    .dataframe tbody tr th {
-        vertical-align: top;
-    }
-
-    .dataframe thead th {
-        text-align: right;
-    }
-</style>
 <table border="1" class="dataframe">
   <thead>
     <tr style="text-align: right;">
@@ -418,7 +405,7 @@ We could perform PCA (Principal component analysis) directly on the relative int
 bray_curtis = pk.bray_curtis_matrix(ri_matrix) #note bray_curtis_matrix requires a numpy.array so won't work directly on sample_data_matrix
 ```
 
-Voila! To finish let's perform PCoA to compare our samples. To do this we are going to need the stats module of the skbio package.
+To finish let's perform PCoA to compare our samples. To do this we are going to need the stats module of the skbio package.
 
 
 ```python
