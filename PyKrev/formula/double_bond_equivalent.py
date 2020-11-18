@@ -1,11 +1,12 @@
+from .element_counts import element_counts
 import numpy as np
-def double_bond_equivalent(count_list):
+def double_bond_equivalent(formula_list):
     
       
     """ 
 	Docstring for function pyKrev.double_bond_equivalent
 	====================
-	This function takes a list of element counts and gives the double bond equivalent.
+	This function takes a list of molecular formula strings and returns the double bond equivalent.
     
 	Use
 	----
@@ -15,7 +16,7 @@ def double_bond_equivalent(count_list):
     
 	Parameters
 	----------
-	Y: A list of dictionary items containing atomic counts as produced by element_counts.
+	Y: A list of molecular formula strings.
     
 	Info
 	----------
@@ -30,9 +31,7 @@ def double_bond_equivalent(count_list):
     
     
     """    
-    assert isinstance(count_list,list),'supply a list of counts given by element_counts()'
-    assert all(isinstance(i,dict) for i in count_list), 'supply a list of counts given by element_counts()'
-   
+    count_list = element_counts(formula_list)
     DBE_array = np.array([])
     warning = 0
     

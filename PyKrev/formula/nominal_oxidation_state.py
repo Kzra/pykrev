@@ -1,10 +1,11 @@
 import numpy as np
-def nominal_oxidation_state(count_list):
+from .element_counts import element_counts
+def nominal_oxidation_state(formula_list):
     
     """ 
 	Docstring for function pyKrev.nominal_oxidation_state
 	====================
-	This function takes a list of element counts and gives the nominal oxidatate state of C.
+	This function takes a list of molecular formula strings and returns the nominal oxidatate state of C.
     
 	Use
 	----
@@ -14,8 +15,7 @@ def nominal_oxidation_state(count_list):
     
 	Parameters
 	----------
-	Y: A list of dictionary items containing atomic counts as produced by element_counts. 
-	Must include C,H,O,N,P,S. 
+	Y: A list of molecular formula strings. 
     
     
 	Info
@@ -35,13 +35,11 @@ def nominal_oxidation_state(count_list):
  	f = S
         
     """      
-    assert isinstance(count_list,list),'supply a list of counts given by element_counts()'
-    assert all(isinstance(i,dict) for i in count_list), 'supply a list of counts given by element_counts()'
+    count_list = element_counts(formula_list)
     
     NOSCs = np.array([])
         
     for i in count_list:
         NOSCs = np.append(NOSCs,-((4*i['C'] + i['H'] - 3 * i['N'] - 2 * i['O'] + 5 * i['P'] - 2 * i['S'])/i['C']) + 4) 
-    #still need to test this calculation is correct
     
     return NOSCs

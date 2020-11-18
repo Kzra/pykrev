@@ -31,14 +31,12 @@ def missing_plot(*groups,**kwargs):
     if 'group_labels' in kwargs: #if the user has supplied group_labels in kwargs, save them to a variable so unique_groups is labelled correctly 
         group_labels = kwargs['group_labels']
     
-    
-    missing_ratios = []
+    missing_formulas = []
     missing_groups = missing_formula(*groups,group_labels = group_labels)
     for group in missing_groups:
-        mc = element_counts(missing_groups[group])
-        missing_ratios.append(element_ratios(mc))
-   
-    multi_van_krevelen_plot(missing_ratios,**kwargs) 
+        missing_formulas.append(missing_groups[group])
+    
+    multi_van_krevelen_plot(missing_formulas,**kwargs) 
     
     return missing_groups
     

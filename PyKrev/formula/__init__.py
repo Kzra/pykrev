@@ -8,3 +8,5 @@ from .standardize_formula import standardize_formula
 from .unique_formula import unique_formula 
 from .find_intersections import find_intersections
 from .read_formularity import read_formularity
+from .calculate_mass import calculate_mass
+from .kendrick_mass_defect import kendrick_mass_defect

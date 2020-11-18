@@ -30,15 +30,13 @@ def unique_plot(*groups, **kwargs):
     if 'group_labels' in kwargs: #if the user has supplied group_labels in kwargs, save them to a variable so unique_groups is labelled correctly 
         group_labels = kwargs['group_labels']
     
-    
-    unique_ratios = []
+    unique_formulas = []
     unique_groups = unique_formula(*groups,group_labels = group_labels)
     
     for group in unique_groups:
-        uc = element_counts(unique_groups[group])
-        unique_ratios.append(element_ratios(uc))
-   
-    multi_van_krevelen_plot(unique_ratios, **kwargs)
+       unique_formulas.append(unique_groups[group])
+    
+    multi_van_krevelen_plot(unique_formulas, **kwargs)
     
     return unique_groups
     

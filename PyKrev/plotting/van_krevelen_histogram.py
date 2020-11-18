@@ -1,13 +1,16 @@
 from matplotlib import pyplot as plt
 from scipy.stats import binned_statistic_2d
+from ..formula import element_ratios 
+from ..formula import element_counts
 
-def van_krevelen_histogram (ratio_list,**kwargs): 
+
+def van_krevelen_histogram (formula_list, x_ratio = 'OC', y_ratio ='HC', **kwargs): 
     
     
     """ 
 	Docstring for function PyKrev.van_krevelen_histogram
 	====================
-	This function takes a list of H/C-O/C ratios and plots a van Krevelen histogram. 
+	This function takes a list of molecular formula strings and plots a van Krevelen histogram. 
     
 	Use
 	----
@@ -17,16 +20,13 @@ def van_krevelen_histogram (ratio_list,**kwargs):
     
 	Parameters
 	----------
-	Y: A list of atom ratios (must contain H/C and O/C). See PyKrev.element_ratios.
-    
+	Y: A list of molecular formula strings.
+    x_ratio: element ratio to plot on x axis, given numerator denominator e.g. 'OC'
+    y_ratio: element ratio to plot on y axis, given numerator denominator e.g. 'HC'
 	**kwargs for pyplot.hist2d() See: https://matplotlib.org/api/_as_gen/matplotlib.pyplot.hist2d.html.
     
     """
-    
-    #check that a list of ratios have been given
-    assert isinstance(ratio_list,list), 'supply a list of ratios given by element_ratios()'
-    #check that each element of ratio list is a dictionary - this is called a generator expression 
-    assert all(isinstance(i,dict) for i in ratio_list), 'supply a list of ratios given by element_ratios()'
+    ratio_list = element_ratios(formula_list,ratios=[x_ratio,y_ratio])
         
     if 'bins' not in kwargs: 
         kwargs['bins'] = 20
