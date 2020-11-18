@@ -347,21 +347,6 @@ sample_data_matrix.iloc[:,1:10]
 ```
 
 
-
-
-<div>
-<style scoped>
-    .dataframe tbody tr th:only-of-type {
-        vertical-align: middle;
-    }
-
-    .dataframe tbody tr th {
-        vertical-align: top;
-    }
-
-    .dataframe thead th {
-        text-align: right;
-    }
 </style>
 <table border="1" class="dataframe">
   <thead>
@@ -461,19 +446,6 @@ plt.legend()
 plt.title('PCoA Example')
 ```
 
-    C:\Users\Ezra\Anaconda3\lib\site-packages\skbio\util\_testing.py:15: FutureWarning: pandas.util.testing is deprecated. Use the functions in the public API at pandas.testing instead.
-      import pandas.util.testing as pdt
-    
-
-
-
-
-    Text(0.5, 1.0, 'PCoA Example')
-
-
-
-
-    
 ![png](output_41_2.png)
     
 
