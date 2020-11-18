@@ -7,6 +7,10 @@
 **Installing PyKrev:** To install pykrev you need to download the entire repository from GitHub. Once downloaded, you can either run your analysis from inside the root directory of the PyKrev repository, or [add PyKrev to your python path](https://bic-berkeley.github.io/psych-214-fall-2016/using_pythonpath.html).
 
 
+**Overview of PyKrev Module Organisation:**
+![PyKrev Module Organisation](pykrev_module_organisation.png "Title")
+
+
 ```python
 import os
 import numpy as np
@@ -158,13 +162,13 @@ plt.grid(False)
 
 
     
-![png](output_16_0.png)
+![png](output_17_0.png)
     
 
 
 
     
-![png](output_16_1.png)
+![png](output_17_1.png)
     
 
 
@@ -187,13 +191,13 @@ cbar.set_label('Counts')
 
 
     
-![png](output_18_0.png)
+![png](output_19_0.png)
     
 
 
 
     
-![png](output_18_1.png)
+![png](output_19_1.png)
     
 
 
@@ -231,7 +235,7 @@ legend = plt.legend(loc='best')
 
 
     
-![png](output_22_0.png)
+![png](output_23_0.png)
     
 
 
@@ -253,19 +257,19 @@ plt.legend()
 
 
 
-    <matplotlib.legend.Legend at 0x1516225bf48>
+    <matplotlib.legend.Legend at 0x266e6ef26c8>
 
 
 
 
     
-![png](output_24_1.png)
+![png](output_25_1.png)
     
 
 
 
     
-![png](output_24_2.png)
+![png](output_25_2.png)
     
 
 
@@ -280,7 +284,7 @@ plt.colorbar().set_label('Aromaticity Index')
 
 
     
-![png](output_26_0.png)
+![png](output_27_0.png)
     
 
 
@@ -342,6 +346,81 @@ assert len(sample_data_matrix.iloc[0,:]) == len(set(all_formula))
 sample_data_matrix.iloc[:,1:10]
 ```
 
+
+
+
+<div>
+<style scoped>
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>C41H34O21</th>
+      <th>C88H156O3</th>
+      <th>C29H46O11</th>
+      <th>C33H44O11</th>
+      <th>C15H12O11</th>
+      <th>C21H28O9</th>
+      <th>C18H24O6</th>
+      <th>C25H28O11</th>
+      <th>C11H8O7</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>A</th>
+      <td>4.31881e+06</td>
+      <td>0</td>
+      <td>1.43848e+06</td>
+      <td>1.38584e+07</td>
+      <td>1.92424e+06</td>
+      <td>2.85584e+06</td>
+      <td>2.72973e+06</td>
+      <td>4.21033e+06</td>
+      <td>1.31289e+06</td>
+    </tr>
+    <tr>
+      <th>B</th>
+      <td>3.17868e+06</td>
+      <td>3.06943e+06</td>
+      <td>0</td>
+      <td>7.83664e+06</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>1.06072e+07</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <th>C</th>
+      <td>0</td>
+      <td>0</td>
+      <td>3.03945e+06</td>
+      <td>6.13748e+07</td>
+      <td>5.40446e+06</td>
+      <td>8.37513e+06</td>
+      <td>7.68344e+06</td>
+      <td>9.34136e+06</td>
+      <td>7.97993e+06</td>
+    </tr>
+  </tbody>
+</table>
+</div>
+
+
+
 We can convert the peak intensities in the sample data matrix to relative intensities (so that each column sums to 1) by using pk.relative_intensity
 
 
@@ -349,6 +428,13 @@ We can convert the peak intensities in the sample data matrix to relative intens
 ri_matrix = pk.relative_intensity(sample_data_matrix)
 sum(ri_matrix[:,0]) #columns sum to 1 
 ```
+
+
+
+
+    1.0
+
+
 
 We could perform PCA (Principal component analysis) directly on the relative intensity matrix, or compute a non-euclidean distance measure, such as [bray-curtis dissimilarity](https://en.wikipedia.org/wiki/Bray%E2%80%93Curtis_dissimilarity) to perform PCoA (Principal coordinate analysis).  This can be done using pk.bray_curtis_matrix.
 
@@ -374,5 +460,22 @@ plt.ylabel((str(pcoa_results.perc_exp[1]) + '%' + ' PC2'))
 plt.legend()
 plt.title('PCoA Example')
 ```
+
+    C:\Users\Ezra\Anaconda3\lib\site-packages\skbio\util\_testing.py:15: FutureWarning: pandas.util.testing is deprecated. Use the functions in the public API at pandas.testing instead.
+      import pandas.util.testing as pdt
+    
+
+
+
+
+    Text(0.5, 1.0, 'PCoA Example')
+
+
+
+
+    
+![png](output_41_2.png)
+    
+
 
 That's the end of the user guide. Thanks for reading and good luck! The package is still early development and i'd greatly appreciate any feedback. If you'd like to contribute code or feature ideas, that'd be awesome too. You can can contact me at ezra.kitson@ed.ac.uk. Last update:  18/11/2020
