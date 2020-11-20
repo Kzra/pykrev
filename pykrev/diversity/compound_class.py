@@ -75,7 +75,7 @@ def compound_class(formula_list, mass_list = [], method = 'MSCC'):
                     cclassCounts[cClass[0]] += 1 
     if method == 'KELL':
         cRatios = element_ratios(formula_list)
-        aindex = aromaticity_index(formula_list, index_type = 'AI')
+        aindex = aromaticity_index(formula_list, index_type = 'rAI')
         cclassCounts['Combustion-derived polycyclic aromatics'] = 0
         cclassCounts['Vascular plant-derived polyphenols'] = 0
         cclassCounts['Highly unsaturated and phenolic compounds'] = 0

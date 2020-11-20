@@ -1,6 +1,6 @@
 import unittest
 import numpy as np
-from pykrev import van_krevelen_plot, element_ratios, element_counts, kendrick_mass_defect_plot, multi_van_krevelen_plot, van_krevelen_histogram, missing_plot, unique_plot, double_bond_equivalent 
+from pykrev import van_krevelen_plot, element_ratios, element_counts, kendrick_mass_defect_plot, multi_van_krevelen_plot, van_krevelen_histogram, missing_plot, unique_plot, double_bond_equivalent, atomic_class_plot, compound_class_plot 
 
 class TestPLOTTING(unittest.TestCase):
 
@@ -36,5 +36,12 @@ class TestPLOTTING(unittest.TestCase):
        x = ['C13H14O5','C13H14N2O4S2','C36H45ClN6O12','C9H11NO2', 'C9H11NO3', 'C11H12N2O2', 'C5H7NO3', 'C5H9NO3', 'C6H12N2O4S2','C6H11NO3S']
        van_krevelen_histogram(x)
 
+    def test_atomic_class_plot(self):
+       x = ['C13H14O5','C13H14N2O4S2','C36H45ClN6O12','C9H11NO2', 'C9H11NO3', 'C11H12N2O2', 'C5H7NO3', 'C5H9NO3', 'C6H12N2O4S2','C6H11NO3S']
+       atomic_class_plot(x, element = 'S')
+
+    def test_compound_class_plot(self):
+       x = ['C13H14O5','C13H14N2O4S2','C36H45ClN6O12','C9H11NO2', 'C9H11NO3', 'C11H12N2O2', 'C5H7NO3', 'C5H9NO3', 'C6H12N2O4S2','C6H11NO3S']
+       compound_class_plot(x, method = 'KELL')
 if __name__ == '__main__':
     unittest.main()

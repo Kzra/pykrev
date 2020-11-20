@@ -50,8 +50,9 @@ def aromaticity_index(formula_list, index_type = 'rAI'):
                 AI_counts = (1 + count['C'] - (count['H']*0.5)-(count['O']*0.5)- count['S'])/(count['C'] - (count['O']*0.5) - count['N'] - count['S'] - count['P'])
             elif index_type == 'AI':
                 AI_counts = (1 + count['C'] -count['O']- count['S'] - (0.5*count['H']))/(count['C'] - count['O'] - count['N'] - count['S'] - count['P'])
-        except KeyError:
-            raise Exception('Make sure your counts include C,H,O,S,N,P')
+        except ZeroDivisionError:
+            AI_counts = np.nan
+            print(f"Warning Zero Division Encountered, NaN value returned. {count}")
         if AI_counts < 0: 
             warning = 1 
             AI_counts = 0
