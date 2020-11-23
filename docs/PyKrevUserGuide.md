@@ -21,7 +21,7 @@ import pykrev as pk
 
 <h3> Basic formula manipulation </h3>
 
-For almost all functionality PyKrev requires lists of molecular formula strings to work. For some functionality PyKrev also requires numpy arrays of corrsponding peak intensitiesand mz_values. Import these into Python however you like. If you want to analyse formula assigned using [formularity software](https://omics.pnl.gov/software/formularity), you can use pk.read_formularity: this function automatically filters out mass charge values that don't have C and H atoms assigned to them.
+For almost all functionality PyKrev requires lists of molecular formula strings to work. For some functionality PyKrev also requires numpy arrays of corrsponding peak intensities and mz_values. Import these into Python however you like. If you want to analyse formula assigned using [formularity software](https://omics.pnl.gov/software/formularity), you can use pk.read_formularity: this function automatically filters out mass charge values that don't have C and H atoms assigned to them.
 
 
 ```python
@@ -217,7 +217,7 @@ Hormones_and_transmitters = brite_df[brite_df['A'] == 'Hormones and transmitters
 Antibiotics = brite_df[brite_df['A'] == 'Antibiotics']['F'].dropna()
 ```
 
-Multi van krevelen plots require multiple ratio lists followed by key word arguments specifying the alpha value (transparency), colour, symbol type, edge colour and label that each of the ratio lists will be plotted with. Additionally the function accepts any keyword arguments for pyplot.scatter, with the exception of alpha, marker, c, edgecolors and label.
+Multi van krevelen plots require multiple molecular formula lists followed by key word arguments specifying the alpha value (transparency), colour, symbol type, edge colour and label that each of the ratio lists will be plotted with. Additionally the function accepts any keyword arguments for pyplot.scatter, with the exception of alpha, marker, c, edgecolors and label.
 
 
 ```python
@@ -288,7 +288,43 @@ plt.colorbar().set_label('Aromaticity Index')
     
 
 
-**Finally, PyKrev can be used alongside UpSetPlot to make Upset plots, but that is covered in a [separate user guide](https://github.com/Kzra/PyKrev/blob/master/docs/UpSetplotswithPyKrev.md).**
+**Atomic Class Plots** enable you to see the distribution of an element within your sample, and the summary statistics show the mean, median and standard deviation of that distribution.  
+
+
+```python
+plt.figure()
+(u,m,sig) = pk.atomic_class_plot(A_formula, element = 'O', color = 'c', summary_statistics = True, bins = range(0,33))
+plt.xticks()
+plt.figure()
+(u,m,sig) = pk.atomic_class_plot(A_formula, element = 'N', color = 'm', summary_statistics = True)
+```
+
+
+    
+![png](output_29_0.png)
+    
+
+
+
+    
+![png](output_29_1.png)
+    
+
+
+**Compound class plots** are useful to see the breakdown of compound classes in a sample. There is more about the *compound_class* function in the next section.
+
+
+```python
+pk.compound_class_plot(A_formula,A_mass_charge, color = 'g', method = 'MSCC')
+```
+
+
+    
+![png](output_31_0.png)
+    
+
+
+**Finally, PyKrev can be used alongside UpSetPlot to make Upset plots, but that is covered in a [separate user guide](https://github.com/Kzra/pykrev/blob/master/docs/UpSet%20plots%20with%20PyKrev.md**
 
 Matplotlib offers a range of customisation options to change the appearance of plots. Be sure to play around with key word arguments to get the plots just how you like them. In addition it's possible to [change the appearance of the text](https://matplotlib.org/tutorials/introductory/customizing.html) and [the overall style of the plot.](https://matplotlib.org/3.1.1/gallery/style_sheets/style_sheets_reference.html) Personally, I like the ggplot style sheet... but maybe that's just me. 
 
@@ -347,6 +383,21 @@ sample_data_matrix.iloc[:,1:10]
 ```
 
 
+
+
+<div>
+<style scoped>
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
 </style>
 <table border="1" class="dataframe">
   <thead>
@@ -446,8 +497,21 @@ plt.legend()
 plt.title('PCoA Example')
 ```
 
-![png](output_41_2.png)
+    C:\Users\Ezra\Anaconda3\lib\site-packages\skbio\util\_testing.py:15: FutureWarning: pandas.util.testing is deprecated. Use the functions in the public API at pandas.testing instead.
+      import pandas.util.testing as pdt
     
 
 
-That's the end of the user guide. Thanks for reading and good luck! The package is still early development and i'd greatly appreciate any feedback. If you'd like to contribute code or feature ideas, that'd be awesome too. You can can contact me at ezra.kitson@ed.ac.uk. Last update:  20/11/2020
+
+
+    Text(0.5, 1.0, 'PCoA Example')
+
+
+
+
+    
+![png](output_45_2.png)
+    
+
+
+That's the end of the user guide. Thanks for reading and good luck! The package is still early development and i'd greatly appreciate any feedback. If you'd like to contribute code or feature ideas, that'd be awesome too. You can can contact me at ezra.kitson@ed.ac.uk. Last update:  18/11/2020
