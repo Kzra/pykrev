@@ -324,7 +324,7 @@ pk.compound_class_plot(A_formula,A_mass_charge, color = 'g', method = 'MSCC')
     
 
 
-**Finally, PyKrev can be used alongside UpSetPlot to make Upset plots, but that is covered in a [separate user guide](https://github.com/Kzra/pykrev/blob/master/docs/UpSet%20plots%20with%20PyKrev.md**
+**Finally, PyKrev can be used alongside UpSetPlot to make Upset plots, but that is covered in a [separate user guide](https://github.com/Kzra/pykrev/blob/master/docs/UpSet%20plots%20with%20PyKrev.md)**
 
 Matplotlib offers a range of customisation options to change the appearance of plots. Be sure to play around with key word arguments to get the plots just how you like them. In addition it's possible to [change the appearance of the text](https://matplotlib.org/tutorials/introductory/customizing.html) and [the overall style of the plot.](https://matplotlib.org/3.1.1/gallery/style_sheets/style_sheets_reference.html) Personally, I like the ggplot style sheet... but maybe that's just me. 
 
@@ -381,24 +381,6 @@ assert len(sample_data_matrix.iloc[0,:]) == len(set(all_formula))
 
 sample_data_matrix.iloc[:,1:10]
 ```
-
-
-
-
-<div>
-<style scoped>
-    .dataframe tbody tr th:only-of-type {
-        vertical-align: middle;
-    }
-
-    .dataframe tbody tr th {
-        vertical-align: top;
-    }
-
-    .dataframe thead th {
-        text-align: right;
-    }
-</style>
 <table border="1" class="dataframe">
   <thead>
     <tr style="text-align: right;">
@@ -496,22 +478,8 @@ plt.ylabel((str(pcoa_results.perc_exp[1]) + '%' + ' PC2'))
 plt.legend()
 plt.title('PCoA Example')
 ```
-
-    C:\Users\Ezra\Anaconda3\lib\site-packages\skbio\util\_testing.py:15: FutureWarning: pandas.util.testing is deprecated. Use the functions in the public API at pandas.testing instead.
-      import pandas.util.testing as pdt
-    
-
-
-
-
-    Text(0.5, 1.0, 'PCoA Example')
-
-
-
-
     
 ![png](output_45_2.png)
     
-
 
 That's the end of the user guide. Thanks for reading and good luck! The package is still early development and i'd greatly appreciate any feedback. If you'd like to contribute code or feature ideas, that'd be awesome too. You can can contact me at ezra.kitson@ed.ac.uk. Last update:  18/11/2020
