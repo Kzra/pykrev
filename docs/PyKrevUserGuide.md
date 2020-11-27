@@ -150,7 +150,7 @@ PyKrev can be used to make a range of van Krevelen style plots from your data. P
 ```python
 #Here we make a van Krevelen style plot where the y axis represents N/C values, and colour code the points by double bond equivalence 
 plt.figure()
-pk.van_krevelen_plot(A_formula, y_ratio = 'NC',c = A_dbe,s = 10,cmap = 'plasma') #van_krevele_plot takes any keyword arguments that can be passed to pyplot.scatter() 
+pk.van_krevelen_plot(A_formula, y_ratio = 'HC',c = A_dbe,s = 10,cmap = 'plasma') #van_krevele_plot takes any keyword arguments that can be passed to pyplot.scatter() 
 cbar = plt.colorbar() #add a colour bar 
 cbar.set_label('Double bond equivalence')
 #PyKrev.van_krevelen_plot can take the value 'density' for the key word argument 'c' to colour code points based on kernel density
@@ -244,7 +244,7 @@ A special type of multi van krevelen plot is the unique plot and the missing plo
 
 ```python
 plt.figure(figsize = (6,4))
-unique_formula = pk.unique_plot(A_formula,B_formula,C_formula,s = 13,group_labels = ['A','B','C'],alphas = [0.7,1,0.7],symbols = ['x','s','o'], y_ratio = 'NC')
+unique_formula = pk.unique_plot(A_formula,B_formula,C_formula,s = 13,group_labels = ['A','B','C'],alphas = [0.7,1,0.7],symbols = ['x','s','o'], y_ratio = 'HC')
 plt.title('Unique formula')
 plt.legend()
 
@@ -257,7 +257,7 @@ plt.legend()
 
 
 
-    <matplotlib.legend.Legend at 0x266e6ef26c8>
+    <matplotlib.legend.Legend at 0x18e1e5b0f40>
 
 
 
@@ -273,7 +273,7 @@ plt.legend()
     
 
 
-[Kendrick mass defect plots](https://doi.org/10.1021/acs.analchem.9b03333) are a useful way to identify chemically related compounds based on exact measurements. With pykrev you can make them using pk.kendrick_mass_defect_plot.
+[**Kendrick mass defect plots**](https://doi.org/10.1021/acs.analchem.9b03333) are a useful way to identify chemically related compounds based on exact measurements. With pykrev you can make them using pk.kendrick_mass_defect_plot.
 
 
 ```python
@@ -315,6 +315,7 @@ plt.figure()
 
 
 ```python
+plt.figure()
 pk.compound_class_plot(A_formula,A_mass_charge, color = 'g', method = 'MSCC')
 ```
 
@@ -322,6 +323,8 @@ pk.compound_class_plot(A_formula,A_mass_charge, color = 'g', method = 'MSCC')
     
 ![png](output_31_0.png)
     
+
+
 **Mass histograms** show the distribution of mass in your sample. You can specify the bin width in mass units, and the method used to calculate mass. 
 
 
@@ -364,8 +367,10 @@ plt.xlim(150,1000)
 
     
 ![png](output_35_1.png)
+    
 
-**Finally, PyKrev can be used alongside UpSetPlot to make Upset plots, but that is covered in a [separate user guide](https://github.com/Kzra/pykrev/blob/master/docs/UpSet%20plots%20with%20PyKrev.md**
+
+**Finally, PyKrev can be used alongside UpSetPlot to make Upset plots, but that is covered in a [separate user guide](https://github.com/Kzra/pykrev/blob/master/docs/UpSet%20plots%20with%20PyKrev.md)**
 
 Matplotlib offers a range of customisation options to change the appearance of plots. Be sure to play around with key word arguments to get the plots just how you like them. In addition it's possible to [change the appearance of the text](https://matplotlib.org/tutorials/introductory/customizing.html) and [the overall style of the plot.](https://matplotlib.org/3.1.1/gallery/style_sheets/style_sheets_reference.html) Personally, I like the ggplot style sheet... but maybe that's just me. 
 
@@ -444,53 +449,53 @@ sample_data_matrix.iloc[:,1:10]
   <thead>
     <tr style="text-align: right;">
       <th></th>
-      <th>C41H34O21</th>
-      <th>C88H156O3</th>
-      <th>C29H46O11</th>
-      <th>C33H44O11</th>
-      <th>C15H12O11</th>
-      <th>C21H28O9</th>
-      <th>C18H24O6</th>
-      <th>C25H28O11</th>
-      <th>C11H8O7</th>
+      <th>C27H46O14</th>
+      <th>C41H78N2O5</th>
+      <th>C45H38O22</th>
+      <th>C28H41N3O12</th>
+      <th>C40H52O12</th>
+      <th>C22H34O9</th>
+      <th>C21H38O7</th>
+      <th>C43H28N2O11</th>
+      <th>C32H44O10</th>
     </tr>
   </thead>
   <tbody>
     <tr>
       <th>A</th>
-      <td>4.31881e+06</td>
+      <td>2.20834e+06</td>
+      <td>1.85959e+06</td>
+      <td>6.51722e+07</td>
       <td>0</td>
-      <td>1.43848e+06</td>
-      <td>1.38584e+07</td>
-      <td>1.92424e+06</td>
-      <td>2.85584e+06</td>
-      <td>2.72973e+06</td>
-      <td>4.21033e+06</td>
-      <td>1.31289e+06</td>
+      <td>7.72674e+06</td>
+      <td>1.20778e+06</td>
+      <td>4.41814e+06</td>
+      <td>0</td>
+      <td>3.41122e+06</td>
     </tr>
     <tr>
       <th>B</th>
-      <td>3.17868e+06</td>
-      <td>3.06943e+06</td>
-      <td>0</td>
-      <td>7.83664e+06</td>
       <td>0</td>
       <td>0</td>
+      <td>5.9798e+07</td>
+      <td>2.39416e+06</td>
+      <td>9.46245e+06</td>
       <td>0</td>
-      <td>1.06072e+07</td>
+      <td>3.41825e+06</td>
       <td>0</td>
+      <td>2.33414e+06</td>
     </tr>
     <tr>
       <th>C</th>
+      <td>7.39868e+06</td>
       <td>0</td>
+      <td>6.38974e+06</td>
       <td>0</td>
-      <td>3.03945e+06</td>
-      <td>6.13748e+07</td>
-      <td>5.40446e+06</td>
-      <td>8.37513e+06</td>
-      <td>7.68344e+06</td>
-      <td>9.34136e+06</td>
-      <td>7.97993e+06</td>
+      <td>3.38353e+06</td>
+      <td>6.46982e+06</td>
+      <td>2.53104e+07</td>
+      <td>3.90361e+06</td>
+      <td>3.57215e+06</td>
     </tr>
   </tbody>
 </table>
@@ -524,35 +529,18 @@ To finish let's perform PCoA to compare our samples. To do this we are going to 
 
 
 ```python
-from skbio import stats
-pcoa_results = stats.ordination.pcoa(bray_curtis,number_of_dimensions = 3)
-pcoa_results.perc_exp = np.round((pcoa_results.proportion_explained[0:3]*100),3)
-group_names = ['A','B','C']
-colours = ['r','g','b']
-plt.figure()
-for i in range(0,len(group_names)):
-    plt.scatter(pcoa_results.samples.iloc[i,0],pcoa_results.samples.iloc[i,1], c = colours[i],label = group_names[i])
-plt.xlabel((str(pcoa_results.perc_exp[0]) + '%' + ' PC1'))
-plt.ylabel((str(pcoa_results.perc_exp[1]) + '%' + ' PC2'))
-plt.legend()
-plt.title('PCoA Example')
+#from skbio import stats
+#pcoa_results = stats.ordination.pcoa(bray_curtis,number_of_dimensions = 3)
+#pcoa_results.perc_exp = np.round((pcoa_results.proportion_explained[0:3]*100),3)
+#group_names = ['A','B','C']
+#colours = ['r','g','b']
+#plt.figure()
+#for i in range(0,len(group_names)):
+#    plt.scatter(pcoa_results.samples.iloc[i,0],pcoa_results.samples.iloc[i,1], c = colours[i],label = group_names[i])
+#plt.xlabel((str(pcoa_results.perc_exp[0]) + '%' + ' PC1'))
+#plt.ylabel((str(pcoa_results.perc_exp[1]) + '%' + ' PC2'))
+#plt.legend()
+#plt.title('PCoA Example')
 ```
 
-    C:\Users\Ezra\Anaconda3\lib\site-packages\skbio\util\_testing.py:15: FutureWarning: pandas.util.testing is deprecated. Use the functions in the public API at pandas.testing instead.
-      import pandas.util.testing as pdt
-    
-
-
-
-
-    Text(0.5, 1.0, 'PCoA Example')
-
-
-
-
-    
-![png](output_45_2.png)
-    
-
-
-That's the end of the user guide. Thanks for reading and good luck! The package is still early development and i'd greatly appreciate any feedback. If you'd like to contribute code or feature ideas, that'd be awesome too. You can can contact me at ezra.kitson@ed.ac.uk. Last update:  18/11/2020
+That's the end of the user guide. Thanks for reading and good luck! The package is still early development and i'd greatly appreciate any feedback. If you'd like to contribute code or feature ideas, that'd be awesome too. You can can contact me at ezra.kitson@ed.ac.uk. Last update:  27/11/2020
