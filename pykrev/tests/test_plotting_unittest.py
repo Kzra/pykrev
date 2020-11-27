@@ -1,6 +1,6 @@
 import unittest
 import numpy as np
-from pykrev import van_krevelen_plot, element_ratios, element_counts, kendrick_mass_defect_plot, multi_van_krevelen_plot, van_krevelen_histogram, missing_plot, unique_plot, double_bond_equivalent, atomic_class_plot, compound_class_plot 
+from pykrev import van_krevelen_plot, element_ratios, element_counts, kendrick_mass_defect_plot, multi_van_krevelen_plot, van_krevelen_histogram, missing_plot, unique_plot, double_bond_equivalent, atomic_class_plot, compound_class_plot, mass_spectrum, mass_histogram
 
 class TestPLOTTING(unittest.TestCase):
 
@@ -43,5 +43,17 @@ class TestPLOTTING(unittest.TestCase):
     def test_compound_class_plot(self):
        x = ['C13H14O5','C13H14N2O4S2','C36H45ClN6O12','C9H11NO2', 'C9H11NO3', 'C11H12N2O2', 'C5H7NO3', 'C5H9NO3', 'C6H12N2O4S2','C6H11NO3S']
        compound_class_plot(x, method = 'KELL')
+        
+    def test_mass_histogram(self):
+       x = ['C13H14O5','C13H14N2O4S2','C36H45ClN6O12','C9H11NO2', 'C9H11NO3', 'C11H12N2O2', 'C5H7NO3', 'C5H9NO3', 'C6H12N2O4S2','C6H11NO3S']
+       mass_histogram(x)
+       mass_histogram(x, method = 'nominal')
+    
+    def test_mass_spectrum(self):
+       x = ['C13H14O5','C13H14N2O4S2','C36H45ClN6O12','C9H11NO2', 'C9H11NO3', 'C11H12N2O2', 'C5H7NO3', 'C5H9NO3', 'C6H12N2O4S2','C6H11NO3S']
+       y = np.array([3210,43,432,423,42,10,103,305,2054,1388])
+       mass_spectrum(x,y)
+       mass_spectrum(x,y, method = 'nominal')
+
 if __name__ == '__main__':
     unittest.main()

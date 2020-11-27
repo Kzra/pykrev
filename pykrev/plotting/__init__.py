@@ -6,3 +6,5 @@ from .unique_plot import unique_plot
 from .kendrick_mass_defect_plot import kendrick_mass_defect_plot
 from .atomic_class_plot import atomic_class_plot
 from .compound_class_plot import compound_class_plot
+from .mass_histogram import mass_histogram
+from .mass_spectrum import mass_spectrum

@@ -322,7 +322,48 @@ pk.compound_class_plot(A_formula,A_mass_charge, color = 'g', method = 'MSCC')
     
 ![png](output_31_0.png)
     
+**Mass histograms** show the distribution of mass in your sample. You can specify the bin width in mass units, and the method used to calculate mass. 
 
+
+```python
+plt.figure()
+pk.mass_histogram(A_formula, method = 'mz', mz_list = A_mass_charge, bin_width = 40, summary_statistics=True, color = 'red')
+pk.mass_histogram(B_formula, method = 'monoisotopic', bin_width = 30, summary_statistics=False, color = 'green')
+plt.xlabel('Mass value')
+```
+
+
+
+
+    Text(0.5, 0, 'Mass value')
+
+
+
+
+    
+![png](output_33_1.png)
+    
+
+
+**Mass spectrum** recreates a mass spectrum based on an assiged formula list. You can specify the method used to calculate mass, and whether or not to normalise the peak intensity list.
+
+
+```python
+plt.figure()
+pk.mass_spectrum(A_formula,A_peak_intensity, method = 'monoisotopic',normalise = True)
+plt.xlim(150,1000)
+```
+
+
+
+
+    (150.0, 1000.0)
+
+
+
+
+    
+![png](output_35_1.png)
 
 **Finally, PyKrev can be used alongside UpSetPlot to make Upset plots, but that is covered in a [separate user guide](https://github.com/Kzra/pykrev/blob/master/docs/UpSet%20plots%20with%20PyKrev.md**
 
