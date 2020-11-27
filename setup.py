@@ -5,7 +5,7 @@ with open("README.md", "r") as fh:
 
 setuptools.setup(
     name="pykrev", 
-    version="0.0.1",
+    version="0.0.2",
     author="Ezra Kitson",
     author_email="ezrakitson@ed.ac.uk",
     description="van Krevelen analysis and beyond in Python",
