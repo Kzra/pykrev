@@ -2,7 +2,7 @@
 
 PyKrev is a Python 3 package to help with analysis of high resolution mass spectrometry data.
 
-To install from [PyPi](https://pypi.org/project/pykrev/0.0.1/) use:
+To install use:
 
 ```
 pip install pykrev
