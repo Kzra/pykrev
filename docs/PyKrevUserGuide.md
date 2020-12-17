@@ -4,7 +4,8 @@
 **What is Pykrev?** Pykrev is a python package containing functions that make it easier to process mass spectrometry data in python. PyKrev is intended to be used in the final part of mass spectrometry data analysis, after the spectra have been calibrated and peaks have been assigned to molecular formula. <br> <br>
 **What data do I need to use PyKrev?** PyKrev was designed to analyse low weight molecular formula uncovered from high resolution mass spectra. The core data sets needed to use PyKrev are lists of molecular formula strings and corresponding numpy arrays of peak intensities and mz values. PyKrev can parse an output .csv file from the formularity software to generate these datasets for you. <br> <br>
 **PyKrev dependencies:** PyKrev is written in Python 3. To use PyKrev you must have the matplotlib, numpy and pandas packages installed. For additional functionality such as gaussian density estimation and multivariate analysis, you will also need to install SciPy. <br> <br>
-**Installing PyKrev:** To install from PyPi use `pip install pykrev`.
+**Installing PyKrev:** To install pykrev use ``` pip install pykrev ```.
+
 
 **Overview of PyKrev Module Organisation:**
 ![PyKrev Module Organisation](pykrev_module_organisation.png "Title")
@@ -20,7 +21,7 @@ import pykrev as pk
 
 <h3> Basic formula manipulation </h3>
 
-For almost all functionality PyKrev requires lists of molecular formula strings to work. For some functionality PyKrev also requires numpy arrays of corrsponding peak intensities and mz_values. Import these into Python however you like. If you want to analyse formula assigned using [formularity software](https://omics.pnl.gov/software/formularity), you can use pk.read_formularity: this function automatically filters out mass charge values that don't have C and H atoms assigned to them.
+For almost all functionality PyKrev requires lists of molecular formula strings to work. For some functionality PyKrev also requires numpy arrays of corrsponding peak intensities and mz values. Import these into Python however you like. If you want to analyse formula assigned using [formularity software](https://omics.pnl.gov/software/formularity), you can use pk.read_formularity: this function automatically filters out mass charge values that don't have C and H atoms assigned to them.
 
 
 ```python
@@ -36,7 +37,7 @@ print(type(A_formula))
 print(type(A_peak_intensity))
 
 #a separate way of loading formula
-brite_df = pd.read_excel('example_data/Brite_DF.xlsx',index_col = 0) #Load the BRITE Biological molecules excel file
+brite_df = pd.read_csv('example_data/Brite_DF.csv',index_col = 0) #Load the BRITE Biological molecules excel file
 brite_formula = brite_df['F'].to_list() #extract the formula
 brite_intensities = np.random.rand(len(brite_formula)) #generate a random array of peak intensities
 ```
@@ -45,7 +46,7 @@ brite_intensities = np.random.rand(len(brite_formula)) #generate a random array 
     <class 'numpy.ndarray'>
     
 
-Almost all functions in PyKrev take a list of molecular formula strings as input. Below we calculate C H N O P S counts in each formula and element ratios using *element_counts* and *element_ratios*.
+Almost all functions in PyKrev take a list of molecular formula strings as input. Below we calculate C H N O P S counts in each formula, as well as element ratios using *element_counts* and *element_ratios*.
 
 
 ```python
@@ -83,6 +84,16 @@ A_nominal_mass = pk.calculate_mass(A_formula, method = 'nominal') ## i.e. rounde
 A_exact_mass = pk.calculate_mass(A_formula, method = 'monoisotopic') ## exact monoisotopic masses
 A_kendrick_mass, A_kendrick_mass_defect = pk.kendrick_mass_defect(A_formula,A_mass_charge, base = ['CH2']) # Kendrick mass and kendrick mass defect
 ```
+
+pykrev can also be used to filter out spectral interferences from a mass list caused by [high molecular weight doubly charged molecular ions](https://doi.org/10.1021/jasms.0c00353).
+
+
+```python
+A_filter_mass, A_filter_formula, A_filter_peak_intensities = pk.filter_spectral_interference(A_mass_charge,A_formula,A_peak_intensity)
+```
+
+    87 masses removed.
+    
 
 Finally, PyKrev can be used to perform set analysis on several lists of molecular formula. It can give you the unique formula in each list using *unique_formula* , the missing formula in each list using *missing_formula* , or all the intersections between them using *find_intersections*.
 
@@ -161,13 +172,13 @@ plt.grid(False)
 
 
     
-![png](output_17_0.png)
+![png](output_19_0.png)
     
 
 
 
     
-![png](output_17_1.png)
+![png](output_19_1.png)
     
 
 
@@ -190,13 +201,13 @@ cbar.set_label('Counts')
 
 
     
-![png](output_19_0.png)
+![png](output_21_0.png)
     
 
 
 
     
-![png](output_19_1.png)
+![png](output_21_1.png)
     
 
 
@@ -234,7 +245,7 @@ legend = plt.legend(loc='best')
 
 
     
-![png](output_23_0.png)
+![png](output_25_0.png)
     
 
 
@@ -256,19 +267,19 @@ plt.legend()
 
 
 
-    <matplotlib.legend.Legend at 0x18e1e5b0f40>
+    <matplotlib.legend.Legend at 0x2ba9594bfd0>
 
 
 
 
     
-![png](output_25_1.png)
+![png](output_27_1.png)
     
 
 
 
     
-![png](output_25_2.png)
+![png](output_27_2.png)
     
 
 
@@ -283,7 +294,7 @@ plt.colorbar().set_label('Aromaticity Index')
 
 
     
-![png](output_27_0.png)
+![png](output_29_0.png)
     
 
 
@@ -300,13 +311,13 @@ plt.figure()
 
 
     
-![png](output_29_0.png)
+![png](output_31_0.png)
     
 
 
 
     
-![png](output_29_1.png)
+![png](output_31_1.png)
     
 
 
@@ -320,7 +331,7 @@ pk.compound_class_plot(A_formula,A_mass_charge, color = 'g', method = 'MSCC')
 
 
     
-![png](output_31_0.png)
+![png](output_33_0.png)
     
 
 
@@ -343,7 +354,7 @@ plt.xlabel('Mass value')
 
 
     
-![png](output_33_1.png)
+![png](output_35_1.png)
     
 
 
@@ -352,8 +363,10 @@ plt.xlabel('Mass value')
 
 ```python
 plt.figure()
-pk.mass_spectrum(A_formula,A_peak_intensity, method = 'monoisotopic',normalise = True)
+pk.mass_spectrum(A_formula,A_peak_intensity, method = 'monoisotopic',normalise = True, color = 'r',linewidth = 2)
+pk.mass_spectrum(A_filter_formula,A_filter_peak_intensities, method = 'monoisotopic',normalise = True, color = 'g', linewith = 2)
 plt.xlim(150,1000)
+
 ```
 
 
@@ -365,11 +378,11 @@ plt.xlim(150,1000)
 
 
     
-![png](output_35_1.png)
+![png](output_37_1.png)
     
 
 
-**Finally, PyKrev can be used alongside UpSetPlot to make Upset plots, but that is covered in a [separate user guide](https://github.com/Kzra/PyKrev/blob/master/docs/UpSetplotswithPyKrev.md)**
+**Finally, PyKrev can be used alongside UpSetPlot to make Upset plots, but that is covered in a [separate user guide](https://github.com/Kzra/pykrev/blob/master/docs/UpSetplotswithPyKrev.md)**
 
 Matplotlib offers a range of customisation options to change the appearance of plots. Be sure to play around with key word arguments to get the plots just how you like them. In addition it's possible to [change the appearance of the text](https://matplotlib.org/tutorials/introductory/customizing.html) and [the overall style of the plot.](https://matplotlib.org/3.1.1/gallery/style_sheets/style_sheets_reference.html) Personally, I like the ggplot style sheet... but maybe that's just me. 
 
@@ -377,15 +390,28 @@ Matplotlib offers a range of customisation options to change the appearance of p
 
 PyKrev can be used to predict the compound class make up of a sample, it can also be used to compute diversity values (akin to biological diversity metrics) based on the peak intensities of molecular formula present in a sample. Finally, it can also be used to concatenate multiple formula and peak intensity lists into a sample data matrix which can then be used to perform statistical ordination such as PCA and PCoA. 
 
-To estimate the compound class composition of a sample, use the *compound_class* function. A variety of criteria can be used to predict compound class, which are discussed in the function's docstring. We are going to use the [MSCC algorithm](https://pubs.acs.org/doi/full/10.1021/acs.analchem.8b00529).
+To estimate the compound class composition of a sample, use the *compound_class* function. A variety of criteria can be used to predict compound class, which are discussed in the function's docstring. Below we compare the [MSCC algorithm](https://pubs.acs.org/doi/full/10.1021/acs.analchem.8b00529), the [KELL method](https://doi.org/10.1038/ncomms4804) and the KEGG_All method (which matches compounds to entries in the [KEGG Compound Database](https://www.genome.jp/kegg/compound/)).
 
 
 ```python
 compounds, counts = pk.compound_class(A_formula,mass_list = A_mass_charge, method = 'MSCC') #The function returns a list of compounds of len (formula_list) and a dictionary containing the totals 
 print(counts)
+print('\n')
+compounds, counts = pk.compound_class(A_formula,mass_list = A_mass_charge, method = 'KELL') #The function returns a list of compounds of len (formula_list) and a dictionary containing the totals 
+print(counts)
+print('\n')
+compounds, counts = pk.compound_class(A_formula,mass_list = A_mass_charge, method = 'KEGG_All') #The function returns a list of compounds of len (formula_list) and a dictionary containing the totals 
+print(counts)
 ```
 
     {'Lipid': 1217, 'Carbohydrate': 60, 'Amino-sugar': 12, 'Protein': 185, 'Phytochemical': 2690, 'Nucleotide': 0, 'Not matched': 328, 'Double matched': 0}
+    
+    
+    Warning: negative ai counts detected and set to zero.
+    {'Combustion-derived polycyclic aromatics': 113, 'Vascular plant-derived polyphenols': 100, 'Highly unsaturated and phenolic compounds': 3083, 'Aliphatic compounds': 1196}
+    
+    
+    {'Not Matched': 4289, 'Nucleic acids': 0, 'Marine biotoxins': 1, 'Venoms': 0, 'Lipids': 17, 'Phenylpropanoids': 13, 'PK  Polyketides': 1, 'Organic acids': 5, 'Phytotoxins': 7, 'Antibiotics': 1, 'Shikimate / acetate-malonate pathway derived compounds': 2, 'SP  Sphingolipids': 0, 'ST  Sterol lipids': 7, 'Carbohydrates': 8, 'FA  Fatty acyls': 12, 'Steroids': 14, 'Flavonoids': 0, 'PR  Prenol lipids': 0, 'Cyanotoxins': 0, 'Amino acid related compounds': 1, 'Polyketides': 40, 'Fungal toxins': 10, 'Vitamins and Cofactors': 1, 'SL  Saccharolipids': 0, 'Terpenoids': 60, 'GP  Glycerophospholipids': 0, 'Others': 1, 'Peptides': 0, 'Hormones and transmitters': 0, 'Alkaloids': 0, 'Fatty acids related compounds': 2, 'GL  Glycerolipids': 0}
     
 
 To compute diversity metrics we can use *diversity_indices*. *Diversity_indices* requires a list of molecular formula, and a corresponding list of peak intensities. Based on these datasets the function calculates molecular richness, abundance-based ([Shannon-wiener](https://en.wikipedia.org/wiki/Diversity_index#Shannon_index) and [Gini-simpson](https://en.wikipedia.org/wiki/Diversity_index#Gini%E2%80%93Simpson_index) and functional-based ([using rao's quadratic entropy](https://www.sciencedirect.com/science/article/pii/S0040580909001117)) diversity values for the sample. [Tanentzap et al. (2019)](https://www.pnas.org/content/116/49/24689) shows how these measurements can be applied in chemical analysis.
@@ -448,53 +474,53 @@ sample_data_matrix.iloc[:,1:10]
   <thead>
     <tr style="text-align: right;">
       <th></th>
-      <th>C27H46O14</th>
-      <th>C41H78N2O5</th>
-      <th>C45H38O22</th>
-      <th>C28H41N3O12</th>
-      <th>C40H52O12</th>
-      <th>C22H34O9</th>
-      <th>C21H38O7</th>
-      <th>C43H28N2O11</th>
-      <th>C32H44O10</th>
+      <th>C42H20N8O12</th>
+      <th>C22H22O9</th>
+      <th>C26H48O9</th>
+      <th>C47H36O2</th>
+      <th>C17H18N2O6</th>
+      <th>C29H31N1O15</th>
+      <th>C11H12O7</th>
+      <th>C32H34O15</th>
+      <th>C13H18O11</th>
     </tr>
   </thead>
   <tbody>
     <tr>
       <th>A</th>
-      <td>2.20834e+06</td>
-      <td>1.85959e+06</td>
-      <td>6.51722e+07</td>
+      <td>3.42041e+06</td>
+      <td>1.84604e+06</td>
+      <td>2.57814e+06</td>
       <td>0</td>
-      <td>7.72674e+06</td>
-      <td>1.20778e+06</td>
-      <td>4.41814e+06</td>
-      <td>0</td>
-      <td>3.41122e+06</td>
+      <td>1.10794e+06</td>
+      <td>4.7695e+06</td>
+      <td>1.37407e+06</td>
+      <td>1.0601e+07</td>
+      <td>1.15041e+06</td>
     </tr>
     <tr>
       <th>B</th>
+      <td>2.74561e+06</td>
       <td>0</td>
       <td>0</td>
-      <td>5.9798e+07</td>
-      <td>2.39416e+06</td>
-      <td>9.46245e+06</td>
       <td>0</td>
-      <td>3.41825e+06</td>
       <td>0</td>
-      <td>2.33414e+06</td>
+      <td>3.21573e+06</td>
+      <td>0</td>
+      <td>8.22108e+06</td>
+      <td>0</td>
     </tr>
     <tr>
       <th>C</th>
-      <td>7.39868e+06</td>
       <td>0</td>
-      <td>6.38974e+06</td>
+      <td>6.78762e+06</td>
+      <td>5.31097e+06</td>
+      <td>2.87292e+06</td>
+      <td>3.43694e+06</td>
       <td>0</td>
-      <td>3.38353e+06</td>
-      <td>6.46982e+06</td>
-      <td>2.53104e+07</td>
-      <td>3.90361e+06</td>
-      <td>3.57215e+06</td>
+      <td>8.92539e+06</td>
+      <td>9.999e+06</td>
+      <td>3.83814e+06</td>
     </tr>
   </tbody>
 </table>
@@ -542,4 +568,4 @@ To finish let's perform PCoA to compare our samples. To do this we are going to 
 #plt.title('PCoA Example')
 ```
 
-That's the end of the user guide. Thanks for reading and good luck! The package is still early development and i'd greatly appreciate any feedback. If you'd like to contribute code or feature ideas, that'd be awesome too. You can can contact me at ezra.kitson@ed.ac.uk. Last update:  27/11/2020
+That's the end of the user guide. Thanks for reading and good luck! The package is still early development and i'd greatly appreciate any feedback. If you'd like to contribute code or feature ideas, that'd be awesome too. You can can contact me at ezra.kitson@ed.ac.uk. Last update:  17/12/2020
