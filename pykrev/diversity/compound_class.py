@@ -1,7 +1,8 @@
 from ..formula import element_ratios 
 from ..formula import aromaticity_index
 from ..formula import element_counts
-
+import pandas as pd
+import os
 
 def compound_class(formula_list, mass_list = [], method = 'MSCC'):
     """ 
@@ -26,10 +27,24 @@ def compound_class(formula_list, mass_list = [], method = 'MSCC'):
         'MSCC' - Multi-dimensional stoiochiometric compound classification.  See: Albert Rivas-Ubach, Yina Liu, Thomas Stephen Bianchi, Nikola Tolic, Christer Jansson, and Ljiljana Paša-Tolic. (2018)
         Moving beyond the van Krevelen diagram: A new stoichiometric approach for compound classification in organisms. Analytical Chemistry, DOI: 10.1021/acs.analchem.8b00529
         'KELL' - Compound classification based on aromaticity index. See: Kellerman, A., Dittmar, T., Kothawala, D. et al. Chemodiversity of dissolved organic matter in lakes driven by climate and hydrology. Nat Commun 5, 3804 (2014).          https://doi.org/10.1038/ncomms4804
+        'KEGG_BioMol' - Match molecular formula to those listed in 'compounds with biological roles' KEGG BRITE Pathways (databases located in ./compound_data).
+        'KEGG_Phyto' - Match molecular formula to those listed in the 'phytochemicals' KEGG BRITE Heirarchy (databases located in ./compound_data). 
+        'KEGG_Lipid' - Match molecular formula to those listed in the 'lipids' KEGG BRITE Heirarchy (databases located in ./compound_data). 
+        'KEGG_Pesticide' - Match molecular formula to those listed in the 'pesticides' KEGG BRITE Heirarchy (databases located in ./compound_data). 
+        'KEGG_Toxin' - Match molecular formula to those listed in the 'toxin' KEGG BRITE Heirarchy (databases located in ./compound_data). 
+        'KEGG_All' - Match molecular formula to all of the possible categories.
+        
+    Notes: Please refer to the KEGG website for information on BRITE heirarchies. https://www.genome.jp/kegg/brite.html
+        
     """
     count_list = element_counts(formula_list)
     cclassCounts = dict()
     compound_class = []
+    
+    #Retrieve the path to the diversity directory that this script is in, needed to retrieve compound class databases
+    functionPath = os.path.realpath(__file__)
+    functionDirectory = os.path.dirname(functionPath)
+    
     if method == 'MSCC':
         ## assert that the same number of elements in mass and count list
         assert len(mass_list) == len(count_list), 'to perform MSCC you must provide a mass list'
@@ -93,5 +108,36 @@ def compound_class(formula_list, mass_list = [], method = 'MSCC'):
             elif ai <= 0.5 and ratio['HC'] >= 1.5:
                 compound_class.append('Aliphatic compounds')
                 cclassCounts['Aliphatic compounds'] += 1     
-                
+        
+        
+    if 'KEGG' in method:
+        if method == 'KEGG_BioMol':
+            BRITE = pd.read_csv(f"{functionDirectory}\compound_data\Brite_BioMol_DF.csv")
+        elif method == 'KEGG_Lipid': 
+            BRITE = pd.read_csv(f"{functionDirectory}\compound_data\Brite_Lipid_DF.csv")
+        elif method == 'KEGG_Phyto':
+            BRITE = pd.read_csv(f"{functionDirectory}\compound_data\Brite_Phyto_DF.csv")
+        elif method == 'KEGG_Pesticide': 
+            BRITE = pd.read_csv(f"{functionDirectory}\compound_data\Brite_Pesticide_DF.csv")
+        elif method == 'KEGG_Toxin': 
+            BRITE = pd.read_csv(f"{functionDirectory}\compound_data\Brite_Toxin_DF.csv")
+        elif method == 'KEGG_All': 
+            BRITE = pd.read_csv(f"{functionDirectory}\compound_data\Brite_All_DF.csv")
+        else:
+            print('Error: KEGG Database Method not recognised. Refer to docstring.')
+        BriteFormula = BRITE['F'].to_list()
+        BriteCatA = BRITE['A'].to_list()
+        KEGGCats = set(BriteCatA)
+        cclassCounts['Not Matched'] = 0
+        for c in KEGGCats:
+            cclassCounts[c] = 0
+        for f in formula_list:
+            try:
+                idx = BriteFormula.index(f)
+                compound_class.append(BriteCatA[idx])
+                cclassCounts[BriteCatA[idx]] += 1
+            except ValueError:
+                cclassCounts['Not Matched'] += 1
+                compound_class.append('Not Matched')
+
     return compound_class,cclassCounts

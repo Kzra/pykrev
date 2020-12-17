@@ -10,3 +10,4 @@ from .find_intersections import find_intersections
 from .read_formularity import read_formularity
 from .calculate_mass import calculate_mass
 from .kendrick_mass_defect import kendrick_mass_defect
+from .filter_spectral_interference import filter_spectral_interference

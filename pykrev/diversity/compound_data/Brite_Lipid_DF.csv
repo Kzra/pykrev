@@ -1,0 +1,134 @@
+,A,B,C,D,E,F
+0,FA  Fatty acyls,FA01 Fatty Acids and Conjugates,FA0117 Dicarboxylic acids,C00489  Pentanedioic acid,C00489,C5H8O4
+1,FA  Fatty acyls,FA01 Fatty Acids and Conjugates,FA0117 Dicarboxylic acids,C02656  Heptanedioic acid,C02656,C7H12O4
+2,FA  Fatty acyls,FA01 Fatty Acids and Conjugates,FA0117 Dicarboxylic acids,C02678  Dodecanedioic acid,C02678,C12H22O4
+3,FA  Fatty acyls,FA01 Fatty Acids and Conjugates,FA0117 Dicarboxylic acids,C03981  2-Hydroxybut-2-enedioic acid,C03981,C4H4O5
+4,FA  Fatty acyls,FA01 Fatty Acids and Conjugates,FA0117 Dicarboxylic acids,C05601  4-Hydroxy-2-oxoheptanedioic acid,C05601,C7H10O6
+5,FA  Fatty acyls,FA01 Fatty Acids and Conjugates,FA0117 Dicarboxylic acids,"C06201  2,4-Dihydroxyhept-2-enedioc acid",C06201,C7H10O6
+6,FA  Fatty acyls,FA01 Fatty Acids and Conjugates,FA0117 Dicarboxylic acids,C08261  Nonanedioic acid,C08261,C9H16O4
+7,FA  Fatty acyls,FA01 Fatty Acids and Conjugates,FA0117 Dicarboxylic acids,C08277  Decanedioic acid,C08277,C10H18O4
+8,FA  Fatty acyls,FA01 Fatty Acids and Conjugates,FA0117 Dicarboxylic acids,C08278  Octanedioic acid,C08278,C8H14O4
+9,FA  Fatty acyls,FA02 Octadecanoids,FA0200 Other Octadecanoids,"C13791  (6R,7S)-6,7-Epoxyoctadecanoic acid",C13791,C18H34O3
+10,FA  Fatty acyls,FA02 Octadecanoids,FA0200 Other Octadecanoids,"C14836  9,10-12,13-Diepoxyoctadecanoic acid",C14836,C18H32O4
+11,FA  Fatty acyls,FA02 Octadecanoids,FA0200 Other Octadecanoids,"C14834  (11E)-9,10-Epoxyoctadecenoic acid",C14834,C18H32O4
+12,FA  Fatty acyls,FA02 Octadecanoids,FA0200 Other Octadecanoids,"C14825  (9R,10S)-(12Z)-9,10-Epoxyoctadecenoic acid",C14825,C18H32O3
+13,FA  Fatty acyls,FA02 Octadecanoids,FA0200 Other Octadecanoids,"C14826  (12R,13S)-(9Z)-12,13-Epoxyoctadecenoic acid",C14826,C18H32O3
+14,FA  Fatty acyls,FA02 Octadecanoids,FA0200 Other Octadecanoids,"C16324  (9S)-(10E,12Z,15Z)-9,10-Epoxyoctadecatri-10,12,15-enoic acid",C16324,C18H28O3
+15,FA  Fatty acyls,FA02 Octadecanoids,FA0200 Other Octadecanoids,"C14832  (10E)-(9S,12R,13S)-12,13-Epoxy-9-hydroxyoctadec-10-enoic acid",C14832,C18H32O4
+16,FA  Fatty acyls,FA02 Octadecanoids,FA0200 Other Octadecanoids,"C14837  9,10-Dihydroxy-12,13-epoxyoctadecanoic acid",C14837,C18H34O5
+17,FA  Fatty acyls,FA02 Octadecanoids,FA0200 Other Octadecanoids,"C14831  (9Z,12Z)-(8R)-8-Hydroperoxyoctadeca-9,12-dienoic acid",C14831,C18H32O4
+18,FA  Fatty acyls,FA02 Octadecanoids,FA0200 Other Octadecanoids,"C14827  (10E,12Z)-(9S)-9-Hydroperoxyoctadeca-10,12-dienoic acid",C14827,C18H32O4
+19,FA  Fatty acyls,FA02 Octadecanoids,FA0200 Other Octadecanoids,"C16341  (2R)-(9Z,12Z,15Z)-2-Hydroperoxyoctadecatri-9,12,15-enoic acid",C16341,C18H30O4
+20,FA  Fatty acyls,FA02 Octadecanoids,FA0200 Other Octadecanoids,"C16321  (10E,12Z,15Z)-(9S)-9-Hydroperoxyoctadeca-10,12,15-trienoic acid",C16321,C18H30O4
+21,FA  Fatty acyls,FA02 Octadecanoids,FA0200 Other Octadecanoids,"C14762  (9Z, 11E)-(13S)-13-Hydroxyoctadeca-9,11-dienoic acid",C14762,C18H32O3
+22,FA  Fatty acyls,FA02 Octadecanoids,FA0200 Other Octadecanoids,"C14767  (10E,12Z)-(9S)-9-Hydroxyoctadeca-10,12-dienoic acid",C14767,C18H32O3
+23,FA  Fatty acyls,FA02 Octadecanoids,FA0200 Other Octadecanoids,"C16342  (2R)-(9Z,12Z,15Z)-2-Hydroxyoctadecatri-9,12,15-enoic acid",C16342,C18H30O3
+24,FA  Fatty acyls,FA02 Octadecanoids,FA0200 Other Octadecanoids,"C16326  (9S)-(10E,12Z,15Z)-9-Hydroxyoctadecatri-10,12,15-enoic acid",C16326,C18H30O3
+25,FA  Fatty acyls,FA02 Octadecanoids,FA0200 Other Octadecanoids,"C16316  (9Z,11E,14Z)-(13S)-13-Hydroxyoctadeca-9,11,14-trienoic acid",C16316,C18H30O3
+26,FA  Fatty acyls,FA02 Octadecanoids,FA0200 Other Octadecanoids,"C16346  (9Z,12Z,15Z)-17-Hydroxyoctadecatri-9,12,15-enoic acid",C16346,C18H30O3
+27,FA  Fatty acyls,FA02 Octadecanoids,FA0200 Other Octadecanoids,"C15988  (9S,10S)-9,10-Dihydroxyoctadecanoic acid",C15988,C18H36O4
+28,FA  Fatty acyls,FA02 Octadecanoids,FA0200 Other Octadecanoids,"C14833  (10E)-(9S,12S,13S)-9,12,13-Trihydroxyoctadec-10-enoic acid",C14833,C18H34O5
+29,FA  Fatty acyls,FA02 Octadecanoids,FA0200 Other Octadecanoids,"C14835  (11E)-9,10,13-Trihydroxyoctadec-11-enoic acid",C14835,C18H34O5
+30,FA  Fatty acyls,FA02 Octadecanoids,FA0200 Other Octadecanoids,"C14765  (9Z,11E)-13-Oxooctadeca-9,11-dienoic acid",C14765,C18H30O3
+31,FA  Fatty acyls,FA02 Octadecanoids,FA0200 Other Octadecanoids,"C14766  (10E,12Z)-9-Oxooctadeca-10,12-dienoic acid",C14766,C18H30O3
+32,FA  Fatty acyls,FA02 Octadecanoids,FA0200 Other Octadecanoids,"C16325  (11Z,15Z)-10-Oxo-11,15-phytodienoic acid",C16325,C18H28O3
+33,FA  Fatty acyls,FA03 Eicosanoids,FA0300 Other Eicosanoids,"C13843  17R,18S-Epoxy-5Z,8Z,11Z,14Z-icosatetraenoic acid",C13843,C20H30O3
+34,FA  Fatty acyls,FA07 Fatty esters,FA0708 Fatty acyl adenylates,C13825  O-Hexanoyl-adnosine monophosphate,C13825,C16H24N5O8P
+35,FA  Fatty acyls,FA08 Fatty amides,FA0804 N-acyl ethanolamines (endocannabinoids),"C11695  N-(5Z,8Z,11Z,14Z-Eicosatetraenoyl)-ethanolamine",C11695,C22H37NO2
+36,FA  Fatty acyls,FA08 Fatty amides,FA0804 N-acyl ethanolamines (endocannabinoids),"C13828  N-(8Z,11Z,14Z-Eicosatrienoyl)-ethanolamine",C13828,C22H39NO2
+37,FA  Fatty acyls,FA08 Fatty amides,FA0804 N-acyl ethanolamines (endocannabinoids),"C13829  N-(7Z,10Z,13Z,16Z-docosatetraenoyl)-ethanolamine",C13829,C24H41NO2
+38,GL  Glycerolipids,GL03 Triradylglycerols,GL0305 Estolides,"C13867  1,2-Di-(9Z,12Z,15Z-octadecatrienoyl)-3-(8-(2E,4Z-decadienoyloxy)-5,6-octadienoyl)-sn-glycerol",C13867,C57H88O8
+39,GP  Glycerophospholipids,GP20 Oxidized glycerophospholipids,GP2002 Oxidized glycerophosphoethanolamines,"C21482  1-Octadecanoyl-2-(15S-hydroxy-5Z,8Z,11Z,13E-eicosatetraenoyl)-sn-glycero-3-phosphoethanolamine",C21482,C43H78NO9P
+40,GP  Glycerophospholipids,GP00 Other,,"C21482  1-Octadecanoyl-2-(15S-hydroxy-5Z,8Z,11Z,13E-eicosatetraenoyl)-sn-glycero-3-phosphoethanolamine",C21482,C43H78NO9P
+41,SP  Sphingolipids,SP01 Sphingoid bases,SP0108 Sphingoid base analogs,C01747  Psychosine,C01747,C24H47NO7
+42,SP  Sphingolipids,SP01 Sphingoid bases,SP0108 Sphingoid base analogs,C03858  D-Glucosyldihydrosphingosine,C03858,C24H49NO7
+43,SP  Sphingolipids,SP02 Ceramides,SP0205 Ceramide 1-phosphates,C02960  Ceramide 1-phosphate,C02960,C19H37NO6PR
+44,ST  Sterol lipids,ST01 Sterols,ST0115 Solanidines and alkaloid derivatives,C10826  Tomatidine,C10826,C27H45NO2
+45,ST  Sterol lipids,ST01 Sterols,ST0115 Solanidines and alkaloid derivatives,C10822  Solasodine,C10822,C27H43NO2
+46,ST  Sterol lipids,ST01 Sterols,ST0115 Solanidines and alkaloid derivatives,C06543  Solanidine,C06543,C27H43NO
+47,ST  Sterol lipids,ST01 Sterols,ST0115 Solanidines and alkaloid derivatives,C10827  Tomatine,C10827,C50H83NO21
+48,ST  Sterol lipids,ST02 Steroids,"ST0203 C21 steroids (gluco/mineralocorticoids, progestogens) and derivatives",C00735  Cortisol,C00735,C21H30O5
+49,ST  Sterol lipids,ST02 Steroids,"ST0203 C21 steroids (gluco/mineralocorticoids, progestogens) and derivatives",C00762  Cortisone,C00762,C21H28O5
+50,ST  Sterol lipids,ST02 Steroids,"ST0203 C21 steroids (gluco/mineralocorticoids, progestogens) and derivatives",C01124  18-Hydroxycorticosterone,C01124,C21H30O5
+51,ST  Sterol lipids,ST02 Steroids,"ST0203 C21 steroids (gluco/mineralocorticoids, progestogens) and derivatives",C02140  Corticosterone,C02140,C21H30O4
+52,ST  Sterol lipids,ST02 Steroids,"ST0203 C21 steroids (gluco/mineralocorticoids, progestogens) and derivatives",C02821  Cortisol 21-acetate,C02821,C23H32O6
+53,ST  Sterol lipids,ST02 Steroids,"ST0203 C21 steroids (gluco/mineralocorticoids, progestogens) and derivatives",C02822  Cortisol 21-sulfate,C02822,C21H30O8S
+54,ST  Sterol lipids,ST02 Steroids,"ST0203 C21 steroids (gluco/mineralocorticoids, progestogens) and derivatives",C03205  11-Deoxycorticosterone,C03205,C21H30O3
+55,ST  Sterol lipids,ST02 Steroids,"ST0203 C21 steroids (gluco/mineralocorticoids, progestogens) and derivatives","C05469  4,5beta-Dihydrocortisone",C05469,C21H30O5
+56,ST  Sterol lipids,ST02 Steroids,"ST0203 C21 steroids (gluco/mineralocorticoids, progestogens) and derivatives","C03588  4,5alpha-Dihydrocortisone",C03588,C21H30O5
+57,ST  Sterol lipids,ST02 Steroids,"ST0203 C21 steroids (gluco/mineralocorticoids, progestogens) and derivatives",C05028  Norethindrone,C05028,C20H26O2
+58,ST  Sterol lipids,ST02 Steroids,"ST0203 C21 steroids (gluco/mineralocorticoids, progestogens) and derivatives",C05470  Urocortisone,C05470,C21H32O5
+59,ST  Sterol lipids,ST02 Steroids,"ST0203 C21 steroids (gluco/mineralocorticoids, progestogens) and derivatives",C05472  Urocortisol,C05472,C21H34O5
+60,ST  Sterol lipids,ST02 Steroids,"ST0203 C21 steroids (gluco/mineralocorticoids, progestogens) and derivatives",C05476  Tetrahydrocorticosterone,C05476,C21H34O4
+61,ST  Sterol lipids,ST02 Steroids,"ST0203 C21 steroids (gluco/mineralocorticoids, progestogens) and derivatives",C05488  11-Deoxycortisol,C05488,C21H30O4
+62,ST  Sterol lipids,ST02 Steroids,"ST0203 C21 steroids (gluco/mineralocorticoids, progestogens) and derivatives",C05490  11-Dehydrocorticosterone,C05490,C21H28O4
+63,ST  Sterol lipids,ST02 Steroids,"ST0203 C21 steroids (gluco/mineralocorticoids, progestogens) and derivatives",C05497  21-Deoxycortisol,C05497,C21H30O4
+64,ST  Sterol lipids,ST02 Steroids,"ST0203 C21 steroids (gluco/mineralocorticoids, progestogens) and derivatives",C07004  Fludrocortisone,C07004,C21H29FO5
+65,ST  Sterol lipids,ST02 Steroids,"ST0203 C21 steroids (gluco/mineralocorticoids, progestogens) and derivatives",D00328  Flurandrenolide,D00328,C24H33FO6
+66,ST  Sterol lipids,ST02 Steroids,"ST0203 C21 steroids (gluco/mineralocorticoids, progestogens) and derivatives",C07629  Desogestrel,C07629,C22H30O
+67,ST  Sterol lipids,ST02 Steroids,"ST0203 C21 steroids (gluco/mineralocorticoids, progestogens) and derivatives",C08149  Levonorgestrel,C08149,C21H28O2
+68,ST  Sterol lipids,ST02 Steroids,"ST0203 C21 steroids (gluco/mineralocorticoids, progestogens) and derivatives",C08151  Megestrol acetate,C08151,C24H32O4
+69,ST  Sterol lipids,ST02 Steroids,"ST0203 C21 steroids (gluco/mineralocorticoids, progestogens) and derivatives",C08153  Norgestrel,C08153,C21H28O2
+70,ST  Sterol lipids,ST02 Steroids,"ST0203 C21 steroids (gluco/mineralocorticoids, progestogens) and derivatives",C08173  Cortisone acetate,C08173,C23H30O6
+71,ST  Sterol lipids,ST02 Steroids,"ST0203 C21 steroids (gluco/mineralocorticoids, progestogens) and derivatives",C08176  Hydrocortisone cypionate,C08176,C29H42O6
+72,ST  Sterol lipids,ST02 Steroids,"ST0203 C21 steroids (gluco/mineralocorticoids, progestogens) and derivatives",C08186  Fludrocortisone acetate,C08186,C23H31FO6
+73,ST  Sterol lipids,ST02 Steroids,"ST0203 C21 steroids (gluco/mineralocorticoids, progestogens) and derivatives",C12656  Paramethasone acetate,C12656,C24H31FO6
+74,ST  Sterol lipids,ST02 Steroids,"ST0203 C21 steroids (gluco/mineralocorticoids, progestogens) and derivatives",C12724  Ethynodiol diacetate,C12724,C24H32O4
+75,ST  Sterol lipids,ST02 Steroids,"ST0203 C21 steroids (gluco/mineralocorticoids, progestogens) and derivatives",C12811  Allylestrenol,C12811,C21H32O
+76,ST  Sterol lipids,ST02 Steroids,"ST0203 C21 steroids (gluco/mineralocorticoids, progestogens) and derivatives",C12888  Hydrocortisone succinate,C12888,C25H34O8
+77,ST  Sterol lipids,ST02 Steroids,"ST0203 C21 steroids (gluco/mineralocorticoids, progestogens) and derivatives",C13037  Lynestrenol,C13037,C20H28O
+78,ST  Sterol lipids,ST02 Steroids,"ST0203 C21 steroids (gluco/mineralocorticoids, progestogens) and derivatives",C13358  Hydrocortisone butyrate propionate,C13358,C28H40O7
+79,ST  Sterol lipids,ST02 Steroids,"ST0203 C21 steroids (gluco/mineralocorticoids, progestogens) and derivatives",C13422  Hydrocortisone caproate,C13422,C27H40O6
+80,ST  Sterol lipids,ST05 Steroid conjugates,ST0504 Taurine conjugates,C02592  Taurolithocholate,C02592,C26H45NO5S
+81,ST  Sterol lipids,ST05 Steroid conjugates,ST0504 Taurine conjugates,C03642  Taurolithocholate sulfate,C03642,C26H45NO8S2
+82,ST  Sterol lipids,ST05 Steroid conjugates,ST0504 Taurine conjugates,C05122  Taurocholate,C05122,C26H45NO7S
+83,ST  Sterol lipids,ST05 Steroid conjugates,ST0504 Taurine conjugates,C05463  Taurodeoxycholate,C05463,C26H45NO6S
+84,ST  Sterol lipids,ST05 Steroid conjugates,ST0504 Taurine conjugates,C05465  Taurochenodeoxycholate,C05465,C26H45NO6S
+85,ST  Sterol lipids,ST00 Other Sterol lipids,,C02592  Taurolithocholate,C02592,C26H45NO5S
+86,ST  Sterol lipids,ST00 Other Sterol lipids,,C03642  Taurolithocholate sulfate,C03642,C26H45NO8S2
+87,ST  Sterol lipids,ST00 Other Sterol lipids,,C05122  Taurocholate,C05122,C26H45NO7S
+88,ST  Sterol lipids,ST00 Other Sterol lipids,,C05463  Taurodeoxycholate,C05463,C26H45NO6S
+89,ST  Sterol lipids,ST00 Other Sterol lipids,,C05465  Taurochenodeoxycholate,C05465,C26H45NO6S
+90,PR  Prenol lipids,PR01 Isoprenoids,PR0109 Retinoids,C00473  Retinol,C00473,C20H30O
+91,PR  Prenol lipids,PR01 Isoprenoids,PR0109 Retinoids,C16682  9-cis-Retinol,C16682,C20H30O
+92,PR  Prenol lipids,PR01 Isoprenoids,PR0109 Retinoids,C00899  11-cis-Retinol,C00899,C20H30O
+93,PR  Prenol lipids,PR01 Isoprenoids,PR0109 Retinoids,"C15492  all-trans-13,14-Dihydroretinol",C15492,C20H32O
+94,PR  Prenol lipids,PR01 Isoprenoids,PR0109 Retinoids,C16683  4-Oxoretinol,C16683,C20H28O2
+95,PR  Prenol lipids,PR01 Isoprenoids,PR0109 Retinoids,C00376  Retinal,C00376,C20H28O
+96,PR  Prenol lipids,PR01 Isoprenoids,PR0109 Retinoids,C05918  all-trans-Dehydroretinal,C05918,C20H26O
+97,PR  Prenol lipids,PR01 Isoprenoids,PR0109 Retinoids,C16681  9-cis-Retinal,C16681,C20H28O
+98,PR  Prenol lipids,PR01 Isoprenoids,PR0109 Retinoids,C02110  11-cis-Retinal,C02110,C20H28O
+99,PR  Prenol lipids,PR01 Isoprenoids,PR0109 Retinoids,C05919  11-cis-Dehydroretinal,C05919,C20H26O
+100,PR  Prenol lipids,PR01 Isoprenoids,PR0109 Retinoids,C00777  Retinoate,C00777,C20H28O2
+101,PR  Prenol lipids,PR01 Isoprenoids,PR0109 Retinoids,C15493  9-cis-Retinoic acid,C15493,C20H28O2
+102,PR  Prenol lipids,PR01 Isoprenoids,PR0109 Retinoids,C16678  all-trans-4-Oxoretinoic acid,C16678,C20H26O3
+103,PR  Prenol lipids,PR01 Isoprenoids,PR0109 Retinoids,C16677  all-trans-4-Hydroxyretinoic acid,C16677,C20H28O3
+104,PR  Prenol lipids,PR01 Isoprenoids,PR0109 Retinoids,C16679  all-trans-18-Hydroxyretinoic acid,C16679,C20H28O3
+105,PR  Prenol lipids,PR01 Isoprenoids,PR0109 Retinoids,"C16680  all-trans-5,6-Epoxyretinoic acid",C16680,C20H28O3
+106,PR  Prenol lipids,PR01 Isoprenoids,PR0109 Retinoids,C02075  Retinyl ester,C02075,C21H29O2R
+107,PR  Prenol lipids,PR01 Isoprenoids,PR0109 Retinoids,C04680  Retinyl-ester-(cellular-retinol-binding-protein),C04680,C21H29O2R
+108,PR  Prenol lipids,PR01 Isoprenoids,PR0109 Retinoids,C02588  Retinyl palmitate,C02588,C36H60O2
+109,PR  Prenol lipids,PR01 Isoprenoids,PR0109 Retinoids,C03455  11-cis-Retinyl palmitate,C03455,C36H60O2
+110,PR  Prenol lipids,PR02 Quinones and hydroquinones,PR0203 Vitamin K,C00828  Menaquinone (Vitamin K2),C00828,C16H16O2(C5H8)n
+111,PR  Prenol lipids,PR02 Quinones and hydroquinones,PR0203 Vitamin K,C02059  Phylloquinone (Vitamin K1),C02059,C31H46O2
+112,PR  Prenol lipids,PR02 Quinones and hydroquinones,PR0203 Vitamin K,C05377  Menadione (Vitamin K3),C05377,C11H8O2
+113,PR  Prenol lipids,PR02 Quinones and hydroquinones,PR0203 Vitamin K,C05818  2-Demethylmenaquinone,C05818,C15H14O2(C5H8)n
+114,PR  Prenol lipids,PR02 Quinones and hydroquinones,PR0203 Vitamin K,C05849  Vitamin K epoxide,C05849,C31H46O3
+115,PR  Prenol lipids,PR02 Quinones and hydroquinones,PR0203 Vitamin K,C13309  2-Demethylphylloquinone,C13309,C30H44O2
+116,PR  Prenol lipids,PR02 Quinones and hydroquinones,PR0203 Vitamin K,C02785  3-Hydroxy-vitamin K,C02785,C31H48O3
+117,PR  Prenol lipids,PR02 Quinones and hydroquinones,PR0203 Vitamin K,C02793  2-Hydroxy-vitamin K,C02793,C31H48O3
+118,PR  Prenol lipids,PR03 Polyprenols,PR0309 Dolichol diphosphates,C00621  Dolichyl diphosphate,C00621,C20H38O7P2(C5H8)n
+119,PR  Prenol lipids,PR03 Polyprenols,PR0309 Dolichol diphosphates,C04213  Dolichyl diphosphooligosaccharide,C04213,C36H63N2O17P2R(C5H8)n
+120,PR  Prenol lipids,PR03 Polyprenols,PR0309 Dolichol diphosphates,C04500  N-Acetyl-D-glucosaminyldiphosphodolichol,C04500,C28H51NO12P2(C5H8)n
+121,PR  Prenol lipids,PR03 Polyprenols,PR0309 Dolichol diphosphates,"C04537  N,N'-Diacetylchitobiosyldiphosphodolichol",C04537,C36H64N2O17P2(C5H8)n
+122,PR  Prenol lipids,PR03 Polyprenols,PR0309 Dolichol diphosphates,C04615  alpha-D-Mannosylchitobiosyldiphosphodolichol,C04615,C42H74N2O22P2(C5H8)n
+123,PR  Prenol lipids,PR03 Polyprenols,PR0309 Dolichol diphosphates,C05860  beta-D-Mannosyldiacetylchitobiosyldiphosphodolichol,C05860,C42H74N2O22P2(C5H8)n
+124,PR  Prenol lipids,PR03 Polyprenols,PR0309 Dolichol diphosphates,C05861  alpha-D-Mannosyl-beta-D-mannosyl-diacetylchitobiosyldiphosphodolichol,C05861,C48H84N2O27P2(C5H8)n
+125,PR  Prenol lipids,PR03 Polyprenols,PR0309 Dolichol diphosphates,C05864  (alpha-D-Mannosyl)4-beta-D-mannosyl-diacetylchitobiosyldiphosphodolichol,C05864,C66H114N2O42P2(C5H8)n
+126,PR  Prenol lipids,PR03 Polyprenols,PR0309 Dolichol diphosphates,C05868  (alpha-D-Mannosyl)8-beta-D-mannosyl-diacetylchitobiosyldiphosphodolichol,C05868,C90H154N2O62P2(C5H8)n
+127,SL  Saccharolipids,SL01 Acylaminosugars,SL0107 Heptaacylaminosugars,C13909  Diphosphoryl heptaacyl lipid A,C13909,C110H208N2O26P2
+128,PK  Polyketides,PK12 Flavonoids,PK1216 Other Flavonoids,C08993  Vignafuran,C08993,C16H14O4
+129,PK  Polyketides,PK12 Flavonoids,PK1216 Other Flavonoids,C08974  Sainfuran,C08974,C16H14O5
+130,PK  Polyketides,PK13 Aromatic polyketides,PK1312 Other aromatic polyketides,C07578  Cannabidiol,C07578,C21H30O2
+131,PK  Polyketides,PK13 Aromatic polyketides,PK1312 Other aromatic polyketides,C07580  Cannabinol,C07580,C21H26O2
+132,PK  Polyketides,PK13 Aromatic polyketides,PK1312 Other aromatic polyketides,C10784  Cannabidiolic acid,C10784,C22H30O4

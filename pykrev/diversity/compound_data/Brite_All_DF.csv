@@ -1,0 +1,1548 @@
+,A,B,C,D,E,F
+0,Organic acids,Carboxylic acids [Fig],Monocarboxylic acids,C00058  Formate; Methanoate,C00058,CH2O2
+1,Organic acids,Carboxylic acids [Fig],Monocarboxylic acids,C00033  Acetate; Ethanoate,C00033,C2H4O2
+2,Organic acids,Carboxylic acids [Fig],Monocarboxylic acids,C00163  Propionate; Propanoate,C00163,C3H6O2
+3,Organic acids,Carboxylic acids [Fig],Monocarboxylic acids,C00246  Butyrate; Butanoate,C00246,C4H8O2
+4,Organic acids,Carboxylic acids [Fig],Monocarboxylic acids,C00803  Valerate; Pentanoate,C00803,C5H10O2
+5,Organic acids,Carboxylic acids [Fig],Monocarboxylic acids,C01585  Capronate; Hexanoate,C01585,C6H12O2
+6,Organic acids,Carboxylic acids [Fig],Monocarboxylic acids,C17714  Enanthate; Heptanoate,C17714,C7H14O2
+7,Organic acids,Carboxylic acids [Fig],Monocarboxylic acids,C06423  Caprylate; Octanoate,C06423,C8H16O2
+8,Organic acids,Carboxylic acids [Fig],Dicarboxylic acids,C00209  Oxalate,C00209,C2H2O4
+9,Organic acids,Carboxylic acids [Fig],Dicarboxylic acids,C00383  Malonate,C00383,C3H4O4
+10,Organic acids,Carboxylic acids [Fig],Dicarboxylic acids,C00042  Succinate,C00042,C4H6O4
+11,Organic acids,Carboxylic acids [Fig],Dicarboxylic acids,C00489  Glutarate,C00489,C5H8O4
+12,Organic acids,Carboxylic acids [Fig],Dicarboxylic acids,C06104  Adipate,C06104,C6H10O4
+13,Organic acids,Carboxylic acids [Fig],Dicarboxylic acids,C02656  Pimelate,C02656,C7H12O4
+14,Organic acids,Carboxylic acids [Fig],Dicarboxylic acids,C08278  Suberate,C08278,C8H14O4
+15,Organic acids,Carboxylic acids [Fig],Tricarboxylic acids,C00158  Citrate,C00158,C6H8O7
+16,Organic acids,Carboxylic acids [Fig],Tricarboxylic acids,C00311  Isocitrate,C00311,C6H8O7
+17,Organic acids,Carboxylic acids [Fig],Tricarboxylic acids,C00417  cis-Aconitate,C00417,C6H6O6
+18,Organic acids,Carboxylic acids [Fig],Tricarboxylic acids,C02341  trans-Aconitate,C02341,C6H6O6
+19,Organic acids,Carboxylic acids [Fig],2-Oxocarboxylic acids,C00048  Glyoxylate; Oxoacetate,C00048,C2H2O3
+20,Organic acids,Carboxylic acids [Fig],2-Oxocarboxylic acids,C00022  Pyruvate; 2-Oxopropanoate,C00022,C3H4O3
+21,Organic acids,Carboxylic acids [Fig],2-Oxocarboxylic acids,C00109  2-Oxobutanoate,C00109,C4H6O3
+22,Organic acids,Carboxylic acids [Fig],2-Oxocarboxylic acids,C06255  2-Oxovalerate,C06255,C5H8O3
+23,Organic acids,Carboxylic acids [Fig],2-Oxocarboxylic acids,C00902  2-Oxohexanoate,C00902,C6H10O3
+24,Organic acids,Carboxylic acids [Fig],2-Oxocarboxylic acids,C00036  Oxaloacetate; 2-Oxosuccinate,C00036,C4H4O5
+25,Organic acids,Carboxylic acids [Fig],2-Oxocarboxylic acids,C00026  2-Oxoglutarate,C00026,C5H6O5
+26,Organic acids,Carboxylic acids [Fig],2-Oxocarboxylic acids,C00322  2-Oxoadipate,C00322,C6H8O5
+27,Organic acids,Carboxylic acids [Fig],2-Oxocarboxylic acids,C16588  2-Oxopimelate,C16588,C7H10O5
+28,Organic acids,Carboxylic acids [Fig],2-Oxocarboxylic acids,C16589  2-Oxosuberate,C16589,C8H12O5
+29,Organic acids,Carboxylic acids [Fig],2-Oxocarboxylic acids,C00141  2-Oxoisovalerate,C00141,C5H8O3
+30,Organic acids,Carboxylic acids [Fig],2-Oxocarboxylic acids,C00233  2-Oxoisocaproate,C00233,C6H10O3
+31,Organic acids,Carboxylic acids [Fig],2-Oxocarboxylic acids,C00671  (S)-3-Methyl-2-oxopentanoic acid,C00671,C6H10O3
+32,Organic acids,Carboxylic acids [Fig],3-Oxocarboxylic acids,C00222  3-Oxopropanoate,C00222,C3H4O3
+33,Organic acids,Carboxylic acids [Fig],3-Oxocarboxylic acids,C00164  Acetoacetate; 3-Oxobutanoate,C00164,C4H6O3
+34,Organic acids,Carboxylic acids [Fig],4-Oxocarboxylic acid,C00232  Succinate semialdehyde; 4-Oxobutanoate,C00232,C4H6O3
+35,Organic acids,Carboxylic acids [Fig],Hydroxycarboxylic acids,C00186  L-Lactate; (S)-2-Hydroxypropanoate,C00186,C3H6O3
+36,Organic acids,Carboxylic acids [Fig],Hydroxycarboxylic acids,C00149  Malate; (S)-2-Hydroxybutanediate,C00149,C4H6O5
+37,Organic acids,Carboxylic acids [Fig],Hydroxycarboxylic acids,C01013  3-Hydroxypropanoate,C01013,C3H6O3
+38,Organic acids,Carboxylic acids [Fig],Hydroxycarboxylic acids,C01089  (R)-3-Hydroxybutanoate,C01089,C4H8O3
+39,Organic acids,Carboxylic acids [Fig],Hydroxycarboxylic acids,C00989  4-Hydroxybutanoate,C00989,C4H8O3
+40,Lipids,Fatty acids [Fig],Saturated fatty acids,C00246  Butyric acid (4:0),C00246,C4H8O2
+41,Lipids,Fatty acids [Fig],Saturated fatty acids,C01585  Caproic acid (6:0),C01585,C6H12O2
+42,Lipids,Fatty acids [Fig],Saturated fatty acids,C06423  Caprylic acid (8:0),C06423,C8H16O2
+43,Lipids,Fatty acids [Fig],Saturated fatty acids,C01571  Capric acid (10:0),C01571,C10H20O2
+44,Lipids,Fatty acids [Fig],Saturated fatty acids,C02679  Lauric acid (12:0),C02679,C12H24O2
+45,Lipids,Fatty acids [Fig],Saturated fatty acids,C06424  Myristic acid (14:0),C06424,C14H28O2
+46,Lipids,Fatty acids [Fig],Saturated fatty acids,C00249  Palmitic acid (16:0),C00249,C16H32O2
+47,Lipids,Fatty acids [Fig],Saturated fatty acids,C01530  Stearic acid (18:0),C01530,C18H36O2
+48,Lipids,Fatty acids [Fig],Saturated fatty acids,C06425  Arachidic acid (20:0),C06425,C20H40O2
+49,Lipids,Fatty acids [Fig],Saturated fatty acids,C08281  Behenic acid (22:0),C08281,C22H44O2
+50,Lipids,Fatty acids [Fig],Saturated fatty acids,C08320  Lignoceric acid (24:0),C08320,C24H48O2
+51,Lipids,Fatty acids [Fig],Unsaturated fatty acids,C08362  Palmitoleic acid (16:1;9),C08362,C16H30O2
+52,Lipids,Fatty acids [Fig],Unsaturated fatty acids,C00712  Oleic acid (18:1;9),C00712,C18H34O2
+53,Lipids,Fatty acids [Fig],Unsaturated fatty acids,C01712  Elaidic acid (18:1;9),C01712,C18H34O2
+54,Lipids,Fatty acids [Fig],Unsaturated fatty acids,C16526  Icosenoic acid (20:1;11),C16526,C20H38O2
+55,Lipids,Fatty acids [Fig],Unsaturated fatty acids,C08316  Erucic acid (22:1;13),C08316,C22H42O2
+56,Lipids,Fatty acids [Fig],Unsaturated fatty acids,C08323  Nervonic acid (24:1;15),C08323,C24H46O2
+57,Lipids,Fatty acids [Fig],Unsaturated fatty acids,"C01595  Linoleic acid (18:2;9,12)",C01595,C18H32O2
+58,Lipids,Fatty acids [Fig],Unsaturated fatty acids,"C16525  Icosadienoic acid (20:2;11,14)",C16525,C20H36O2
+59,Lipids,Fatty acids [Fig],Unsaturated fatty acids,"C16533  Docosadienoic acid (22:2;13,16)",C16533,C22H40O2
+60,Lipids,Fatty acids [Fig],Unsaturated fatty acids,"C06426  gamma-Linolenic acid (18:3;6,9,12)",C06426,C18H30O2
+61,Lipids,Fatty acids [Fig],Unsaturated fatty acids,"C06427  alpha-Linolenic acid (18:3;9,12,15)",C06427,C18H30O2
+62,Lipids,Fatty acids [Fig],Unsaturated fatty acids,"C00219  Arachidonic acid (20:4;5,8,11,14)",C00219,C20H32O2
+63,Lipids,Fatty acids [Fig],Unsaturated fatty acids,"C06428  Eicosapentaenoic acid (20:5;5,8,11,14.17)",C06428,C20H30O2
+64,Lipids,Fatty acids [Fig],Unsaturated fatty acids,"C06429  Docosahexaenoic acid (22:6;4,7,10,13,16,19)",C06429,C22H32O2
+65,Lipids,Fats [Fig],Acylglycerols,C01885  1-Monoacylglycerol,C01885,C4H7O4R
+66,Lipids,Fats [Fig],Acylglycerols,C02112  2-Monoacylglycerol,C02112,C4H7O4R
+67,Lipids,Fats [Fig],Acylglycerols,"C00641  1,2-Diacylglycerol",C00641,C5H6O5R2
+68,Lipids,Fats [Fig],Acylglycerols,"C06437  1,3-Diacylglycerol",C06437,C5H6O5R2
+69,Lipids,Fats [Fig],Acylglycerols,C00422  Triacylglycerol,C00422,C6H5O6R3
+70,Lipids,Phospholipids [Fig],Glycerophospholipids,C00416  Phosphatidic acid,C00416,C5H7O8PR2
+71,Lipids,Phospholipids [Fig],Glycerophospholipids,C00350  Phosphatidylethanolamine,C00350,C7H12NO8PR2
+72,Lipids,Phospholipids [Fig],Glycerophospholipids,C00157  Phosphatidylcholine; Lecithin,C00157,C10H18NO8PR2
+73,Lipids,Phospholipids [Fig],Glycerophospholipids,C02737  Phosphatidylserine,C02737,C8H12NO10PR2
+74,Lipids,Phospholipids [Fig],Glycerophospholipids,C01194  Phosphatidylinositol,C01194,C11H17O13PR2
+75,Lipids,Phospholipids [Fig],Glycerophospholipids,C04230  2-Lysolecithin,C04230,C9H20NO7PR
+76,Lipids,Phospholipids [Fig],Glycerophospholipids,C04756  Plasmenylethanolamine,C04756,C8H14NO7PR2
+77,Lipids,Phospholipids [Fig],Glycerophospholipids,C00958  Plasmenylcholine,C00958,C11H21NO7PR2
+78,Lipids,Phospholipids [Fig],Glycerophospholipids,C00344  Phosphatidylglycerol,C00344,C8H13O10PR2
+79,Lipids,Phospholipids [Fig],Glycerophospholipids,C05980  Diphosphatidylglycerol; Cardiolipin,C05980,C13H18O17P2R4
+80,Lipids,Phospholipids [Fig],Phosphosphingolipids,C00550  Sphingomyelin,C00550,C24H49N2O6PR
+81,Lipids,Glycolipids [Fig],Glyceroglycolipids,C03692  Monogalactosyldiacylglycerol,C03692,C11H16O10R2
+82,Lipids,Glycolipids [Fig],Glyceroglycolipids,C06037  Digalactosyldiacylglycerol,C06037,C17H26O15R2
+83,Lipids,Glycolipids [Fig],Glyceroglycolipids,C20825  Seminolipid,C20825,C10H16O12SR2
+84,Lipids,Glycolipids [Fig],Glycosphingolipids,C01190  Glucosylceramide,C01190,C25H46NO8R
+85,Lipids,Glycolipids [Fig],Glycosphingolipids,C02686  Galactosylceramide,C02686,C25H46NO8R
+86,Lipids,Glycolipids [Fig],Glycosphingolipids,C01290  Lactosylceramide,C01290,C31H56NO13R
+87,Lipids,Glycolipids [Fig],Glycosphingolipids,C04911  GM1,C04911,C56H96N3O31R
+88,Lipids,Glycolipids [Fig],Glycosphingolipids,C04884  GM2,C04884,C50H86N3O26R
+89,Lipids,Glycolipids [Fig],Glycosphingolipids,C04730  GM3,C04730,C42H73N2O21R
+90,Lipids,Glycolipids [Fig],Glycosphingolipids,C06125  Sulfatide,C06125,C25H46NO11SR
+91,Lipids,Eicosanoids [Fig],Prostaglandins,C04685  Prostaglandin A1,C04685,C20H32O4
+92,Lipids,Eicosanoids [Fig],Prostaglandins,C05953  Prostaglandin A2,C05953,C20H30O4
+93,Lipids,Eicosanoids [Fig],Prostaglandins,C00959  Prostaglandin B1,C00959,C20H32O4
+94,Lipids,Eicosanoids [Fig],Prostaglandins,C05954  Prostaglandin B2,C05954,C20H30O4
+95,Lipids,Eicosanoids [Fig],Prostaglandins,C04686  Prostaglandin C1,C04686,C20H32O4
+96,Lipids,Eicosanoids [Fig],Prostaglandins,C05955  Prostaglandin C2,C05955,C20H30O4
+97,Lipids,Eicosanoids [Fig],Prostaglandins,C06438  Prostaglandin D1,C06438,C20H34O5
+98,Lipids,Eicosanoids [Fig],Prostaglandins,C00696  Prostaglandin D2,C00696,C20H32O5
+99,Lipids,Eicosanoids [Fig],Prostaglandins,C04741  Prostaglandin E1,C04741,C20H34O5
+100,Lipids,Eicosanoids [Fig],Prostaglandins,C00584  Prostaglandin E2,C00584,C20H32O5
+101,Lipids,Eicosanoids [Fig],Prostaglandins,C06439  Prostaglandin E3,C06439,C20H30O5
+102,Lipids,Eicosanoids [Fig],Prostaglandins,C06475  Prostaglandin F1alpha,C06475,C20H36O5
+103,Lipids,Eicosanoids [Fig],Prostaglandins,C00639  Prostaglandin F2alpha,C00639,C20H34O5
+104,Lipids,Eicosanoids [Fig],Prostaglandins,C02314  Prostaglandin F2beta,C02314,C20H34O5
+105,Lipids,Eicosanoids [Fig],Prostaglandins,C06476  Prostaglandin F3alpha,C06476,C20H32O5
+106,Lipids,Eicosanoids [Fig],Prostaglandins,C05956  Prostaglandin G2,C05956,C20H32O6
+107,Lipids,Eicosanoids [Fig],Prostaglandins,C00427  Prostaglandin H2,C00427,C20H32O5
+108,Lipids,Eicosanoids [Fig],Prostaglandins,C01312  Prostaglandin I2,C01312,C20H32O5
+109,Lipids,Eicosanoids [Fig],Prostaglandins,C05957  Prostaglandin J2,C05957,C20H30O4
+110,Lipids,Eicosanoids [Fig],Leukotrienes,C00909  Leukotriene A4,C00909,C20H30O3
+111,Lipids,Eicosanoids [Fig],Leukotrienes,C02165  Leukotriene B4,C02165,C20H32O4
+112,Lipids,Eicosanoids [Fig],Leukotrienes,C02166  Leukotriene C4,C02166,C30H47N3O9S
+113,Lipids,Eicosanoids [Fig],Leukotrienes,C05951  Leukotriene D4,C05951,C25H40N2O6S
+114,Lipids,Eicosanoids [Fig],Leukotrienes,C05952  Leukotriene E4,C05952,C23H37NO5S
+115,Lipids,Eicosanoids [Fig],Leukotrienes,C06462  Leukotriene F4,C06462,C28H44N2O8S
+116,Lipids,Eicosanoids [Fig],Leukotrienes,C05356  5-HPETE,C05356,C20H32O4
+117,Lipids,Eicosanoids [Fig],Thromboxanes,C02198  Thromboxane A2,C02198,C20H32O5
+118,Lipids,Eicosanoids [Fig],Thromboxanes,C05963  Thromboxane B2,C05963,C20H34O6
+119,Lipids,Eicosanoids [Fig],Thromboxanes,C05964  11-Dehydro-thromboxane B2,C05964,C20H32O6
+120,Carbohydrates,Monosaccharides,Aldoses [Fig],C00577  D-Glyceraldehyde,C00577,C3H6O3
+121,Carbohydrates,Monosaccharides,Aldoses [Fig],C02426  L-Glyceraldehyde,C02426,C3H6O3
+122,Carbohydrates,Monosaccharides,Aldoses [Fig],C01796  D-Erythrose,C01796,C4H8O4
+123,Carbohydrates,Monosaccharides,Aldoses [Fig],C06463  D-Threose,C06463,C4H8O4
+124,Carbohydrates,Monosaccharides,Aldoses [Fig],C00216  D-Arabinose,C00216,C5H10O5
+125,Carbohydrates,Monosaccharides,Aldoses [Fig],C00259  L-Arabinose,C00259,C5H10O5
+126,Carbohydrates,Monosaccharides,Aldoses [Fig],C00181  D-Xylose,C00181,C5H10O5
+127,Carbohydrates,Monosaccharides,Aldoses [Fig],C01510  L-Xylose,C01510,C5H10O5
+128,Carbohydrates,Monosaccharides,Aldoses [Fig],C00476  D-Lyxose,C00476,C5H10O5
+129,Carbohydrates,Monosaccharides,Aldoses [Fig],C01508  L-Lyxose,C01508,C5H10O5
+130,Carbohydrates,Monosaccharides,Aldoses [Fig],C00121  D-Ribose,C00121,C5H10O5
+131,Carbohydrates,Monosaccharides,Aldoses [Fig],C00031  D-Glucose,C00031,C6H12O6
+132,Carbohydrates,Monosaccharides,Aldoses [Fig],C00124  D-Galactose,C00124,C6H12O6
+133,Carbohydrates,Monosaccharides,Aldoses [Fig],C01825  L-Galactose,C01825,C6H12O6
+134,Carbohydrates,Monosaccharides,Aldoses [Fig],C00159  D-Mannose,C00159,C6H12O6
+135,Carbohydrates,Monosaccharides,Aldoses [Fig],C01487  D-Allose,C01487,C6H12O6
+136,Carbohydrates,Monosaccharides,Aldoses [Fig],C06464  D-Altrose,C06464,C6H12O6
+137,Carbohydrates,Monosaccharides,Aldoses [Fig],C06465  D-Gulose,C06465,C6H12O6
+138,Carbohydrates,Monosaccharides,Aldoses [Fig],C15923  L-Gulose,C15923,C6H12O6
+139,Carbohydrates,Monosaccharides,Aldoses [Fig],C06466  D-Idose,C06466,C6H12O6
+140,Carbohydrates,Monosaccharides,Aldoses [Fig],C06467  D-Talose,C06467,C6H12O6
+141,Carbohydrates,Monosaccharides,Aldoses [Fig],"C06474  3,6-Anhydrogalactose",C06474,C6H10O5
+142,Carbohydrates,Monosaccharides,Aldoses [Fig],"C06478  3,6-Anhydroglucose",C06478,C6H10O5
+143,Carbohydrates,Monosaccharides,Ketoses [Fig],C00184  Dihydroxyacetone,C00184,C3H6O3
+144,Carbohydrates,Monosaccharides,Ketoses [Fig],C02022  D-Erythrulose,C02022,C4H8O4
+145,Carbohydrates,Monosaccharides,Ketoses [Fig],C02045  L-Erythrulose,C02045,C4H8O4
+146,Carbohydrates,Monosaccharides,Ketoses [Fig],C00309  D-Ribulose,C00309,C5H10O5
+147,Carbohydrates,Monosaccharides,Ketoses [Fig],C00508  L-Ribulose,C00508,C5H10O5
+148,Carbohydrates,Monosaccharides,Ketoses [Fig],C00310  D-Xylulose,C00310,C5H10O5
+149,Carbohydrates,Monosaccharides,Ketoses [Fig],C00312  L-Xylulose,C00312,C5H10O5
+150,Carbohydrates,Monosaccharides,Ketoses [Fig],C00095  D-Fructose; Fruit sugar,C00095,C6H12O6
+151,Carbohydrates,Monosaccharides,Ketoses [Fig],C01719  L-Fructose,C01719,C6H12O6
+152,Carbohydrates,Monosaccharides,Ketoses [Fig],C00764  D-Sorbose,C00764,C6H12O6
+153,Carbohydrates,Monosaccharides,Ketoses [Fig],C00247  L-Sorbose,C00247,C6H12O6
+154,Carbohydrates,Monosaccharides,Ketoses [Fig],C00795  D-Tagatose,C00795,C6H12O6
+155,Carbohydrates,Monosaccharides,Ketoses [Fig],C06468  D-Psicose,C06468,C6H12O6
+156,Carbohydrates,Monosaccharides,Ketoses [Fig],C02076  Sedoheptulose,C02076,C7H14O7
+157,Carbohydrates,Monosaccharides,Ketoses [Fig],C19612  Coriose,C19612,C7H14O7
+158,Carbohydrates,Monosaccharides,Deoxy sugars [Fig],C01801  Deoxyribose,C01801,C5H10O4
+159,Carbohydrates,Monosaccharides,Deoxy sugars [Fig],C01018  D-Fucose,C01018,C6H12O5
+160,Carbohydrates,Monosaccharides,Deoxy sugars [Fig],C01019  L-Fucose,C01019,C6H12O5
+161,Carbohydrates,Monosaccharides,Deoxy sugars [Fig],C01684  D-Rhamnose,C01684,C6H12O5
+162,Carbohydrates,Monosaccharides,Deoxy sugars [Fig],C00507  L-Rhamnose,C00507,C6H12O5
+163,Carbohydrates,Monosaccharides,Deoxy sugars [Fig],C00586  2-Deoxy-D-glucose,C00586,C6H12O5
+164,Carbohydrates,Monosaccharides,Deoxy sugars [Fig],C02522  D-Quinovose,C02522,C6H12O5
+165,Carbohydrates,Monosaccharides,Deoxy sugars [Fig],C02781  2-Deoxy-D-galactose,C02781,C6H12O5
+166,Carbohydrates,Monosaccharides,Deoxy sugars [Fig],C06471  Abequose,C06471,C6H12O4
+167,Carbohydrates,Monosaccharides,Amino sugars [Fig],C00329  D-Glucosamine,C00329,C6H13NO5
+168,Carbohydrates,Monosaccharides,Amino sugars [Fig],C02262  D-Galactosamine,C02262,C6H13NO5
+169,Carbohydrates,Monosaccharides,Amino sugars [Fig],C03570  D-Mannosamine,C03570,C6H13NO5
+170,Carbohydrates,Monosaccharides,Amino sugars [Fig],C15478  D-Fucosamine,C15478,C6H13NO4
+171,Carbohydrates,Monosaccharides,Amino sugars [Fig],C15479  D-Quinovosamine,C15479,C6H13NO4
+172,Carbohydrates,Monosaccharides,Amino sugars [Fig],C06469  Neuraminic acid,C06469,C9H17NO8
+173,Carbohydrates,Monosaccharides,Amino sugars [Fig],C06470  Muramic acid,C06470,C9H17NO7
+174,Carbohydrates,Monosaccharides,Amino sugars [Fig],C00140  N-Acetyl-D-glucosamine,C00140,C8H15NO6
+175,Carbohydrates,Monosaccharides,Amino sugars [Fig],C01132  N-Acetyl-D-galactosamine,C01132,C8H15NO6
+176,Carbohydrates,Monosaccharides,Amino sugars [Fig],C00645  N-Acetyl-D-mannosamine,C00645,C8H15NO6
+177,Carbohydrates,Monosaccharides,Amino sugars [Fig],C15480  N-Acetyl-D-fucosamine,C15480,C8H15NO5
+178,Carbohydrates,Monosaccharides,Amino sugars [Fig],C15481  N-Acetyl-D-quinovosamine,C15481,C8H15NO5
+179,Carbohydrates,Monosaccharides,Amino sugars [Fig],C00270  N-Acetylneuraminic acid,C00270,C11H19NO9
+180,Carbohydrates,Monosaccharides,Amino sugars [Fig],C02713  N-Acetylmuramic acid,C02713,C11H19NO8
+181,Carbohydrates,Monosaccharides,Amino sugars [Fig],C03525  O-Acetylneuraminic acid,C03525,C11H19NO9
+182,Carbohydrates,Monosaccharides,Amino sugars [Fig],C03410  N-Glycoloyl-neuraminate,C03410,C11H19NO10
+183,Carbohydrates,Monosaccharides,Sugar acids [Fig],C00905  D-Fructuronic acid,C00905,C6H10O7
+184,Carbohydrates,Monosaccharides,Sugar acids [Fig],C00558  D-Tagaturonic acid,C00558,C6H10O7
+185,Carbohydrates,Monosaccharides,Sugar acids [Fig],C00191  D-Glucuronic acid,C00191,C6H10O7
+186,Carbohydrates,Monosaccharides,Sugar acids [Fig],C00333  D-Galacturonic acid,C00333,C6H10O7
+187,Carbohydrates,Monosaccharides,Sugar acids [Fig],C02024  D-Mannuronic acid,C02024,C6H10O7
+188,Carbohydrates,Monosaccharides,Sugar acids [Fig],C06472  L-Iduronic acid,C06472,C6H10O7
+189,Carbohydrates,Monosaccharides,Sugar acids [Fig],C06477  L-Guluronic acid,C06477,C6H10O7
+190,Carbohydrates,Monosaccharides,Sugar acids [Fig],C00257  D-Gluconic acid,C00257,C6H12O7
+191,Carbohydrates,Monosaccharides,Sugar acids [Fig],C03752  D-Glucosaminic acid,C03752,C6H13NO6
+192,Carbohydrates,Monosaccharides,Sugar acids [Fig],C06473  2-Keto-D-gluconic acid,C06473,C6H10O7
+193,Carbohydrates,Monosaccharides,Sugar acids [Fig],C01187  3-Deoxy-D-manno-octulosonic acid,C01187,C8H14O8
+194,Carbohydrates,Monosaccharides,Sugar alcohols [Fig],C00116  Glycerol,C00116,C3H8O3
+195,Carbohydrates,Monosaccharides,Sugar alcohols [Fig],C00379  Xylitol,C00379,C5H12O5
+196,Carbohydrates,Monosaccharides,Sugar alcohols [Fig],C00794  Sorbitol,C00794,C6H14O6
+197,Carbohydrates,Monosaccharides,Sugar alcohols [Fig],C00392  Mannitol,C00392,C6H14O6
+198,Carbohydrates,Monosaccharides,Sugar alcohols [Fig],C00137  myo-Inositol,C00137,C6H12O6
+199,Carbohydrates,Oligosaccharides [Fig],Disaccharides,C00089  Sucrose; Cane sugar,C00089,C12H22O11
+200,Carbohydrates,Oligosaccharides [Fig],Disaccharides,C00243  Lactose; Milk sugar,C00243,C12H22O11
+201,Carbohydrates,Oligosaccharides [Fig],Disaccharides,C00208  Maltose; Malt sugar,C00208,C12H22O11
+202,Carbohydrates,Oligosaccharides [Fig],Disaccharides,C01083  Trehalose,C01083,C12H22O11
+203,Carbohydrates,Oligosaccharides [Fig],Disaccharides,C00185  Cellobiose,C00185,C12H22O11
+204,Carbohydrates,Oligosaccharides [Fig],Disaccharides,C19632  Kojibiose,C19632,C12H22O11
+205,Carbohydrates,Oligosaccharides [Fig],Disaccharides,C01518  Nigerose,C01518,C12H22O11
+206,Carbohydrates,Oligosaccharides [Fig],Disaccharides,C00252  Isomaltose,C00252,C12H22O11
+207,Carbohydrates,Oligosaccharides [Fig],Disaccharides,C08250  Sophorose,C08250,C12H22O11
+208,Carbohydrates,Oligosaccharides [Fig],Disaccharides,C02048  Laminaribiose,C02048,C12H22O11
+209,Carbohydrates,Oligosaccharides [Fig],Disaccharides,C08240  Gentiobiose,C08240,C12H22O11
+210,Carbohydrates,Oligosaccharides [Fig],Disaccharides,C19636  Turanose,C19636,C12H22O11
+211,Carbohydrates,Oligosaccharides [Fig],Disaccharides,C19633  Maltulose,C19633,C12H22O11
+212,Carbohydrates,Oligosaccharides [Fig],Disaccharides,C01742  Palatinose,C01742,C12H22O11
+213,Carbohydrates,Oligosaccharides [Fig],Disaccharides,C19635  Scillabiose,C19635,C12H22O10
+214,Carbohydrates,Oligosaccharides [Fig],Disaccharides,C01728  Mannobiose,C01728,C12H22O11
+215,Carbohydrates,Oligosaccharides [Fig],Disaccharides,C05402  Melibiose,C05402,C12H22O11
+216,Carbohydrates,Oligosaccharides [Fig],Disaccharides,C06372  Lacto-N-biose,C06372,C14H25NO11
+217,Carbohydrates,Oligosaccharides [Fig],Disaccharides,C19634  Melibiulose,C19634,C12H22O11
+218,Carbohydrates,Oligosaccharides [Fig],Disaccharides,C08247  Rutinose,C08247,C12H22O10
+219,Carbohydrates,Oligosaccharides [Fig],Disaccharides,C01625  Vicianose,C01625,C11H20O10
+220,Carbohydrates,Oligosaccharides [Fig],Disaccharides,C01630  Xylobiose,C01630,C10H18O9
+221,Carbohydrates,Oligosaccharides [Fig],Tetrasaccharides,C06371  Lacto-N-tetraose,C06371,C26H45NO21
+222,Carbohydrates,Polysaccharides [Fig],Homopolysaccharides,G10481  Cellulose,G10481,
+223,Carbohydrates,Polysaccharides [Fig],Homopolysaccharides,G10495  Amylose,G10495,
+224,Carbohydrates,Polysaccharides [Fig],Homopolysaccharides,G04981  Inulin,G04981,
+225,Carbohydrates,Polysaccharides [Fig],Homopolysaccharides,G10483  Chitin,G10483,
+226,Carbohydrates,Polysaccharides [Fig],Homopolysaccharides,G10536  Chitosan,G10536,
+227,Carbohydrates,Polysaccharides [Fig],Homopolysaccharides,G11610  Amylopectin,G11610,
+228,Carbohydrates,Polysaccharides [Fig],Homopolysaccharides,G11603  Glycogen,G11603,
+229,Carbohydrates,Polysaccharides [Fig],Homopolysaccharides,G10591  Pectin,G10591,
+230,Carbohydrates,Polysaccharides [Fig],Heteropolysaccharides,G11598  Glucomannan,G11598,
+231,Carbohydrates,Polysaccharides [Fig],Heteropolysaccharides,G11599  Galactoglucomannan,G11599,
+232,Carbohydrates,Polysaccharides [Fig],Heteropolysaccharides,G11622  Xyloglucan,G11622,
+233,Carbohydrates,Polysaccharides [Fig],Heteropolysaccharides,G11623  4-O-Methylglucuronoxylan,G11623,
+234,Carbohydrates,Polysaccharides [Fig],Heteropolysaccharides,G11619  Arabinoxylan,G11619,
+235,Carbohydrates,Polysaccharides [Fig],Heteropolysaccharides,G11624  4-O-Methylglucuronoarabinoxylran,G11624,
+236,Carbohydrates,Polysaccharides [Fig],Heteropolysaccharides,G11334  Chondroitin,G11334,
+237,Carbohydrates,Polysaccharides [Fig],Heteropolysaccharides,G10505  Hyaluronic acid,G10505,
+238,Carbohydrates,Polysaccharides [Fig],Heteropolysaccharides,G10593  Alginic acid,G10593,
+239,Nucleic acids,Bases [Fig],Purines,C00147  Adenine (Ade),C00147,C5H5N5
+240,Nucleic acids,Bases [Fig],Purines,C00242  Guanine (Gua),C00242,C5H5N5O
+241,Nucleic acids,Bases [Fig],Pyrimidines,C00106  Uracil (Ura),C00106,C4H4N2O2
+242,Nucleic acids,Bases [Fig],Pyrimidines,C00178  Thymine (Thy),C00178,C5H6N2O2
+243,Nucleic acids,Bases [Fig],Pyrimidines,C00380  Cytosine (Cyt),C00380,C4H5N3O
+244,Nucleic acids,Nucleosides [Fig],Ribonucleosides,C00212  Adenosine (A),C00212,C10H13N5O4
+245,Nucleic acids,Nucleosides [Fig],Ribonucleosides,C00387  Guanosine (G),C00387,C10H13N5O5
+246,Nucleic acids,Nucleosides [Fig],Ribonucleosides,C00299  Uridine (U),C00299,C9H12N2O6
+247,Nucleic acids,Nucleosides [Fig],Ribonucleosides,C00475  Cytidine (C),C00475,C9H13N3O5
+248,Nucleic acids,Nucleosides [Fig],Deoxyribonucleosides,C00559  Deoxyadenosine (dA),C00559,C10H13N5O3
+249,Nucleic acids,Nucleosides [Fig],Deoxyribonucleosides,C00330  Deoxyguanosine (dG),C00330,C10H13N5O4
+250,Nucleic acids,Nucleosides [Fig],Deoxyribonucleosides,C00526  Deoxyuridine (dU),C00526,C9H12N2O5
+251,Nucleic acids,Nucleosides [Fig],Deoxyribonucleosides,C00214  Deoxythymidine (dT),C00214,C10H14N2O5
+252,Nucleic acids,Nucleosides [Fig],Deoxyribonucleosides,C00881  Deoxycytidine (dC),C00881,C9H13N3O4
+253,Nucleic acids,Nucleotides [Fig],Ribonucleotides,C00020  AMP,C00020,C10H14N5O7P
+254,Nucleic acids,Nucleotides [Fig],Ribonucleotides,C00008  ADP,C00008,C10H15N5O10P2
+255,Nucleic acids,Nucleotides [Fig],Ribonucleotides,C00002  ATP,C00002,C10H16N5O13P3
+256,Nucleic acids,Nucleotides [Fig],Ribonucleotides,C00144  GMP,C00144,C10H14N5O8P
+257,Nucleic acids,Nucleotides [Fig],Ribonucleotides,C00035  GDP,C00035,C10H15N5O11P2
+258,Nucleic acids,Nucleotides [Fig],Ribonucleotides,C00044  GTP,C00044,C10H16N5O14P3
+259,Nucleic acids,Nucleotides [Fig],Ribonucleotides,C00105  UMP,C00105,C9H13N2O9P
+260,Nucleic acids,Nucleotides [Fig],Ribonucleotides,C00015  UDP,C00015,C9H14N2O12P2
+261,Nucleic acids,Nucleotides [Fig],Ribonucleotides,C00075  UTP,C00075,C9H15N2O15P3
+262,Nucleic acids,Nucleotides [Fig],Ribonucleotides,C00055  CMP,C00055,C9H14N3O8P
+263,Nucleic acids,Nucleotides [Fig],Ribonucleotides,C00112  CDP,C00112,C9H15N3O11P2
+264,Nucleic acids,Nucleotides [Fig],Ribonucleotides,C00063  CTP,C00063,C9H16N3O14P3
+265,Nucleic acids,Nucleotides [Fig],Deoxyribonucleotides,C00360  dAMP,C00360,C10H14N5O6P
+266,Nucleic acids,Nucleotides [Fig],Deoxyribonucleotides,C00206  dADP,C00206,C10H15N5O9P2
+267,Nucleic acids,Nucleotides [Fig],Deoxyribonucleotides,C00131  dATP,C00131,C10H16N5O12P3
+268,Nucleic acids,Nucleotides [Fig],Deoxyribonucleotides,C00362  dGMP,C00362,C10H14N5O7P
+269,Nucleic acids,Nucleotides [Fig],Deoxyribonucleotides,C00361  dGDP,C00361,C10H15N5O10P2
+270,Nucleic acids,Nucleotides [Fig],Deoxyribonucleotides,C00286  dGTP,C00286,C10H16N5O13P3
+271,Nucleic acids,Nucleotides [Fig],Deoxyribonucleotides,C00365  dUMP,C00365,C9H13N2O8P
+272,Nucleic acids,Nucleotides [Fig],Deoxyribonucleotides,C01346  dUDP,C01346,C9H14N2O11P2
+273,Nucleic acids,Nucleotides [Fig],Deoxyribonucleotides,C00460  dUTP,C00460,C9H15N2O14P3
+274,Nucleic acids,Nucleotides [Fig],Deoxyribonucleotides,C00364  dTMP,C00364,C10H15N2O8P
+275,Nucleic acids,Nucleotides [Fig],Deoxyribonucleotides,C00363  dTDP,C00363,C10H16N2O11P2
+276,Nucleic acids,Nucleotides [Fig],Deoxyribonucleotides,C00459  dTTP,C00459,C10H17N2O14P3
+277,Nucleic acids,Nucleotides [Fig],Deoxyribonucleotides,C00239  dCMP,C00239,C9H14N3O7P
+278,Nucleic acids,Nucleotides [Fig],Deoxyribonucleotides,C00705  dCDP,C00705,C9H15N3O10P2
+279,Nucleic acids,Nucleotides [Fig],Deoxyribonucleotides,C00458  dCTP,C00458,C9H16N3O13P3
+280,Nucleic acids,Cyclic nucleotides [Fig],"3',5'-Cyclic nuclcleotides","C00575  3',5'-Cyclic AMP",C00575,C10H12N5O6P
+281,Nucleic acids,Cyclic nucleotides [Fig],"3',5'-Cyclic nuclcleotides","C00942  3',5'-Cyclic GMP",C00942,C10H12N5O7P
+282,Nucleic acids,Cyclic nucleotides [Fig],"3',5'-Cyclic nuclcleotides","C00943  3',5'-Cyclic IMP",C00943,C10H11N4O7P
+283,Nucleic acids,Cyclic nucleotides [Fig],"3',5'-Cyclic nuclcleotides","C00968  3',5'-Cyclic dAMP",C00968,C10H12N5O5P
+284,Nucleic acids,Cyclic nucleotides [Fig],"3',5'-Cyclic nuclcleotides","C02507  3',5'-Cyclic dGMP",C02507,C10H12N5O6P
+285,Nucleic acids,Cyclic nucleotides [Fig],"3',5'-Cyclic nuclcleotides","C00941  3',5'-Cyclic CMP",C00941,C9H12N3O7P
+286,Nucleic acids,Cyclic nucleotides [Fig],"2',3'-Cyclic nucleotides","C02353  2',3'-Cyclic AMP",C02353,C10H12N5O6P
+287,Nucleic acids,Cyclic nucleotides [Fig],"2',3'-Cyclic nucleotides","C06194  2',3'-Cyclic GMP",C06194,C10H12N5O7P
+288,Nucleic acids,Cyclic nucleotides [Fig],"2',3'-Cyclic nucleotides","C02354  2',3'-Cyclic CMP",C02354,C9H12N3O7P
+289,Nucleic acids,Cyclic nucleotides [Fig],"2',3'-Cyclic nucleotides","C02355  2',3'-Cyclic UMP",C02355,C9H11N2O8P
+290,Peptides,Peptides,Dipeptides [Fig],C01262  Anserine,C01262,C10H16N4O3
+291,Peptides,Peptides,Dipeptides [Fig],C00386  Carnosine,C00386,C9H14N4O3
+292,Peptides,Peptides,Dipeptides [Fig],C00993  D-Alanyl-D-alanine,C00993,C6H12N2O3
+293,Peptides,Amino acids,Common amino acids [Fig],C00037  Glycine (Gly),C00037,C2H5NO2
+294,Peptides,Amino acids,Common amino acids [Fig],C00041  Alanine (Ala),C00041,C3H7NO2
+295,Peptides,Amino acids,Common amino acids [Fig],C00183  Valine (Val),C00183,C5H11NO2
+296,Peptides,Amino acids,Common amino acids [Fig],C00123  Leucine (Leu),C00123,C6H13NO2
+297,Peptides,Amino acids,Common amino acids [Fig],C00407  Isoleucine (Ile),C00407,C6H13NO2
+298,Peptides,Amino acids,Common amino acids [Fig],C00049  Aspartic acid (Asp),C00049,C4H7NO4
+299,Peptides,Amino acids,Common amino acids [Fig],C00152  Asparagine (Asn),C00152,C4H8N2O3
+300,Peptides,Amino acids,Common amino acids [Fig],C00025  Glutamic acid (Glu),C00025,C5H9NO4
+301,Peptides,Amino acids,Common amino acids [Fig],C00064  Glutamine (Gln),C00064,C5H10N2O3
+302,Peptides,Amino acids,Common amino acids [Fig],C00065  Serine (Ser),C00065,C3H7NO3
+303,Peptides,Amino acids,Common amino acids [Fig],C00188  Threonine (Thr),C00188,C4H9NO3
+304,Peptides,Amino acids,Common amino acids [Fig],C00073  Methionine (Met),C00073,C5H11NO2S
+305,Peptides,Amino acids,Common amino acids [Fig],C00097  Cysteine (Cys),C00097,C3H7NO2S
+306,Peptides,Amino acids,Common amino acids [Fig],C00047  Lysine (Lys),C00047,C6H14N2O2
+307,Peptides,Amino acids,Common amino acids [Fig],C00062  Arginine (Arg),C00062,C6H14N4O2
+308,Peptides,Amino acids,Common amino acids [Fig],C00135  Histidine (His),C00135,C6H9N3O2
+309,Peptides,Amino acids,Common amino acids [Fig],C00148  Proline (Pro),C00148,C5H9NO2
+310,Peptides,Amino acids,Common amino acids [Fig],C00079  Phenylalanine (Phe),C00079,C9H11NO2
+311,Peptides,Amino acids,Common amino acids [Fig],C00082  Tyrosine (Tyr),C00082,C9H11NO3
+312,Peptides,Amino acids,Common amino acids [Fig],C00078  Tryptophan (Trp),C00078,C11H12N2O2
+313,Peptides,Amino acids,Other amino acids [Fig],C05688  Selenocysteine (Sec),C05688,C3H7NO2Se
+314,Peptides,Amino acids,Other amino acids [Fig],C16138  Pyrrolysine (Pyl),C16138,C12H21N3O3
+315,Peptides,Amino acids,Other amino acids [Fig],C00077  L-Ornithine,C00077,C5H12N2O2
+316,Peptides,Amino acids,Other amino acids [Fig],C00155  L-Homocysteine,C00155,C4H9NO2S
+317,Peptides,Amino acids,Other amino acids [Fig],C00263  L-Homoserine,C00263,C4H9NO3
+318,Peptides,Amino acids,Other amino acids [Fig],C00327  L-Citrulline,C00327,C6H13N3O3
+319,Peptides,Amino acids,Other amino acids [Fig],C00606  3-Sulfino-L-alanine,C00606,C3H7NO4S
+320,Peptides,Amino acids,Other amino acids [Fig],C03406  L-Argininosuccinate,C03406,C10H18N4O6
+321,Peptides,Amino acids,Other amino acids [Fig],"C00355  3,4-Dihydroxy-L-phenylalanine",C00355,C9H11NO4
+322,Peptides,Amino acids,Other amino acids [Fig],C02515  3-Iodo-L-tyrosine,C02515,C9H10INO3
+323,Peptides,Amino acids,Other amino acids [Fig],"C01060  3,5-Diiodo-L-tyrosine",C01060,C9H9I2NO3
+324,Peptides,Amino acids,Other amino acids [Fig],C02465  Triiodothyronine,C02465,C15H12I3NO4
+325,Peptides,Amino acids,Other amino acids [Fig],C01829  L-Thyroxine,C01829,C15H11I4NO4
+326,Peptides,Amino acids,Other amino acids [Fig],C00099  beta-Alanine,C00099,C3H7NO2
+327,Peptides,Amino acids,Other amino acids [Fig],C00334  gamma-Aminobutyric acid,C00334,C4H9NO2
+328,Peptides,Amino acids,Other amino acids [Fig],C05145  3-Aminoisobutyric acid,C05145,C4H9NO2
+329,Peptides,Amino acids,Other amino acids [Fig],C00133  D-Alanine,C00133,C3H7NO2
+330,Peptides,Amino acids,Other amino acids [Fig],C06417  D-Valine,C06417,C5H11NO2
+331,Peptides,Amino acids,Other amino acids [Fig],C01570  D-Leucine,C01570,C6H13NO2
+332,Peptides,Amino acids,Other amino acids [Fig],C06418  D-Isoleucine,C06418,C6H13NO2
+333,Peptides,Amino acids,Other amino acids [Fig],C00402  D-Aspartic acid,C00402,C4H7NO4
+334,Peptides,Amino acids,Other amino acids [Fig],C01905  D-Asparagine,C01905,C4H8N2O3
+335,Peptides,Amino acids,Other amino acids [Fig],C00217  D-Glutamic acid,C00217,C5H9NO4
+336,Peptides,Amino acids,Other amino acids [Fig],C00819  D-Glutamine,C00819,C5H10N2O3
+337,Peptides,Amino acids,Other amino acids [Fig],C00740  D-Serine,C00740,C3H7NO3
+338,Peptides,Amino acids,Other amino acids [Fig],C00820  D-Threonine,C00820,C4H9NO3
+339,Peptides,Amino acids,Other amino acids [Fig],C00855  D-Methionine,C00855,C5H11NO2S
+340,Peptides,Amino acids,Other amino acids [Fig],C00793  D-Cysteine,C00793,C3H7NO2S
+341,Peptides,Amino acids,Other amino acids [Fig],C00739  D-Lysine,C00739,C6H14N2O2
+342,Peptides,Amino acids,Other amino acids [Fig],C00792  D-Arginine,C00792,C6H14N4O2
+343,Peptides,Amino acids,Other amino acids [Fig],C06419  D-Histidine,C06419,C6H9N3O2
+344,Peptides,Amino acids,Other amino acids [Fig],C00763  D-Proline,C00763,C5H9NO2
+345,Peptides,Amino acids,Other amino acids [Fig],C02265  D-Phenylalanine,C02265,C9H11NO2
+346,Peptides,Amino acids,Other amino acids [Fig],C06420  D-Tyrosine,C06420,C9H11NO3
+347,Peptides,Amino acids,Other amino acids [Fig],C00525  D-Tryptophan,C00525,C11H12N2O2
+348,Peptides,Amino acids,Other amino acids [Fig],C01879  Pidolic acid,C01879,C5H7NO3
+349,Peptides,Amino acids,Other amino acids [Fig],C01157  Hydroxyproline,C01157,C5H9NO3
+350,Peptides,Amino acids,Other amino acids [Fig],C01420  Cystine,C01420,C6H12N2O4S2
+351,Peptides,Amino acids,Other amino acids [Fig],C03145  N-Formylmethionine,C03145,C6H11NO3S
+352,Peptides,Amines,Biogenic amines [Fig],C00189  Ethanolamine,C00189,C2H7NO
+353,Peptides,Amines,Biogenic amines [Fig],C01678  Cysteamine,C01678,C2H7NS
+354,Peptides,Amines,Biogenic amines [Fig],C03194  Aminopropanol,C03194,C3H9NO
+355,Peptides,Amines,Biogenic amines [Fig],C00099  beta-Alanine,C00099,C3H7NO2
+356,Peptides,Amines,Biogenic amines [Fig],C00334  gamma-Aminobutyric acid (GABA),C00334,C4H9NO2
+357,Peptides,Amines,Biogenic amines [Fig],C00134  Putrescine,C00134,C4H12N2
+358,Peptides,Amines,Biogenic amines [Fig],C00388  Histamine,C00388,C5H9N3
+359,Peptides,Amines,Biogenic amines [Fig],C03758  Dopamine,C03758,C8H11NO2
+360,Peptides,Amines,Biogenic amines [Fig],C00780  Serotonin,C00780,C10H12N2O
+361,Peptides,Amines,Biogenic amines [Fig],C00483  Tyramine,C00483,C8H11NO
+362,Peptides,Amines,Biogenic amines [Fig],C05332  Phenethylamine,C05332,C8H11N
+363,Peptides,Amines,Biogenic amines [Fig],C01137  S-Adenosylmethioninamine,C01137,C14H23N6O3S
+364,Vitamins and Cofactors,Vitamins,Fat-soluble vitamins [Fig],C00473  Retinol (Vitamin A),C00473,C20H30O
+365,Vitamins and Cofactors,Vitamins,Fat-soluble vitamins [Fig],C05441  Ergocalciferol (Vitamin D2),C05441,C28H44O
+366,Vitamins and Cofactors,Vitamins,Fat-soluble vitamins [Fig],C05443  Cholecalciferol (Vitamin D3),C05443,C27H44O
+367,Vitamins and Cofactors,Vitamins,Fat-soluble vitamins [Fig],C02477  alpha-Tocopherol (Vitamin E),C02477,C29H50O2
+368,Vitamins and Cofactors,Vitamins,Fat-soluble vitamins [Fig],C02059  Phylloquinone (Vitamin K1),C02059,C31H46O2
+369,Vitamins and Cofactors,Vitamins,Fat-soluble vitamins [Fig],C00828  Menaquinone (Vitamin K2),C00828,C16H16O2(C5H8)n
+370,Vitamins and Cofactors,Vitamins,Water-soluble vitamins [Fig],C00378  Thiamine (Vitamin B1),C00378,C12H17N4OS
+371,Vitamins and Cofactors,Vitamins,Water-soluble vitamins [Fig],C00255  Riboflavin (Vitamin B2),C00255,C17H20N4O6
+372,Vitamins and Cofactors,Vitamins,Water-soluble vitamins [Fig],C00253  Nicotinic acid (Vitamin B3),C00253,C6H5NO2
+373,Vitamins and Cofactors,Vitamins,Water-soluble vitamins [Fig],C00153  Nicotinamide (Vitamin B3),C00153,C6H6N2O
+374,Vitamins and Cofactors,Vitamins,Water-soluble vitamins [Fig],C00864  Pantothenic acid (Vitamin B5),C00864,C9H17NO5
+375,Vitamins and Cofactors,Vitamins,Water-soluble vitamins [Fig],C00250  Pyridoxal (Vitamin B6),C00250,C8H9NO3
+376,Vitamins and Cofactors,Vitamins,Water-soluble vitamins [Fig],C00314  Pyridoxine (Vitamin B6),C00314,C8H11NO3
+377,Vitamins and Cofactors,Vitamins,Water-soluble vitamins [Fig],C00534  Pyridoxamine (Vitamin B6),C00534,C8H12N2O2
+378,Vitamins and Cofactors,Vitamins,Water-soluble vitamins [Fig],C00504  Folic acid (Vitamin B9),C00504,C19H19N7O6
+379,Vitamins and Cofactors,Vitamins,Water-soluble vitamins [Fig],C05776  Cobalamin(III) (Vitamin B12),C05776,C62H88CoN13O14PR
+380,Vitamins and Cofactors,Vitamins,Water-soluble vitamins [Fig],C00072  Ascorbic acid (Vitamin C),C00072,C6H8O6
+381,Vitamins and Cofactors,Cofactors,Coenzymes [Fig],C00068  TPP,C00068,C12H19N4O7P2S
+382,Vitamins and Cofactors,Cofactors,Coenzymes [Fig],C00016  FAD,C00016,C27H33N9O15P2
+383,Vitamins and Cofactors,Cofactors,Coenzymes [Fig],C00061  FMN,C00061,C17H21N4O9P
+384,Vitamins and Cofactors,Cofactors,Coenzymes [Fig],C00003  NAD,C00003,C21H28N7O14P2
+385,Vitamins and Cofactors,Cofactors,Coenzymes [Fig],C00006  NADP,C00006,C21H29N7O17P3
+386,Vitamins and Cofactors,Cofactors,Coenzymes [Fig],C00010  CoA,C00010,C21H36N7O16P3S
+387,Vitamins and Cofactors,Cofactors,Coenzymes [Fig],C00018  PLP,C00018,C8H10NO6P
+388,Vitamins and Cofactors,Cofactors,Coenzymes [Fig],C00101  THF,C00101,C19H23N7O6
+389,Vitamins and Cofactors,Cofactors,Coenzymes [Fig],C00194  Cobamamide,C00194,C72H100CoN18O17P
+390,Vitamins and Cofactors,Cofactors,Coenzymes [Fig],C00002  ATP,C00002,C10H16N5O13P3
+391,Vitamins and Cofactors,Cofactors,Coenzymes [Fig],C00063  CTP,C00063,C9H16N3O14P3
+392,Vitamins and Cofactors,Cofactors,Coenzymes [Fig],C00019  SAM,C00019,C15H22N6O5S
+393,Vitamins and Cofactors,Cofactors,Coenzymes [Fig],C00029  UDP-glucose,C00029,C15H24N2O17P2
+394,Vitamins and Cofactors,Cofactors,Coenzymes [Fig],C04628  Coenzyme B,C04628,C11H22NO7PS
+395,Vitamins and Cofactors,Cofactors,Coenzymes [Fig],C05777  Coenzyme F430,C05777,C42H51N6NiO13
+396,Vitamins and Cofactors,Cofactors,Coenzymes [Fig],C03576  Coenzyme M,C03576,C2H6O3S2
+397,Vitamins and Cofactors,Cofactors,Coenzymes [Fig],C11378  Coenzyme Q10,C11378,C59H90O4
+398,Vitamins and Cofactors,Cofactors,Coenzymes [Fig],C00051  Glutathione,C00051,C10H17N3O6S
+399,Vitamins and Cofactors,Cofactors,Coenzymes [Fig],C00862  Methanofuran,C00862,C34H44N4O15
+400,Vitamins and Cofactors,Cofactors,Coenzymes [Fig],C00053  PAPS,C00053,C10H15N5O13P2S
+401,Vitamins and Cofactors,Cofactors,Coenzymes [Fig],C00272  Tetrahydrobiopterin,C00272,C9H15N5O3
+402,Vitamins and Cofactors,Cofactors,Coenzymes [Fig],"C01217  5,6,7,8-Tetrahydromethanopterin",C01217,C30H45N6O16P
+403,Vitamins and Cofactors,Cofactors,Coenzymes [Fig],C15670  Heme A,C15670,C49H56FeN4O6
+404,Vitamins and Cofactors,Cofactors,Coenzymes [Fig],C00032  Heme B,C00032,C34H32FeN4O4
+405,Vitamins and Cofactors,Cofactors,Coenzymes [Fig],C15672  Heme O,C15672,C49H58FeN4O5
+406,Vitamins and Cofactors,Cofactors,Coenzymes [Fig],C00120  Biotin,C00120,C10H16N2O3S
+407,Vitamins and Cofactors,Cofactors,Coenzymes [Fig],C00725  Lipoate,C00725,C8H14O2S2
+408,Vitamins and Cofactors,Cofactors,Coenzymes [Fig],C18237  Molybdenum cofactor,C18237,C10H12MoN5O8PS2
+409,Vitamins and Cofactors,Cofactors,Coenzymes [Fig],C00113  PQQ,C00113,C14H6N2O8
+410,Steroids,18-Carbon atoms,Estrane derivatives [Fig],C02537  Estradiol-17alpha,C02537,C18H24O2
+411,Steroids,18-Carbon atoms,Estrane derivatives [Fig],C00951  Estradiol-17beta,C00951,C18H24O2
+412,Steroids,18-Carbon atoms,Estrane derivatives [Fig],C05141  Estriol,C05141,C18H24O3
+413,Steroids,18-Carbon atoms,Estrane derivatives [Fig],C00468  Estrone,C00468,C18H22O2
+414,Steroids,18-Carbon atoms,Estrane derivatives [Fig],C14392  Equilin,C14392,C18H20O2
+415,Steroids,18-Carbon atoms,Estrane derivatives [Fig],C14303  Equilenin,C14303,C18H18O2
+416,Steroids,18-Carbon atoms,Estrane derivatives [Fig],C05301  2-Hydroxyestradiol,C05301,C18H24O3
+417,Steroids,18-Carbon atoms,Estrane derivatives [Fig],C03935  6beta-Hydroxyestradiol-17beta,C03935,C18H24O3
+418,Steroids,18-Carbon atoms,Estrane derivatives [Fig],C05302  2-Methoxyestradiol-17beta,C05302,C19H26O3
+419,Steroids,19-Carbon atoms,Androstane derivatives [Fig],C05285  Adrenosterone,C05285,C19H24O3
+420,Steroids,19-Carbon atoms,Androstane derivatives [Fig],C00523  Androsterone,C00523,C19H30O2
+421,Steroids,19-Carbon atoms,Androstane derivatives [Fig],"C03772  5beta-Androstane-3,17-dione",C03772,C19H28O2
+422,Steroids,19-Carbon atoms,Androstane derivatives [Fig],C07632  Androstanediol,C07632,C19H32O2
+423,Steroids,19-Carbon atoms,Androstane derivatives [Fig],C15638  3-Androstanol,C15638,C19H32O
+424,Steroids,19-Carbon atoms,Androstane derivatives [Fig],C04295  Androstenediol,C04295,C19H30O2
+425,Steroids,19-Carbon atoms,Androstane derivatives [Fig],C00280  Androstenedione,C00280,C19H26O2
+426,Steroids,19-Carbon atoms,Androstane derivatives [Fig],C14210  4-Androstenediol,C14210,C19H30O2
+427,Steroids,19-Carbon atoms,Androstane derivatives [Fig],C01227  Dehydroepiandrosterone,C01227,C19H28O2
+428,Steroids,19-Carbon atoms,Androstane derivatives [Fig],C03917  Dihydrotestosterone,C03917,C19H30O2
+429,Steroids,19-Carbon atoms,Androstane derivatives [Fig],C04373  Etiocholanolone,C04373,C19H30O2
+430,Steroids,19-Carbon atoms,Androstane derivatives [Fig],C00535  Testosterone,C00535,C19H28O2
+431,Steroids,21-Carbon atoms,Pregnane derivatives [Fig],C01953  Pregnenolone,C01953,C21H32O2
+432,Steroids,21-Carbon atoms,Pregnane derivatives [Fig],C00410  Progesterone,C00410,C21H30O2
+433,Steroids,21-Carbon atoms,Pregnane derivatives [Fig],C01780  Aldosterone,C01780,C21H28O5
+434,Steroids,21-Carbon atoms,Pregnane derivatives [Fig],C03205  11-Deoxycorticosterone,C03205,C21H30O3
+435,Steroids,21-Carbon atoms,Pregnane derivatives [Fig],C02140  Corticosterone,C02140,C21H30O4
+436,Steroids,21-Carbon atoms,Pregnane derivatives [Fig],C00735  Cortisol,C00735,C21H30O5
+437,Steroids,21-Carbon atoms,Pregnane derivatives [Fig],C00762  Cortisone,C00762,C21H28O5
+438,Steroids,23-Carbon atoms,Cardanolide derivatives [Fig],C08859  Cymarin,C08859,C30H44O9
+439,Steroids,23-Carbon atoms,Cardanolide derivatives [Fig],C08866  Gitoxin,C08866,C41H64O14
+440,Steroids,23-Carbon atoms,Cardanolide derivatives [Fig],C08876  Neriifolin,C08876,C30H46O8
+441,Steroids,23-Carbon atoms,Cardanolide derivatives [Fig],C06955  Digitoxin,C06955,C41H64O13
+442,Steroids,23-Carbon atoms,Cardanolide derivatives [Fig],C06956  Digoxin,C06956,C41H64O14
+443,Steroids,23-Carbon atoms,Cardanolide derivatives [Fig],C01443  Ouabain,C01443,C29H44O12
+444,Steroids,24-Carbon atoms,Cholane derivatives [Fig],C00695  Cholic acid,C00695,C24H40O5
+445,Steroids,24-Carbon atoms,Cholane derivatives [Fig],C02528  Chenodeoxycholate,C02528,C24H40O4
+446,Steroids,24-Carbon atoms,Cholane derivatives [Fig],C04483  Deoxycholic acid,C04483,C24H40O4
+447,Steroids,24-Carbon atoms,Cholane derivatives [Fig],C03990  Lithocholic acid,C03990,C24H40O3
+448,Steroids,24-Carbon atoms,Cholane derivatives [Fig],C07880  Ursodiol,C07880,C24H40O4
+449,Steroids,24-Carbon atoms,Cholane derivatives [Fig],C01921  Glycocholate,C01921,C26H43NO6
+450,Steroids,24-Carbon atoms,Cholane derivatives [Fig],C05122  Taurocholate,C05122,C26H45NO7S
+451,Steroids,24-Carbon atoms,Cholane derivatives [Fig],C15517  Hyodeoxycholate,C15517,C24H40O4
+452,Steroids,24-Carbon atoms,Cholane derivatives [Fig],C15515  Murideoxycholate,C15515,C24H40O4
+453,Steroids,24-Carbon atoms,Cholane derivatives [Fig],C03070  3-Oxo-5beta-cholanate,C03070,C24H38O3
+454,Steroids,24-Carbon atoms,Bufanolide derivatives [Fig],C08868  Hellebrin,C08868,C36H52O15
+455,Steroids,24-Carbon atoms,Bufanolide derivatives [Fig],C17058  Resibufogenin,C17058,C24H32O4
+456,Steroids,24-Carbon atoms,Bufanolide derivatives [Fig],C16922  Bufalin,C16922,C24H34O4
+457,Steroids,24-Carbon atoms,Bufanolide derivatives [Fig],C16923  Bufotalin,C16923,C26H36O6
+458,Steroids,24-Carbon atoms,Bufanolide derivatives [Fig],C16931  Cinobufagin,C16931,C26H34O6
+459,Steroids,24-Carbon atoms,Bufanolide derivatives [Fig],C16932  Cinobufotalin,C16932,C26H34O7
+460,Steroids,24-Carbon atoms,Bufanolide derivatives [Fig],C16962  Gamabufogenin,C16962,C24H34O5
+461,Steroids,24-Carbon atoms,Bufanolide derivatives [Fig],C16969  Hellebrigenin,C16969,C24H32O6
+462,Steroids,24-Carbon atoms,Bufanolide derivatives [Fig],C17072  Telocinobufagin,C17072,C24H34O5
+463,Steroids,24-Carbon atoms,Bufanolide derivatives [Fig],C12816  Proscillaridin,C12816,C30H42O8
+464,Steroids,24-Carbon atoms,Bufanolide derivatives [Fig],C19643  Scillarenin,C19643,C24H32O4
+465,Steroids,24-Carbon atoms,Bufanolide derivatives [Fig],C08880  Scilliroside,C08880,C32H44O12
+466,Steroids,27-Carbon atoms,Cholestane derivatives [Fig],C15337  Allocholesterol,C15337,C27H46O
+467,Steroids,27-Carbon atoms,Cholestane derivatives [Fig],C00187  Cholesterol,C00187,C27H46O
+468,Steroids,27-Carbon atoms,Cholestane derivatives [Fig],C01164  7-Dehydrocholesterol,C01164,C27H44O
+469,Steroids,27-Carbon atoms,Cholestane derivatives [Fig],C01802  Desmosterol,C01802,C27H44O
+470,Steroids,27-Carbon atoms,Cholestane derivatives [Fig],C00477  Ecdysone,C00477,C27H44O6
+471,Steroids,27-Carbon atoms,Spirostan derivatives [Fig],C08896  Digitogenin,C08896,C27H44O5
+472,Steroids,27-Carbon atoms,Spirostan derivatives [Fig],C08898  Diosgenin,C08898,C27H42O3
+473,Steroids,27-Carbon atoms,Spirostan derivatives [Fig],C08899  Gitogenin,C08899,C27H44O4
+474,Steroids,27-Carbon atoms,Spirostan derivatives [Fig],C03963  Sarsasapogenin,C03963,C27H44O3
+475,Steroids,27-Carbon atoms,Spirostan derivatives [Fig],C08913  Smilagenin,C08913,C27H44O3
+476,Steroids,27-Carbon atoms,Spirostan derivatives [Fig],C08914  Tigogenin,C08914,C27H44O3
+477,Steroids,27-Carbon atoms,Furostan derivatives [Fig],C04715  Nuatigenin,C04715,C27H42O4
+478,Steroids,27-Carbon atoms,Furostan derivatives [Fig],C19648  Pseudotigogenin,C19648,C27H44O3
+479,Steroids,27-Carbon atoms,Furostan derivatives [Fig],C19649  Pseudosarsasapogenin,C19649,C27H44O3
+480,Steroids,27-Carbon atoms,Furostan derivatives [Fig],C19650  Pseudosmilagenin,C19650,C27H44O3
+481,Steroids,28-Carbon atoms,Ergostane derivatives [Fig],C19651  Ergostanol,C19651,C28H50O
+482,Steroids,28-Carbon atoms,Ergostane derivatives [Fig],C19652  alpha-Ergostenol,C19652,C28H48O
+483,Steroids,28-Carbon atoms,Ergostane derivatives [Fig],C01694  Ergosterol,C01694,C28H44O
+484,Steroids,28-Carbon atoms,Ergostane derivatives [Fig],C19653  Lumisterol,C19653,C28H44O
+485,Steroids,28-Carbon atoms,Campestane derivatives [Fig],C08814  Brassinolide,C08814,C28H48O6
+486,Steroids,28-Carbon atoms,Campestane derivatives [Fig],C15787  Campestanol,C15787,C28H50O
+487,Steroids,28-Carbon atoms,Campestane derivatives [Fig],C01789  Campesterol,C01789,C28H48O
+488,Steroids,29-Carbon atoms,Stigmastane derivatives [Fig],C08817  Fucosterol,C08817,C29H48O
+489,Steroids,29-Carbon atoms,Stigmastane derivatives [Fig],C19644  Stigmastanol,C19644,C29H52O
+490,Steroids,29-Carbon atoms,Stigmastane derivatives [Fig],C05442  Stigmasterol,C05442,C29H48O
+491,Steroids,29-Carbon atoms,Poriferastane derivatives [Fig],C08836  Poriferasterol,C08836,C29H48O
+492,Steroids,29-Carbon atoms,Poriferastane derivatives [Fig],C19654  gamma-Sitosterol,C19654,C29H50O
+493,Steroids,30-Carbon atoms,Gorgostane derivatives [Fig],C19657  Acanthasterol,C19657,C30H50O
+494,Steroids,30-Carbon atoms,Gorgostane derivatives [Fig],C19655  Gorgosterol,C19655,C30H50O
+495,Steroids,30-Carbon atoms,Gorgostane derivatives [Fig],C19656  Sarcoaldesterol A,C19656,C30H52O4
+496,Hormones and transmitters,Peptide hormones,Prolactin-releasing peptide [KO:K05269],C16086  Prolactin-releasing peptide-31,C16086,
+497,Hormones and transmitters,Peptide hormones,Prolactin-releasing peptide [KO:K05269],C16087  Prolactin-releasing peptide-20,C16087,
+498,Hormones and transmitters,Peptide hormones,Thyrotropin-releasing hormone [KO:K05253],C03958  Thyrotropin-releasing hormone,C03958,C16H22N6O4
+499,Hormones and transmitters,Peptide hormones,Gonadotropin-releasing hormone [KO:K05252],C07607  Gonadotropin-releasing hormone I,C07607,C55H75N17O13
+500,Hormones and transmitters,Peptide hormones,Gonadotropin-releasing hormone [KO:K05252],C16084  Gonadotropin-releasing hormone II,C16084,
+501,Hormones and transmitters,Peptide hormones,Growth hormone-releasing hormone [KO:K05260],C16085  Growth hormone-releasing hormone (1-29),C16085,
+502,Hormones and transmitters,Peptide hormones,Somatostatin [KO:K05237],C16022  Somatostatin-14,C16022,
+503,Hormones and transmitters,Peptide hormones,Somatostatin [KO:K05237],C16021  Somatostatin-28,C16021,
+504,Hormones and transmitters,Peptide hormones,Corticotropin-releasing hormone [KO:K05256],C16079  Corticotropin releasing hormone,C16079,
+505,Hormones and transmitters,Peptide hormones,Gastrin-releasing peptide [KO:K05224],C16115  Gastrin-releasing peptide,C16115,
+506,Hormones and transmitters,Peptide hormones,Melanin-concentrating hormone [KO:K05229],C16030  Melanin-concentrating hormone,C16030,
+507,Hormones and transmitters,Peptide hormones,Oxytocin [KO:K05243],C00746  Oxytocin,C00746,C43H66N12O12S2
+508,Hormones and transmitters,Peptide hormones,Arginine vasopressin [KO:K05242],C13662  Arg-vasopressin,C13662,C46H65N15O12S2
+509,Hormones and transmitters,Peptide hormones,Melanotropin [KO:K05228],C02758  alpha-Melanotropin,C02758,
+510,Hormones and transmitters,Peptide hormones,Melanotropin [KO:K05228],C16136  beta-Melanotropin,C16136,
+511,Hormones and transmitters,Peptide hormones,Melanotropin [KO:K05228],C16137  gamma-Melanotropin,C16137,
+512,Hormones and transmitters,Peptide hormones,Corticotropin [KO:K05228],C02017  Corticotropin,C02017,
+513,Hormones and transmitters,Peptide hormones,Growth hormone [KO:K05438],C18181  Growth hormone,C18181,
+514,Hormones and transmitters,Peptide hormones,Prolactin [KO:K05439],C18201  Prolactin,C18201,
+515,Hormones and transmitters,Peptide hormones,Thyroid stimulating hormone [KO:K05251 K08522],C18182  Thyroid stimulating hormone,C18182,
+516,Hormones and transmitters,Peptide hormones,Luteinizing hormone [KO:K08521 K08522],C18183  Luteinizing hormone,C18183,
+517,Hormones and transmitters,Peptide hormones,Follicle stimulating hormone [KO:K05250 K08522],C18184  Follicle stimulating hormone,C18184,
+518,Hormones and transmitters,Peptide hormones,beta-Endorphin [KO:K05228],C02210  beta-Endorphin,C02210,
+519,Hormones and transmitters,Peptide hormones,Enkephalin [KO:K18832],C11684  Met-enkephalin,C11684,C27H35N5O7S
+520,Hormones and transmitters,Peptide hormones,Enkephalin [KO:K18832],C16041  Leu-enkephalin,C16041,
+521,Hormones and transmitters,Peptide hormones,Dynorphin [KO:K15840],C01574  Dynorphin A,C01574,
+522,Hormones and transmitters,Peptide hormones,Dynorphin [KO:K15840],C16135  Dynorphin B,C16135,
+523,Hormones and transmitters,Peptide hormones,Chorionic gonadotropin [KO:K10045 K08522],C18185  Chorionic gonadotropin,C18185,
+524,Hormones and transmitters,Peptide hormones,Calcitonin [KO:K12332],C06865  Calcitonin,C06865,C145H240N44O48S2
+525,Hormones and transmitters,Peptide hormones,Parathyroid hormone [KO:K05261],C16051  Parathyroid hormone,C16051,
+526,Hormones and transmitters,Peptide hormones,Atrial natriuretic peptide [KO:K12334],C16003  Atrial natriuretic peptide,C16003,
+527,Hormones and transmitters,Peptide hormones,Brain natriuretic peptide [KO:K12335],C16004  Brain natriuretic peptide,C16004,
+528,Hormones and transmitters,Peptide hormones,C-Type natriuretic peptide [KO:K12336],C16005  C-Type natriuretic peptide,C16005,
+529,Hormones and transmitters,Peptide hormones,Endothelin [KO:K05227],C16010  Endothelin-1,C16010,
+530,Hormones and transmitters,Peptide hormones,Endothelin [KO:K05227],C16012  Endothelin-2,C16012,
+531,Hormones and transmitters,Peptide hormones,Endothelin [KO:K05227],C16013  Endothelin-3,C16013,
+532,Hormones and transmitters,Peptide hormones,Glucagon [KO:K05259],C01501  Glucagon,C01501,C153H225N43O49S
+533,Hormones and transmitters,Peptide hormones,Insulin [KO:K04526],C00723  Insulin,C00723,
+534,Hormones and transmitters,Peptide hormones,Amylin [KO:K08039],C16130  Amylin,C16130,
+535,Hormones and transmitters,Peptide hormones,Peptide YY [KO:K05233],C16118  Peptide YY,C16118,
+536,Hormones and transmitters,Peptide hormones,Gastrin [KO:K13768],C18186  Gastrin-14,C18186,
+537,Hormones and transmitters,Peptide hormones,Gastrin [KO:K13768],C16113  Gastrin-17,C16113,
+538,Hormones and transmitters,Peptide hormones,Gastrin [KO:K13768],C18187  Gastrin-34,C18187,
+539,Hormones and transmitters,Peptide hormones,Ghrelin [KO:K05254],C16025  Ghrelin,C16025,
+540,Hormones and transmitters,Peptide hormones,Cholecystokinin [KO:K05226],C16114  Cholecystokinin-8,C16114,
+541,Hormones and transmitters,Peptide hormones,Cholecystokinin [KO:K05226],C16133  Cholecystokinin-33,C16133,
+542,Hormones and transmitters,Peptide hormones,Incretin [KO:K05258 K05259],C15906  Gastric inhibitory peptide,C15906,
+543,Hormones and transmitters,Peptide hormones,Incretin [KO:K05258 K05259],C16048  Glucagon-like peptide 1,C16048,
+544,Hormones and transmitters,Peptide hormones,Motilin [KO:K05265],C16047  Motilin,C16047,
+545,Hormones and transmitters,Peptide hormones,Secretin [KO:K05263],C13523  Secretin,C13523,C128H216N44O38(R1)(R2)
+546,Hormones and transmitters,Peptide hormones,Thymosin alpha [KO:K13784],C16065  Thymosin alpha-1,C16065,
+547,Hormones and transmitters,Peptide hormones,Thymosin beta-4 [KO:K05764],C16066  Thymosin beta-4,C16066,
+548,Hormones and transmitters,Peptide hormones,Thymosin beta-10 [KO:K13785],C16067  Thymosin beta-10,C16067,
+549,Hormones and transmitters,Peptide hormones,Insulin-like growth factor 1 [KO:K05459],C16131  Insulin-like growth factor I,C16131,
+550,Hormones and transmitters,Peptide hormones,Insulin-like growth factor 2 [KO:K13769],C16132  Insulin-like growth factor II,C16132,
+551,Hormones and transmitters,Peptide hormones,Erythropoietin [KO:K05437],C18200  Erythropoietin,C18200,
+552,Hormones and transmitters,Peptide hormones,Angiotensin [KO:K09821],C00873  Angiotensin I,C00873,C62H89N17O14
+553,Hormones and transmitters,Peptide hormones,Angiotensin [KO:K09821],C02135  Angiotensin II,C02135,C50H71N13O12
+554,Hormones and transmitters,Peptide hormones,Angiotensin [KO:K09821],C15848  Angiotensin III,C15848,C46H66N12O9
+555,Hormones and transmitters,Peptide hormones,Angiotensin [KO:K09821],C15849  Angiotensin IV,C15849,C40H54N8O8
+556,Hormones and transmitters,Peptide hormones,Bradykinin [KO:K03898],C00306  Bradykinin,C00306,C50H73N15O11
+557,Hormones and transmitters,Peptide hormones,Leptin [KO:K05424],C18188  Leptin,C18188,
+558,Hormones and transmitters,Peptide hormones,Adiponectin [KO:K07296],C18189  Adiponectin,C18189,
+559,Hormones and transmitters,Peptide hormones,Resistin [KO:K13438],C18190  Resistin,C18190,
+560,Hormones and transmitters,Steroid hormones,Androgens,C00280  Androstenedione,C00280,C19H26O2
+561,Hormones and transmitters,Steroid hormones,Androgens,C05291  7alpha-Hydroxytestosterone,C05291,C19H28O3
+562,Hormones and transmitters,Steroid hormones,Androgens,C00535  Testosterone,C00535,C19H28O2
+563,Hormones and transmitters,Steroid hormones,Androgens,C01227  Dehydroepiandrosterone,C01227,C19H28O2
+564,Hormones and transmitters,Steroid hormones,Androgens,C03917  Dihydrotestosterone,C03917,C19H30O2
+565,Hormones and transmitters,Steroid hormones,Androgens,C04555  Dehydroepiandrosterone sulfate,C04555,C19H28O5S
+566,Hormones and transmitters,Steroid hormones,Androgens,C05294  19-Hydroxytestosterone,C05294,C19H28O3
+567,Hormones and transmitters,Steroid hormones,Estrogens,C00468  Estrone,C00468,C18H22O2
+568,Hormones and transmitters,Steroid hormones,Estrogens,C00951  Estradiol-17beta,C00951,C18H24O2
+569,Hormones and transmitters,Steroid hormones,Estrogens,C02538  Estrone 3-sulfate,C02538,C18H22O5S
+570,Hormones and transmitters,Steroid hormones,Estrogens,C05141  Estriol,C05141,C18H24O3
+571,Hormones and transmitters,Steroid hormones,Estrogens,C05300  16alpha-Hydroxyestrone,C05300,C18H22O3
+572,Hormones and transmitters,Steroid hormones,Progestagens,C00410  Progesterone,C00410,C21H30O2
+573,Hormones and transmitters,Steroid hormones,Progestagens,C01176  17alpha-Hydroxyprogesterone,C01176,C21H30O3
+574,Hormones and transmitters,Steroid hormones,Progestagens,C01953  Pregnenolone,C01953,C21H32O2
+575,Hormones and transmitters,Steroid hormones,Progestagens,C05138  17alpha-Hydroxypregnenolone,C05138,C21H32O3
+576,Hormones and transmitters,Steroid hormones,Glucocorticoids,C00735  Cortisol,C00735,C21H30O5
+577,Hormones and transmitters,Steroid hormones,Glucocorticoids,C00762  Cortisone,C00762,C21H28O5
+578,Hormones and transmitters,Steroid hormones,Glucocorticoids,C05488  11-Deoxycortisol,C05488,C21H30O4
+579,Hormones and transmitters,Steroid hormones,Glucocorticoids,C05470  Tetrahydrocortisone,C05470,C21H32O5
+580,Hormones and transmitters,Steroid hormones,Glucocorticoids,C05497  21-Deoxycortisol,C05497,C21H30O4
+581,Hormones and transmitters,Steroid hormones,Mineralocorticoids,C01124  18-Hydroxycorticosterone,C01124,C21H30O5
+582,Hormones and transmitters,Steroid hormones,Mineralocorticoids,C01780  Aldosterone,C01780,C21H28O5
+583,Hormones and transmitters,Steroid hormones,Mineralocorticoids,C02140  Corticosterone,C02140,C21H30O4
+584,Hormones and transmitters,Steroid hormones,Mineralocorticoids,C03205  11-Deoxycorticosterone,C03205,C21H30O3
+585,Hormones and transmitters,Steroid hormones,Mineralocorticoids,C05490  11-Dehydrocorticosterone,C05490,C21H28O4
+586,Hormones and transmitters,Steroid hormones,Others,C01673  Calcitriol (Vitamin D),C01673,C27H44O3
+587,Hormones and transmitters,Steroid hormones,Others,C00477  Ecdysone,C00477,C27H44O6
+588,Hormones and transmitters,Other hormones,Melatonin,C01598  Melatonin,C01598,C13H16N2O2
+589,Hormones and transmitters,Other hormones,Thyroid hormones,C01829  Thyroxine,C01829,C15H11I4NO4
+590,Hormones and transmitters,Other hormones,Thyroid hormones,C02465  Triiodothyronine,C02465,C15H12I3NO4
+591,Hormones and transmitters,Other hormones,Adrenalines,C00788  Adrenaline,C00788,C9H13NO3
+592,Hormones and transmitters,Other hormones,Adrenalines,C00547  Noradrenaline,C00547,C8H11NO3
+593,Hormones and transmitters,Other hormones,Dopamine,C03758  Dopamine,C03758,C8H11NO2
+594,Hormones and transmitters,Other hormones,Histamine,C00388  Histamine,C00388,C5H9N3
+595,Hormones and transmitters,Neurotransmitters [Fig],Acetylcholine,C01996  Acetylcholine,C01996,C7H16NO2
+596,Hormones and transmitters,Neurotransmitters [Fig],Amino acids,C00037  Glycine,C00037,C2H5NO2
+597,Hormones and transmitters,Neurotransmitters [Fig],Amino acids,C00049  Aspartate,C00049,C4H7NO4
+598,Hormones and transmitters,Neurotransmitters [Fig],Amino acids,C00025  Glutamate,C00025,C5H9NO4
+599,Hormones and transmitters,Neurotransmitters [Fig],Amino acids,C00334  GABA,C00334,C4H9NO2
+600,Hormones and transmitters,Neurotransmitters [Fig],Amino acids,C00355  Dopa,C00355,C9H11NO4
+601,Hormones and transmitters,Neurotransmitters [Fig],Amino acids,C01829  Thyroxine,C01829,C15H11I4NO4
+602,Hormones and transmitters,Neurotransmitters [Fig],Biogenic amines,C03758  Dopamine,C03758,C8H11NO2
+603,Hormones and transmitters,Neurotransmitters [Fig],Biogenic amines,C00788  Epinephrine; Adrenaline,C00788,C9H13NO3
+604,Hormones and transmitters,Neurotransmitters [Fig],Biogenic amines,C00547  Norepinephrine; Noradrenaline,C00547,C8H11NO3
+605,Hormones and transmitters,Neurotransmitters [Fig],Biogenic amines,C00780  Serotonin,C00780,C10H12N2O
+606,Hormones and transmitters,Neurotransmitters [Fig],Biogenic amines,C00388  Histamine,C00388,C5H9N3
+607,Antibiotics,beta-Lactams [Fig],Penams,C05551  Penicillin G,C05551,C16H18N2O4S
+608,Antibiotics,beta-Lactams [Fig],Penams,C06574  Ampicillin,C06574,C16H19N3O4S
+609,Antibiotics,beta-Lactams [Fig],Cephems,C00916  Cephalosporin C,C00916,C16H21N3O8S
+610,Antibiotics,beta-Lactams [Fig],Cephems,C06566  Cephamycin C,C06566,C16H22N4O9S
+611,Antibiotics,beta-Lactams [Fig],Cephems,C06880  Cefazolin,C06880,C14H14N8O4S3
+612,Antibiotics,beta-Lactams [Fig],Cephems,C06683  Ceftriaxone,C06683,C18H18N8O7S3
+613,Antibiotics,beta-Lactams [Fig],Clavams,C06662  Clavulanic acid,C06662,C8H9NO5
+614,Antibiotics,beta-Lactams [Fig],Carbapenems,C06664  Thienamycin,C06664,C11H16N2O4S
+615,Antibiotics,beta-Lactams [Fig],Carbapenems,C06665  Imipenem,C06665,C12H17N3O4S
+616,Antibiotics,beta-Lactams [Fig],Monobactams,C01941  Nocardicin A,C01941,C23H24N4O9
+617,Antibiotics,beta-Lactams [Fig],Monobactams,C06840  Aztreonam,C06840,C13H17N5O8S2
+618,Antibiotics,Aminoglycosides [Fig],Streptidines,C00413  Streptomycin,C00413,C21H39N7O12
+619,Antibiotics,Aminoglycosides [Fig],Actinamines,C02078  Spectinomycin,C02078,C14H24N2O7
+620,Antibiotics,Aminoglycosides [Fig],2-Deoxystreptamines,C00304  Kanamycin,C00304,C18H33N3O10(R1)(R2)
+621,Antibiotics,Aminoglycosides [Fig],2-Deoxystreptamines,C01918  Gentamicin C,C01918,C19H37N5O7(R1)(R2)
+622,Antibiotics,Aminoglycosides [Fig],2-Deoxystreptamines,C01737  Neomycin B,C01737,C23H46N6O13
+623,Antibiotics,Aminoglycosides [Fig],2-Deoxystreptamines,C17585  Butirosin A,C17585,C21H41N5O12
+624,Antibiotics,Polyketides and nonribosomal peptides [Fig],Macrolides,C01912  Erythromycin,C01912,C37H67NO13
+625,Antibiotics,Polyketides and nonribosomal peptides [Fig],Macrolides,C01946  Oleandomycin,C01946,C35H61NO12
+626,Antibiotics,Polyketides and nonribosomal peptides [Fig],Macrolides,C01457  Tylosin,C01457,C46H77NO17
+627,Antibiotics,Polyketides and nonribosomal peptides [Fig],Macrolides,C06690  Candicidin D,C06690,C59H84N2O18
+628,Antibiotics,Polyketides and nonribosomal peptides [Fig],Ansamycins,C11222  Geldanamycin,C11222,C29H40N2O9
+629,Antibiotics,Polyketides and nonribosomal peptides [Fig],Ansamycins,C12247  Rifamycin W,C12247,C35H45NO11
+630,Antibiotics,Polyketides and nonribosomal peptides [Fig],Ansamycins,C06688  Rifampicin,C06688,C43H58N4O12
+631,Antibiotics,Polyketides and nonribosomal peptides [Fig],Tetracyclines,C06570  Tetracycline,C06570,C22H24N2O8
+632,Antibiotics,Polyketides and nonribosomal peptides [Fig],Tetracyclines,C06571  Chlortetracycline,C06571,C22H23ClN2O8
+633,Antibiotics,Polyketides and nonribosomal peptides [Fig],Other polyketides,C01661  Adriamycin,C01661,C27H29NO11
+634,Antibiotics,Polyketides and nonribosomal peptides [Fig],Other polyketides,C06691  Actinorhodine,C06691,C32H26O14
+635,Antibiotics,Polyketides and nonribosomal peptides [Fig],Other polyketides,C06764  Tetranactin,C06764,C44H72O12
+636,Antibiotics,Polyketides and nonribosomal peptides [Fig],Other polyketides,C06693  Monensin,C06693,C36H62O11
+637,Antibiotics,Polyketides and nonribosomal peptides [Fig],Other polyketides,C06686  Griseofulvin,C06686,C17H17ClO6
+638,Antibiotics,Polyketides and nonribosomal peptides [Fig],Non-ribosomal peptides,C06689  Vancomycin,C06689,C66H75Cl2N9O24
+639,Antibiotics,Polyketides and nonribosomal peptides [Fig],Non-ribosomal peptides,C12046  Teicoplanin A2-2,C12046,C88H97Cl2N9O33
+640,Antibiotics,Polyketides and nonribosomal peptides [Fig],Non-ribosomal peptides,C01895  Bleomycin B2,C01895,C55H84N20O21S2
+641,Antibiotics,Polyketides and nonribosomal peptides [Fig],Non-ribosomal peptides,C15482  Bacitracin A,C15482,C66H103N17O16S
+642,Antibiotics,Polyketides and nonribosomal peptides [Fig],Non-ribosomal peptides,C06684  Valinomycin,C06684,C54H90N6O18
+643,Antibiotics,Polyketides and nonribosomal peptides [Fig],Non-ribosomal peptides,C11612  Polymyxin B,C11612,C55H95N16O13R
+644,Antibiotics,Polyketides and nonribosomal peptides [Fig],Non-ribosomal peptides,C06770  Actinomycin D,C06770,C62H86N12O16
+645,Antibiotics,Quinolones [Fig],4-Quinolones,C05079  Nalidixic acid,C05079,C12H12N2O3
+646,Antibiotics,Quinolones [Fig],Fluoroquinolones,C06687  Norfloxacin,C06687,C16H18FN3O3
+647,Antibiotics,Others [Fig],Pure sugars,C06763  Nojirimycin,C06763,C6H13NO5
+648,Antibiotics,Others [Fig],Glycolipids,C06765  Flavomycin,C06765,C69H107N4O35P
+649,Antibiotics,Others [Fig],Amino acid derivatives,C06682  Cycloserine,C06682,C3H6N2O2
+650,Antibiotics,Others [Fig],Peptide nucleosides,C06692  Polyoxin B,C06692,C17H25N5O13
+651,Antibiotics,Others [Fig],Cycloalkane derivatives,C06685  Cycloheximide,C06685,C15H23NO4
+652,Antibiotics,Others [Fig],Steroids,C06694  Fusidic acid,C06694,C31H48O6
+653,Antibiotics,Others [Fig],Aromatic compounds,C00918  Chloramphenicol,C00918,C11H12Cl2N2O5
+654,Antibiotics,Others [Fig],Aromatic compounds,C05080  Novobiocin,C05080,C31H36N2O11
+655,Antibiotics,Others [Fig],Aliphatic compounds,C06454  Fosfomycin,C06454,C3H7O4P
+656,Antibiotics,Others [Fig],Quinones,C06681  Mitomycin,C06681,C15H18N4O5
+657,Antibiotics,Others [Fig],Cyclic lactones,C06695  2-Oxazolidinone,C06695,C3H5NO2
+0,FA  Fatty acyls,FA01 Fatty Acids and Conjugates,FA0117 Dicarboxylic acids,C00489  Pentanedioic acid,C00489,C5H8O4
+1,FA  Fatty acyls,FA01 Fatty Acids and Conjugates,FA0117 Dicarboxylic acids,C02656  Heptanedioic acid,C02656,C7H12O4
+2,FA  Fatty acyls,FA01 Fatty Acids and Conjugates,FA0117 Dicarboxylic acids,C02678  Dodecanedioic acid,C02678,C12H22O4
+3,FA  Fatty acyls,FA01 Fatty Acids and Conjugates,FA0117 Dicarboxylic acids,C03981  2-Hydroxybut-2-enedioic acid,C03981,C4H4O5
+4,FA  Fatty acyls,FA01 Fatty Acids and Conjugates,FA0117 Dicarboxylic acids,C05601  4-Hydroxy-2-oxoheptanedioic acid,C05601,C7H10O6
+5,FA  Fatty acyls,FA01 Fatty Acids and Conjugates,FA0117 Dicarboxylic acids,"C06201  2,4-Dihydroxyhept-2-enedioc acid",C06201,C7H10O6
+6,FA  Fatty acyls,FA01 Fatty Acids and Conjugates,FA0117 Dicarboxylic acids,C08261  Nonanedioic acid,C08261,C9H16O4
+7,FA  Fatty acyls,FA01 Fatty Acids and Conjugates,FA0117 Dicarboxylic acids,C08277  Decanedioic acid,C08277,C10H18O4
+8,FA  Fatty acyls,FA01 Fatty Acids and Conjugates,FA0117 Dicarboxylic acids,C08278  Octanedioic acid,C08278,C8H14O4
+9,FA  Fatty acyls,FA02 Octadecanoids,FA0200 Other Octadecanoids,"C13791  (6R,7S)-6,7-Epoxyoctadecanoic acid",C13791,C18H34O3
+10,FA  Fatty acyls,FA02 Octadecanoids,FA0200 Other Octadecanoids,"C14836  9,10-12,13-Diepoxyoctadecanoic acid",C14836,C18H32O4
+11,FA  Fatty acyls,FA02 Octadecanoids,FA0200 Other Octadecanoids,"C14834  (11E)-9,10-Epoxyoctadecenoic acid",C14834,C18H32O4
+12,FA  Fatty acyls,FA02 Octadecanoids,FA0200 Other Octadecanoids,"C14825  (9R,10S)-(12Z)-9,10-Epoxyoctadecenoic acid",C14825,C18H32O3
+13,FA  Fatty acyls,FA02 Octadecanoids,FA0200 Other Octadecanoids,"C14826  (12R,13S)-(9Z)-12,13-Epoxyoctadecenoic acid",C14826,C18H32O3
+14,FA  Fatty acyls,FA02 Octadecanoids,FA0200 Other Octadecanoids,"C16324  (9S)-(10E,12Z,15Z)-9,10-Epoxyoctadecatri-10,12,15-enoic acid",C16324,C18H28O3
+15,FA  Fatty acyls,FA02 Octadecanoids,FA0200 Other Octadecanoids,"C14832  (10E)-(9S,12R,13S)-12,13-Epoxy-9-hydroxyoctadec-10-enoic acid",C14832,C18H32O4
+16,FA  Fatty acyls,FA02 Octadecanoids,FA0200 Other Octadecanoids,"C14837  9,10-Dihydroxy-12,13-epoxyoctadecanoic acid",C14837,C18H34O5
+17,FA  Fatty acyls,FA02 Octadecanoids,FA0200 Other Octadecanoids,"C14831  (9Z,12Z)-(8R)-8-Hydroperoxyoctadeca-9,12-dienoic acid",C14831,C18H32O4
+18,FA  Fatty acyls,FA02 Octadecanoids,FA0200 Other Octadecanoids,"C14827  (10E,12Z)-(9S)-9-Hydroperoxyoctadeca-10,12-dienoic acid",C14827,C18H32O4
+19,FA  Fatty acyls,FA02 Octadecanoids,FA0200 Other Octadecanoids,"C16341  (2R)-(9Z,12Z,15Z)-2-Hydroperoxyoctadecatri-9,12,15-enoic acid",C16341,C18H30O4
+20,FA  Fatty acyls,FA02 Octadecanoids,FA0200 Other Octadecanoids,"C16321  (10E,12Z,15Z)-(9S)-9-Hydroperoxyoctadeca-10,12,15-trienoic acid",C16321,C18H30O4
+21,FA  Fatty acyls,FA02 Octadecanoids,FA0200 Other Octadecanoids,"C14762  (9Z, 11E)-(13S)-13-Hydroxyoctadeca-9,11-dienoic acid",C14762,C18H32O3
+22,FA  Fatty acyls,FA02 Octadecanoids,FA0200 Other Octadecanoids,"C14767  (10E,12Z)-(9S)-9-Hydroxyoctadeca-10,12-dienoic acid",C14767,C18H32O3
+23,FA  Fatty acyls,FA02 Octadecanoids,FA0200 Other Octadecanoids,"C16342  (2R)-(9Z,12Z,15Z)-2-Hydroxyoctadecatri-9,12,15-enoic acid",C16342,C18H30O3
+24,FA  Fatty acyls,FA02 Octadecanoids,FA0200 Other Octadecanoids,"C16326  (9S)-(10E,12Z,15Z)-9-Hydroxyoctadecatri-10,12,15-enoic acid",C16326,C18H30O3
+25,FA  Fatty acyls,FA02 Octadecanoids,FA0200 Other Octadecanoids,"C16316  (9Z,11E,14Z)-(13S)-13-Hydroxyoctadeca-9,11,14-trienoic acid",C16316,C18H30O3
+26,FA  Fatty acyls,FA02 Octadecanoids,FA0200 Other Octadecanoids,"C16346  (9Z,12Z,15Z)-17-Hydroxyoctadecatri-9,12,15-enoic acid",C16346,C18H30O3
+27,FA  Fatty acyls,FA02 Octadecanoids,FA0200 Other Octadecanoids,"C15988  (9S,10S)-9,10-Dihydroxyoctadecanoic acid",C15988,C18H36O4
+28,FA  Fatty acyls,FA02 Octadecanoids,FA0200 Other Octadecanoids,"C14833  (10E)-(9S,12S,13S)-9,12,13-Trihydroxyoctadec-10-enoic acid",C14833,C18H34O5
+29,FA  Fatty acyls,FA02 Octadecanoids,FA0200 Other Octadecanoids,"C14835  (11E)-9,10,13-Trihydroxyoctadec-11-enoic acid",C14835,C18H34O5
+30,FA  Fatty acyls,FA02 Octadecanoids,FA0200 Other Octadecanoids,"C14765  (9Z,11E)-13-Oxooctadeca-9,11-dienoic acid",C14765,C18H30O3
+31,FA  Fatty acyls,FA02 Octadecanoids,FA0200 Other Octadecanoids,"C14766  (10E,12Z)-9-Oxooctadeca-10,12-dienoic acid",C14766,C18H30O3
+32,FA  Fatty acyls,FA02 Octadecanoids,FA0200 Other Octadecanoids,"C16325  (11Z,15Z)-10-Oxo-11,15-phytodienoic acid",C16325,C18H28O3
+33,FA  Fatty acyls,FA03 Eicosanoids,FA0300 Other Eicosanoids,"C13843  17R,18S-Epoxy-5Z,8Z,11Z,14Z-icosatetraenoic acid",C13843,C20H30O3
+34,FA  Fatty acyls,FA07 Fatty esters,FA0708 Fatty acyl adenylates,C13825  O-Hexanoyl-adnosine monophosphate,C13825,C16H24N5O8P
+35,FA  Fatty acyls,FA08 Fatty amides,FA0804 N-acyl ethanolamines (endocannabinoids),"C11695  N-(5Z,8Z,11Z,14Z-Eicosatetraenoyl)-ethanolamine",C11695,C22H37NO2
+36,FA  Fatty acyls,FA08 Fatty amides,FA0804 N-acyl ethanolamines (endocannabinoids),"C13828  N-(8Z,11Z,14Z-Eicosatrienoyl)-ethanolamine",C13828,C22H39NO2
+37,FA  Fatty acyls,FA08 Fatty amides,FA0804 N-acyl ethanolamines (endocannabinoids),"C13829  N-(7Z,10Z,13Z,16Z-docosatetraenoyl)-ethanolamine",C13829,C24H41NO2
+38,GL  Glycerolipids,GL03 Triradylglycerols,GL0305 Estolides,"C13867  1,2-Di-(9Z,12Z,15Z-octadecatrienoyl)-3-(8-(2E,4Z-decadienoyloxy)-5,6-octadienoyl)-sn-glycerol",C13867,C57H88O8
+39,GP  Glycerophospholipids,GP20 Oxidized glycerophospholipids,GP2002 Oxidized glycerophosphoethanolamines,"C21482  1-Octadecanoyl-2-(15S-hydroxy-5Z,8Z,11Z,13E-eicosatetraenoyl)-sn-glycero-3-phosphoethanolamine",C21482,C43H78NO9P
+40,GP  Glycerophospholipids,GP00 Other,,"C21482  1-Octadecanoyl-2-(15S-hydroxy-5Z,8Z,11Z,13E-eicosatetraenoyl)-sn-glycero-3-phosphoethanolamine",C21482,C43H78NO9P
+41,SP  Sphingolipids,SP01 Sphingoid bases,SP0108 Sphingoid base analogs,C01747  Psychosine,C01747,C24H47NO7
+42,SP  Sphingolipids,SP01 Sphingoid bases,SP0108 Sphingoid base analogs,C03858  D-Glucosyldihydrosphingosine,C03858,C24H49NO7
+43,SP  Sphingolipids,SP02 Ceramides,SP0205 Ceramide 1-phosphates,C02960  Ceramide 1-phosphate,C02960,C19H37NO6PR
+44,ST  Sterol lipids,ST01 Sterols,ST0115 Solanidines and alkaloid derivatives,C10826  Tomatidine,C10826,C27H45NO2
+45,ST  Sterol lipids,ST01 Sterols,ST0115 Solanidines and alkaloid derivatives,C10822  Solasodine,C10822,C27H43NO2
+46,ST  Sterol lipids,ST01 Sterols,ST0115 Solanidines and alkaloid derivatives,C06543  Solanidine,C06543,C27H43NO
+47,ST  Sterol lipids,ST01 Sterols,ST0115 Solanidines and alkaloid derivatives,C10827  Tomatine,C10827,C50H83NO21
+48,ST  Sterol lipids,ST02 Steroids,"ST0203 C21 steroids (gluco/mineralocorticoids, progestogens) and derivatives",C00735  Cortisol,C00735,C21H30O5
+49,ST  Sterol lipids,ST02 Steroids,"ST0203 C21 steroids (gluco/mineralocorticoids, progestogens) and derivatives",C00762  Cortisone,C00762,C21H28O5
+50,ST  Sterol lipids,ST02 Steroids,"ST0203 C21 steroids (gluco/mineralocorticoids, progestogens) and derivatives",C01124  18-Hydroxycorticosterone,C01124,C21H30O5
+51,ST  Sterol lipids,ST02 Steroids,"ST0203 C21 steroids (gluco/mineralocorticoids, progestogens) and derivatives",C02140  Corticosterone,C02140,C21H30O4
+52,ST  Sterol lipids,ST02 Steroids,"ST0203 C21 steroids (gluco/mineralocorticoids, progestogens) and derivatives",C02821  Cortisol 21-acetate,C02821,C23H32O6
+53,ST  Sterol lipids,ST02 Steroids,"ST0203 C21 steroids (gluco/mineralocorticoids, progestogens) and derivatives",C02822  Cortisol 21-sulfate,C02822,C21H30O8S
+54,ST  Sterol lipids,ST02 Steroids,"ST0203 C21 steroids (gluco/mineralocorticoids, progestogens) and derivatives",C03205  11-Deoxycorticosterone,C03205,C21H30O3
+55,ST  Sterol lipids,ST02 Steroids,"ST0203 C21 steroids (gluco/mineralocorticoids, progestogens) and derivatives","C05469  4,5beta-Dihydrocortisone",C05469,C21H30O5
+56,ST  Sterol lipids,ST02 Steroids,"ST0203 C21 steroids (gluco/mineralocorticoids, progestogens) and derivatives","C03588  4,5alpha-Dihydrocortisone",C03588,C21H30O5
+57,ST  Sterol lipids,ST02 Steroids,"ST0203 C21 steroids (gluco/mineralocorticoids, progestogens) and derivatives",C05028  Norethindrone,C05028,C20H26O2
+58,ST  Sterol lipids,ST02 Steroids,"ST0203 C21 steroids (gluco/mineralocorticoids, progestogens) and derivatives",C05470  Urocortisone,C05470,C21H32O5
+59,ST  Sterol lipids,ST02 Steroids,"ST0203 C21 steroids (gluco/mineralocorticoids, progestogens) and derivatives",C05472  Urocortisol,C05472,C21H34O5
+60,ST  Sterol lipids,ST02 Steroids,"ST0203 C21 steroids (gluco/mineralocorticoids, progestogens) and derivatives",C05476  Tetrahydrocorticosterone,C05476,C21H34O4
+61,ST  Sterol lipids,ST02 Steroids,"ST0203 C21 steroids (gluco/mineralocorticoids, progestogens) and derivatives",C05488  11-Deoxycortisol,C05488,C21H30O4
+62,ST  Sterol lipids,ST02 Steroids,"ST0203 C21 steroids (gluco/mineralocorticoids, progestogens) and derivatives",C05490  11-Dehydrocorticosterone,C05490,C21H28O4
+63,ST  Sterol lipids,ST02 Steroids,"ST0203 C21 steroids (gluco/mineralocorticoids, progestogens) and derivatives",C05497  21-Deoxycortisol,C05497,C21H30O4
+64,ST  Sterol lipids,ST02 Steroids,"ST0203 C21 steroids (gluco/mineralocorticoids, progestogens) and derivatives",C07004  Fludrocortisone,C07004,C21H29FO5
+65,ST  Sterol lipids,ST02 Steroids,"ST0203 C21 steroids (gluco/mineralocorticoids, progestogens) and derivatives",D00328  Flurandrenolide,D00328,C24H33FO6
+66,ST  Sterol lipids,ST02 Steroids,"ST0203 C21 steroids (gluco/mineralocorticoids, progestogens) and derivatives",C07629  Desogestrel,C07629,C22H30O
+67,ST  Sterol lipids,ST02 Steroids,"ST0203 C21 steroids (gluco/mineralocorticoids, progestogens) and derivatives",C08149  Levonorgestrel,C08149,C21H28O2
+68,ST  Sterol lipids,ST02 Steroids,"ST0203 C21 steroids (gluco/mineralocorticoids, progestogens) and derivatives",C08151  Megestrol acetate,C08151,C24H32O4
+69,ST  Sterol lipids,ST02 Steroids,"ST0203 C21 steroids (gluco/mineralocorticoids, progestogens) and derivatives",C08153  Norgestrel,C08153,C21H28O2
+70,ST  Sterol lipids,ST02 Steroids,"ST0203 C21 steroids (gluco/mineralocorticoids, progestogens) and derivatives",C08173  Cortisone acetate,C08173,C23H30O6
+71,ST  Sterol lipids,ST02 Steroids,"ST0203 C21 steroids (gluco/mineralocorticoids, progestogens) and derivatives",C08176  Hydrocortisone cypionate,C08176,C29H42O6
+72,ST  Sterol lipids,ST02 Steroids,"ST0203 C21 steroids (gluco/mineralocorticoids, progestogens) and derivatives",C08186  Fludrocortisone acetate,C08186,C23H31FO6
+73,ST  Sterol lipids,ST02 Steroids,"ST0203 C21 steroids (gluco/mineralocorticoids, progestogens) and derivatives",C12656  Paramethasone acetate,C12656,C24H31FO6
+74,ST  Sterol lipids,ST02 Steroids,"ST0203 C21 steroids (gluco/mineralocorticoids, progestogens) and derivatives",C12724  Ethynodiol diacetate,C12724,C24H32O4
+75,ST  Sterol lipids,ST02 Steroids,"ST0203 C21 steroids (gluco/mineralocorticoids, progestogens) and derivatives",C12811  Allylestrenol,C12811,C21H32O
+76,ST  Sterol lipids,ST02 Steroids,"ST0203 C21 steroids (gluco/mineralocorticoids, progestogens) and derivatives",C12888  Hydrocortisone succinate,C12888,C25H34O8
+77,ST  Sterol lipids,ST02 Steroids,"ST0203 C21 steroids (gluco/mineralocorticoids, progestogens) and derivatives",C13037  Lynestrenol,C13037,C20H28O
+78,ST  Sterol lipids,ST02 Steroids,"ST0203 C21 steroids (gluco/mineralocorticoids, progestogens) and derivatives",C13358  Hydrocortisone butyrate propionate,C13358,C28H40O7
+79,ST  Sterol lipids,ST02 Steroids,"ST0203 C21 steroids (gluco/mineralocorticoids, progestogens) and derivatives",C13422  Hydrocortisone caproate,C13422,C27H40O6
+80,ST  Sterol lipids,ST05 Steroid conjugates,ST0504 Taurine conjugates,C02592  Taurolithocholate,C02592,C26H45NO5S
+81,ST  Sterol lipids,ST05 Steroid conjugates,ST0504 Taurine conjugates,C03642  Taurolithocholate sulfate,C03642,C26H45NO8S2
+82,ST  Sterol lipids,ST05 Steroid conjugates,ST0504 Taurine conjugates,C05122  Taurocholate,C05122,C26H45NO7S
+83,ST  Sterol lipids,ST05 Steroid conjugates,ST0504 Taurine conjugates,C05463  Taurodeoxycholate,C05463,C26H45NO6S
+84,ST  Sterol lipids,ST05 Steroid conjugates,ST0504 Taurine conjugates,C05465  Taurochenodeoxycholate,C05465,C26H45NO6S
+85,ST  Sterol lipids,ST00 Other Sterol lipids,,C02592  Taurolithocholate,C02592,C26H45NO5S
+86,ST  Sterol lipids,ST00 Other Sterol lipids,,C03642  Taurolithocholate sulfate,C03642,C26H45NO8S2
+87,ST  Sterol lipids,ST00 Other Sterol lipids,,C05122  Taurocholate,C05122,C26H45NO7S
+88,ST  Sterol lipids,ST00 Other Sterol lipids,,C05463  Taurodeoxycholate,C05463,C26H45NO6S
+89,ST  Sterol lipids,ST00 Other Sterol lipids,,C05465  Taurochenodeoxycholate,C05465,C26H45NO6S
+90,PR  Prenol lipids,PR01 Isoprenoids,PR0109 Retinoids,C00473  Retinol,C00473,C20H30O
+91,PR  Prenol lipids,PR01 Isoprenoids,PR0109 Retinoids,C16682  9-cis-Retinol,C16682,C20H30O
+92,PR  Prenol lipids,PR01 Isoprenoids,PR0109 Retinoids,C00899  11-cis-Retinol,C00899,C20H30O
+93,PR  Prenol lipids,PR01 Isoprenoids,PR0109 Retinoids,"C15492  all-trans-13,14-Dihydroretinol",C15492,C20H32O
+94,PR  Prenol lipids,PR01 Isoprenoids,PR0109 Retinoids,C16683  4-Oxoretinol,C16683,C20H28O2
+95,PR  Prenol lipids,PR01 Isoprenoids,PR0109 Retinoids,C00376  Retinal,C00376,C20H28O
+96,PR  Prenol lipids,PR01 Isoprenoids,PR0109 Retinoids,C05918  all-trans-Dehydroretinal,C05918,C20H26O
+97,PR  Prenol lipids,PR01 Isoprenoids,PR0109 Retinoids,C16681  9-cis-Retinal,C16681,C20H28O
+98,PR  Prenol lipids,PR01 Isoprenoids,PR0109 Retinoids,C02110  11-cis-Retinal,C02110,C20H28O
+99,PR  Prenol lipids,PR01 Isoprenoids,PR0109 Retinoids,C05919  11-cis-Dehydroretinal,C05919,C20H26O
+100,PR  Prenol lipids,PR01 Isoprenoids,PR0109 Retinoids,C00777  Retinoate,C00777,C20H28O2
+101,PR  Prenol lipids,PR01 Isoprenoids,PR0109 Retinoids,C15493  9-cis-Retinoic acid,C15493,C20H28O2
+102,PR  Prenol lipids,PR01 Isoprenoids,PR0109 Retinoids,C16678  all-trans-4-Oxoretinoic acid,C16678,C20H26O3
+103,PR  Prenol lipids,PR01 Isoprenoids,PR0109 Retinoids,C16677  all-trans-4-Hydroxyretinoic acid,C16677,C20H28O3
+104,PR  Prenol lipids,PR01 Isoprenoids,PR0109 Retinoids,C16679  all-trans-18-Hydroxyretinoic acid,C16679,C20H28O3
+105,PR  Prenol lipids,PR01 Isoprenoids,PR0109 Retinoids,"C16680  all-trans-5,6-Epoxyretinoic acid",C16680,C20H28O3
+106,PR  Prenol lipids,PR01 Isoprenoids,PR0109 Retinoids,C02075  Retinyl ester,C02075,C21H29O2R
+107,PR  Prenol lipids,PR01 Isoprenoids,PR0109 Retinoids,C04680  Retinyl-ester-(cellular-retinol-binding-protein),C04680,C21H29O2R
+108,PR  Prenol lipids,PR01 Isoprenoids,PR0109 Retinoids,C02588  Retinyl palmitate,C02588,C36H60O2
+109,PR  Prenol lipids,PR01 Isoprenoids,PR0109 Retinoids,C03455  11-cis-Retinyl palmitate,C03455,C36H60O2
+110,PR  Prenol lipids,PR02 Quinones and hydroquinones,PR0203 Vitamin K,C00828  Menaquinone (Vitamin K2),C00828,C16H16O2(C5H8)n
+111,PR  Prenol lipids,PR02 Quinones and hydroquinones,PR0203 Vitamin K,C02059  Phylloquinone (Vitamin K1),C02059,C31H46O2
+112,PR  Prenol lipids,PR02 Quinones and hydroquinones,PR0203 Vitamin K,C05377  Menadione (Vitamin K3),C05377,C11H8O2
+113,PR  Prenol lipids,PR02 Quinones and hydroquinones,PR0203 Vitamin K,C05818  2-Demethylmenaquinone,C05818,C15H14O2(C5H8)n
+114,PR  Prenol lipids,PR02 Quinones and hydroquinones,PR0203 Vitamin K,C05849  Vitamin K epoxide,C05849,C31H46O3
+115,PR  Prenol lipids,PR02 Quinones and hydroquinones,PR0203 Vitamin K,C13309  2-Demethylphylloquinone,C13309,C30H44O2
+116,PR  Prenol lipids,PR02 Quinones and hydroquinones,PR0203 Vitamin K,C02785  3-Hydroxy-vitamin K,C02785,C31H48O3
+117,PR  Prenol lipids,PR02 Quinones and hydroquinones,PR0203 Vitamin K,C02793  2-Hydroxy-vitamin K,C02793,C31H48O3
+118,PR  Prenol lipids,PR03 Polyprenols,PR0309 Dolichol diphosphates,C00621  Dolichyl diphosphate,C00621,C20H38O7P2(C5H8)n
+119,PR  Prenol lipids,PR03 Polyprenols,PR0309 Dolichol diphosphates,C04213  Dolichyl diphosphooligosaccharide,C04213,C36H63N2O17P2R(C5H8)n
+120,PR  Prenol lipids,PR03 Polyprenols,PR0309 Dolichol diphosphates,C04500  N-Acetyl-D-glucosaminyldiphosphodolichol,C04500,C28H51NO12P2(C5H8)n
+121,PR  Prenol lipids,PR03 Polyprenols,PR0309 Dolichol diphosphates,"C04537  N,N'-Diacetylchitobiosyldiphosphodolichol",C04537,C36H64N2O17P2(C5H8)n
+122,PR  Prenol lipids,PR03 Polyprenols,PR0309 Dolichol diphosphates,C04615  alpha-D-Mannosylchitobiosyldiphosphodolichol,C04615,C42H74N2O22P2(C5H8)n
+123,PR  Prenol lipids,PR03 Polyprenols,PR0309 Dolichol diphosphates,C05860  beta-D-Mannosyldiacetylchitobiosyldiphosphodolichol,C05860,C42H74N2O22P2(C5H8)n
+124,PR  Prenol lipids,PR03 Polyprenols,PR0309 Dolichol diphosphates,C05861  alpha-D-Mannosyl-beta-D-mannosyl-diacetylchitobiosyldiphosphodolichol,C05861,C48H84N2O27P2(C5H8)n
+125,PR  Prenol lipids,PR03 Polyprenols,PR0309 Dolichol diphosphates,C05864  (alpha-D-Mannosyl)4-beta-D-mannosyl-diacetylchitobiosyldiphosphodolichol,C05864,C66H114N2O42P2(C5H8)n
+126,PR  Prenol lipids,PR03 Polyprenols,PR0309 Dolichol diphosphates,C05868  (alpha-D-Mannosyl)8-beta-D-mannosyl-diacetylchitobiosyldiphosphodolichol,C05868,C90H154N2O62P2(C5H8)n
+127,SL  Saccharolipids,SL01 Acylaminosugars,SL0107 Heptaacylaminosugars,C13909  Diphosphoryl heptaacyl lipid A,C13909,C110H208N2O26P2
+128,PK  Polyketides,PK12 Flavonoids,PK1216 Other Flavonoids,C08993  Vignafuran,C08993,C16H14O4
+129,PK  Polyketides,PK12 Flavonoids,PK1216 Other Flavonoids,C08974  Sainfuran,C08974,C16H14O5
+130,PK  Polyketides,PK13 Aromatic polyketides,PK1312 Other aromatic polyketides,C07578  Cannabidiol,C07578,C21H30O2
+131,PK  Polyketides,PK13 Aromatic polyketides,PK1312 Other aromatic polyketides,C07580  Cannabinol,C07580,C21H26O2
+132,PK  Polyketides,PK13 Aromatic polyketides,PK1312 Other aromatic polyketides,C10784  Cannabidiolic acid,C10784,C22H30O4
+0,Alkaloids,Alkaloids derived from ornithine,Tropane alkaloids,C10841  Anatoxin a,C10841,C10H15NO
+1,Alkaloids,Alkaloids derived from ornithine,Tropane alkaloids,C10842  Anisodamine,C10842,C17H23NO4
+2,Alkaloids,Alkaloids derived from ornithine,Tropane alkaloids,C10844  Apohyoscine,C10844,C17H19NO3
+3,Alkaloids,Alkaloids derived from ornithine,Tropane alkaloids,C01479  Atropine,C01479,C17H23NO3
+4,Alkaloids,Alkaloids derived from ornithine,Tropane alkaloids,C10843  Apoatropine,C10843,C17H21NO2
+5,Alkaloids,Alkaloids derived from ornithine,Tropane alkaloids,C10845  Belladonnine,C10845,C34H42N2O4
+6,Alkaloids,Alkaloids derived from ornithine,Tropane alkaloids,C10846  Bellendine,C10846,C12H15NO2
+7,Alkaloids,Alkaloids derived from ornithine,Tropane alkaloids,C10849  Brugine,C10849,C12H19NO2S2
+8,Alkaloids,Alkaloids derived from ornithine,Tropane alkaloids,C10850  Calystegin A3,C10850,C7H13NO3
+9,Alkaloids,Alkaloids derived from ornithine,Tropane alkaloids,C10581  Cichorine,C10581,C10H11NO3
+10,Alkaloids,Alkaloids derived from ornithine,Tropane alkaloids,C01416  Cocaine,C01416,C17H21NO4
+11,Alkaloids,Alkaloids derived from ornithine,Tropane alkaloids,C10853  Cochlearine,C10853,C15H19NO3
+12,Alkaloids,Alkaloids derived from ornithine,Tropane alkaloids,C10854  Convolamine,C10854,C17H23NO4
+13,Alkaloids,Alkaloids derived from ornithine,Tropane alkaloids,C10856  Convolvine,C10856,C16H21NO4
+14,Alkaloids,Alkaloids derived from ornithine,Tropane alkaloids,C10852  Cinnamoylcocaine,C10852,C19H23NO4
+15,Alkaloids,Alkaloids derived from ornithine,Tropane alkaloids,C10857  Darlingine,C10857,C13H17NO2
+16,Alkaloids,Alkaloids derived from ornithine,Tropane alkaloids,C10858  Ecgonine,C10858,C9H15NO3
+17,Alkaloids,Alkaloids derived from ornithine,Tropane alkaloids,C12448  Ecgonine methyl ester,C12448,C10H17NO3
+18,Alkaloids,Alkaloids derived from ornithine,Tropane alkaloids,C10847  Benzoylecgonine,C10847,C16H19NO4
+19,Alkaloids,Alkaloids derived from ornithine,Tropane alkaloids,C12449  Pseudoecgonine,C12449,C9H15NO3
+20,Alkaloids,Alkaloids derived from ornithine,Tropane alkaloids,C12450  Pseudoecgonyl-CoA,C12450,C30H49N8O18P3S
+21,Alkaloids,Alkaloids derived from ornithine,Tropane alkaloids,C02046  L-Hyoscyamine,C02046,C17H23NO3
+22,Alkaloids,Alkaloids derived from ornithine,Tropane alkaloids,C03325  (6S)-Hydroxyhyoscyamine,C03325,C17H23NO4
+23,Alkaloids,Alkaloids derived from ornithine,Tropane alkaloids,C10862  Norhyoscyamine,C10862,C16H21NO3
+24,Alkaloids,Alkaloids derived from ornithine,Tropane alkaloids,C10859  Knightinol,C10859,C17H23NO3
+25,Alkaloids,Alkaloids derived from ornithine,Tropane alkaloids,C10860  Littorine,C10860,C17H23NO3
+26,Alkaloids,Alkaloids derived from ornithine,Tropane alkaloids,C10861  Meteloidine,C10861,C13H21NO4
+27,Alkaloids,Alkaloids derived from ornithine,Tropane alkaloids,C02066  Pseudotropine,C02066,C8H15NO
+28,Alkaloids,Alkaloids derived from ornithine,Tropane alkaloids,C10863  Phyllalbine,C10863,C16H21NO4
+29,Alkaloids,Alkaloids derived from ornithine,Tropane alkaloids,C10864  Physoperuvine,C10864,C8H15NO
+30,Alkaloids,Alkaloids derived from ornithine,Tropane alkaloids,C01851  Scopolamine,C01851,C17H21NO4
+31,Alkaloids,Alkaloids derived from ornithine,Tropane alkaloids,C10866  Scopoline,C10866,C8H13NO2
+32,Alkaloids,Alkaloids derived from ornithine,Tropane alkaloids,C10867  Strobamine,C10867,C17H19NO2
+33,Alkaloids,Alkaloids derived from ornithine,Tropane alkaloids,C10848  Tropacocaine,C10848,C15H19NO2
+34,Alkaloids,Alkaloids derived from ornithine,Tropane alkaloids,C00729  Tropine,C00729,C8H15NO
+35,Alkaloids,Alkaloids derived from ornithine,Tropane alkaloids,C12453  Acetylpseudotropine,C12453,C10H17NO2
+36,Alkaloids,Alkaloids derived from ornithine,Tropane alkaloids,C12452  Acetyltropine,C12452,C10H17NO2
+37,Alkaloids,Alkaloids derived from ornithine,Tropane alkaloids,C00783  Tropinone,C00783,C8H13NO
+38,Alkaloids,Alkaloids derived from ornithine,Tropane alkaloids,C10868  Tigloidine,C10868,C13H21NO2
+39,Alkaloids,Alkaloids derived from ornithine,Tropane alkaloids,C10869  Valeroidine,C10869,C13H23NO3
+40,Alkaloids,Alkaloids derived from lysine,Piperidine alkaloids,C10123  Adenocarpine,C10123,C19H24N2O
+41,Alkaloids,Alkaloids derived from lysine,Piperidine alkaloids,C10125  Ammodendrine,C10125,C12H20N2O
+42,Alkaloids,Alkaloids derived from lysine,Piperidine alkaloids,C06183  L-(+)-Anaferine,C06183,C13H24N2O
+43,Alkaloids,Alkaloids derived from lysine,Piperidine alkaloids,C11358  D-(-)-Anaferine,C11358,C13H24N2O
+44,Alkaloids,Alkaloids derived from lysine,Piperidine alkaloids,C10127  Anibine,C10127,C11H9NO3
+45,Alkaloids,Alkaloids derived from lysine,Piperidine alkaloids,C10130  Astrocasine,C10130,C20H26N2O
+46,Alkaloids,Alkaloids derived from lysine,Piperidine alkaloids,C10131  Astrophylline,C10131,C19H26N2O
+47,Alkaloids,Alkaloids derived from lysine,Piperidine alkaloids,C10134  Buchananine,C10134,C12H15NO7
+48,Alkaloids,Alkaloids derived from lysine,Piperidine alkaloids,C10135  Carpaine,C10135,C28H50N2O4
+49,Alkaloids,Alkaloids derived from lysine,Piperidine alkaloids,C10136  Cassine,C10136,C18H35NO2
+50,Alkaloids,Alkaloids derived from lysine,Piperidine alkaloids,C10139  Cryptophorine,C10139,C17H27NO
+51,Alkaloids,Alkaloids derived from lysine,Piperidine alkaloids,C10141  Deoxymannojirimycin,C10141,C6H13NO4
+52,Alkaloids,Alkaloids derived from lysine,Piperidine alkaloids,C10142  Dioscorine,C10142,C13H19NO2
+53,Alkaloids,Alkaloids derived from lysine,Piperidine alkaloids,C10144  Fagomine,C10144,C6H13NO3
+54,Alkaloids,Alkaloids derived from lysine,Piperidine alkaloids,C10146  Fusaric acid,C10146,C10H13NO2
+55,Alkaloids,Alkaloids derived from lysine,Piperidine alkaloids,C10148  Girgensonine,C10148,C13H16N2O
+56,Alkaloids,Alkaloids derived from lysine,Piperidine alkaloids,C10150  Harzianopyridone,C10150,C14H19NO5
+57,Alkaloids,Alkaloids derived from lysine,Piperidine alkaloids,C10156  Lobelanidine,C10156,C22H29NO2
+58,Alkaloids,Alkaloids derived from lysine,Piperidine alkaloids,C10157  Lobelanine,C10157,C22H25NO2
+59,Alkaloids,Alkaloids derived from lysine,Piperidine alkaloids,C07475  Lobeline,C07475,C22H27NO2
+60,Alkaloids,Alkaloids derived from lysine,Piperidine alkaloids,C10153  Isolobinine,C10153,C18H25NO2
+61,Alkaloids,Alkaloids derived from lysine,Piperidine alkaloids,C10158  Mearsine,C10158,C9H13NO
+62,Alkaloids,Alkaloids derived from lysine,Piperidine alkaloids,C10162  Nigrifactin,C10162,C12H17N
+63,Alkaloids,Alkaloids derived from lysine,Piperidine alkaloids,C10163  Nitramine,C10163,C10H19NO
+64,Alkaloids,Alkaloids derived from lysine,Piperidine alkaloids,C10164  Picolinic acid,C10164,C6H5NO2
+65,Alkaloids,Alkaloids derived from lysine,Piperidine alkaloids,C10166  Piplartine,C10166,C17H19NO5
+66,Alkaloids,Alkaloids derived from lysine,Piperidine alkaloids,C06182  Pelletierine,C06182,C8H15NO
+67,Alkaloids,Alkaloids derived from lysine,Piperidine alkaloids,C06184  N-Methylpelletierine,C06184,C9H17NO
+68,Alkaloids,Alkaloids derived from lysine,Piperidine alkaloids,C10865  Pseudopelletierine,C10865,C9H15NO
+69,Alkaloids,Alkaloids derived from lysine,Piperidine alkaloids,C00408  L-Pipecolate,C00408,C6H11NO2
+70,Alkaloids,Alkaloids derived from lysine,Piperidine alkaloids,C06181  Piperideine,C06181,C5H9N
+71,Alkaloids,Alkaloids derived from lysine,Piperidine alkaloids,C03882  Piperine,C03882,C17H19NO3
+72,Alkaloids,Alkaloids derived from lysine,Piperidine alkaloids,C10167  (+)-Prosopinine,C10167,C18H35NO3
+73,Alkaloids,Alkaloids derived from lysine,Piperidine alkaloids,C10168  Pseudoconhydrine,C10168,C8H17NO
+74,Alkaloids,Alkaloids derived from lysine,Piperidine alkaloids,C10170  Santiaguine,C10170,C38H48N4O2
+75,Alkaloids,Alkaloids derived from lysine,Piperidine alkaloids,C10171  (-)-Sedamine,C10171,C14H21NO
+76,Alkaloids,Alkaloids derived from nicotinic acid,Pyridine alkaloids,C06180  Anabasine,C06180,C10H14N2
+77,Alkaloids,Alkaloids derived from nicotinic acid,Pyridine alkaloids,C11357  (-)-Anabasine,C11357,C10H14N2
+78,Alkaloids,Alkaloids derived from nicotinic acid,Pyridine alkaloids,C10126  Anatabine,C10126,C10H12N2
+79,Alkaloids,Alkaloids derived from nicotinic acid,Pyridine alkaloids,C10128  Arecaidine,C10128,C7H11NO2
+80,Alkaloids,Alkaloids derived from nicotinic acid,Pyridine alkaloids,C10129  Arecoline,C10129,C8H13NO2
+81,Alkaloids,Alkaloids derived from nicotinic acid,Pyridine alkaloids,C10149  Guvacine,C10149,C6H9NO2
+82,Alkaloids,Alkaloids derived from nicotinic acid,Pyridine alkaloids,C10160  Myosmine,C10160,C9H10N2
+83,Alkaloids,Alkaloids derived from nicotinic acid,Pyridine alkaloids,C10161  Nicotyrine,C10161,C10H10N2
+84,Alkaloids,Alkaloids derived from nicotinic acid,Pyridine alkaloids,C00153  Nicotinamide,C00153,C6H6N2O
+85,Alkaloids,Alkaloids derived from nicotinic acid,Pyridine alkaloids,C00253  Nicotinate,C00253,C6H5NO2
+86,Alkaloids,Alkaloids derived from nicotinic acid,Pyridine alkaloids,C00745  Nicotine,C00745,C10H14N2
+87,Alkaloids,Alkaloids derived from nicotinic acid,Pyridine alkaloids,C01004  N-Methylnicotinate,C01004,C7H7NO2
+88,Alkaloids,Alkaloids derived from nicotinic acid,Pyridine alkaloids,C01020  6-Hydroxynicotinate,C01020,C6H5NO3
+89,Alkaloids,Alkaloids derived from nicotinic acid,Pyridine alkaloids,C01185  Nicotinate D-ribonucleotide,C01185,C11H15NO9P
+90,Alkaloids,Alkaloids derived from nicotinic acid,Pyridine alkaloids,C13051  Nicotinic acid adenine dinucleotide phosphate,C13051,C21H28N6O18P3
+91,Alkaloids,Alkaloids derived from nicotinic acid,Pyridine alkaloids,C06524  Nornicotine,C06524,C9H12N2
+92,Alkaloids,Alkaloids derived from nicotinic acid,Pyridine alkaloids,C11360  (+)-Nornicotine,C11360,C9H12N2
+93,Alkaloids,Alkaloids derived from nicotinic acid,Pyridine alkaloids,C01526  Ricinine,C01526,C8H8N2O2
+94,Alkaloids,Alkaloids derived from tyrosine,Tyramine derivatives,C10575  Candicine,C10575,C11H18NO
+95,Alkaloids,Alkaloids derived from tyrosine,Tyramine derivatives,C03758  Dopamine,C03758,C8H11NO2
+96,Alkaloids,Alkaloids derived from tyrosine,Tyramine derivatives,C06199  Hordenine,C06199,C10H15NO
+97,Alkaloids,Alkaloids derived from tyrosine,Tyramine derivatives,C06546  Mescaline,C06546,C11H17NO3
+98,Alkaloids,Alkaloids derived from tyrosine,Tyramine derivatives,C08310  N-Methylmescaline,C08310,C12H19NO3
+99,Alkaloids,Alkaloids derived from tyrosine,Tyramine derivatives,C00483  Tyramine,C00483,C8H11NO
+100,Alkaloids,Alkaloids derived from tyrosine,Tyramine derivatives,C02442  N-Methyltyramine,C02442,C9H13NO
+101,Alkaloids,Alkaloids derived from tryptophan and anthranilic acid,Pyrroloindole alkaloids,C09133  (-)-Chimonanthine,C09133,C22H26N4
+102,Alkaloids,Alkaloids derived from tryptophan and anthranilic acid,Pyrroloindole alkaloids,C09170  Eseramine,C09170,C16H22N4O3
+103,Alkaloids,Alkaloids derived from tryptophan and anthranilic acid,Pyrroloindole alkaloids,C09176  Eseridine,C09176,C15H21N3O3
+104,Alkaloids,Alkaloids derived from tryptophan and anthranilic acid,Pyrroloindole alkaloids,C06535  Physostigmine,C06535,C15H21N3O2
+105,Alkaloids,Alkaloids derived from tryptophan and anthranilic acid,Pyrroloindole alkaloids,C09232  Physovenine,C09232,C14H18N2O3
+106,Alkaloids,Alkaloids derived from histidine,Imidazole alkaloids,C16696  Dolichotheline,C16696,C10H17N3O
+107,Alkaloids,Alkaloids derived from histidine,Imidazole alkaloids,C07474  Pilocarpine,C07474,C11H16N2O2
+108,Alkaloids,Alkaloids derived from histidine,Imidazole alkaloids,C10610  Pilosine,C10610,C16H18N2O3
+109,Alkaloids,Alkaloids derived by amination reactions,Steroid alkaloids,C06543  Solanidine,C06543,C27H43NO
+110,Alkaloids,Alkaloids derived by amination reactions,Steroid alkaloids,C06545  Conessine,C06545,C24H40N2
+111,Alkaloids,Alkaloids derived by amination reactions,Steroid alkaloids,C10795  Buxamine E,C10795,C26H44N2
+112,Alkaloids,Alkaloids derived by amination reactions,Steroid alkaloids,C10796  alpha-Chaconine,C10796,C45H73NO14
+113,Alkaloids,Alkaloids derived by amination reactions,Steroid alkaloids,C10797  Cyclobuxine D,C10797,C25H42N2O
+114,Alkaloids,Alkaloids derived by amination reactions,Steroid alkaloids,C10798  Cyclopamine,C10798,C27H41NO2
+115,Alkaloids,Alkaloids derived by amination reactions,Steroid alkaloids,C10799  Cycloprotobuxine C,C10799,C27H48N2
+116,Alkaloids,Alkaloids derived by amination reactions,Steroid alkaloids,C10801  Cyclovirobuxine C,C10801,C27H48N2O
+117,Alkaloids,Alkaloids derived by amination reactions,Steroid alkaloids,C10803  Demissine,C10803,C50H83NO20
+118,Alkaloids,Alkaloids derived by amination reactions,Steroid alkaloids,C10806  Funtumine,C10806,C21H35NO
+119,Alkaloids,Alkaloids derived by amination reactions,Steroid alkaloids,C10807  Germine,C10807,C27H43NO8
+120,Alkaloids,Alkaloids derived by amination reactions,Steroid alkaloids,C10808  Imperialine,C10808,C27H43NO3
+121,Alkaloids,Alkaloids derived by amination reactions,Steroid alkaloids,C10810  Irehine,C10810,C23H39NO
+122,Alkaloids,Alkaloids derived by amination reactions,Steroid alkaloids,C10811  Jervine,C10811,C27H39NO3
+123,Alkaloids,Alkaloids derived by amination reactions,Steroid alkaloids,C10813  Kurchessine,C10813,C25H44N2
+124,Alkaloids,Alkaloids derived by amination reactions,Steroid alkaloids,C10814  Paravallarine,C10814,C22H33NO2
+125,Alkaloids,Alkaloids derived by amination reactions,Steroid alkaloids,C10830  Peimine,C10830,C27H45NO3
+126,Alkaloids,Alkaloids derived by amination reactions,Steroid alkaloids,C10815  Protoveratrine A,C10815,C41H63NO14
+127,Alkaloids,Alkaloids derived by amination reactions,Steroid alkaloids,C10816  Protoveratrine B,C10816,C41H63NO15
+128,Alkaloids,Alkaloids derived by amination reactions,Steroid alkaloids,C10817  Protoverine,C10817,C27H43NO9
+129,Alkaloids,Alkaloids derived by amination reactions,Steroid alkaloids,C10818  Solacapine,C10818,C27H48N2O2
+130,Alkaloids,Alkaloids derived by amination reactions,Steroid alkaloids,C10819  Solamargine,C10819,C45H73NO15
+131,Alkaloids,Alkaloids derived by amination reactions,Steroid alkaloids,C10820  Solanine,C10820,C45H73NO15
+132,Alkaloids,Alkaloids derived by amination reactions,Steroid alkaloids,C10821  Solanocapsine,C10821,C27H46N2O2
+133,Alkaloids,Alkaloids derived by amination reactions,Steroid alkaloids,C10822  Solasodine,C10822,C27H43NO2
+134,Alkaloids,Alkaloids derived by amination reactions,Steroid alkaloids,C10824  Solasonine,C10824,C45H73NO16
+135,Alkaloids,Alkaloids derived by amination reactions,Steroid alkaloids,C10825  Terminaline,C10825,C23H41NO2
+136,Alkaloids,Alkaloids derived by amination reactions,Steroid alkaloids,C10826  Tomatidine,C10826,C27H45NO2
+137,Alkaloids,Alkaloids derived by amination reactions,Steroid alkaloids,C10827  Tomatine,C10827,C50H83NO21
+138,Alkaloids,Alkaloids derived by amination reactions,Steroid alkaloids,C10828  Veracevine,C10828,C27H43NO8
+139,Alkaloids,Alkaloids derived by amination reactions,Steroid alkaloids,C10829  Veratramine,C10829,C27H39NO2
+140,Alkaloids,Alkaloids derived by amination reactions,Steroid alkaloids,C06544  Veratridine,C06544,C36H51NO11
+141,Alkaloids,Alkaloids derived by amination reactions,Steroid alkaloids,C10831  Zygadenine,C10831,C27H43NO7
+142,Alkaloids,Others,Others,C10570  Annuloline,C10570,C20H19NO4
+143,Alkaloids,Others,Others,C10573  Calycanthine,C10573,C22H26N4
+144,Alkaloids,Others,Others,C12227  Chelerythrine,C12227,C21H18NO4
+145,Alkaloids,Others,Others,C10596  Halfordinol,C10596,C14H10N2O2
+146,Flavonoids,Flavonoids,Anthocyanidins and anthocyanins,C16354  Albireodelphin,C16354,C42H47O25
+147,Flavonoids,Flavonoids,Anthocyanidins and anthocyanins,C08574  Apigeninidin,C08574,C15H11O4
+148,Flavonoids,Flavonoids,Anthocyanidins and anthocyanins,C08604  Chrysanthemin,C08604,C21H21O11
+149,Flavonoids,Flavonoids,Anthocyanidins and anthocyanins,C05905  Cyanidin,C05905,C15H11O6
+150,Flavonoids,Flavonoids,Anthocyanidins and anthocyanins,C04491  Cyanidin-3-rhamnoglucoside chloride,C04491,C27H31O15. Cl
+151,Flavonoids,Flavonoids,Anthocyanidins and anthocyanins,C08620  Cyanidin 3-O-rutinoside,C08620,C27H31O15
+152,Flavonoids,Flavonoids,Anthocyanidins and anthocyanins,C08647  Cyanidin 3-O-galactoside,C08647,C21H21O11
+153,Flavonoids,Flavonoids,Anthocyanidins and anthocyanins,"C08629  Cyanidin 3,5,3'-tri-O-glucoside",C08629,C33H41O21
+154,Flavonoids,Flavonoids,Anthocyanidins and anthocyanins,C12095  Cyanidin 3-O-(6-O-p-coumaroyl)glucoside,C12095,C30H27O13
+155,Flavonoids,Flavonoids,Anthocyanidins and anthocyanins,C12096  Cyanidin 3-O-(6-O-p-coumaroyl)glucoside-5-O-glucoside,C12096,C36H37O18
+156,Flavonoids,Flavonoids,Anthocyanidins and anthocyanins,C12643  Cyanidin 3-O-(6-O-malonyl-beta-D-glucoside),C12643,C24H23O14
+157,Flavonoids,Flavonoids,Anthocyanidins and anthocyanins,C12646  Cyanidin 3-O-rutinoside 5-O-beta-D-glucoside,C12646,C33H41O20
+158,Flavonoids,Flavonoids,Anthocyanidins and anthocyanins,"C16289  Cyanidin 3-O-3'',6''-O-dimalonylglucoside",C16289,C27H25O17
+159,Flavonoids,Flavonoids,Anthocyanidins and anthocyanins,C16306  Cyanidin 3-O-sophoroside,C16306,C27H31O16
+160,Flavonoids,Flavonoids,Anthocyanidins and anthocyanins,C16350  Cyanidin 3-O-beta-D-glucoside 5-O-(6-coumaroyl-beta-D-glucoside),C16350,C36H37O18
+161,Flavonoids,Flavonoids,Anthocyanidins and anthocyanins,C16373  Cyanidin-3-O-(6''-O-malonyl-2''-O-glucuronyl)glucoside,C16373,C30H31O20
+162,Flavonoids,Flavonoids,Anthocyanidins and anthocyanins,C16292  Cyanidin-3-(p-coumaroyl)-rutinoside-5-glucoside,C16292,C42H47O22
+163,Flavonoids,Flavonoids,Anthocyanidins and anthocyanins,C16369  Cyanidin 3-(6-p-caffeoyl)glucoside,C16369,C30H27O14
+164,Flavonoids,Flavonoids,Anthocyanidins and anthocyanins,C16372  Cyanidin 3-glucoside 5-caffeoylglucoside,C16372,C36H37O19
+165,Flavonoids,Flavonoids,Anthocyanidins and anthocyanins,C16298  Cyanidin 5-O-glucoside,C16298,C21H21O11
+166,Flavonoids,Flavonoids,Anthocyanidins and anthocyanins,C08639  Cyanin,C08639,C27H31O16
+167,Flavonoids,Flavonoids,Anthocyanidins and anthocyanins,C16312  Delphin,C16312,C27H31O17
+168,Flavonoids,Flavonoids,Anthocyanidins and anthocyanins,C16301  Delphinidin 3-O-(6''-O-malonyl-beta-D-glucoside),C16301,C24H23O15
+169,Flavonoids,Flavonoids,Anthocyanidins and anthocyanins,C12138  Delphinidin 3-O-glucoside,C12138,C21H21O12
+170,Flavonoids,Flavonoids,Anthocyanidins and anthocyanins,C16313  Delphinidin 3-glucoside 5-caffoyl-glucoside,C16313,C36H37O20
+171,Flavonoids,Flavonoids,Anthocyanidins and anthocyanins,C16351  Delphinidin 3-O-beta-D-glucoside 5-O-(6-coumaroyl-beta-D-glucoside),C16351,C36H37O19
+172,Flavonoids,Flavonoids,Anthocyanidins and anthocyanins,C16304  Delphinidin 3-O-(6''-O-malonyl)-beta-glucoside-3'-O-beta-glucoside,C16304,C30H33O20
+173,Flavonoids,Flavonoids,Anthocyanidins and anthocyanins,C16307  Delphinidin 3-O-sophoroside,C16307,C27H31O17
+174,Flavonoids,Flavonoids,Anthocyanidins and anthocyanins,C16367  Delphinidin 3-O-(6-caffeoyl-beta-D-glucoside),C16367,C30H27O15
+175,Flavonoids,Flavonoids,Anthocyanidins and anthocyanins,"C16290  Delphinidin 3-O-3'',6''-O-dimalonylglucoside",C16290,C27H25O18
+176,Flavonoids,Flavonoids,Anthocyanidins and anthocyanins,C16294  Delphinidin-3-(p-coumaroyl)-rutinoside-5-glucoside,C16294,C42H47O23
+177,Flavonoids,Flavonoids,Anthocyanidins and anthocyanins,C16370  Delphinidin 3-(6-p-coumaroyl)glucoside,C16370,C30H27O14
+178,Flavonoids,Flavonoids,Anthocyanidins and anthocyanins,"C16314  Delphinidin 3,5,3'-triglucoside",C16314,C33H41O22
+179,Flavonoids,Flavonoids,Anthocyanidins and anthocyanins,C08641  Gentiodelphin,C08641,C51H53O28
+180,Flavonoids,Flavonoids,Anthocyanidins and anthocyanins,C08642  Heavenly blue anthocyanin,C08642,C79H91O45
+181,Flavonoids,Flavonoids,Anthocyanidins and anthocyanins,C08652  Luteolinidin,C08652,C15H11O5
+182,Flavonoids,Flavonoids,Anthocyanidins and anthocyanins,C08653  Malonylawobanin,C08653,C39H39O22
+183,Flavonoids,Flavonoids,Anthocyanidins and anthocyanins,C16299  Malonylshisonin,C16299,C39H39O21
+184,Flavonoids,Flavonoids,Anthocyanidins and anthocyanins,C08716  Malvidin,C08716,C17H15O7
+185,Flavonoids,Flavonoids,Anthocyanidins and anthocyanins,C12140  Malvidin 3-O-glucoside,C12140,C23H25O12
+186,Flavonoids,Flavonoids,Anthocyanidins and anthocyanins,C16296  Malvidin-3-(p-coumaroyl)-rutinoside-5-glucoside,C16296,C44H51O23
+187,Flavonoids,Flavonoids,Anthocyanidins and anthocyanins,C08718  Malvin,C08718,C29H35O17
+188,Flavonoids,Flavonoids,Anthocyanidins and anthocyanins,C08723  Monardaein,C08723,C42H41O23
+189,Flavonoids,Flavonoids,Anthocyanidins and anthocyanins,C05904  Pelargonidin,C05904,C15H11O5
+190,Flavonoids,Flavonoids,Anthocyanidins and anthocyanins,C12137  Pelargonidin 3-O-glucoside,C12137,C21H21O10
+191,Flavonoids,Flavonoids,Anthocyanidins and anthocyanins,C12640  Pelargonidin 3-O-(6-caffeoyl-beta-D-glucoside) 5-O-beta-D-glucoside,C12640,C36H37O18
+192,Flavonoids,Flavonoids,Anthocyanidins and anthocyanins,C12642  Pelargonidin 3-O-(6-O-malonyl-beta-D-glucoside),C12642,C24H23O13
+193,Flavonoids,Flavonoids,Anthocyanidins and anthocyanins,C12644  Pelargonidin 3-O-rutinoside,C12644,C27H31O14
+194,Flavonoids,Flavonoids,Anthocyanidins and anthocyanins,C12645  Pelargonidin 3-O-rutinoside 5-O-beta-D-glucoside,C12645,C33H41O19
+195,Flavonoids,Flavonoids,Anthocyanidins and anthocyanins,"C16288  Pelargonidin 3-O-3'',6''-O-dimalonylglucoside",C16288,C27H25O16
+196,Flavonoids,Flavonoids,Anthocyanidins and anthocyanins,C16297  Pelargonidin 3-O-(6-caffeoyl-beta-D-glucoside),C16297,C30H27O13
+197,Flavonoids,Flavonoids,Anthocyanidins and anthocyanins,C16305  Pelargonidin 3-O-sophoroside,C16305,C27H31O15
+198,Flavonoids,Flavonoids,Anthocyanidins and anthocyanins,C16349  Pelargonidin 3-O-beta-D-glucoside 5-O-(6-coumaroyl-beta-D-glucoside),C16349,C36H37O17
+199,Flavonoids,Flavonoids,Anthocyanidins and anthocyanins,C16368  Pelargonidin 3-(6-p-coumaroyl)glucoside,C16368,C30H27O12
+200,Flavonoids,Flavonoids,Anthocyanidins and anthocyanins,C16371  Pelargonidin 3-glucoside 5-caffeoylglucoside,C16371,C36H37O18
+201,Flavonoids,Flavonoids,Anthocyanidins and anthocyanins,C12139  Petunidin 3-O-glucoside,C12139,C22H23O12
+202,Flavonoids,Flavonoids,Anthocyanidins and anthocyanins,C16295  Petunidin-3-(p-coumaroyl)-rutinoside-5-glucoside,C16295,C43H49O23
+203,Flavonoids,Flavonoids,Anthocyanidins and anthocyanins,C08725  Pelargonin,C08725,C27H31O15
+204,Flavonoids,Flavonoids,Anthocyanidins and anthocyanins,C16293  Peonidin-3-(p-coumaroyl)-rutinoside-5-glucoside,C16293,C43H49O22
+205,Flavonoids,Flavonoids,Anthocyanidins and anthocyanins,C08728  Riccionidin A,C08728,C15H9O6
+206,Flavonoids,Flavonoids,Anthocyanidins and anthocyanins,C08729  Rosinidin,C08729,C17H15O6
+207,Flavonoids,Flavonoids,Anthocyanidins and anthocyanins,C12647  Salvianin,C12647,C42H41O24
+208,Flavonoids,Flavonoids,Anthocyanidins and anthocyanins,C12641  4'''-Demalonylsalvianin,C12641,C39H39O21
+209,Flavonoids,Flavonoids,Anthocyanidins and anthocyanins,C16302  Ternatin A1,C16302,C96H107O53
+210,Flavonoids,Flavonoids,Anthocyanidins and anthocyanins,C16303  Ternatin C5,C16303,C36H43O25
+211,Flavonoids,Flavonoids,Anthocyanidins and anthocyanins,C16315  Tulipanin,C16315,C27H31O16
+212,Flavonoids,Isoflavonoids,2-Arylbenzofurans,C08732  Albafuran A,C08732,C24H26O4
+213,Flavonoids,Isoflavonoids,2-Arylbenzofurans,C08844  Moracin A,C08844,C16H14O5
+214,Flavonoids,Isoflavonoids,2-Arylbenzofurans,C08846  Mulberrofuran A,C08846,C25H28O4
+215,Flavonoids,Isoflavonoids,2-Arylbenzofurans,C08974  Sainfuran,C08974,C16H14O5
+216,Flavonoids,Isoflavonoids,2-Arylbenzofurans,C08993  Vignafuran,C08993,C16H14O4
+217,Flavonoids,Complex flavonoids,Diels-Alder adduct of chalcone,C10099  Kuwanone G,C10099,C40H36O11
+218,Flavonoids,Complex flavonoids,Diels-Alder adduct of chalcone,C10100  Kuwanone H,C10100,C45H44O11
+219,Flavonoids,Complex flavonoids,Diels-Alder adduct of chalcone,C08928  Mulberrofuran C,C08928,C34H28O9
+220,Flavonoids,Complex flavonoids,Diels-Alder adduct of chalcone,C09834  Sanggenon C,C09834,C40H36O12
+221,Flavonoids,Complex flavonoids,Diels-Alder adduct of chalcone,C09835  Sanggenon D,C09835,C40H36O12
+222,Phenylpropanoids,Monolignols,Others,C10428  Anethole,C10428,C10H12O
+223,Phenylpropanoids,Monolignols,Others,C16930  Chavicol,C16930,C9H10O
+224,Phenylpropanoids,Monolignols,Others,C10426  1'-Acetoxychavicol acetate,C10426,C13H14O4
+225,Phenylpropanoids,Monolignols,Others,C00423  trans-Cinnamate,C00423,C9H8O2
+226,Phenylpropanoids,Monolignols,Others,C00540  Cinnamoyl-CoA,C00540,C30H42N7O17P3S
+227,Phenylpropanoids,Monolignols,Others,C00903  Cinnamaldehyde,C00903,C9H8O
+228,Phenylpropanoids,Monolignols,Others,C01772  trans-2-Hydroxycinnamate,C01772,C9H8O3
+229,Phenylpropanoids,Monolignols,Others,C05158  trans-beta-D-Glucosyl-2-hydroxycinnamate,C05158,C15H18O8
+230,Phenylpropanoids,Monolignols,Others,C05838  cis-2-Hydroxycinnamate,C05838,C9H8O3
+231,Phenylpropanoids,Monolignols,Others,C05839  cis-beta-D-Glucosyl-2-hydroxycinnamate,C05839,C15H18O8
+232,Phenylpropanoids,Monolignols,Others,C10451  Elemicin,C10451,C12H16O3
+233,Phenylpropanoids,Monolignols,Others,C10452  Estragole,C10452,C10H12O
+234,Phenylpropanoids,Monolignols,Others,C10453  Eugenol,C10453,C10H12O2
+235,Phenylpropanoids,Monolignols,Others,C10480  Myristicin,C10480,C11H12O3
+236,Phenylpropanoids,Coumarins,Furanocoumarins,C09053  Alloimperatorin,C09053,C16H14O4
+237,Phenylpropanoids,Coumarins,Furanocoumarins,C09060  Angelicin,C09060,C11H6O3
+238,Phenylpropanoids,Coumarins,Furanocoumarins,C09116  Archangelicin,C09116,C24H26O7
+239,Phenylpropanoids,Coumarins,Furanocoumarins,C09123  Athamantin,C09123,C24H30O7
+240,Phenylpropanoids,Coumarins,Furanocoumarins,C00758  Bergaptol,C00758,C11H6O4
+241,Phenylpropanoids,Coumarins,Furanocoumarins,C01557  Bergapten,C01557,C12H8O4
+242,Phenylpropanoids,Coumarins,Furanocoumarins,C09141  Byakangelicin,C09141,C17H18O7
+243,Phenylpropanoids,Coumarins,Furanocoumarins,C09165  Chalepensin,C09165,C16H14O3
+244,Phenylpropanoids,Coumarins,Furanocoumarins,C09210  (R)-Columbianetin,C09210,C14H14O4
+245,Phenylpropanoids,Coumarins,Furanocoumarins,C09257  Decuroside III,C09257,C26H34O14
+246,Phenylpropanoids,Coumarins,Furanocoumarins,C09267  Heliettin,C09267,C19H22O4
+247,Phenylpropanoids,Coumarins,Furanocoumarins,C09269  Imperatorin,C09269,C16H14O4
+248,Phenylpropanoids,Coumarins,Furanocoumarins,C02162  Isopimpinellin,C02162,C13H10O5
+249,Phenylpropanoids,Coumarins,Furanocoumarins,C09272  Libanorin,C09272,C19H20O5
+250,Phenylpropanoids,Coumarins,Furanocoumarins,C09276  Marmesin,C09276,C14H14O4
+251,Phenylpropanoids,Coumarins,Furanocoumarins,C09278  Nodakenetin,C09278,C14H14O4
+252,Phenylpropanoids,Coumarins,Furanocoumarins,C09279  Nodakenin,C09279,C20H24O9
+253,Phenylpropanoids,Coumarins,Furanocoumarins,C09282  Oxypeucedanin,C09282,C16H14O5
+254,Phenylpropanoids,Coumarins,Furanocoumarins,C09283  Peucedanin,C09283,C15H14O4
+255,Phenylpropanoids,Coumarins,Furanocoumarins,C09284  Peucenidin,C09284,C21H22O7
+256,Phenylpropanoids,Coumarins,Furanocoumarins,C09285  Pimpinellin,C09285,C13H10O5
+257,Phenylpropanoids,Coumarins,Furanocoumarins,C09305  Psoralen,C09305,C11H6O3
+258,Phenylpropanoids,Coumarins,Furanocoumarins,C09308  Rutamarin,C09308,C21H24O5
+259,Phenylpropanoids,Coumarins,Furanocoumarins,C09309  Rutarin,C09309,C20H24O10
+260,Phenylpropanoids,Coumarins,Furanocoumarins,C09314  Trioxsalen,C09314,C14H12O3
+261,Phenylpropanoids,Coumarins,Furanocoumarins,C00841  Xanthotoxol,C00841,C11H6O4
+262,Phenylpropanoids,Coumarins,Furanocoumarins,C01864  Xanthotoxin,C01864,C12H8O4
+263,Shikimate / acetate-malonate pathway derived compounds,Stilbenoids,"Stilbenoid dimers, stilbenoid oligomers and bis(bibenzyl)s",C10248  Blestriarene B,C10248,C30H24O6
+264,Shikimate / acetate-malonate pathway derived compounds,Stilbenoids,"Stilbenoid dimers, stilbenoid oligomers and bis(bibenzyl)s",C10249  Canaliculatol,C10249,C42H32O9
+265,Shikimate / acetate-malonate pathway derived compounds,Stilbenoids,"Stilbenoid dimers, stilbenoid oligomers and bis(bibenzyl)s",C10252  Copalliferol B,C10252,C42H32O9
+266,Shikimate / acetate-malonate pathway derived compounds,Stilbenoids,"Stilbenoid dimers, stilbenoid oligomers and bis(bibenzyl)s",C10260  Gnetin A,C10260,C28H22O6
+267,Shikimate / acetate-malonate pathway derived compounds,Stilbenoids,"Stilbenoid dimers, stilbenoid oligomers and bis(bibenzyl)s",C10270  Marchantin A,C10270,C28H24O5
+268,Shikimate / acetate-malonate pathway derived compounds,Stilbenoids,"Stilbenoid dimers, stilbenoid oligomers and bis(bibenzyl)s",C10289  epsilon-Viniferin,C10289,C28H22O6
+269,Shikimate / acetate-malonate pathway derived compounds,Others,Zingiber derived compounds,C10462  [6]-Gingerol,C10462,C17H26O4
+270,Shikimate / acetate-malonate pathway derived compounds,Others,Zingiber derived compounds,C17495  [8]-Gingerol,C17495,C19H30O4
+271,Shikimate / acetate-malonate pathway derived compounds,Others,Zingiber derived compounds,C10482  6-Paradol,C10482,C17H26O3
+272,Shikimate / acetate-malonate pathway derived compounds,Others,Zingiber derived compounds,C10494  [6]-Shogaol,C10494,C17H24O3
+273,Shikimate / acetate-malonate pathway derived compounds,Others,Zingiber derived compounds,C17497  Zingerone,C17497,C11H14O3
+274,Terpenoids,Monoterpenoids (C10),Others,C09845  Cinerin I,C09845,C20H28O3
+275,Terpenoids,Monoterpenoids (C10),Others,C09846  Cinerin II,C09846,C21H28O5
+276,Terpenoids,Monoterpenoids (C10),Others,C09842  Chrysanthemic acid,C09842,C10H16O2
+277,Terpenoids,Monoterpenoids (C10),Others,C07594  Pyrethrin I,C07594,C21H28O3
+278,Terpenoids,Monoterpenoids (C10),Others,C09894  Pyrethrin II,C09894,C22H28O5
+279,Terpenoids,Sesquiterpenoids (C15),Others,C09059  Alectrol,C09059,C21H24O7
+280,Terpenoids,Sesquiterpenoids (C15),Others,C09294  Anisatin,C09294,C15H20O8
+281,Terpenoids,Sesquiterpenoids (C15),Others,C09295  Arbusculin A,C09295,C15H22O3
+282,Terpenoids,Sesquiterpenoids (C15),Others,C09538  Artemisinin,C09538,C15H22O5
+283,Terpenoids,Sesquiterpenoids (C15),Others,C09345  Artemorin,C09345,C15H20O3
+284,Terpenoids,Sesquiterpenoids (C15),Others,C20181  Avermitilol,C20181,C15H26O
+285,Terpenoids,Sesquiterpenoids (C15),Others,C09350  Bakkenolide A,C09350,C15H22O2
+286,Terpenoids,Sesquiterpenoids (C15),Others,C19740  (+)-alpha-Barbatene,C19740,C15H24
+287,Terpenoids,Sesquiterpenoids (C15),Others,C09628  Carotol,C09628,C15H26O
+288,Terpenoids,Sesquiterpenoids (C15),Others,C09632  Centarol,C09632,C15H26O2
+289,Terpenoids,Sesquiterpenoids (C15),Others,C09633  Chamazulene,C09633,C14H16
+290,Terpenoids,Sesquiterpenoids (C15),Others,C09635  alpha-Chamigrene,C09635,C15H24
+291,Terpenoids,Sesquiterpenoids (C15),Others,C09637  beta-Chamigrene,C09637,C15H24
+292,Terpenoids,Sesquiterpenoids (C15),Others,C09638  Cinnamodial,C09638,C17H24O5
+293,Terpenoids,Sesquiterpenoids (C15),Others,C09374  Confertiflorin,C09374,C17H22O5
+294,Terpenoids,Sesquiterpenoids (C15),Others,C09376  Confertifolin,C09376,C15H22O2
+295,Terpenoids,Sesquiterpenoids (C15),Others,C09639  alpha-Copaene,C09639,C15H24
+296,Terpenoids,Sesquiterpenoids (C15),Others,C09645  Cuauhtemone,C09645,C15H24O3
+297,Terpenoids,Sesquiterpenoids (C15),Others,C09647  alpha-Cubebene,C09647,C15H24
+298,Terpenoids,Sesquiterpenoids (C15),Others,C09648  beta-Cubebene,C09648,C15H24
+299,Terpenoids,Sesquiterpenoids (C15),Others,C09649  alpha-Curcumene,C09649,C15H22
+300,Terpenoids,Sesquiterpenoids (C15),Others,C20179  gamma-Curcumene,C20179,C15H24
+301,Terpenoids,Sesquiterpenoids (C15),Others,C09652  Daucol,C09652,C15H26O2
+302,Terpenoids,Sesquiterpenoids (C15),Others,C09653  Debneyol,C09653,C15H26O2
+303,Terpenoids,Sesquiterpenoids (C15),Others,C09658  Dehydromyodesmone,C09658,C15H18O2
+304,Terpenoids,Sesquiterpenoids (C15),Others,C09673  Glutinosone,C09673,C14H20O2
+305,Terpenoids,Sesquiterpenoids (C15),Others,C19734  (-)-alpha-Gurjunene,C19734,C15H24
+306,Terpenoids,Sesquiterpenoids (C15),Others,C09677  Helminthosporal,C09677,C15H22O2
+307,Terpenoids,Sesquiterpenoids (C15),Others,C09678  Helminthosporol,C09678,C15H24O2
+308,Terpenoids,Sesquiterpenoids (C15),Others,C09679  Helminthosporoside A,C09679,C39H64O22
+309,Terpenoids,Sesquiterpenoids (C15),Others,C09680  Hemigossypol,C09680,C15H16O4
+310,Terpenoids,Sesquiterpenoids (C15),Others,C09681  Hernandulcin,C09681,C15H24O2
+311,Terpenoids,Sesquiterpenoids (C15),Others,C09682  Himachalol,C09682,C15H26O
+312,Terpenoids,Sesquiterpenoids (C15),Others,C09686  Hydroxyisopatchoulenone,C09686,C15H22O2
+313,Terpenoids,Sesquiterpenoids (C15),Others,C09685  10beta-Hydroxy-6beta-isobutyrylfuranoeremophilane,C09685,C19H28O4
+314,Terpenoids,Sesquiterpenoids (C15),Others,C09399  Drimenin,C09399,C15H22O2
+315,Terpenoids,Sesquiterpenoids (C15),Others,C19743  Drimenol,C19743,C15H26O
+316,Terpenoids,Sesquiterpenoids (C15),Others,C19744  (+)-Epicubenol,C19744,C15H26O
+317,Terpenoids,Sesquiterpenoids (C15),Others,C09408  Eremofrullanolide,C09408,C15H20O2
+318,Terpenoids,Sesquiterpenoids (C15),Others,C09409  Eremophilenolide,C09409,C15H22O2
+319,Terpenoids,Sesquiterpenoids (C15),Others,C09690  alpha-Irone,C09690,C14H22O
+320,Terpenoids,Sesquiterpenoids (C15),Others,C11350  (+)-trans-alpha-Irone,C11350,C14H22O
+321,Terpenoids,Sesquiterpenoids (C15),Others,C09695  Lacinilene C 7-methyl ether,C09695,C16H20O3
+322,Terpenoids,Sesquiterpenoids (C15),Others,C09697  Laserpitin,C09697,C25H38O7
+323,Terpenoids,Sesquiterpenoids (C15),Others,C09698  Ledol,C09698,C15H26O
+324,Terpenoids,Sesquiterpenoids (C15),Others,C09700  Lubimin,C09700,C15H24O2
+325,Terpenoids,Sesquiterpenoids (C15),Others,C09508  Microhelenin A,C09508,C15H18O4
+326,Terpenoids,Sesquiterpenoids (C15),Others,C09509  Microhelenin C,C09509,C20H26O5
+327,Terpenoids,Sesquiterpenoids (C15),Others,C09499  Matricin,C09499,C17H22O5
+328,Terpenoids,Sesquiterpenoids (C15),Others,C09502  Mellitoxin,C09502,C15H18O7
+329,Terpenoids,Sesquiterpenoids (C15),Others,C09706  Petasin,C09706,C20H28O3
+330,Terpenoids,Sesquiterpenoids (C15),Others,C09707  Phaseic acid,C09707,C15H20O5
+331,Terpenoids,Sesquiterpenoids (C15),Others,C09708  Phomenone,C09708,C15H20O4
+332,Terpenoids,Sesquiterpenoids (C15),Others,C09709  Phytuberin,C09709,C17H26O4
+333,Terpenoids,Sesquiterpenoids (C15),Others,C09528  Picrotin,C09528,C15H18O7
+334,Terpenoids,Sesquiterpenoids (C15),Others,C09529  Picrotoxinin,C09529,C15H16O6
+335,Terpenoids,Sesquiterpenoids (C15),Others,C09710  Pinguisone,C09710,C15H20O2
+336,Terpenoids,Sesquiterpenoids (C15),Others,C19756  Presilphiperfolan-8beta-ol,C19756,C15H26O
+337,Terpenoids,Sesquiterpenoids (C15),Others,C09714  Rhipocephalin,C09714,C21H28O6
+338,Terpenoids,Sesquiterpenoids (C15),Others,C09715  Rishitin,C09715,C14H22O2
+339,Terpenoids,Sesquiterpenoids (C15),Others,C09717  Rugosal A,C09717,C15H22O4
+340,Terpenoids,Sesquiterpenoids (C15),Others,C09719  alpha-Santalol,C09719,C15H24O
+341,Terpenoids,Sesquiterpenoids (C15),Others,C09720  beta-Santalol,C09720,C15H24O
+342,Terpenoids,Sesquiterpenoids (C15),Others,C09722  Seiricardine A,C09722,C15H26O2
+343,Terpenoids,Sesquiterpenoids (C15),Others,C09725  Shiromodiol diacetate,C09725,C19H30O5
+344,Terpenoids,Sesquiterpenoids (C15),Others,C09729  alpha-Sinensal,C09729,C15H22O
+345,Terpenoids,Sesquiterpenoids (C15),Others,C09730  beta-Sinensal,C09730,C15H22O
+346,Terpenoids,Sesquiterpenoids (C15),Others,C09739  Tetradymol,C09739,C15H22O2
+347,Terpenoids,Sesquiterpenoids (C15),Others,C09740  Thujopsene,C09740,C15H24
+348,Terpenoids,Sesquiterpenoids (C15),Others,C09743  Valerenic acid,C09743,C15H22O2
+349,Terpenoids,Sesquiterpenoids (C15),Others,C09744  alpha-Vetivone,C09744,C15H22O
+350,Terpenoids,Sesquiterpenoids (C15),Others,C09745  beta-Vetivone,C09745,C15H22O
+351,Terpenoids,Sesquiterpenoids (C15),Others,C09576  Vernodalin,C09576,C19H20O7
+352,Terpenoids,Sesquiterpenoids (C15),Others,C09577  Vernodalol,C09577,C20H24O8
+353,Terpenoids,Sesquiterpenoids (C15),Others,C09582  Vernolepin,C09582,C15H16O5
+354,Terpenoids,Sesquiterpenoids (C15),Others,C09584  Vernomenin,C09584,C15H16O5
+355,Terpenoids,Sesquiterpenoids (C15),Others,C09749  alpha-Ylangene,C09749,C15H24
+356,Terpenoids,Sesquiterpenoids (C15),Others,C09750  Zingiberene,C09750,C15H24
+357,Terpenoids,Sesquiterpenoids (C15),Others,C09607  Zexbrevin B,C09607,C19H24O7
+358,Terpenoids,Diterpenoids (C20),Others,C09057  Acutilol A,C09057,C20H32O2
+359,Terpenoids,Diterpenoids (C20),Others,C09064  Atractyloside,C09064,C30H44O16S2. 2K
+360,Terpenoids,Diterpenoids (C20),Others,C09065  Baliospermin,C09065,C32H50O8
+361,Terpenoids,Diterpenoids (C20),Others,C09066  Cafestol,C09066,C20H28O3
+362,Terpenoids,Diterpenoids (C20),Others,C09076  Coleonol,C09076,C22H34O7
+363,Terpenoids,Diterpenoids (C20),Others,C09078  Cotylenin F,C09078,C33H54O11
+364,Terpenoids,Diterpenoids (C20),Others,C09090  Enmein,C09090,C20H26O6
+365,Terpenoids,Diterpenoids (C20),Others,C19991  Euphornin,C19991,C33H44O9
+366,Terpenoids,Diterpenoids (C20),Others,C09093  Fusicoccin H,C09093,C26H42O8
+367,Terpenoids,Diterpenoids (C20),Others,C09104  Hallactone A,C09104,C19H22O6
+368,Terpenoids,Diterpenoids (C20),Others,C09105  Hallactone B,C09105,C20H24O9S
+369,Terpenoids,Diterpenoids (C20),Others,C09109  Hymatoxin A,C09109,C20H29O7S
+370,Terpenoids,Diterpenoids (C20),Others,C09112  Ingenol,C09112,C20H28O5
+371,Terpenoids,Diterpenoids (C20),Others,"C09113  Ingenol 3,20-dibenzoate",C09113,C34H36O7
+372,Terpenoids,Diterpenoids (C20),Others,C09110  Ineketone,C09110,C20H30O3
+373,Terpenoids,Diterpenoids (C20),Others,C09114  Inumakilactone A glycoside,C09114,C24H30O13
+374,Terpenoids,Diterpenoids (C20),Others,C09117  Isodonal,C09117,C22H28O7
+375,Terpenoids,Diterpenoids (C20),Others,C09121  Jodrellin A,C09121,C24H32O8
+376,Terpenoids,Diterpenoids (C20),Others,C09122  Kansuinine B,C09122,C38H42O14
+377,Terpenoids,Diterpenoids (C20),Others,C09125  Lathyrol,C09125,C20H30O4
+378,Terpenoids,Diterpenoids (C20),Others,C09128  Marrubiin,C09128,C20H28O4
+379,Terpenoids,Diterpenoids (C20),Others,C09132  Mascaroside,C09132,C26H36O11
+380,Terpenoids,Diterpenoids (C20),Others,C09135  Montanin,C09135,C32H48O8
+381,Terpenoids,Diterpenoids (C20),Others,C09137  Montanol,C09137,C21H36O4
+382,Terpenoids,Diterpenoids (C20),Others,C09138  Nagilactone C,C09138,C19H22O7
+383,Terpenoids,Diterpenoids (C20),Others,C09163  Pisiferic acid,C09163,C20H28O3
+384,Terpenoids,Diterpenoids (C20),Others,C09174  Ponalactone A,C09174,C19H22O6
+385,Terpenoids,Diterpenoids (C20),Others,C09172  Podolactone B,C09172,C19H22O9
+386,Terpenoids,Diterpenoids (C20),Others,C09173  Podolide,C09173,C19H22O5
+387,Terpenoids,Diterpenoids (C20),Others,C09175  Portulal,C09175,C20H32O4
+388,Terpenoids,Diterpenoids (C20),Others,C09177  Premarrubiin,C09177,C20H28O4
+389,Terpenoids,Diterpenoids (C20),Others,C09188  Spruceanol,C09188,C20H28O2
+390,Terpenoids,Diterpenoids (C20),Others,C09202  Tripdiolide,C09202,C20H24O7
+391,Terpenoids,Diterpenoids (C20),Others,C09204  Triptolide,C09204,C20H24O6
+392,Terpenoids,Diterpenoids (C20),Others,C09205  Zoapatanol,C09205,C20H34O4
+393,Terpenoids,Sesterterpenoids (C25),,C09057  Acutilol A,C09057,C20H32O2
+394,Terpenoids,Sesterterpenoids (C25),,C09064  Atractyloside,C09064,C30H44O16S2. 2K
+395,Terpenoids,Sesterterpenoids (C25),,C09065  Baliospermin,C09065,C32H50O8
+396,Terpenoids,Sesterterpenoids (C25),,C09066  Cafestol,C09066,C20H28O3
+397,Terpenoids,Sesterterpenoids (C25),,C09076  Coleonol,C09076,C22H34O7
+398,Terpenoids,Sesterterpenoids (C25),,C09078  Cotylenin F,C09078,C33H54O11
+399,Terpenoids,Sesterterpenoids (C25),,C09090  Enmein,C09090,C20H26O6
+400,Terpenoids,Sesterterpenoids (C25),,C19991  Euphornin,C19991,C33H44O9
+401,Terpenoids,Sesterterpenoids (C25),,C09093  Fusicoccin H,C09093,C26H42O8
+402,Terpenoids,Sesterterpenoids (C25),,C09104  Hallactone A,C09104,C19H22O6
+403,Terpenoids,Sesterterpenoids (C25),,C09105  Hallactone B,C09105,C20H24O9S
+404,Terpenoids,Sesterterpenoids (C25),,C09109  Hymatoxin A,C09109,C20H29O7S
+405,Terpenoids,Sesterterpenoids (C25),,C09112  Ingenol,C09112,C20H28O5
+406,Terpenoids,Sesterterpenoids (C25),,"C09113  Ingenol 3,20-dibenzoate",C09113,C34H36O7
+407,Terpenoids,Sesterterpenoids (C25),,C09110  Ineketone,C09110,C20H30O3
+408,Terpenoids,Sesterterpenoids (C25),,C09114  Inumakilactone A glycoside,C09114,C24H30O13
+409,Terpenoids,Sesterterpenoids (C25),,C09117  Isodonal,C09117,C22H28O7
+410,Terpenoids,Sesterterpenoids (C25),,C09121  Jodrellin A,C09121,C24H32O8
+411,Terpenoids,Sesterterpenoids (C25),,C09122  Kansuinine B,C09122,C38H42O14
+412,Terpenoids,Sesterterpenoids (C25),,C09125  Lathyrol,C09125,C20H30O4
+413,Terpenoids,Sesterterpenoids (C25),,C09128  Marrubiin,C09128,C20H28O4
+414,Terpenoids,Sesterterpenoids (C25),,C09132  Mascaroside,C09132,C26H36O11
+415,Terpenoids,Sesterterpenoids (C25),,C09135  Montanin,C09135,C32H48O8
+416,Terpenoids,Sesterterpenoids (C25),,C09137  Montanol,C09137,C21H36O4
+417,Terpenoids,Sesterterpenoids (C25),,C09138  Nagilactone C,C09138,C19H22O7
+418,Terpenoids,Sesterterpenoids (C25),,C09163  Pisiferic acid,C09163,C20H28O3
+419,Terpenoids,Sesterterpenoids (C25),,C09174  Ponalactone A,C09174,C19H22O6
+420,Terpenoids,Sesterterpenoids (C25),,C09172  Podolactone B,C09172,C19H22O9
+421,Terpenoids,Sesterterpenoids (C25),,C09173  Podolide,C09173,C19H22O5
+422,Terpenoids,Sesterterpenoids (C25),,C09175  Portulal,C09175,C20H32O4
+423,Terpenoids,Sesterterpenoids (C25),,C09177  Premarrubiin,C09177,C20H28O4
+424,Terpenoids,Sesterterpenoids (C25),,C09188  Spruceanol,C09188,C20H28O2
+425,Terpenoids,Sesterterpenoids (C25),,C09202  Tripdiolide,C09202,C20H24O7
+426,Terpenoids,Sesterterpenoids (C25),,C09204  Triptolide,C09204,C20H24O6
+427,Terpenoids,Sesterterpenoids (C25),,C09205  Zoapatanol,C09205,C20H34O4
+428,Terpenoids,Triterpenoids (C30),Others,C08921  Aescin,C08921,C55H86O24
+429,Terpenoids,Triterpenoids (C30),Others,C08922  Aridanin,C08922,C38H61NO8
+430,Terpenoids,Triterpenoids (C30),Others,C08923  Arvensoside A,C08923,C48H78O18
+431,Terpenoids,Triterpenoids (C30),Others,C08926  Avenacin A-1,C08926,C55H83NO21
+432,Terpenoids,Triterpenoids (C30),Others,C08927  Avenacin B-2,C08927,C54H80O20
+433,Terpenoids,Triterpenoids (C30),Others,C08930  Azukisaponin III,C08930,C42H66O15
+434,Terpenoids,Triterpenoids (C30),Others,C08932  Bayogenin 3-O-cellobioside,C08932,C42H68O15
+435,Terpenoids,Triterpenoids (C30),Others,C08789  Bryodulcosigenin,C08789,C30H50O4
+436,Terpenoids,Triterpenoids (C30),Others,C08933  Camellidin I,C08933,C55H86O25
+437,Terpenoids,Triterpenoids (C30),Others,C08934  Camellidin II,C08934,C53H84O24
+438,Terpenoids,Triterpenoids (C30),Others,C08790  Carnosifloside I,C08790,C42H68O13
+439,Terpenoids,Triterpenoids (C30),Others,C08791  Carnosifloside III,C08791,C48H78O18
+440,Terpenoids,Triterpenoids (C30),Others,C08792  Carnosifloside VI,C08792,C48H80O18
+441,Terpenoids,Triterpenoids (C30),Others,C08935  Cimicifugoside,C08935,C37H54O11
+442,Terpenoids,Triterpenoids (C30),Others,C08936  Colubrin,C08936,C48H76O18
+443,Terpenoids,Triterpenoids (C30),Others,C08937  Colubrinoside,C08937,C50H78O19
+444,Terpenoids,Triterpenoids (C30),Others,C08938  Cyclamin,C08938,C58H94O27
+445,Terpenoids,Triterpenoids (C30),Others,C08940  Desglucomusennin,C08940,C45H72O16
+446,Terpenoids,Triterpenoids (C30),Others,C08941  Dianoside A,C08941,C42H66O15
+447,Terpenoids,Triterpenoids (C30),Others,C08759  Eurycomalactone,C08759,C19H24O6
+448,Terpenoids,Triterpenoids (C30),Others,C08765  Glycinoeclepin A,C08765,C25H34O7
+449,Terpenoids,Triterpenoids (C30),Others,C08808  Gratiogenin,C08808,C30H48O4
+450,Terpenoids,Triterpenoids (C30),Others,C08949  Gypenoside XXV,C08949,C47H78O18
+451,Terpenoids,Triterpenoids (C30),Others,C08952  Gypsogenin 3-O-rhamnosylglucuronide,C08952,C42H64O14
+452,Terpenoids,Triterpenoids (C30),Others,C08953  Hederagenin 3-O-arabinoside,C08953,C35H56O8
+453,Terpenoids,Triterpenoids (C30),Others,C08766  Harrisonin,C08766,C27H32O10
+454,Terpenoids,Triterpenoids (C30),Others,C08956  Helianthoside A,C08956,C53H86O21
+455,Terpenoids,Triterpenoids (C30),Others,C08767  12alpha-Hydroxyamoorstatin,C08767,C28H36O10
+456,Terpenoids,Triterpenoids (C30),Others,C08768  Ichangin,C08768,C26H32O9
+457,Terpenoids,Triterpenoids (C30),Others,C08958  Lemmatoxin,C08958,C48H78O18
+458,Terpenoids,Triterpenoids (C30),Others,C08959  Medicagenic acid 3-O-triglucoside,C08959,C48H76O21
+459,Terpenoids,Triterpenoids (C30),Others,C08960  Musennin,C08960,C51H82O21
+460,Terpenoids,Triterpenoids (C30),Others,C08773  Nomilin,C08773,C28H34O9
+461,Terpenoids,Triterpenoids (C30),Others,C08965  Pfaffic acid,C08965,C29H44O3
+462,Terpenoids,Triterpenoids (C30),Others,C08966  Pfaffoside A,C08966,C40H60O13
+463,Terpenoids,Triterpenoids (C30),Others,C08967  Phaseoloside D,C08967,C65H104O31
+464,Terpenoids,Triterpenoids (C30),Others,C08968  Phytolaccoside B,C08968,C36H56O11
+465,Terpenoids,Triterpenoids (C30),Others,C08969  Pittoside A,C08969,C41H68O13
+466,Terpenoids,Triterpenoids (C30),Others,C08970  Primulasaponin,C08970,C54H88O23
+467,Terpenoids,Triterpenoids (C30),Others,C08779  Rutaevin,C08779,C26H30O9
+468,Terpenoids,Triterpenoids (C30),Others,C08781  Samaderin A,C08781,C18H18O6
+469,Terpenoids,Triterpenoids (C30),Others,C08634  Sapelin A,C08634,C30H50O4
+470,Terpenoids,Triterpenoids (C30),Others,C17067  Siaresinol,C17067,C30H48O4
+471,Terpenoids,Triterpenoids (C30),Others,C08809  Spinoside A,C08809,C39H56O12
+472,Terpenoids,Triterpenoids (C30),Others,C08635  Taccalonolide A,C08635,C36H46O14
+473,Terpenoids,Triterpenoids (C30),Others,C19832  Thalianol,C19832,C30H50O
+474,Terpenoids,Triterpenoids (C30),Others,C08985  Thalicoside A,C08985,C42H70O14
+475,Terpenoids,Triterpenoids (C30),Others,C08986  Theasaponin,C08986,C59H92O27
+476,Terpenoids,Triterpenoids (C30),Others,C08987  Tubeimoside I,C08987,C63H98O29
+477,Terpenoids,Triterpenoids (C30),Others,C08989  Virgaureasaponin I,C08989,C59H96O27
+478,Terpenoids,Triterpenoids (C30),Others,C08788  Zapoterin,C08788,C26H30O8
+479,Terpenoids,Triterpenoids (C30),Others,C08991  Ziziphin,C08991,C51H80O18
+480,Terpenoids,Steroids,Others,C08831  Miroestrol,C08831,C20H22O6
+481,Terpenoids,Steroids,Others,C18164  Deoxymiroestrol,C18164,C20H22O5
+482,Terpenoids,Steroids,Others,C08841  Withaferin A,C08841,C28H38O6
+483,Terpenoids,Steroids,Others,C08842  Withanolide D,C08842,C28H38O6
+484,Terpenoids,Carotenoids and apocarotenoids,Apocarotenoids,C06082  Abscisate,C06082,C15H20O4
+485,Terpenoids,Carotenoids and apocarotenoids,Apocarotenoids,C08582  Bixin,C08582,C25H30O4
+486,Terpenoids,Carotenoids and apocarotenoids,Apocarotenoids,C08589  Crocin,C08589,C44H64O24
+487,Terpenoids,Carotenoids and apocarotenoids,Apocarotenoids,C08588  Crocetin,C08588,C20H24O4
+488,Terpenoids,Carotenoids and apocarotenoids,Apocarotenoids,C19867  beta-D-Glucosyl crocetin,C19867,C26H34O9
+489,Terpenoids,Carotenoids and apocarotenoids,Apocarotenoids,C17513  beta-D-Gentiobiosyl beta-D-glucosyl crocetin,C17513,C38H54O19
+490,Terpenoids,Carotenoids and apocarotenoids,Apocarotenoids,C20425  beta-Cyclocitral,C20425,C10H16O
+491,Terpenoids,Carotenoids and apocarotenoids,Apocarotenoids,C12286  alpha-Ionone,C12286,C13H20O
+492,Terpenoids,Carotenoids and apocarotenoids,Apocarotenoids,C12287  beta-Ionone,C12287,C13H20O
+493,Terpenoids,Carotenoids and apocarotenoids,Apocarotenoids,C20426  Mycorradicin,C20426,C14H16O4
+494,Terpenoids,Carotenoids and apocarotenoids,Apocarotenoids,C17055  Picrocrocin,C17055,C16H26O7
+495,Terpenoids,Carotenoids and apocarotenoids,Apocarotenoids,C17062  Safranal,C17062,C10H14O
+496,Terpenoids,Carotenoids and apocarotenoids,Apocarotenoids,C09186  Sorgolactone,C09186,C18H20O5
+497,Terpenoids,Carotenoids and apocarotenoids,Apocarotenoids,C09190  Strigol,C09190,C19H22O6
+498,Terpenoids,Carotenoids and apocarotenoids,Apocarotenoids,C18037  5-Deoxystrigol,C18037,C19H22O5
+499,Terpenoids,Others,Polyterpenoids,C04217  all-trans-Pentaprenyl diphosphate,C04217,C25H44O7P2
+500,Terpenoids,Others,Polyterpenoids,C01230  all-trans-Hexaprenyl diphosphate,C01230,C30H52O7P2
+501,Terpenoids,Others,Polyterpenoids,C04216  all-trans-Heptaprenyl diphosphate,C04216,C35H60O7P2
+502,Terpenoids,Others,Polyterpenoids,C04146  all-trans-Octaprenyl diphosphate,C04146,C40H68O7P2
+503,Terpenoids,Others,Polyterpenoids,C04145  all-trans-Nonaprenyl diphosphate,C04145,C45H76O7P2
+504,Terpenoids,Others,Polyterpenoids,C17432  all-trans-Decaprenyl diphosphate,C17432,C50H84O7P2
+505,Terpenoids,Others,Polyterpenoids,"C04574  di-trans,poly-cis-Undecaprenyl diphosphate",C04574,C55H92O7P2
+506,Terpenoids,Others,Polyterpenoids,C02321  Rubber particle,C02321,(C5H8)n
+507,Polyketides,Anthraquinones,Anthraquinone type,C10294  Aloe-emodin,C10294,C15H10O5
+508,Polyketides,Anthraquinones,Anthraquinone type,C01474  Alizarin,C01474,C14H8O4
+509,Polyketides,Anthraquinones,Anthraquinone type,C10291  Alizarin 2-methyl ether,C10291,C15H10O4
+510,Polyketides,Anthraquinones,Anthraquinone type,C10297  Anthragallol,C10297,C14H8O5
+511,Polyketides,Anthraquinones,Anthraquinone type,C17670  Aurantio-obtusin,C17670,C17H14O7
+512,Polyketides,Anthraquinones,Anthraquinone type,C10303  Aurantio-obtusin beta-D-glucoside,C10303,C23H24O12
+513,Polyketides,Anthraquinones,Anthraquinone type,C10308  Cassiamin C,C10308,C30H18O8
+514,Polyketides,Anthraquinones,Anthraquinone type,C10315  Chrysophanol,C10315,C15H10O4
+515,Polyketides,Anthraquinones,Anthraquinone type,C10316  Chrysophanol 8-O-beta-D-glucoside,C10316,C21H20O9
+516,Polyketides,Anthraquinones,Anthraquinone type,C10312  Danthron,C10312,C14H8O4
+517,Polyketides,Anthraquinones,Anthraquinone type,C10327  Digiferrugineol,C10327,C15H10O4
+518,Polyketides,Anthraquinones,Anthraquinone type,C10334  Dothistromin,C10334,C18H12O9
+519,Polyketides,Anthraquinones,Anthraquinone type,C10343  Emodin,C10343,C15H10O5
+520,Polyketides,Anthraquinones,Anthraquinone type,C10345  Emodin 8-glucoside,C10345,C21H20O10
+521,Polyketides,Anthraquinones,Anthraquinone type,C10311  7-Chloroemodin,C10311,C15H9ClO5
+522,Polyketides,Anthraquinones,Anthraquinone type,C10360  2-Isoprenylemodin,C10360,C20H18O5
+523,Polyketides,Anthraquinones,Anthraquinone type,C10346  Frangulin A,C10346,C21H20O9
+524,Polyketides,Anthraquinones,Anthraquinone type,C10349  Frangulin B,C10349,C20H18O9
+525,Polyketides,Anthraquinones,Anthraquinone type,C16802  Glucofrangulin A,C16802,C27H30O14
+526,Polyketides,Anthraquinones,Anthraquinone type,C16803  Glucofrangulin B,C16803,C26H28O14
+527,Polyketides,Anthraquinones,Anthraquinone type,C10354  2-Hydroxymethylanthraquinone,C10354,C15H10O3
+528,Polyketides,Anthraquinones,Anthraquinone type,"C10329  1,4-Dihydroxy-2-methylanthraquinone",C10329,C15H10O4
+529,Polyketides,Anthraquinones,Anthraquinone type,C10365  Knipholone,C10365,C24H18O8
+530,Polyketides,Anthraquinones,Anthraquinone type,C10369  Lucidin,C10369,C15H10O5
+531,Polyketides,Anthraquinones,Anthraquinone type,C10370  Lucidin omega-methyl ether,C10370,C16H12O5
+532,Polyketides,Anthraquinones,Anthraquinone type,C17040  Obtusin,C17040,C18H16O7
+533,Polyketides,Anthraquinones,Anthraquinone type,C17039  Obtusifolin,C17039,C16H12O5
+534,Polyketides,Anthraquinones,Anthraquinone type,C10381  Obtusifolin 2-glucoside,C10381,C22H22O10
+535,Polyketides,Anthraquinones,Anthraquinone type,C17669  Chryso-obtusin,C17669,C19H18O7
+536,Polyketides,Anthraquinones,Anthraquinone type,C10313  Chryso-obtusin glucoside,C10313,C25H28O12
+537,Polyketides,Anthraquinones,Anthraquinone type,C10374  Morindaparvin A,C10374,C15H8O4
+538,Polyketides,Anthraquinones,Anthraquinone type,C10376  Morindone,C10376,C15H10O5
+539,Polyketides,Anthraquinones,Anthraquinone type,C10379  Norobtusifolin,C10379,C15H10O5
+540,Polyketides,Anthraquinones,Anthraquinone type,C17045  Physcion,C17045,C16H12O5
+541,Polyketides,Anthraquinones,Anthraquinone type,C10382  Physcion 8-gentiobioside,C10382,C28H32O15
+542,Polyketides,Anthraquinones,Anthraquinone type,C10384  Physcion 8-glucoside,C10384,C22H22O10
+543,Polyketides,Anthraquinones,Anthraquinone type,C10395  Purpurin,C10395,C14H8O5
+544,Polyketides,Anthraquinones,Anthraquinone type,C10397  Purpurin 1-methyl ether,C10397,C15H10O5
+545,Polyketides,Anthraquinones,Anthraquinone type,C10394  Pseudopurpurin,C10394,C15H8O7
+546,Polyketides,Anthraquinones,Anthraquinone type,C01448  Questin,C01448,C16H12O5
+547,Polyketides,Anthraquinones,Anthraquinone type,C17811  Questinol,C17811,C16H12O6
+548,Polyketides,Anthraquinones,Anthraquinone type,C10401  Rhein,C10401,C15H8O6
+549,Polyketides,Anthraquinones,Anthraquinone type,C10402  Rubiadin,C10402,C15H10O4
+550,Polyketides,Anthraquinones,Anthraquinone type,C10405  Tectoquinone,C10405,C15H10O2
+551,Polyketides,Anthraquinones,Anthraquinone type,C10407  Ventinone A,C10407,C17H14O6
+552,Polyketides,Pyrones,Xanthenes,C10052  Athyriol,C10052,C14H10O6
+553,Polyketides,Pyrones,Xanthenes,C10069  Isoathyriol,C10069,C14H10O6
+554,Polyketides,Pyrones,Xanthenes,C10053  Bellidifolin,C10053,C14H10O6
+555,Polyketides,Pyrones,Xanthenes,C10054  Calophyllin B,C10054,C18H16O4
+556,Polyketides,Pyrones,Xanthenes,C10055  Dehydrocycloguanandin,C10055,C18H14O4
+557,Polyketides,Pyrones,Xanthenes,C10056  Demethylbellidifolin,C10056,C13H8O6
+558,Polyketides,Pyrones,Xanthenes,C10059  6-Deoxyjacareubin,C10059,C18H14O5
+559,Polyketides,Pyrones,Xanthenes,"C10060  3,5-Dimethoxy-1,6-dihydroxyxanthone",C10060,C15H12O6
+560,Polyketides,Pyrones,Xanthenes,C10061  Euxanthone,C10061,C13H8O4
+561,Polyketides,Pyrones,Xanthenes,C10063  Gartanin,C10063,C23H24O6
+562,Polyketides,Pyrones,Xanthenes,C10064  Gentiacaulein,C10064,C15H12O6
+563,Polyketides,Pyrones,Xanthenes,C10065  Gentisein,C10065,C13H8O5
+564,Polyketides,Pyrones,Xanthenes,C10070  Isogentisin,C10070,C14H10O5
+565,Polyketides,Pyrones,Xanthenes,C10067  Irisxanthone,C10067,C20H20O11
+566,Polyketides,Pyrones,Xanthenes,C10071  1-Isomangostin,C10071,C24H26O6
+567,Polyketides,Pyrones,Xanthenes,C10074  Jacareubin,C10074,C18H14O6
+568,Polyketides,Pyrones,Xanthenes,C10075  Lancerin,C10075,C19H18O10
+569,Polyketides,Pyrones,Xanthenes,C10076  Macluraxanthone,C10076,C23H22O6
+570,Polyketides,Pyrones,Xanthenes,C10077  Mangiferin,C10077,C19H18O11
+571,Polyketides,Pyrones,Xanthenes,C10080  Mangostin,C10080,C24H26O6
+572,Polyketides,Pyrones,Xanthenes,C10081  Mesuaxanthone A,C10081,C14H10O5
+573,Polyketides,Pyrones,Xanthenes,C10082  Mesuaxanthone B,C10082,C13H8O5
+574,Polyketides,Pyrones,Xanthenes,C10083  2-O-Methylswertianin,C10083,C15H12O6
+575,Polyketides,Pyrones,Xanthenes,C10086  Norathyriol,C10086,C13H8O6
+576,Polyketides,Pyrones,Xanthenes,C10087  Norlichexanthone,C10087,C14H10O5
+577,Polyketides,Pyrones,Xanthenes,C10088  Norswertianin,C10088,C13H8O6
+578,Polyketides,Pyrones,Xanthenes,C10089  Norswertianolin,C10089,C19H18O11
+579,Polyketides,Pyrones,Xanthenes,C10090  Psorospermin,C10090,C19H16O6
+580,Polyketides,Pyrones,Xanthenes,C10091  Swerchirin,C10091,C15H12O6
+581,Polyketides,Pyrones,Xanthenes,C10092  Swertianin,C10092,C14H10O6
+582,Polyketides,Pyrones,Xanthenes,C10093  Swertianolin,C10093,C20H20O11
+583,Polyketides,Pyrones,Xanthenes,"C10094  1,3,5-Trihydroxyxanthone",C10094,C13H8O5
+584,Polyketides,Pyrones,Xanthenes,C10095  Tripteroside,C10095,C19H18O11
+585,Polyketides,Others,Phloroglucinols,C20206  Albaspidin BB,C20206,C25H32O8
+586,Polyketides,Others,Phloroglucinols,C10672  Aspidin,C10672,C25H32O8
+587,Polyketides,Others,Phloroglucinols,C10673  Aspidinol,C10673,C12H16O4
+588,Polyketides,Others,Phloroglucinols,C20207  Grandinol,C20207,C13H16O5
+589,Polyketides,Others,Phloroglucinols,C10695  Humulone,C10695,C21H30O5
+590,Polyketides,Others,Phloroglucinols,C10704  alpha-Kosin,C10704,C25H32O8
+591,Polyketides,Others,Phloroglucinols,C10706  Lupulone,C10706,C26H38O4
+592,Polyketides,Others,Phloroglucinols,C10721  Rottlerin,C10721,C30H28O8
+593,Fatty acids related compounds,Fatty acids,Others,C20213  Annonacin,C20213,C35H64O7
+594,Fatty acids related compounds,Fatty acids,Others,C08467  Asimicin,C08467,C37H66O7
+595,Fatty acids related compounds,Fatty acids,Others,C08282  Chaulmoogric acid,C08282,C18H32O2
+596,Fatty acids related compounds,Fatty acids,Others,C16795  Hydnocarpic acid,C16795,C16H28O2
+597,Fatty acids related compounds,Fatty acids,Others,C08491  Jasmonate,C08491,C12H18O3
+598,Fatty acids related compounds,Fatty acids,Others,C08321  Malvalic acid,C08321,C18H32O2
+599,Fatty acids related compounds,Fatty acids,Others,C08366  Sterculic acid,C08366,C19H34O2
+600,Fatty acids related compounds,Fatty acids,Others,C08572  Uvaricin,C08572,C39H68O7
+601,Fatty acids related compounds,Fatty acids,Others,C08368  Vernolic acid,C08368,C18H32O3
+602,Amino acid related compounds,Betalains,Others,C08538  Betalamic acid,C08538,C9H9NO5
+603,Amino acid related compounds,Betalains,Others,C08563  Muscapurpurin,C08563,C18H14N2O10
+604,Amino acid related compounds,Cyanogenic glucosides,Others,C01418  Cycasin,C01418,C8H16N2O7
+605,Amino acid related compounds,Cyanogenic glucosides,Others,C08512  Ranunculin,C08512,C11H16O8
+606,Amino acid related compounds,Glucosinolates,Glucosinolates derived from tryptophan,C05837  Glucobrassicin,C05837,C16H20N2O9S2
+607,Amino acid related compounds,Glucosinolates,Glucosinolates derived from tryptophan,C08424  Neoglucobrassicin,C08424,C17H22N2O10S2
+608,Amino acid related compounds,Glucosinolates,Glucosinolates derived from tryptophan,C08428  (N-Sulfoindol-3-yl)methylglucosinolate,C08428,C16H20N2O12S3
+609,Amino acid related compounds,Others,Capsaicinoids and derivatives,C06866  Capsaicin,C06866,C18H27NO3
+610,Amino acid related compounds,Others,Capsaicinoids and derivatives,C20203  Capsiate,C20203,C18H26O4
+611,Amino acid related compounds,Others,Capsaicinoids and derivatives,C16952  Dihydrocapsaicin,C16952,C18H29NO3
+612,Amino acid related compounds,Others,Capsaicinoids and derivatives,C20215  Homocapsaicin,C20215,C19H29NO3
+613,Amino acid related compounds,Others,Capsaicinoids and derivatives,C20216  Nordihydrocapsaicin,C20216,C17H27NO3
+614,Others,Naphthoquinones,alpha-Naphthoquinones,C10368  Lawsone,C10368,C10H6O3
+615,Others,Naphthoquinones,alpha-Naphthoquinones,C03840  Juglone,C03840,C10H6O3
+616,Others,Naphthoquinones,alpha-Naphthoquinones,C10366  Lapachol,C10366,C15H14O3
+617,Others,Naphthoquinones,alpha-Naphthoquinones,C10325  Deoxylapachol,C10325,C15H14O2
+618,Others,Naphthoquinones,alpha-Naphthoquinones,C10335  Droserone,C10335,C11H8O4
+619,Others,Naphthoquinones,alpha-Naphthoquinones,C10398  Ramentaceone,C10398,C11H8O3
+620,Others,Naphthoquinones,alpha-Naphthoquinones,C17412  Shikonin,C17412,C16H16O5
+621,Others,Tannins and galloyl derivatives,Miscellaneous galloyl derivatives,C10242  Terminalin,C10242,C28H10O16
+622,Others,Others,Others,C16913  Anemonin,C16913,C10H8O4
+623,Others,Others,Others,C19515  Braxin C,C19515,C20H30O8
+624,Others,Others,Others,C07090  Protoanemonin,C07090,C5H4O2
+625,Others,Others,Others,C08287  Hypoglycin,C08287,C7H11NO2
+626,Others,Others,Others,C08280  Hypoglycin B,C08280,C12H18N2O5
+627,Others,Others,Others,C10839  Urushiol III,C10839,C21H32O2
+0,Fungal toxins,Mushroom toxins,Others,C19949  Acromelic acid A,C19949,C13H14N2O7
+1,Fungal toxins,Mushroom toxins,Others,C19977  Clitidine,C19977,C11H14N2O6
+2,Fungal toxins,Mushroom toxins,Others,C08271  Coprine,C08271,C8H14N2O4
+3,Fungal toxins,Mushroom toxins,Others,C08305  Gyromitrin,C08305,C4H8N2O
+4,Fungal toxins,Mushroom toxins,Others,C10600  Ibotenic acid,C10600,C5H6N2O4
+5,Fungal toxins,Mushroom toxins,Others,C19978  Sclerocitrin,C19978,C36H22O17
+6,Fungal toxins,Mushroom toxins,Others,C06047  Stizolobate,C06047,C9H9NO6
+7,Fungal toxins,Mushroom toxins,Others,C06048  Stizolobinate,C06048,C9H9NO6
+8,Fungal toxins,Mushroom toxins,Others,C19979  Ustalic acid,C19979,C19H14O6
+9,Fungal toxins,Mushroom toxins,Others,C19976  Valinopine,C19976,C10H17NO6
+10,Fungal toxins,Mycotoxins,Others,C16765  Citrinin,C16765,C13H14O5
+11,Fungal toxins,Mycotoxins,Others,C09955  Ochratoxin A,C09955,C20H18ClNO6
+12,Fungal toxins,Mycotoxins,Others,C16748  Patulin,C16748,C7H6O4
+13,Fungal toxins,Mycotoxins,Others,C09981  Zearalenone,C09981,C18H22O5
+14,Fungal toxins,Mycotoxins,Others,C16838  Alternariol,C16838,C14H10O5
+15,Fungal toxins,Mycotoxins,Others,C08511  Tenuazonic acid,C08511,C10H15NO3
+16,Fungal toxins,Mycotoxins,Others,C08441  Tentoxin,C08441,C22H30N4O4
+17,Fungal toxins,Mycotoxins,Others,C11590  Beauvericin,C11590,C45H57N3O9
+18,Fungal toxins,Mycotoxins,Others,C15740  Enniatin B,C15740,C33H57N3O9
+19,Fungal toxins,Mycotoxins,Others,C15757  Enniatin D,C15757,C34H59N3O9
+20,Fungal toxins,Mycotoxins,Others,C20591  Fusaproliferin,C20591,C27H40O5
+21,Fungal toxins,Mycotoxins,Others,C20592  Moniliformin,C20592,C4H2O3
+22,Fungal toxins,Mycotoxins,Others,C16766  Citreoviridin,C16766,C23H30O6
+23,Fungal toxins,Mycotoxins,Others,C19379  Cyclochlorotine,C19379,C24H31Cl2N5O7
+24,Fungal toxins,Mycotoxins,Others,C03032  Cyclopiazonic acid,C03032,C20H20N2O3
+25,Fungal toxins,Mycotoxins,Others,C19953  Cytochalasin A,C19953,C29H35NO5
+26,Fungal toxins,Mycotoxins,Others,C19954  Cytochalasin B,C19954,C29H37NO5
+27,Fungal toxins,Mycotoxins,Others,C10595  Gliotoxin,C10595,C13H14N2O4S2
+28,Fungal toxins,Mycotoxins,Others,C16763  Luteoskyrin,C16763,C30H22O12
+29,Fungal toxins,Mycotoxins,Others,C20046  Mollicellin C,C20046,C22H20O8
+30,Fungal toxins,Mycotoxins,Others,C16804  Penicillic acid,C16804,C8H10O4
+31,Fungal toxins,Mycotoxins,Others,C19955  Phomopsin A,C19955,C36H45ClN6O12
+32,Fungal toxins,Mycotoxins,Others,C06079  PR-toxin,C06079,C17H20O6
+33,Fungal toxins,Mycotoxins,Others,C16767  Rubratoxin B,C16767,C26H30O11
+34,Fungal toxins,Mycotoxins,Others,C16764  Rugulosin,C16764,C30H22O10
+35,Fungal toxins,Mycotoxins,Others,C16768  Sporidesmin J,C16768,C17H18ClN3O6S2
+36,Fungal toxins,Mycotoxins,Others,C00961  Sterigmatocystin,C00961,C18H12O6
+37,Fungal toxins,Mycotoxins,Others,C20045  Verruculogen,C20045,C27H33N3O7
+38,Fungal toxins,Mycotoxins,Others,C14752  alpha-Zearalanol,C14752,C18H26O5
+39,Fungal toxins,Mycotoxins,Others,C14750  alpha-Zearalenol,C14750,C18H24O5
+40,Fungal toxins,Mycotoxins,Others,C14751  beta-Zearalenol,C14751,C18H24O5
+41,Phytotoxins,Alkaloids,Others,C10573  Calycanthine,C10573,C22H26N4
+42,Phytotoxins,Alkaloids,Others,C19984  Cerberin,C19984,C32H48O9
+43,Phytotoxins,Alkaloids,Others,C12227  Chelerythrine,C12227,C21H18NO4
+44,Phytotoxins,Alkaloids,Others,C08677  Delphinine,C08677,C33H45NO9
+45,Phytotoxins,Alkaloids,Others,C10660  Dictamnine,C10660,C12H9NO2
+46,Phytotoxins,Alkaloids,Others,C10774  Matrine,C10774,C15H24N2O
+47,Phytotoxins,Alkaloids,Others,C19985  Nantenine,C19985,C20H21NO4
+48,Phytotoxins,Alkaloids,Others,C00745  Nicotine,C00745,C10H14N2
+49,Phytotoxins,Alkaloids,Others,C08705  Ryanodine,C08705,C25H35NO9
+50,Phytotoxins,Glycosides,Cyanogenic glycosides,C08325  Amygdalin,C08325,C20H27NO11
+51,Phytotoxins,Glycosides,Cyanogenic glycosides,C01418  Cycasin,C01418,C8H16N2O7
+52,Phytotoxins,Glycosides,Cyanogenic glycosides,C00844  Prunasin,C00844,C14H17NO6
+53,Phytotoxins,Terpenoids,Sesquiterpenoids,C09294  Anisatin,C09294,C15H20O8
+54,Phytotoxins,Terpenoids,Sesquiterpenoids,C09379  Coriamyrtin,C09379,C15H18O5
+55,Phytotoxins,Terpenoids,Sesquiterpenoids,C09529  Picrotoxinin,C09529,C15H16O6
+56,Phytotoxins,Terpenoids,Sesquiterpenoids,C09570  Tutin,C09570,C15H18O6
+57,Phytotoxins,Others,Others,C08287  Hypoglycin,C08287,C7H11NO2
+58,Phytotoxins,Others,Others,C08280  Hypoglycin B,C08280,C12H18N2O5
+59,Phytotoxins,Others,Others,C10737  Phrymarolin I,C10737,C24H24O11
+60,Phytotoxins,Others,Others,C10874  Podophyllotoxin,C10874,C22H22O8
+61,Phytotoxins,Others,Others,C07090  Protoanemonin,C07090,C5H4O2
+62,Phytotoxins,Others,Others,C19515  Ptaquiloside,C19515,C20H30O8
+63,Phytotoxins,Others,Others,C08512  Ranunculin,C08512,C11H16O8
+64,Phytotoxins,Others,Others,C10839  Urushiol III,C10839,C21H32O2
+65,Cyanotoxins,Alkaloids,Others,C19999  Cylindrospermopsin,C19999,C15H21N5O7S
+66,Cyanotoxins,Alkaloids,Others,C15720  Lyngbyatoxin,C15720,C27H39N3O2
+67,Cyanotoxins,Alkaloids,Others,C13757  Saxitoxin,C13757,C10H17N7O4
+68,Cyanotoxins,Peptides,Others,C15713  Nodularin,C15713,C41H60N8O10
+69,Marine biotoxins,Amnesic Shellfish Poisoning; ASP,Kainoids,C13732  Domoic acid,C13732,C15H21NO6
+70,Marine biotoxins,Amnesic Shellfish Poisoning; ASP,Kainoids,C20027  Isodomoic acid A,C20027,C15H21NO6
+71,Marine biotoxins,Ciguatera fish poisoning; CFP,Cyclic polyethers,C16762  Ciguatoxin I,C16762,C60H86O19
+72,Marine biotoxins,Ciguatera fish poisoning; CFP,Cyclic polyethers,C20003  Caribbean ciguatoxin 1,C20003,C62H92O19
+73,Marine biotoxins,Ciguatera fish poisoning; CFP,Cyclic polyethers,C20001  CTX 3C,C20001,C57H82O16
+74,Marine biotoxins,Ciguatera fish poisoning; CFP,Cyclic polyethers,C20002  Ciguatoxin 4A,C20002,C60H84O16
+75,Marine biotoxins,Ciguatera fish poisoning; CFP,Cyclic polyethers,C16885  Gambieric acid A,C16885,C59H92O16
+76,Marine biotoxins,Ciguatera fish poisoning; CFP,Cyclic polyethers,C16886  Gambieric acid B,C16886,C60H94O16
+77,Marine biotoxins,Ciguatera fish poisoning; CFP,Cyclic polyethers,C16887  Gambieric acid C,C16887,C65H100O19
+78,Marine biotoxins,Ciguatera fish poisoning; CFP,Cyclic polyethers,C16888  Gambieric acid D,C16888,C66H102O19
+79,Marine biotoxins,Ciguatera fish poisoning; CFP,Cyclic polyethers,C20004  Gambierol,C20004,C43H64O11
+80,Marine biotoxins,Ciguatera fish poisoning; CFP,Cyclic polyethers,C16852  Gambiertoxin 4b,C16852,C60H84O16
+81,Marine biotoxins,Ciguatera fish poisoning; CFP,Cyclic polyethers,C16854  Maitotoxin,C16854,C164H256O68S2. 2Na
+82,Marine biotoxins,Diarrhetic shellfish poisoning; DSP,Others,C16871  Pectenotoxin 1,C16871,C47H70O15
+83,Marine biotoxins,Diarrhetic shellfish poisoning; DSP,Others,C20012  Pectenotoxin 2,C20012,C47H70O14
+84,Marine biotoxins,Neurotoxic Shellfish Poison; NSP,Cyclic polyethers,C16839  Brevetoxin A,C16839,C49H70O13
+85,Marine biotoxins,Neurotoxic Shellfish Poison; NSP,Cyclic polyethers,C16857  Brevetoxin B,C16857,C50H70O14
+86,Marine biotoxins,Neurotoxic Shellfish Poison; NSP,Cyclic polyethers,C20013  Brevetoxin B1,C20013,C52H75NO17S
+87,Marine biotoxins,Neurotoxic Shellfish Poison; NSP,Cyclic polyethers,C20014  Brevetoxin B2,C20014,C53H79NO17S
+88,Marine biotoxins,Neurotoxic Shellfish Poison; NSP,Cyclic polyethers,C20015  Brevetoxin C,C20015,C49H69ClO14
+89,Marine biotoxins,Neurotoxic Shellfish Poison; NSP,Cyclic polyethers,C20016  Hemibrevetoxin B,C20016,C28H42O7
+90,Marine biotoxins,Paralytic shellfish poisoning; PSP,N-Sulfo-carbamoyl derivatives,C20018  Gonyautoxin 5,C20018,C10H17N7O7S
+91,Marine biotoxins,Paralytic shellfish poisoning; PSP,N-Sulfo-carbamoyl derivatives,C20019  Gonyautoxin 6,C20019,C10H17N7O8S
+92,Marine biotoxins,Paralytic shellfish poisoning; PSP,N-Sulfo-carbamoyl derivatives,C20020  Gonyautoxin 8,C20020,C10H17N7O11S2
+93,Marine biotoxins,Others,Others,C16907  Azaspiracid,C16907,C47H71NO12
+94,Marine biotoxins,Others,Others,C20025  Gymnodimine,C20025,C32H45NO4
+95,Marine biotoxins,Others,Others,C16761  Neosurugatoxin,C16761,C30H34BrN5O15
+96,Marine biotoxins,Others,Others,C20023  Prorocentrolide,C20023,C56H85NO13
+97,Marine biotoxins,Others,Others,C20024  Prorocentrolide B,C20024,C56H85NO17S
+98,Marine biotoxins,Others,Others,C18064  Pyropheophorbide a,C18064,C33H34N4O3
+99,Venoms,Bee venoms,Others,C20052  Philanthotoxin,C20052,C23H41N5O3
+100,Venoms,Bee venoms,Others,C13806  Philanthotoxin 343,C13806,C23H41N5O3
+101,Venoms,Bee venoms,Others,C20053  Tertiapin,C20053,C106H180N34O23S5
+102,Venoms,Frog venoms,Others,C08299  Bufotenine,C08299,C12H16N2O
+103,Venoms,Frog venoms,Others,C20030  Dermorphin,C20030,C40H50N8O10
+104,Venoms,Mollusk venoms,Others,C20000  Onchidal,C20000,C17H24O3
+105,Venoms,Scorpion venoms,Peptides,C20056  Agitoxin 1,C20056,C169H284N52O47S7
+106,Venoms,Scorpion venoms,Peptides,C20063  Bestoxin,C20063,
+107,Venoms,Scorpion venoms,Peptides,C20069  Charybdotoxin,C20069,C176H277N57O55S7
+108,Venoms,Scorpion venoms,Peptides,C20064  kappa-Hefutoxin 1,C20064,C105H156N38O36S4
+109,Venoms,Scorpion venoms,Peptides,C20055  Iberiotoxin,C20055,C179H274N50O55S7
+110,Venoms,Scorpion venoms,Peptides,C20058  Leiurotoxin I,C20058,C142H243N45O39S7
+111,Venoms,Scorpion venoms,Peptides,C20065  Maurotoxin,C20065,C145H232N46O46S8
+112,Venoms,Scorpion venoms,Peptides,C20057  Margatoxin,C20057,C178H286N52O50S7
+113,Venoms,Scorpion venoms,Peptides,C20066  Slotoxin,C20066,C177H281N47O50S7
+114,Venoms,Snake venoms,Hemorrhagins,C20085  Botrocetin,C20085,
+115,Venoms,Snake venoms,Hemorrhagins,C20086  Crotalase,C20086,
+116,Venoms,Snake venoms,Hemorrhagins,C20087  Crotalocytin,C20087,
+117,Venoms,Snake venoms,Hemorrhagins,C20088  Echistatin,C20088,C217H341N71O74S9
+118,Venoms,Snake venoms,Hemorrhagins,C20089  Gabonase,C20089,
+119,Venoms,Snake venoms,Hemorrhagins,C21791  Rhodocytin,C21791,
+120,Venoms,Spider venoms,Others,C20115  Agelenin,C20115,
+121,Venoms,Spider venoms,Others,C20116  Hanatoxin 1,C20116,
+122,Venoms,Spider venoms,Others,C20117  Huwentoxin-XI,C20117,
+123,Venoms,Spider venoms,Others,C20054  alpha-Latrotoxin,C20054,
+124,Venoms,Spider venoms,Others,C20118  Robustoxin,C20118,C206H313N59O59S9
+125,Venoms,Spider venoms,Others,C20067  Stromatoxin 1,C20067,
+126,Venoms,Others,Others,C20060  Cephalostatin 1,C20060,C54H74N2O10
+127,Venoms,Others,Others,C20061  Ritterazine A,C20061,C54H76N2O10

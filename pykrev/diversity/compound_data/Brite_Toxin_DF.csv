@@ -1,0 +1,129 @@
+,A,B,C,D,E,F
+0,Fungal toxins,Mushroom toxins,Others,C19949  Acromelic acid A,C19949,C13H14N2O7
+1,Fungal toxins,Mushroom toxins,Others,C19977  Clitidine,C19977,C11H14N2O6
+2,Fungal toxins,Mushroom toxins,Others,C08271  Coprine,C08271,C8H14N2O4
+3,Fungal toxins,Mushroom toxins,Others,C08305  Gyromitrin,C08305,C4H8N2O
+4,Fungal toxins,Mushroom toxins,Others,C10600  Ibotenic acid,C10600,C5H6N2O4
+5,Fungal toxins,Mushroom toxins,Others,C19978  Sclerocitrin,C19978,C36H22O17
+6,Fungal toxins,Mushroom toxins,Others,C06047  Stizolobate,C06047,C9H9NO6
+7,Fungal toxins,Mushroom toxins,Others,C06048  Stizolobinate,C06048,C9H9NO6
+8,Fungal toxins,Mushroom toxins,Others,C19979  Ustalic acid,C19979,C19H14O6
+9,Fungal toxins,Mushroom toxins,Others,C19976  Valinopine,C19976,C10H17NO6
+10,Fungal toxins,Mycotoxins,Others,C16765  Citrinin,C16765,C13H14O5
+11,Fungal toxins,Mycotoxins,Others,C09955  Ochratoxin A,C09955,C20H18ClNO6
+12,Fungal toxins,Mycotoxins,Others,C16748  Patulin,C16748,C7H6O4
+13,Fungal toxins,Mycotoxins,Others,C09981  Zearalenone,C09981,C18H22O5
+14,Fungal toxins,Mycotoxins,Others,C16838  Alternariol,C16838,C14H10O5
+15,Fungal toxins,Mycotoxins,Others,C08511  Tenuazonic acid,C08511,C10H15NO3
+16,Fungal toxins,Mycotoxins,Others,C08441  Tentoxin,C08441,C22H30N4O4
+17,Fungal toxins,Mycotoxins,Others,C11590  Beauvericin,C11590,C45H57N3O9
+18,Fungal toxins,Mycotoxins,Others,C15740  Enniatin B,C15740,C33H57N3O9
+19,Fungal toxins,Mycotoxins,Others,C15757  Enniatin D,C15757,C34H59N3O9
+20,Fungal toxins,Mycotoxins,Others,C20591  Fusaproliferin,C20591,C27H40O5
+21,Fungal toxins,Mycotoxins,Others,C20592  Moniliformin,C20592,C4H2O3
+22,Fungal toxins,Mycotoxins,Others,C16766  Citreoviridin,C16766,C23H30O6
+23,Fungal toxins,Mycotoxins,Others,C19379  Cyclochlorotine,C19379,C24H31Cl2N5O7
+24,Fungal toxins,Mycotoxins,Others,C03032  Cyclopiazonic acid,C03032,C20H20N2O3
+25,Fungal toxins,Mycotoxins,Others,C19953  Cytochalasin A,C19953,C29H35NO5
+26,Fungal toxins,Mycotoxins,Others,C19954  Cytochalasin B,C19954,C29H37NO5
+27,Fungal toxins,Mycotoxins,Others,C10595  Gliotoxin,C10595,C13H14N2O4S2
+28,Fungal toxins,Mycotoxins,Others,C16763  Luteoskyrin,C16763,C30H22O12
+29,Fungal toxins,Mycotoxins,Others,C20046  Mollicellin C,C20046,C22H20O8
+30,Fungal toxins,Mycotoxins,Others,C16804  Penicillic acid,C16804,C8H10O4
+31,Fungal toxins,Mycotoxins,Others,C19955  Phomopsin A,C19955,C36H45ClN6O12
+32,Fungal toxins,Mycotoxins,Others,C06079  PR-toxin,C06079,C17H20O6
+33,Fungal toxins,Mycotoxins,Others,C16767  Rubratoxin B,C16767,C26H30O11
+34,Fungal toxins,Mycotoxins,Others,C16764  Rugulosin,C16764,C30H22O10
+35,Fungal toxins,Mycotoxins,Others,C16768  Sporidesmin J,C16768,C17H18ClN3O6S2
+36,Fungal toxins,Mycotoxins,Others,C00961  Sterigmatocystin,C00961,C18H12O6
+37,Fungal toxins,Mycotoxins,Others,C20045  Verruculogen,C20045,C27H33N3O7
+38,Fungal toxins,Mycotoxins,Others,C14752  alpha-Zearalanol,C14752,C18H26O5
+39,Fungal toxins,Mycotoxins,Others,C14750  alpha-Zearalenol,C14750,C18H24O5
+40,Fungal toxins,Mycotoxins,Others,C14751  beta-Zearalenol,C14751,C18H24O5
+41,Phytotoxins,Alkaloids,Others,C10573  Calycanthine,C10573,C22H26N4
+42,Phytotoxins,Alkaloids,Others,C19984  Cerberin,C19984,C32H48O9
+43,Phytotoxins,Alkaloids,Others,C12227  Chelerythrine,C12227,C21H18NO4
+44,Phytotoxins,Alkaloids,Others,C08677  Delphinine,C08677,C33H45NO9
+45,Phytotoxins,Alkaloids,Others,C10660  Dictamnine,C10660,C12H9NO2
+46,Phytotoxins,Alkaloids,Others,C10774  Matrine,C10774,C15H24N2O
+47,Phytotoxins,Alkaloids,Others,C19985  Nantenine,C19985,C20H21NO4
+48,Phytotoxins,Alkaloids,Others,C00745  Nicotine,C00745,C10H14N2
+49,Phytotoxins,Alkaloids,Others,C08705  Ryanodine,C08705,C25H35NO9
+50,Phytotoxins,Glycosides,Cyanogenic glycosides,C08325  Amygdalin,C08325,C20H27NO11
+51,Phytotoxins,Glycosides,Cyanogenic glycosides,C01418  Cycasin,C01418,C8H16N2O7
+52,Phytotoxins,Glycosides,Cyanogenic glycosides,C00844  Prunasin,C00844,C14H17NO6
+53,Phytotoxins,Terpenoids,Sesquiterpenoids,C09294  Anisatin,C09294,C15H20O8
+54,Phytotoxins,Terpenoids,Sesquiterpenoids,C09379  Coriamyrtin,C09379,C15H18O5
+55,Phytotoxins,Terpenoids,Sesquiterpenoids,C09529  Picrotoxinin,C09529,C15H16O6
+56,Phytotoxins,Terpenoids,Sesquiterpenoids,C09570  Tutin,C09570,C15H18O6
+57,Phytotoxins,Others,Others,C08287  Hypoglycin,C08287,C7H11NO2
+58,Phytotoxins,Others,Others,C08280  Hypoglycin B,C08280,C12H18N2O5
+59,Phytotoxins,Others,Others,C10737  Phrymarolin I,C10737,C24H24O11
+60,Phytotoxins,Others,Others,C10874  Podophyllotoxin,C10874,C22H22O8
+61,Phytotoxins,Others,Others,C07090  Protoanemonin,C07090,C5H4O2
+62,Phytotoxins,Others,Others,C19515  Ptaquiloside,C19515,C20H30O8
+63,Phytotoxins,Others,Others,C08512  Ranunculin,C08512,C11H16O8
+64,Phytotoxins,Others,Others,C10839  Urushiol III,C10839,C21H32O2
+65,Cyanotoxins,Alkaloids,Others,C19999  Cylindrospermopsin,C19999,C15H21N5O7S
+66,Cyanotoxins,Alkaloids,Others,C15720  Lyngbyatoxin,C15720,C27H39N3O2
+67,Cyanotoxins,Alkaloids,Others,C13757  Saxitoxin,C13757,C10H17N7O4
+68,Cyanotoxins,Peptides,Others,C15713  Nodularin,C15713,C41H60N8O10
+69,Marine biotoxins,Amnesic Shellfish Poisoning; ASP,Kainoids,C13732  Domoic acid,C13732,C15H21NO6
+70,Marine biotoxins,Amnesic Shellfish Poisoning; ASP,Kainoids,C20027  Isodomoic acid A,C20027,C15H21NO6
+71,Marine biotoxins,Ciguatera fish poisoning; CFP,Cyclic polyethers,C16762  Ciguatoxin I,C16762,C60H86O19
+72,Marine biotoxins,Ciguatera fish poisoning; CFP,Cyclic polyethers,C20003  Caribbean ciguatoxin 1,C20003,C62H92O19
+73,Marine biotoxins,Ciguatera fish poisoning; CFP,Cyclic polyethers,C20001  CTX 3C,C20001,C57H82O16
+74,Marine biotoxins,Ciguatera fish poisoning; CFP,Cyclic polyethers,C20002  Ciguatoxin 4A,C20002,C60H84O16
+75,Marine biotoxins,Ciguatera fish poisoning; CFP,Cyclic polyethers,C16885  Gambieric acid A,C16885,C59H92O16
+76,Marine biotoxins,Ciguatera fish poisoning; CFP,Cyclic polyethers,C16886  Gambieric acid B,C16886,C60H94O16
+77,Marine biotoxins,Ciguatera fish poisoning; CFP,Cyclic polyethers,C16887  Gambieric acid C,C16887,C65H100O19
+78,Marine biotoxins,Ciguatera fish poisoning; CFP,Cyclic polyethers,C16888  Gambieric acid D,C16888,C66H102O19
+79,Marine biotoxins,Ciguatera fish poisoning; CFP,Cyclic polyethers,C20004  Gambierol,C20004,C43H64O11
+80,Marine biotoxins,Ciguatera fish poisoning; CFP,Cyclic polyethers,C16852  Gambiertoxin 4b,C16852,C60H84O16
+81,Marine biotoxins,Ciguatera fish poisoning; CFP,Cyclic polyethers,C16854  Maitotoxin,C16854,C164H256O68S2. 2Na
+82,Marine biotoxins,Diarrhetic shellfish poisoning; DSP,Others,C16871  Pectenotoxin 1,C16871,C47H70O15
+83,Marine biotoxins,Diarrhetic shellfish poisoning; DSP,Others,C20012  Pectenotoxin 2,C20012,C47H70O14
+84,Marine biotoxins,Neurotoxic Shellfish Poison; NSP,Cyclic polyethers,C16839  Brevetoxin A,C16839,C49H70O13
+85,Marine biotoxins,Neurotoxic Shellfish Poison; NSP,Cyclic polyethers,C16857  Brevetoxin B,C16857,C50H70O14
+86,Marine biotoxins,Neurotoxic Shellfish Poison; NSP,Cyclic polyethers,C20013  Brevetoxin B1,C20013,C52H75NO17S
+87,Marine biotoxins,Neurotoxic Shellfish Poison; NSP,Cyclic polyethers,C20014  Brevetoxin B2,C20014,C53H79NO17S
+88,Marine biotoxins,Neurotoxic Shellfish Poison; NSP,Cyclic polyethers,C20015  Brevetoxin C,C20015,C49H69ClO14
+89,Marine biotoxins,Neurotoxic Shellfish Poison; NSP,Cyclic polyethers,C20016  Hemibrevetoxin B,C20016,C28H42O7
+90,Marine biotoxins,Paralytic shellfish poisoning; PSP,N-Sulfo-carbamoyl derivatives,C20018  Gonyautoxin 5,C20018,C10H17N7O7S
+91,Marine biotoxins,Paralytic shellfish poisoning; PSP,N-Sulfo-carbamoyl derivatives,C20019  Gonyautoxin 6,C20019,C10H17N7O8S
+92,Marine biotoxins,Paralytic shellfish poisoning; PSP,N-Sulfo-carbamoyl derivatives,C20020  Gonyautoxin 8,C20020,C10H17N7O11S2
+93,Marine biotoxins,Others,Others,C16907  Azaspiracid,C16907,C47H71NO12
+94,Marine biotoxins,Others,Others,C20025  Gymnodimine,C20025,C32H45NO4
+95,Marine biotoxins,Others,Others,C16761  Neosurugatoxin,C16761,C30H34BrN5O15
+96,Marine biotoxins,Others,Others,C20023  Prorocentrolide,C20023,C56H85NO13
+97,Marine biotoxins,Others,Others,C20024  Prorocentrolide B,C20024,C56H85NO17S
+98,Marine biotoxins,Others,Others,C18064  Pyropheophorbide a,C18064,C33H34N4O3
+99,Venoms,Bee venoms,Others,C20052  Philanthotoxin,C20052,C23H41N5O3
+100,Venoms,Bee venoms,Others,C13806  Philanthotoxin 343,C13806,C23H41N5O3
+101,Venoms,Bee venoms,Others,C20053  Tertiapin,C20053,C106H180N34O23S5
+102,Venoms,Frog venoms,Others,C08299  Bufotenine,C08299,C12H16N2O
+103,Venoms,Frog venoms,Others,C20030  Dermorphin,C20030,C40H50N8O10
+104,Venoms,Mollusk venoms,Others,C20000  Onchidal,C20000,C17H24O3
+105,Venoms,Scorpion venoms,Peptides,C20056  Agitoxin 1,C20056,C169H284N52O47S7
+106,Venoms,Scorpion venoms,Peptides,C20063  Bestoxin,C20063,
+107,Venoms,Scorpion venoms,Peptides,C20069  Charybdotoxin,C20069,C176H277N57O55S7
+108,Venoms,Scorpion venoms,Peptides,C20064  kappa-Hefutoxin 1,C20064,C105H156N38O36S4
+109,Venoms,Scorpion venoms,Peptides,C20055  Iberiotoxin,C20055,C179H274N50O55S7
+110,Venoms,Scorpion venoms,Peptides,C20058  Leiurotoxin I,C20058,C142H243N45O39S7
+111,Venoms,Scorpion venoms,Peptides,C20065  Maurotoxin,C20065,C145H232N46O46S8
+112,Venoms,Scorpion venoms,Peptides,C20057  Margatoxin,C20057,C178H286N52O50S7
+113,Venoms,Scorpion venoms,Peptides,C20066  Slotoxin,C20066,C177H281N47O50S7
+114,Venoms,Snake venoms,Hemorrhagins,C20085  Botrocetin,C20085,
+115,Venoms,Snake venoms,Hemorrhagins,C20086  Crotalase,C20086,
+116,Venoms,Snake venoms,Hemorrhagins,C20087  Crotalocytin,C20087,
+117,Venoms,Snake venoms,Hemorrhagins,C20088  Echistatin,C20088,C217H341N71O74S9
+118,Venoms,Snake venoms,Hemorrhagins,C20089  Gabonase,C20089,
+119,Venoms,Snake venoms,Hemorrhagins,C21791  Rhodocytin,C21791,
+120,Venoms,Spider venoms,Others,C20115  Agelenin,C20115,
+121,Venoms,Spider venoms,Others,C20116  Hanatoxin 1,C20116,
+122,Venoms,Spider venoms,Others,C20117  Huwentoxin-XI,C20117,
+123,Venoms,Spider venoms,Others,C20054  alpha-Latrotoxin,C20054,
+124,Venoms,Spider venoms,Others,C20118  Robustoxin,C20118,C206H313N59O59S9
+125,Venoms,Spider venoms,Others,C20067  Stromatoxin 1,C20067,
+126,Venoms,Others,Others,C20060  Cephalostatin 1,C20060,C54H74N2O10
+127,Venoms,Others,Others,C20061  Ritterazine A,C20061,C54H76N2O10

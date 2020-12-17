@@ -1,6 +1,6 @@
 import unittest
 import numpy as np
-from pykrev import element_counts, element_ratios, double_bond_equivalent, aromaticity_index, nominal_oxidation_state, calculate_mass, kendrick_mass_defect, find_intersections, unique_formula, missing_formula 
+from pykrev import element_counts, element_ratios, double_bond_equivalent, aromaticity_index, nominal_oxidation_state, calculate_mass, kendrick_mass_defect, find_intersections, unique_formula, missing_formula, filter_spectral_interference
 
 class TestFORMULA(unittest.TestCase):
 
@@ -102,6 +102,14 @@ class TestFORMULA(unittest.TestCase):
         res = missing_formula(x,x2,x3, group_labels = ['x','x2','x3'])
         self.assertEqual(sorted(res['x']),sorted(['F','E']))
         self.assertEqual(res['x2'],[])
+    
+    def test_filter_si(self):
+        x = [98.4096,98.8121,136.2304]
+        x2 = ["","",""]
+        x3 = [14982198,1195016,1039854]
+        res1, res2, res3 = filter_spectral_interference(x,x2,x3)
+        self.assertIsNone(np.testing.assert_array_equal(res1,np.array([98.8121,136.2304])))
 
+        
 if __name__ == '__main__':
     unittest.main()

@@ -1,0 +1,175 @@
+,A,B,C,D,E,F
+0,Pesticides,Fungicides,Others,C06588  Biphenyl,C06588,C12H10
+1,Pesticides,Fungicides,Others,C11258  Bitertanol,C11258,C20H23N3O2
+2,Pesticides,Fungicides,Others,C13034  Bronopol,C13034,C3H6BrNO4
+3,Pesticides,Fungicides,Others,C18706  Butylamine,C18706,C4H11N
+4,Pesticides,Fungicides,Others,C11000  Dichloran,C11000,C6H4Cl2N2O2
+5,Pesticides,Fungicides,Others,C18458  Diclomezine,C18458,C11H8Cl2N2O
+6,Pesticides,Fungicides,Others,C18721  Dinobuton,C18721,C14H18N2O7
+7,Pesticides,Fungicides,Others,C18460  Echlomezole,C18460,C5H5Cl3N2OS
+8,Pesticides,Fungicides,Others,C14268  Fenpiclonil,C14268,C11H6Cl2N2
+9,Pesticides,Fungicides,Others,C18726  Fenpropidin,C18726,C19H31N
+10,Pesticides,Fungicides,Others,C18462  Fludioxonil,C18462,C12H6F2N2O2
+11,Pesticides,Fungicides,Others,C18737  Fuberidazole,C18737,C11H8N2O
+12,Pesticides,Fungicides,Others,C11111  Isoprothiolane,C11111,C12H18O4S2
+13,Pesticides,Fungicides,Others,C18746  Methasulfocarb,C18746,C9H11NO4S2
+14,Pesticides,Fungicides,Others,C18447  Methyl bromide,C18447,CH3Br
+15,Pesticides,Fungicides,Others,C18448  Methyl iodide,C18448,CH3I
+16,Pesticides,Fungicides,Others,C18751  Nitrapyrin,C18751,C6H3Cl4N
+17,Pesticides,Fungicides,Others,C18873  Nitrothal-isopropyl,C18873,C14H17NO6
+18,Pesticides,Fungicides,Others,C11012  Pencycuron,C11012,C19H21ClN2O
+19,Pesticides,Fungicides,Others,C11151  Phenylmercury acetate,C11151,C8H8HgO2
+20,Pesticides,Fungicides,Others,C06701  Phosphonate,C06701,H3PO3
+21,Pesticides,Fungicides,Others,C18483  Probenazole,C18483,C10H9NO3S
+22,Pesticides,Fungicides,Others,C18487  Pyroquilon,C18487,C11H11NO
+23,Pesticides,Fungicides,Others,C18575  Quinoxaline,C18575,C8H6N2
+24,Pesticides,Fungicides,Others,C18892  Quinoxyfen,C18892,C15H8Cl2FNO
+25,Pesticides,Fungicides,Others,C11124  Spiroxamine,C11124,C18H35NO2
+26,Pesticides,Fungicides,Others,C18492  Tricyclazole,C18492,C9H7N3S
+27,Pesticides,Herbicides,Others,C01471  Acrolein,C01471,C3H4O
+28,Pesticides,Herbicides,Others,C02001  Allyl alcohol,C02001,C3H6O
+29,Pesticides,Herbicides,Others,C11261  Amitrole,C11261,C2H4N4
+30,Pesticides,Herbicides,Others,C18775  Benazolin,C18775,C9H6ClNO3S
+31,Pesticides,Herbicides,Others,C18452  Benfuresate,C18452,C12H16O4S
+32,Pesticides,Herbicides,Others,C10964  Benoxacor,C10964,C11H11Cl2NO2
+33,Pesticides,Herbicides,Others,C18594  Bentazone-sodium,C18594,C10H11N2O3S. Na
+34,Pesticides,Herbicides,Others,C18536  Benzobicyclon,C18536,C22H19ClO4S2
+35,Pesticides,Herbicides,Others,C11094  Carfentrazone-ethyl,C11094,C15H14Cl2F3N3O3
+36,Pesticides,Herbicides,Others,C18570  Chloridazon,C18570,C10H8ClN3O
+37,Pesticides,Herbicides,Others,C06755  Chloroacetic acid,C06755,C2H3ClO2
+38,Pesticides,Herbicides,Others,C10903  Cinmethylin,C10903,C18H26O2
+39,Pesticides,Herbicides,Others,C11095  Clomazone,C11095,C12H14ClNO2
+40,Pesticides,Herbicides,Others,C18782  Dichlormid,C18782,C8H11Cl2NO
+41,Pesticides,Herbicides,Others,C18719  Dimethipin,C18719,C6H10O4S2
+42,Pesticides,Herbicides,Others,C18600  Dalapon,C18600,C3H4Cl2O2
+43,Pesticides,Herbicides,Others,C18724  Endothal-disodium,C18724,C8H8O5. 2Na
+44,Pesticides,Herbicides,Others,C18829  Ethofumesate,C18829,C13H18O5S
+45,Pesticides,Herbicides,Others,C18831  Fenchlorazole-ethyl,C18831,C12H8Cl5N3O2
+46,Pesticides,Herbicides,Others,C18832  Fenclorim,C18832,C10H6Cl2N2
+47,Pesticides,Herbicides,Others,C18788  Flamprop-M,C18788,C16H13ClFNO3
+48,Pesticides,Herbicides,Others,C18543  Flupoxam,C18543,C19H14ClF5N4O2
+49,Pesticides,Herbicides,Others,C18854  Flupropanate,C18854,C3H2F4O2
+50,Pesticides,Herbicides,Others,C18857  Fluridone,C18857,C19H14F3NO
+51,Pesticides,Herbicides,Others,C11100  Flurochloridone,C11100,C12H10Cl2F3NO
+52,Pesticides,Herbicides,Others,C18859  Fluthiacet,C18859,C14H13ClFN3O3S2
+53,Pesticides,Herbicides,Others,C10908  Fluthiacet-methyl,C10908,C15H15ClFN3O3S2
+54,Pesticides,Herbicides,Others,C18735  Fluxofenim,C18735,C12H11ClF3NO3
+55,Pesticides,Herbicides,Others,C18470  Indanofan,C18470,C20H17ClO3
+56,Pesticides,Herbicides,Others,C18874  Norflurazon,C18874,C12H9ClF3N3O
+57,Pesticides,Herbicides,Others,C18878  Oxabetrinil,C18878,C12H12N2O3
+58,Pesticides,Herbicides,Others,C18496  Oxadiazon,C18496,C15H18Cl2N2O3
+59,Pesticides,Herbicides,Others,C18571  Oxaziclomefone,C18571,C20H19Cl2NO2
+60,Pesticides,Herbicides,Others,C18592  Pentoxazone,C18592,C17H17ClFNO4
+61,Pesticides,Herbicides,Others,C18803  Pyridate,C18803,C19H23ClN2O2S
+62,Pesticides,Herbicides,Others,C18485  Pyriftalid,C18485,C15H14N2O4S
+63,Pesticides,Herbicides,Others,C18584  Quinoclamin,C18584,C10H6ClNO2
+64,Pesticides,Herbicides,Others,C11150  TCA,C11150,C2HCl3O2
+65,Pesticides,Herbicides,Others,C18808  TCA-sodium,C18808,C2Cl3O2. Na
+66,Pesticides,Insecticides,Others,C18455  Chlorfenapyr,C18455,C15H11BrClF3N2O
+67,Pesticides,Insecticides,Others,C18816  Cryolite,C18816,Na3AlF6
+68,Pesticides,Insecticides,Others,C18463  Flonicamid,C18463,C9H6F3N3O
+69,Pesticides,Insecticides,Others,C18520  Flubendiamide,C18520,C23H22F7IN2O4S
+70,Pesticides,Insecticides,Others,C10994  Hydramethylnon,C10994,C25H24F6N4
+71,Pesticides,Insecticides,Others,C18862  Hydroprene,C18862,C17H30O2
+72,Pesticides,Insecticides,Others,C18569  Indoxacarb,C18569,C22H17ClF3N3O7
+73,Pesticides,Insecticides,Others,C18523  Metaflumizone,C18523,C24H16F6N4O2
+74,Pesticides,Insecticides,Others,C18557  Milbemectin,C18557,C31H44O7
+75,Pesticides,Insecticides,Others,C00745  Nicotine,C00745,C10H14N2
+76,Pesticides,Insecticides,Others,C18863  2-(Octylthio)ethanol,C18863,C10H22OS
+77,Pesticides,Insecticides,Others,C18614  Pyridaben,C18614,C19H25ClN2OS
+78,Pesticides,Insecticides,Others,C18484  Pyridalyl,C18484,C18H14Cl4F3NO3
+79,Pesticides,Insecticides,Others,C07593  Rotenone,C07593,C23H22O6
+80,Pesticides,Insecticides,Others,C18894  Spinetoram,C18894,C42H69NO10
+81,Pesticides,Insecticides,Others,C18488  Spiromesifen,C18488,C23H30O4
+82,Pesticides,Insecticides,Others,C18807  Spirotetramat,C18807,C21H27NO5
+83,Pesticides,Insecticides,Others,C18766  Sulfluramid,C18766,C10H6F17NO2S
+84,Pesticides,Insecticides,Others,C18770  Triazamate,C18770,C13H22N4O3S
+85,Pesticides,Insect growth regulators,Moulting hormone agonists,C18515  Chromafenozide,C18515,C24H30N2O3
+86,Pesticides,Insect growth regulators,Moulting hormone agonists,C18791  Halofenozide,C18791,C18H19ClN2O2
+87,Pesticides,Insect growth regulators,Moulting hormone agonists,C18525  Methoxyfenozide,C18525,C22H28N2O3
+88,Pesticides,Insect growth regulators,Moulting hormone agonists,C18526  Tebufenozide,C18526,C22H28N2O2
+89,Pesticides,Plant growth regulators,Others,C18586  Calcium formate,C18586,(CHO2)2. Ca
+90,Pesticides,Plant growth regulators,Others,C00114  Choline,C00114,C5H14NO
+91,Pesticides,Plant growth regulators,Others,C18819  Cloxyfonac-sodium,C18819,C9H8ClO4. Na
+92,Pesticides,Plant growth regulators,Others,C01566  Cyanamide,C01566,CH2N2
+93,Pesticides,Plant growth regulators,Others,C01633  1-Decanol,C01633,C10H22O
+94,Pesticides,Plant growth regulators,Others,C18399  Ethephon,C18399,C2H6ClO3P
+95,Pesticides,Plant growth regulators,Others,C18532  Ethychlozate,C18532,C11H11ClN2O2
+96,Pesticides,Plant growth regulators,Others,C01699  Gibberellin A3,C01699,C19H22O6
+97,Pesticides,Plant growth regulators,Others,C10942  Inabenfide,C10942,C19H15ClN2O2
+98,Pesticides,Plant growth regulators,Others,C18474  Maleic hydrazide,C18474,C4H4N2O2
+99,Pesticides,Plant growth regulators,Others,C18538  Prohydrojasmon,C18538,C15H26O3
+100,Pesticides,Plant growth regulators,Others,C18541  Trinexapac-ethyl,C18541,C13H16O5
+101,Pesticides,Rodenticides,Others,C18676  alpha-Chlorohydrin,C18676,C3H7ClO2
+102,Pesticides,Rodenticides,Others,C18697  Bromethalin,C18697,C14H7Br3F3N3O4
+103,Pesticides,Rodenticides,Others,C18707  Chloralose,C18707,C8H11Cl3O6
+104,Pesticides,Rodenticides,Others,C18514  Chlorophacinone,C18514,C23H15ClO3
+105,Pesticides,Rodenticides,Others,C18698  Diphenadione,C18698,C23H16O3
+106,Pesticides,Rodenticides,Others,C06522  Strychnine,C06522,C21H22N2O2
+107,Pesticides,Others,Synergist,C18880  Piperonyl butoxide,C18880,C19H30O5
+108,Obsolete pesticides,Fungicides,Others,C18935  Anilazine,C18935,C9H5Cl3N4
+109,Obsolete pesticides,Fungicides,Others,C18924  Benquinox,C18924,C13H11N3O2
+110,Obsolete pesticides,Fungicides,Others,C18923  Carbamorph,C18923,C8H16N2OS2
+111,Obsolete pesticides,Fungicides,Others,C18933  Chloranil,C18933,C6Cl4O2
+112,Obsolete pesticides,Fungicides,Others,C11252  Chloroneb,C11252,C8H8Cl2O2
+113,Obsolete pesticides,Fungicides,Others,C18936  Chlorquinox,C18936,C8H2Cl4N2
+114,Obsolete pesticides,Fungicides,Others,C18922  Dinocton 6,C18922,C16H22N2O7
+115,Obsolete pesticides,Fungicides,Others,C18929  Drazoxolon,C18929,C10H8ClN3O2
+116,Obsolete pesticides,Fungicides,Others,C18937  Fenaminosulf,C18937,C8H10N3O3S. Na
+117,Obsolete pesticides,Fungicides,Others,C18938  Fenitropan,C18938,C13H15NO6
+118,Obsolete pesticides,Fungicides,Others,C18920  Fluoromidine,C18920,C7H3ClF3N3
+119,Obsolete pesticides,Fungicides,Others,C18939  Fluotrimazole,C18939,C22H16F3N3
+120,Obsolete pesticides,Fungicides,Others,C18941  Halacrinate,C18941,C12H7BrClNO2
+121,Obsolete pesticides,Fungicides,Others,C18942  Mecarbinzid,C18942,C13H16N4O3S
+122,Obsolete pesticides,Fungicides,Others,C18934  Metsulfovax,C18934,C12H12N2OS
+123,Obsolete pesticides,Fungicides,Others,C18943  Prothiocarb,C18943,C8H18N2OS
+124,Obsolete pesticides,Fungicides,Others,C18944  Quinacetol sulfate,C18944,(C11H9NO2)2. H2SO4
+125,Obsolete pesticides,Fungicides,Others,C18945  Thicyofen,C18945,C8H5ClN2OS2
+126,Obsolete pesticides,Fungicides,Others,C18946  Thioquinox,C18946,C9H4N2S3
+127,Obsolete pesticides,Fungicides,Others,C18149  Tributyltin oxide,C18149,C24H54OSn2
+128,Obsolete pesticides,Herbicides,Others,C19112  Buthidazole,C19112,C10H16N4O2S
+129,Obsolete pesticides,Herbicides,Others,C19113  Calcium carbimide,C19113,CaCN2
+130,Obsolete pesticides,Herbicides,Others,C19114  Chlorfenac,C19114,C8H5Cl3O2
+131,Obsolete pesticides,Herbicides,Others,C19115  Chlorfenprop-methyl,C19115,C10H10Cl2O2
+132,Obsolete pesticides,Herbicides,Others,C19116  Credazine,C19116,C11H10N2O
+133,Obsolete pesticides,Herbicides,Others,C19117  Cyometrinil,C19117,C10H7N3O
+134,Obsolete pesticides,Herbicides,Others,C19118  Dimexano,C19118,C4H6O2S4
+135,Obsolete pesticides,Herbicides,Others,C19120  Dixanthogen,C19120,C6H10O2S4
+136,Obsolete pesticides,Herbicides,Others,C11024  Fenoxaprop-ethyl,C11024,C18H16ClNO5
+137,Obsolete pesticides,Herbicides,Others,C19091  Haloxydine,C19091,C5HCl2F2NO
+138,Obsolete pesticides,Herbicides,Others,C19122  Hexachloroacetone,C19122,C3Cl6O
+139,Obsolete pesticides,Herbicides,Others,C19055  Hexaflurate,C19055,KAsF6
+140,Obsolete pesticides,Herbicides,Others,C19108  Isocil,C19108,C8H11BrN2O2
+141,Obsolete pesticides,Herbicides,Others,C19107  Isomethiozin,C19107,C12H20N4OS
+142,Obsolete pesticides,Herbicides,Others,C18433  Karbutilate,C18433,C14H21N3O3
+143,Obsolete pesticides,Herbicides,Others,C19123  Methazole,C19123,C9H6Cl2N2O3
+144,Obsolete pesticides,Herbicides,Others,C19124  Methoxyphenone,C19124,C16H16O2
+145,Obsolete pesticides,Herbicides,Others,C11194  Morfamquat,C11194,C26H36N4O4. 2Cl
+146,Obsolete pesticides,Herbicides,Others,C19125  Naphthalic anhydride,C19125,C12H6O3
+147,Obsolete pesticides,Herbicides,Others,C19126  Oxapyrazon,C19126,C12H8BrN3O4
+148,Obsolete pesticides,Herbicides,Others,C19067  Potassium cyanate,C19067,KCNO
+149,Obsolete pesticides,Herbicides,Others,C19127  Proxan,C19127,C4H8OS2
+150,Obsolete pesticides,Herbicides,Others,C19128  Pydanon,C19128,C6H8N2O5
+151,Obsolete pesticides,Herbicides,Others,C19149  TCA-ethadyl,C19149,C6H4Cl6O4
+152,Obsolete pesticides,Herbicides,Others,C19129  Terbucarb,C19129,C17H27NO2
+153,Obsolete pesticides,Herbicides,Others,C19130  Tridiphane,C19130,C10H7Cl5O
+154,Obsolete pesticides,Insecticides,Others,C14746  Chlordimeform,C14746,C10H13ClN2
+155,Obsolete pesticides,Insecticides,Others,C10989  Fluvalinate,C10989,C26H22ClF3N2O3
+156,Obsolete pesticides,Insecticides,Others,C19039  Malonoben,C19039,C18H22N2O
+157,Obsolete pesticides,Insecticides,Others,C08705  Ryanodine,C08705,C25H35NO9
+158,Obsolete pesticides,Insecticides,Others,C08142  Sodium fluoride,C08142,NaF
+159,Obsolete pesticides,Insecticides,Others,C19040  Sodium hexafluorosilicate,C19040,Na2SiF6
+160,Obsolete pesticides,Insect growth regulators,Mite growth regulators,C19041  Flubenzimine,C19041,C17H10F6N4S
+161,Obsolete pesticides,Plant growth regulators,Others,C19131  Etacelasil,C19131,C11H25ClO6Si
+162,Obsolete pesticides,Plant growth regulators,Others,C19134  Heptopargil,C19134,C13H19NO
+163,Obsolete pesticides,Plant growth regulators,Others,C19135  Triapenthenol,C19135,C15H25N3O
+164,Obsolete pesticides,Rodenticides,Others,C19136  ANTU,C19136,C11H10N2S
+165,Obsolete pesticides,Rodenticides,Others,C19137  Bisthiosemi,C19137,C3H10N6S2
+166,Obsolete pesticides,Rodenticides,Others,C19138  Crimidine,C19138,C7H10ClN3
+167,Obsolete pesticides,Rodenticides,Others,C19139  Norbormide,C19139,C33H25N3O3
+168,Obsolete pesticides,Rodenticides,Others,C19140  Phosacetim,C19140,C14H13Cl2N2O2PS
+169,Obsolete pesticides,Rodenticides,Others,C19141  Pindone,C19141,C14H14O3
+170,Obsolete pesticides,Rodenticides,Others,C08880  Scilliroside,C08880,C32H44O12
+171,Obsolete pesticides,Others,Synergists,C19147  Piperonyl sulfoxide,C19147,C18H28O3S
+172,Obsolete pesticides,Others,Synergists,C19145  Propyl isome,C19145,C20H26O6
+173,Obsolete pesticides,Others,Synergists,C19146  Sesamex,C19146,C15H22O6

@@ -5,7 +5,7 @@ with open("README.md", "r") as fh:
 
 setuptools.setup(
     name="pykrev", 
-    version="0.0.2",
+    version="0.0.3",
     author="Ezra Kitson",
     author_email="ezrakitson@ed.ac.uk",
     description="van Krevelen analysis and beyond in Python",
@@ -19,4 +19,5 @@ setuptools.setup(
         "Operating System :: OS Independent",
     ],
     python_requires='>=3.6',
+    include_package_data=True,
 )
