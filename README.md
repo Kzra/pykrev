@@ -1,6 +1,6 @@
 # PyKrev: van Krevelen analysis and beyond
 
-PyKrev is a Python 3 package to help with analysis of high resolution mass spectrometry data.
+PyKrev is a Python 3 library to help with analysis of high resolution mass spectrometry data.
 
 To install use:
 
