@@ -27,6 +27,7 @@ def compound_class(formula_list, mass_list = [], method = 'MSCC'):
         'MSCC' - Multi-dimensional stoiochiometric compound classification.  See: Albert Rivas-Ubach, Yina Liu, Thomas Stephen Bianchi, Nikola Tolic, Christer Jansson, and Ljiljana Paša-Tolic. (2018)
         Moving beyond the van Krevelen diagram: A new stoichiometric approach for compound classification in organisms. Analytical Chemistry, DOI: 10.1021/acs.analchem.8b00529
         'KELL' - Compound classification based on aromaticity index. See: Kellerman, A., Dittmar, T., Kothawala, D. et al. Chemodiversity of dissolved organic matter in lakes driven by climate and hydrology. Nat Commun 5, 3804 (2014).          https://doi.org/10.1038/ncomms4804
+        'FORM' - Compound classification based on the formularity algorithm. 
         'KEGG_BioMol' - Match molecular formula to those listed in 'compounds with biological roles' KEGG BRITE Pathways (databases located in ./compound_data).
         'KEGG_Phyto' - Match molecular formula to those listed in the 'phytochemicals' KEGG BRITE Heirarchy (databases located in ./compound_data). 
         'KEGG_Lipid' - Match molecular formula to those listed in the 'lipids' KEGG BRITE Heirarchy (databases located in ./compound_data). 
@@ -108,7 +109,43 @@ def compound_class(formula_list, mass_list = [], method = 'MSCC'):
             elif ai <= 0.5 and ratio['HC'] >= 1.5:
                 compound_class.append('Aliphatic compounds')
                 cclassCounts['Aliphatic compounds'] += 1     
-        
+    
+    if method == 'FORM':
+        cRatios = element_ratios(formula_list)
+        cclassCounts['Lipid-like'] = 0
+        cclassCounts['Carbohydrate-like'] = 0
+        cclassCounts['Unsaturated hydrocarbons'] = 0
+        cclassCounts['Condensed aromatics'] = 0
+        cclassCounts['Lignin-like'] = 0
+        cclassCounts['Tannin-like'] = 0
+        cclassCounts['Amino Sugar-like'] = 0
+        cclassCounts['Protein-like'] = 0
+        cclassCounts['Not assigned'] = 0
+        for ratio in cRatios:
+            if ratio['OC'] >= 0.01 and ratio['OC'] <= 0.3 and ratio['HC'] >= 1.5 and ratio['HC'] <= 2.2:
+                compound_class.append('Lipid-like')
+                cclassCounts['Lipid-like'] += 1 
+            elif ratio['OC'] >= 0.7 and ratio['OC'] <= 1.1 and ratio['HC'] >= 1.5 and ratio['HC'] <= 2.3:
+                compound_class.append('Carbohydrate-like')
+                cclassCounts['Carbohydrate-like'] += 1 
+            elif ratio['OC'] >= 0.01 and ratio['OC'] <= 0.1 and ratio['HC'] >= 0.8 and ratio['HC'] <= 1.5:
+                compound_class.append('Unsaturated hydrocarbons')
+                cclassCounts['Unsaturated hydrocarbons'] += 1
+            elif ratio['OC'] >= 0.01 and ratio['OC'] <= 1 and ratio['HC'] >= 0.2 and ratio['HC'] <= 0.8:
+                compound_class.append('Condensed aromatics')
+                cclassCounts['Condensed aromatics'] += 1
+            elif ratio['OC'] >= 0.1 and ratio['OC'] <= 0.7 and ratio['HC'] >= 0.8 and ratio['HC'] <= 1.6:
+                compound_class.append('Lignin-like')
+                cclassCounts['Lignin-like'] += 1
+            elif ratio['OC'] >= 0.7 and ratio['OC'] <= 1.2 and ratio['HC'] >= 0.8 and ratio['HC'] <= 1.6:
+                compound_class.append('Tannin-like')
+                cclassCounts['Tannin-like'] += 1
+            elif ratio['OC'] >= 0.6 and ratio['OC'] <= 0.7 and ratio['HC'] >= 1.5 and ratio['HC'] <= 2.2:
+                compound_class.append('Amino Sugar-like')
+                cclassCounts['Tannin-like'] += 1
+            elif ratio['OC'] >= 0.3 and ratio['OC'] <= 0.6 and ratio['HC'] >= 1.5 and ratio['HC'] <= 2.3:
+                compound_class.append('Protein-like')
+                cclassCounts['Protein-like'] += 1
         
     if 'KEGG' in method:
         if method == 'KEGG_BioMol':

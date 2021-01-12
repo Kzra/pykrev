@@ -9,7 +9,7 @@ def kendrick_mass_defect_plot(formula_list,mz_list, base = 'CH2', **kwargs):
 	----
 	kendrick_mass_defect_plot(Y,X)
     
-	Returns a tuple containing two numpy arrays, the first contains the kendrick mass and the second the kendrick mass defect. 
+	Returns the figure and axes handles and a tuple containing two numpy arrays, the first contains the kendrick mass and the second the kendrick mass defect. 
     
 	Parameters
 	----------
@@ -23,6 +23,7 @@ def kendrick_mass_defect_plot(formula_list,mz_list, base = 'CH2', **kwargs):
     plt.scatter(kendrickMass,kendrickMassDefect, **kwargs)
     plt.xlabel('Kendrick Mass')
     plt.ylabel('Kendrick Mass Defect')
-    
-    return kendrickMass, kendrickMassDefect
+    fig = plt.gcf()
+    ax = plt.gca()
+    return fig, ax, (kendrickMass, kendrickMassDefect)
     

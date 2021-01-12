@@ -19,7 +19,7 @@ def mass_spectrum(formula_list,
 	----
 	mass_spectrum(Y,peak_intensities)
     
-    	Returns None
+    	Returns the figure and axes handles
     
 	Parameters
 	----------
@@ -68,4 +68,6 @@ def mass_spectrum(formula_list,
     else:
         plt.xlabel(f"{method[0].upper()}{method[1::]} atomic mass")
     plt.ylabel("Intensity")
-    return 
+    fig = plt.gcf()
+    ax = plt.gca()
+    return fig,ax

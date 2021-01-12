@@ -1,5 +1,6 @@
 import pandas as pd
-def ordination_matrix(molecular_formulas = [],peak_intensities=[],group_names = []):
+import numpy as np
+def ordination_matrix(molecular_formulas = [],peak_intensities=[],group_names = [], impute_value = 0):
     """ 
 	Docstring for function pyKrev.ordination_matrix
 	====================
@@ -11,16 +12,19 @@ def ordination_matrix(molecular_formulas = [],peak_intensities=[],group_names = 
 	ordination_matrix(molecular_formulas = [],peak_intensities =[],group_names = [])
     
 	Returns a pandas dataframe, in which the column headers are a set of all formula across molecular_formula and the rows correspond to a specific sample.
-    The [row,col] value of the dataframe is therefore the peak intensity of the formula in that sample. Zero if the formula was not present. 
+    The [row,col] value of the dataframe is therefore the peak intensity of the formula in that sample. Impute value (default 0) if the formula was not present. 
     
 	Parameters
 	----------
 	molecular_formulas: a list containing lists of molecular formulas
     peak_intensities: a list containing numpy arrays corresponding to the formula lists in molecular_formulas 
     group_names: a list of strings of len(molecular_formulas) corresponding to the row (i.e. sample) names
+    impute_value: the value to impute when a formula isn't present in a group. An integer or float or 'nan' (default 0):
+
     
     """
-        
+    if  impute_value == 'nan':
+        impute_value = np.nan
     if not group_names:
         group_names = [i for i in range(0,len(molecular_formulas))]
     all_formula = set()
@@ -37,7 +41,7 @@ def ordination_matrix(molecular_formulas = [],peak_intensities=[],group_names = 
                 ordination_mat.iloc[row_index,col_index] = plist[i] #set the row value to the peak intensity for that sample 
                 row_index += 1  #move down a row i.e. sample
             except ValueError: #if the formula can't be found 
-                ordination_mat.iloc[row_index,col_index] = 0 #set the value to zero 
+                ordination_mat.iloc[row_index,col_index] = impute_value #set the value to impute_value 
                 row_index += 1 #move down a row
         col_index += 1 #move across to the next column i.e. formula
     return ordination_mat

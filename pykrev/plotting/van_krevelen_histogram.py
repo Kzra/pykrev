@@ -16,7 +16,7 @@ def van_krevelen_histogram (formula_list, x_ratio = 'OC', y_ratio ='HC', **kwarg
 	----
 	van_krevelen_histogram(Y)
     
-	Returns a density index score if bins are provided as integers (see PyKrev.density_index).   
+	Returns the figure and axes handles and a density index score if bins are provided as integers (see PyKrev.density_index).   
     
 	Parameters
 	----------
@@ -56,7 +56,10 @@ def van_krevelen_histogram (formula_list, x_ratio = 'OC', y_ratio ='HC', **kwarg
     plt.xlabel('Atomic ratio of O/C')
     plt.ylabel('Atomic ratio of H/C')
     
-    return d_index
+    fig = plt.gcf()
+    ax = plt.gca()
+    
+    return fig, ax, d_index
         
     
 def density_index (ratio_list,xbins=20,ybins=20):

@@ -16,7 +16,7 @@ def compound_class_plot(formula_list,
 	----
 	compound_class_plot(Y)
     
-    Returns None
+    Returns the figure and axes handles and a tuple containing a list of compound class assignments and a dictionary containing the compound class counts
     
 	Parameters
 	----------
@@ -38,4 +38,6 @@ def compound_class_plot(formula_list,
     plt.xticks(x_pos, labels, rotation = 'vertical')
     plt.xlabel("Compound class")
     plt.ylabel("Counts")
-    return 
+    fig = plt.gcf()
+    ax = plt.gca()
+    return fig, ax, (compoundClass, cclassCounts)

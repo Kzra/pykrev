@@ -7,15 +7,25 @@ class TestPLOTTING(unittest.TestCase):
     def setUp(self):
         pass
 
-    def test_van_krevelen_plot(self):
+    def test_van_krevelen_plot_no_patch(self):
        x = ['C13H14O5','C13H14N2O4S2','C36H45ClN6O12','C9H11NO2', 'C9H11NO3', 'C11H12N2O2', 'C5H7NO3', 'C5H9NO3', 'C6H12N2O4S2','C6H11NO3S']
        x_dbe = double_bond_equivalent(x)
-       van_krevelen_plot(x, y_ratio = 'NC', c = x_dbe)
+       van_krevelen_plot(x, y_ratio = 'NC', c = x_dbe, patch_classes = [])
 
-    def test_multi_van_krevelen_plot(self):
+    def test_van_krevelen_plot_patch(self):
+       x = ['C13H14O5','C13H14N2O4S2','C36H45ClN6O12','C9H11NO2', 'C9H11NO3', 'C11H12N2O2', 'C5H7NO3', 'C5H9NO3', 'C6H12N2O4S2','C6H11NO3S']
+       x_dbe = double_bond_equivalent(x)
+       fig,ax = van_krevelen_plot(x, y_ratio = 'NC', c = x_dbe, patch_classes = ['lipid-like','lignin-like'], patch_alpha = 0.2, patch_text = False, patch_colors = ['#ffffbf','#ffffbf'])
+
+    def test_multi_van_krevelen_plot_no_patch(self):
        x = ['C13H14O5','C13H14N2O4S2','C36H45ClN6O12','C9H11NO2', 'C9H11NO3', 'C11H12N2O2', 'C5H7NO3', 'C5H9NO3', 'C6H12N2O4S2','C6H11NO3S']
        x2 = ['C14H14O5','C12H14N2O4S2','C36H45ClN6O12','C9H14NO2', 'C9H11N2O3', 'C11H12N2O2', 'C55H7NO3', 'C5H9NO3', 'C6H12N2O4S2','C6H11NO3S']
-       multi_van_krevelen_plot(x, x2, group_labels = ['Group_1','Group_2'])
+       multi_van_krevelen_plot(x, x2, group_labels = ['Group_1','Group_2'], patch_classes = [])
+
+    def test_multi_van_krevelen_plot_patch(self):
+       x = ['C13H14O5','C13H14N2O4S2','C36H45ClN6O12','C9H11NO2', 'C9H11NO3', 'C11H12N2O2', 'C5H7NO3', 'C5H9NO3', 'C6H12N2O4S2','C6H11NO3S']
+       x2 = ['C14H14O5','C12H14N2O4S2','C36H45ClN6O12','C9H14NO2', 'C9H11N2O3', 'C11H12N2O2', 'C55H7NO3', 'C5H9NO3', 'C6H12N2O4S2','C6H11NO3S']
+       multi_van_krevelen_plot(x, x2, group_labels = ['Group_1','Group_2'], patch_classes = ['tannin-like','lignin-like'], patch_alpha = 0.4, patch_text = True, patch_colors = ['#ffffbf','#ffffbf'])
 
     def test_missing_plot(self):
        x = ['C13H14O5','C13H14N2O4S2','C36H45ClN6O12','C9H11NO2', 'C9H11NO3', 'C11H12N2O2', 'C5H7NO3', 'C5H9NO3', 'C6H12N2O4S2','C6H11NO3S']

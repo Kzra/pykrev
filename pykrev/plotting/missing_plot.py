@@ -17,7 +17,7 @@ def missing_plot(*groups,**kwargs):
 	----
 	missing_plot(*Y)
     
-	Returns a dictionary containing missing groups.   
+	Returns the figure and axes handles and a dictionary containing missing groups.   
     
 	Parameters
 	----------
@@ -36,7 +36,7 @@ def missing_plot(*groups,**kwargs):
     for group in missing_groups:
         missing_formulas.append(missing_groups[group])
     
-    multi_van_krevelen_plot(missing_formulas,**kwargs) 
+    fig, ax = multi_van_krevelen_plot(missing_formulas,**kwargs) 
     
-    return missing_groups
+    return fig, ax, missing_groups
     

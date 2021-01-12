@@ -79,7 +79,12 @@ class TestDIVERSITY(unittest.TestCase):
         x = ['C13H14O5','C13H14N2O4S2','C36H45ClN6O12','C9H11NO2', 'C9H11NO3', 'C11H12N2O2', 'C5H7NO3', 'C5H9NO3', 'C6H12N2O4S2','C6H11NO3S']
         z = np.array([1000,2432,3000,4201,2000,5990,1000,6520,8000,9001])
         res = compound_class(x, method = 'KELL')
-        
+
+    def test_compound_class_FORM(self):
+        x = ['C13H14O5','C13H14N2O4S2','C36H45ClN6O12','C9H11NO2', 'C9H11NO3', 'C11H12N2O2', 'C5H7NO3', 'C5H9NO3', 'C6H12N2O4S2','C6H11NO3S']
+        z = np.array([1000,2432,3000,4201,2000,5990,1000,6520,8000,9001])
+        res = compound_class(x, method = 'FORM')
+
     def test_compound_class_KEGG(self):
         x = ['C13H14O5','C13H14N2O4S2','C36H45ClN6O12','C9H11NO2', 'C9H11NO3', 'C11H12N2O2', 'C5H7NO3', 'C5H9NO3', 'C6H12N2O4S2','C6H11NO3S']
         z = np.array([1000,2432,3000,4201,2000,5990,1000,6520,8000,9001])

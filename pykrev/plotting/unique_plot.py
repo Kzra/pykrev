@@ -16,7 +16,7 @@ def unique_plot(*groups, **kwargs):
 	----
 	unique_plot(Y*)
     
-	Returns unique_groups produced by pk.unique_formula().   
+	Returns figure and ax handles and the unique_groups produced by pk.unique_formula().   
     
 	Parameters
 	----------
@@ -36,7 +36,7 @@ def unique_plot(*groups, **kwargs):
     for group in unique_groups:
        unique_formulas.append(unique_groups[group])
     
-    multi_van_krevelen_plot(unique_formulas, **kwargs)
+    fig,ax = multi_van_krevelen_plot(unique_formulas, **kwargs)
     
-    return unique_groups
+    return fig,ax,unique_groups
     

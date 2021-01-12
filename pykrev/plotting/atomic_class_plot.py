@@ -16,7 +16,7 @@ def atomic_class_plot(formula_list,
 	----
 	atomic_class_plot(Y)
     
-    Returns a tuple containing the mean, median and standard deviation 
+    Returns the fig and ax handles and a tuple containing the mean, median and standard deviation 
     
 	Parameters
 	----------
@@ -37,7 +37,9 @@ def atomic_class_plot(formula_list,
     plt.grid(axis='y', alpha=0.75)
     plt.xlabel(f"{element} atom class")
     plt.ylabel("Counts")
+    fig = plt.gcf()
+    ax = plt.gca()
     if summary_statistics:
     ## add to the upper right of the plot
         plt.annotate(f"$\mu={np.round(atom_mean,2)}$\nm = {np.round(atom_median,2)}\n$\sigma={np.round(atom_std,2)}$", xy=(0.75, 0.75), xycoords='axes fraction')
-    return atom_mean, atom_median, atom_std
+    return fig, ax, (atom_mean, atom_median, atom_std) 
