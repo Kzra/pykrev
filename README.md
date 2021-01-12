@@ -10,7 +10,7 @@ pip install pykrev
 
 [**The User Guide can be accessed here**](https://github.com/Kzra/PyKrev/blob/master/docs/PyKrevUserGuide.md)
 
-[**Making UpSet plots with PyKrev* and UpSetPlot*](https://github.com/Kzra/PyKrev/blob/master/docs/UpSetplotswithPyKrev.md)
+[**Making UpSet plots with PyKrev* and UpSetPlot**](https://github.com/Kzra/PyKrev/blob/master/docs/UpSetplotswithPyKrev.md)
 
 [**Performing PCA with PyKrev and scikit-learn**](https://github.com/Kzra/PyKrev/blob/master/docs/PCAwithPyKrev.md)
 
