@@ -1,4 +1,6 @@
-[**UpSet Plots**](https://caleydo.org/tools/upset/#:~:text=UpSet%20concept,the%20figure%20on%20the%20right.&text=The%20first%20row%20in%20the,B%20or%20C\)%2C%20etc.) are an effective way of visualising intersections of three or more sets. This is particularly useful when we want to compare high resolution mass spectrometry data between multiple samples. An implementation of UpSet plots in Python is [UpSetPlot](https://pypi.org/project/UpSetPlot/) which you will need to install before performing the following analysis.
+## UpSet plots with PyKrev ##
+
+* [**UpSet Plots**](https://caleydo.org/tools/upset/#:~:text=UpSet%20concept,the%20figure%20on%20the%20right.&text=The%20first%20row%20in%20the,B%20or%20C\)%2C%20etc.) are an effective way of visualising intersections of three or more sets. This is particularly useful when we want to compare high resolution mass spectrometry data between multiple samples. An implementation of UpSet plots in Python is [UpSetPlot](https://pypi.org/project/UpSetPlot/) which you will need to install before performing the following analysis.
 
 
 ```python
@@ -9,6 +11,8 @@ import pandas as pd
 import pykrev as pk
 ```
 
+* Read in the example formula using ```read_formularity```. 
+
 
 ```python
 A_formula, A_peak_intensity, [], [] = pk.read_formularity('example_data/formularity_example_A.csv',pi_col = 'peak_intensity',pi = True, mz=False,cclass = False) 
@@ -16,7 +20,7 @@ B_formula,B_peak_intensity, [], [] = pk.read_formularity('example_data/formulari
 C_formula,C_peak_intensity, [], [] = pk.read_formularity('example_data/formularity_example_C.csv',pi_col = 'peak_intensity',pi = True, mz=False,cclass = False)
 ```
 
-There are two ways in which we can use PyKrev with UpSetPlot to produce upset plots based on our data. <br> Method 1 is simpler, but does not allow us to customise the plots as much.
+* There are two ways in which we can use PyKrev with UpSetPlot to produce upset plots based on our data. <br> Method 1 is simpler, but does not allow us to customise the plots as much.
 
 
 ```python
@@ -31,11 +35,11 @@ title = plt.title('Method 1')
 
 
     
-![png](output_4_0.png)
+![png](output_6_0.png)
     
 
 
-Method 2 is a little more complex, but allows us to add additional catplots above each intersection to give more information about the formula in that intersection. In the example below, I use catplots to show the distribution of double bond equivalence and oxygen atom number, as well as the proportion of compound class types in each intersection based on AI mod and HC ratios (see [Kellerman et al. (2014)](https://www.nature.com/articles/ncomms4804)).
+* Method 2 is a little more complex, but allows us to add additional catplots above each intersection to give more information about the formula in that intersection. In the example below, I use catplots to show the distribution of double bond equivalence and oxygen atom number, as well as the proportion of compound class types in each intersection based on AI mod and HC ratios (see [Kellerman et al. (2014)](https://www.nature.com/articles/ncomms4804)).
 
 
 ```python
@@ -131,8 +135,12 @@ upset_returns['extra6'].set_ylabel('Unsaturated \nphenolic \ncompounds', fontsiz
 
 
     
-![png](output_6_2.png)
+![png](output_8_2.png)
     
 
 
-There you go! Of course you don't have to include compund class, oxygen counts or double bond equivalence, but whatever parameters are of interest. **Happy upsetting**. 
+That's everything! Of course you don't have to include compund class, oxygen counts or double bond equivalence, but whatever parameters are of interest. **Happy upsetting**. 
+
+* Contact: ezra.kitson@ed.ac.uk
+* Last updated: 15/01/2021
+

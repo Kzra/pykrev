@@ -1,3 +1,11 @@
+## [1.0.1] -15-01-20201
+
+### Changed
+- compound_class 'FORM' method patched so that non-assignments are appended to list and counted
+- added two new loading plot examples to the pca docs 
+- reformatted upsetplot docs
+- short description in setup.py
+
 ## [1.0.0] -11-01-20201
 
 ### Added

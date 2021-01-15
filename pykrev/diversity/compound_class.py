@@ -146,6 +146,9 @@ def compound_class(formula_list, mass_list = [], method = 'MSCC'):
             elif ratio['OC'] >= 0.3 and ratio['OC'] <= 0.6 and ratio['HC'] >= 1.5 and ratio['HC'] <= 2.3:
                 compound_class.append('Protein-like')
                 cclassCounts['Protein-like'] += 1
+            else:
+                compound_class.append('Not assigned')
+                cclassCounts['Not assigned'] += 1
         
     if 'KEGG' in method:
         if method == 'KEGG_BioMol':

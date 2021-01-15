@@ -5,10 +5,10 @@ with open("README.md", "r") as fh:
 
 setuptools.setup(
     name="pykrev", 
-    version="1.0.0",
+    version="1.0.1",
     author="Ezra Kitson",
     author_email="ezrakitson@ed.ac.uk",
-    description="van Krevelen analysis and beyond in Python",
+    description="FT-MS data analysis in Python",
     long_description=long_description,
     long_description_content_type="text/markdown",
     url="https://github.com/kzra/pykrev",

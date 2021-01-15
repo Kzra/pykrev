@@ -16,12 +16,17 @@ from matplotlib import pyplot as plt
 import pandas as pd
 ```
 
+
+```python
+np.random.seed(87) ## seed the RNG (for reproducible figures)
+```
+
 * First we need to load in our dataset. In this example we are going to load in a batch aligned dataset. ```read_batch_formularity``` can then compute an ordination matrix directly on the data.
   * The dataset was taken from [Kew, Will, et al. (2018)](https://pubs.acs.org/doi/10.1021/acs.analchem.8b01446) and consists of four whisky samples (samples A - D) analysed using ESI mode FT-MS with formula assignment rules of O>0, N<2, S<=2, P<1.
 
 
 ```python
-fdata, fordination = pk.read_batch_formularity('batch_formularity.csv', impute_value = 0)
+fdata, fordination = pk.read_batch_formularity('example_data/batch_formularity.csv', impute_value = 0)
 nsample, nformula = fordination.shape #the ordination matrix has samples in rows and formula in columns
 ```
 
@@ -65,8 +70,6 @@ assert pordination.shape == (nsample,nformula)
 pca = PCA() #instance of the PCA class, here we can define parameters about the PCA 
 pca.fit(pordination) #fit the PCA intialised with default parameters to our data
 pca_result = pca.transform(pordination) # transform our data with the fitted model
-#print(pca_result) #print the coordinates of the PCA components in reduced dimensional space
-#print(pca.explained_variance_ratio_) #print the relative contributions of the data 
 ```
 
 * One way to visualise the variance explained by your principal coordinates is with a scree plot and a variance plot. You can use the ```scree_plot``` and ```variance_plot``` functions i've defined below to do this. 
@@ -82,10 +85,10 @@ def scree_plot(pca_instance, **kwargs):
     plt.xlabel('Principal Component')
     plt.ylabel('Eigenvalue')
     return plt.gcf(), plt.gca()
+```
 
-plt.figure()
-scree_plot(pca)
 
+```python
 def variance_plot(pca_instance, **kwargs):
     """ This function creates a variance plot on the results of the sklearn implementation of PCA."""
     varExplained = pca_instance.explained_variance_ratio_
@@ -100,28 +103,25 @@ def variance_plot(pca_instance, **kwargs):
     plt.ylabel('Variance explained ')
     plt.legend(['Proportion','Cumulative'])
     return plt.gcf(), plt.gca()   
-
-plt.figure()
-variance_plot(pca)
 ```
 
 
+```python
+plt.figure()
+fig, ax = scree_plot(pca)
+plt.figure()
+fig, ax = variance_plot(pca)
+```
 
 
-    (<Figure size 432x288 with 1 Axes>,
-     <AxesSubplot:xlabel='Principal Component', ylabel='Variance explained '>)
-
+    
+![png](output_16_0.png)
+    
 
 
 
     
-![png](output_13_1.png)
-    
-
-
-
-    
-![png](output_13_2.png)
+![png](output_16_1.png)
     
 
 
@@ -129,33 +129,37 @@ variance_plot(pca)
 
 
 ```python
-def pca_plot(pca_result, pca_instance, group_names = [], text_offset = 0.002, **kwargs):
+def pca_plot(pca_result, pca_instance, group_names, text_offset = 0.002, text = False, **kwargs):
     """ This function creates a 2D PCA plot on the results of the sklearn implementation of PCA."""
+    assert len(group_names)==len(pca_result[:,1])
     varExplained = pca_instance.explained_variance_ratio_
-    plt.scatter(pca_result[:,0],pca_result[:,1], **kwargs)
+    for i in range(0,len(group_names)):
+        # scatter points with default pyplot colour scheme
+        plt.scatter(pca_result[i,0],pca_result[i,1], **kwargs)
+        # add text labels to scatter points 
+        if text == True:
+             plt.text(pca_result[i,0] + text_offset,pca_result[i,1], group_names[i])
+    #label axes
     plt.xlabel(f"PC 1 {str(varExplained[0]*100)[:4]}%")
     plt.ylabel(f"PC 2 {str(varExplained[1]*100)[:4]}%")
-    ## add axis lines (like abline in r )
+    plt.legend(group_names)
+    ## add axis lines (like abline in r)
     plt.axhline(0, color='k', linestyle = '--', alpha = 0.5)
     plt.axvline(0, color='k', linestyle = '--', alpha = 0.5)
-    if group_names:
-        assert len(group_names)==len(pca_result[:,1])
-        for i in range (0,len(group_names)):
-            plt.text(pca_result[i,0] + text_offset,pca_result[i,1], group_names[i])
+
     return plt.gcf(), plt.gca() 
 
-fig, ax = pca_plot(pca_result = pca_result, pca_instance = pca, 
-         group_names = ['Sample 1', 'Sample 2', 'Sample 3', 'Sample 4'],
-         c = ['r','b','m','c'])
+fig, ax = pca_plot(pca_result = pca_result, pca_instance = pca, text = False,
+         group_names = ['Sample A', 'Sample B', 'Sample C', 'Sample D'])
 ```
 
 
     
-![png](output_15_0.png)
+![png](output_18_0.png)
     
 
 
-* The PCA plot is useful to visualise the separation between our samples, but how do the features of our dataset (in this case the molecular formula) contribute to this separation? To visualise this we will use plot the loadings of our features using ```loading_plot```.
+* The PCA plot is useful to visualise the separation between our samples, but how do the features of our dataset (in this case the molecular formula) contribute to this separation? To visualise this we will use loading plots. 
  * First we need to extract the loadings and label them by their corresponding molecular formula. 
 
 
@@ -165,10 +169,6 @@ loadings = pca.components_.T #extract the loadings of the formula
 loadingDF= pd.DataFrame(loadings,formula) #this constructs a dataframe with the formula as rows and the loadings for the four principal components as columns
 loadingDF.head()
 ```
-
-
-
-
 
 </style>
 <table border="1" class="dataframe">
@@ -183,39 +183,39 @@ loadingDF.head()
   </thead>
   <tbody>
     <tr>
-      <th>C13H18O8</th>
-      <td>0.004601</td>
-      <td>0.027376</td>
-      <td>-0.002374</td>
-      <td>-0.994156</td>
+      <th>C22H12O2S2</th>
+      <td>-0.000696</td>
+      <td>0.001101</td>
+      <td>0.013782</td>
+      <td>0.977792</td>
     </tr>
     <tr>
-      <th>C17H30O16</th>
-      <td>-0.000459</td>
-      <td>0.000726</td>
-      <td>0.009082</td>
-      <td>0.033736</td>
+      <th>C15H14O6</th>
+      <td>0.001697</td>
+      <td>0.009655</td>
+      <td>-0.001565</td>
+      <td>-0.015297</td>
     </tr>
     <tr>
-      <th>C17H8O10</th>
-      <td>-0.006651</td>
-      <td>-0.007415</td>
-      <td>0.010036</td>
-      <td>-0.065484</td>
+      <th>C21H14O11</th>
+      <td>-0.000889</td>
+      <td>-0.003127</td>
+      <td>-0.005893</td>
+      <td>-0.185827</td>
     </tr>
     <tr>
-      <th>C15H22O9</th>
-      <td>0.001601</td>
-      <td>0.004380</td>
-      <td>0.003829</td>
-      <td>-0.000184</td>
+      <th>C10H18O3</th>
+      <td>-0.000488</td>
+      <td>0.001787</td>
+      <td>0.004227</td>
+      <td>0.000866</td>
     </tr>
     <tr>
-      <th>C26H24O13</th>
-      <td>-0.001346</td>
-      <td>-0.002386</td>
-      <td>0.003246</td>
-      <td>-0.000202</td>
+      <th>C17H12O10</th>
+      <td>-0.002741</td>
+      <td>-0.014004</td>
+      <td>0.000492</td>
+      <td>0.000241</td>
     </tr>
   </tbody>
 </table>
@@ -223,13 +223,16 @@ loadingDF.head()
 
 
 
-* Now we have to visualise our loadings. There are many ways we can do this and it's a great place to get creative. Functions in the formula, plotting and diversity packages in PyKrev can help. Below we create a loading plot that recreates a mass spectrum using ```mass_spectrum```.
-  * The loadings don't have to be visualised as masses, they could be visualised based on compound class, atom counts or anything else you can think of.
+* Now we have to visualise our loadings. There are many ways we can do this and it's a great place to get creative. Functions in the formula, plotting and diversity packages in PyKrev can help. Below I have defined functions to create : 
+
+  * a loading plot that recreates a mass spectrum with the contribution of masses to the PCs using ```mass_loading_plot```.
+  * a loading plot that shows the sum contribution of compound classes to the PCs using ```cclass_loading_plot```.
+  * a loading plot that shows the sum contribution of oxygen classes to the PCs using ```oxygen_loading_plot```.
 
 
 
 ```python
-def loading_plot(loadingDF):
+def mass_loading_plot(loadingDF):
     """This function takes a loading dataframe and plots the loadings of the first 2 PCs against mass"""
     formula = list(loadingDF.index)
     pk.mass_spectrum(formula_list=formula, peak_intensities= loadingDF.iloc[:,0],method = 'average', normalise= False, color = 'b')
@@ -238,43 +241,221 @@ def loading_plot(loadingDF):
     plt.legend(['PC1','PC2'])
     
     return plt.gcf(), plt.gca()
+```
 
-#Below we plot the loadings alongside the sample coordinates on the first two princial axis. 
-#Masses with a positive loading in PC1 are correlated with samples with a positive value in PC1 etc.
-group_names = ['S1','S2','S3','S4']
+
+```python
+def cclass_loading_plot(loadingDF):
+    """This function takes a loading dataframe and plots a bar chart of compound class 
+        with the sum loadings of the first 2 PCs """
+    formula = list(loadingDF.index)
+    #perform compound class assignment using the formularity assignment rules
+    assignments, counts = pk.compound_class(formula,method = 'FORM')
+    #make a dictionary to store the sum of the loading values per compound class inside 
+    # for PC1
+    compoundPC1 = dict()
+    # initialise dictionary with 0 values
+    for i in range(0,len(loadingDF.index)):
+        compoundPC1[assignments[i]] = 0 
+    # sum the assignment values 
+    for i in range(0,len(loadingDF.index)):
+        compoundPC1[assignments[i]] += loadingDF.iloc[i,0]
+    # sort the compound classes dictionaries alphabetically (ordered dicts possible in >Python 3.7)
+    sortedPC1 = dict()
+    for s in sorted(compoundPC1):
+        sortedPC1[s] = compoundPC1[s]
+    # for PC2 
+    compoundPC2 = dict()
+    for i in range(0,len(loadingDF.index)):
+        compoundPC2[assignments[i]] = 0 
+    for i in range(0,len(loadingDF.index)):
+        compoundPC2[assignments[i]] += loadingDF.iloc[i,1]
+    sortedPC2 = dict()
+    for s in sorted(compoundPC2):
+        sortedPC2[s] = compoundPC2[s]
+    # extract the values to plot on the y axis
+    y1 = np.array(list(sortedPC1.values()))
+    y2 = np.array(list(sortedPC2.values()))
+    # create a number line for the x axis, 
+    #adequately spaced to allow side by side bars for PC1 and PC2
+    xrange = np.arange(0,len(y1)*3,3)
+    plt.bar(xrange,y1)
+    plt.bar(xrange+.8,y2)
+    plt.legend(['PC1','PC2'])
+    plt.axhline(0, color='k', linestyle = '--', alpha = 0.5)
+    #Include xticks 
+    plt.xticks(xrange,list(sortedPC1.keys()), rotation= 'vertical')
+    plt.xlabel('Compound class')
+    plt.ylabel('Sum loadings')
+    # return the range of the x-axis (so we can set custom x ticks if needed)
+    return plt.gcf(), plt.gca(), xrange
+```
+
+
+```python
+def oxygen_loading_plot(loadingDF):
+    """This function takes a loading dataframe and plots a bar chart of oxygen class 
+        with the sum loadings of the first 2 PCs """
+    formula = list(loadingDF.index)
+    #perform oxygen class assignment using element counts 
+    oxygen_counts = [o['O'] for o in pk.element_counts(formula)]
+    #make a dictionary to store the sum of the loading values per compound class inside 
+    # for PC1
+    oxygenPC1 = dict()
+    # initialise dictionary with 0 values
+    for i in range(0,len(loadingDF.index)):
+        oxygenPC1[oxygen_counts[i]] = 0 
+    # sum the assignment values 
+    for i in range(0,len(loadingDF.index)):
+        oxygenPC1[oxygen_counts[i]] += loadingDF.iloc[i,0]
+    # sort the oxygen class dictionaries numerically (ordered dicts possible in >Python 3.7)
+    sortedPC1 = dict()
+    for s in sorted(oxygenPC1):
+        sortedPC1[s] = oxygenPC1[s]
+    # for PC2 
+    oxygenPC2 = dict()
+    for i in range(0,len(loadingDF.index)):
+        oxygenPC2[oxygen_counts[i]] = 0 
+    for i in range(0,len(loadingDF.index)):
+        oxygenPC2[oxygen_counts[i]] += loadingDF.iloc[i,1]
+    sortedPC2 = dict()
+    for s in sorted(oxygenPC2):
+        sortedPC2[s] = oxygenPC2[s]
+    # extract the values to plot on the y axis
+    y1 = np.array(list(sortedPC1.values()))
+    y2 = np.array(list(sortedPC2.values()))
+    # create a number line for the x axis, 
+    #adequately spaced to allow side by side bars for PC1 and PC2
+    xrange = np.arange(0,len(y1)*3,3)
+    plt.bar(xrange,y1)
+    plt.bar(xrange+.8,y2)
+    plt.legend(['PC1','PC2'])
+    plt.axhline(0, color='k', linestyle = '--', alpha = 0.5)
+    #Include xticks 
+    plt.xticks(xrange,list(sortedPC1.keys()), rotation= 'vertical')
+    plt.xlabel('Oxygen class')
+    plt.ylabel('Sum loadings')
+    # return the range of the x-axis (so we can set custom x ticks if needed)
+    return plt.gcf(), plt.gca(), xrange
+```
+
+* In each case I like to plot the positions of the samples on the first two principal components next to the loading plot to make analysing the plots easier. This is possible using ```plt.subplots``` to create panelled figures. 
+
+
+
+```python
+## MASS LOADINGS 
+varExplained = pca.explained_variance_ratio_ #variance explained in your PCA results
+group_names = ['A','B','C','D'] # sample names
 plt.figure(figsize=(10, 4)) # create the overall figure
-plt.subplot(1,4,(1,2)) #take two panels of the subplot for the loading plot
-loading_plot(loadingDF)
-plt.subplot(1,4,3) #take one panel for the PC1 plot
+plt.subplot(1,4,(1,2)) #take the first two panels of the subplot for the loading plot
+mass_loading_plot(loadingDF)
+plt.ylim(-1,1) # centre the y axis
+plt.subplot(1,4,3) #take the third panel for the PC1 plot
 for i in range(0,4):
-    plt.scatter(0,pca_result[i,0]) #if you want to shudder the points (to avoid overlap) replace 0 with random.uniform(-.1,.1)
-plt.title('PC1 (93.5%)')
+    ## the np.random function shudders the x coordinates of the points, which is necessary to prevent overlap
+    plt.scatter(np.random.uniform(-.1,.1, 1),pca_result[i,0])
+plt.title(f'PC1 ({str(varExplained[0]*100)[:4]}%)') #include the % variance explained in the 
 plt.ylim(-.1,.1)
 plt.xticks([])
 plt.yticks([-.08,0,.08])
 plt.axhline(0, color='k', linestyle = '--', alpha = 0.5)
 plt.subplot(1,4,4) #take the final panel for the PC2 plot
 for i in range(0,4):
-    plt.scatter(0,pca_result[i,1]) 
-plt.title('PC2 (4.96%)')
+    plt.scatter(np.random.uniform(-.1,.1, 1),pca_result[i,1]) 
+plt.title(f'PC2 ({str(varExplained[1]*100)[:4]}%)')
 plt.ylim(-.1,.1)
 plt.xticks([])
 plt.yticks([-.08,0,.08])
 plt.legend(group_names, loc = 'lower right')
 plt.axhline(0, color='k', linestyle = '--', alpha = 0.5)
-
 plt.tight_layout()
 plt.show()
 ```
 
 
     
-![png](output_19_0a.png)
+![png](output_26_0.png)
     
 
 
-* Analysing the above graphic we can see that in the first principal component, that accounts for ~95% of variation in the dataset, sample 4 is separated from the other three samples and strongly correlated  with two masses, one at ~ 180 Da and one ~ 200 Da. Sample 1 and 2 have negative scores PC1 and are correlated with masses at ~ 300 Da and ~ 500 Da. The samples are more clustered in PC2 which accounts for ~ 5% of the overal variation in the dataset and there is a greater range of positive and negative loadings across masses from 100 - 400 Da.
 
-**That's the end of the guide.** Hopefully you are now more comfortable using sklearn and PyKrev to perform dimensionality reduction on your FT-MS data. One of the main advantages of doing your data analysis in Python is being able to use the powerful machine learning libraries Python has to offer. sklearn has many capabilities beyond PCA - ... discriminant analysis, k-means clustering, neural networks, random forest classifiers and  support vector machines to name just a few -  that will enable you to ask new and interesting questions with your data. [ You can learn more about them here.](https://scikit-learn.org/stable/)
+```python
+## COMPOUND CLASS LOADINGS 
+varExplained = pca.explained_variance_ratio_ #variance explained in your PCA results
+group_names = ['A','B','C','D']
+custom_classes = ['Amino\nSugar','Carb','Con\nHC','Lignin','Lipid','NA','Protein','Tannin','Unsat\nHC']
+plt.figure(figsize=(10, 4)) # create the overall figure
+plt.subplot(1,4,(1,2)) #take two panels of the subplot for the loading plot
+fig, ax, xrange = cclass_loading_plot(loadingDF)
+plt.ylim(-2,2) #centre the y axis
+## Important!! If you are copying this code, first check the order of your xticks before manually setting them
+plt.xticks(xrange,custom_classes, rotation = 'horizontal') #Set custom xticks to save space
+plt.subplot(1,4,3) #take one panel for the PC1 plot
+for i in range(0,4):
+    plt.scatter(np.random.uniform(-.1,.1, 1),pca_result[i,0]) #shudder the points to avoid overlap 
+plt.title(f'PC1 ({str(varExplained[0]*100)[:4]}%)') #include the % variance explained in the 
+plt.ylim(-.1,.1)
+plt.xticks([])
+plt.yticks([-.08,0,.08])
+plt.axhline(0, color='k', linestyle = '--', alpha = 0.5)
+plt.subplot(1,4,4) #take the final panel for the PC2 plot
+for i in range(0,4):
+    plt.scatter(np.random.uniform(-.1,.1, 1),pca_result[i,1]) 
+plt.title(f'PC2 ({str(varExplained[1]*100)[:4]}%)') #include the % variance explained in the 
+plt.ylim(-.1,.1)
+plt.xticks([])
+plt.yticks([-.08,0,.08])
+plt.legend(group_names, loc = 'lower right')
+plt.axhline(0, color='k', linestyle = '--', alpha = 0.5)
+plt.tight_layout()
+plt.show()
+```
+
+
+    
+![png](output_27b_0.png)
+    
+
+
+
+```python
+## OXYGEN CLASS LOADINGS 
+varExplained = pca.explained_variance_ratio_ #variance explained in your PCA results
+group_names = ['A','B','C','D']
+plt.figure(figsize=(10, 4)) # create the overall figure
+plt.subplot(1,4,(1,2)) #take two panels of the subplot for the loading plot
+oxygen_loading_plot(loadingDF)
+plt.ylim(-2,2) #centre the y axis
+plt.subplot(1,4,3) #take one panel for the PC1 plot
+for i in range(0,4):
+    plt.scatter(np.random.uniform(-.1,.1, 1),pca_result[i,0]) #shudder the points to avoid overlap 
+plt.title(f'PC1 ({str(varExplained[0]*100)[:4]}%)') #include the % variance explained in the 
+plt.ylim(-.1,.1)
+plt.xticks([])
+plt.yticks([-.08,0,.08])
+plt.axhline(0, color='k', linestyle = '--', alpha = 0.5)
+plt.subplot(1,4,4) #take the final panel for the PC2 plot
+for i in range(0,4):
+    plt.scatter(np.random.uniform(-.1,.1, 1),pca_result[i,1]) 
+plt.title(f'PC2 ({str(varExplained[1]*100)[:4]}%)') #include the % variance explained in the 
+plt.ylim(-.1,.1)
+plt.xticks([])
+plt.yticks([-.08,0,.08])
+plt.legend(group_names, loc = 'lower right')
+plt.axhline(0, color='k', linestyle = '--', alpha = 0.5)
+plt.tight_layout()
+plt.show()
+```
+
+
+    
+![png](output_28_0.png)
+    
+
+
+* Analysing the above graphics we can see that in the first principal component, that accounts for ~95% of variation in the dataset, both whisky sample B and D have positive scores, although sample D has a notably higher score. From the loading plots we can say that these samples are  correlated  with two masses, one at ~ 180 Da and one ~ 200 Da, and with formula assigned to the lipid compound class, and with formula that have < 5 oxygen atoms. Whisky sample A and C have negative scores on PC1, and are correlated with two masses ~300 Da and ~500 Da, formula assigned to condensed hydrocarbon and lignin compound classes, and formula with oxygen counts > 15.
+
+**That's the end of the guide.** Hopefully you are now more comfortable using sklearn and PyKrev to perform dimensionality reduction on your FT-MS data and interpret the results. One of the main advantages of doing your data analysis in Python is being able to use the powerful machine learning libraries Python has to offer. sklearn has many capabilities beyond PCA - ... discriminant analysis, k-means clustering, neural networks, random forest classifiers and  support vector machines to name just a few -  that will enable you to ask new and interesting questions with your data. [ You can learn more about them here.](https://scikit-learn.org/stable/)
   * Contact : ezra.kitson@ed.ac.uk
   * Last Updated: 12/01/2021
