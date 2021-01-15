@@ -14,7 +14,7 @@ pip install pykrev
 
 [*Performing PCA with PyKrev and scikit-learn*](https://github.com/Kzra/PyKrev/blob/master/docs/PCAwithPyKrev.md)
 
-Version 1.0.0 [*Changelog*](https://github.com/Kzra/pykrev/blob/master/CHANGELOG.md)
+Version 1.0.1 [*Changelog*](https://github.com/Kzra/pykrev/blob/master/CHANGELOG.md)
 
 Please send any feedback or comments to ezra.kitson@ed.ac.uk
 
