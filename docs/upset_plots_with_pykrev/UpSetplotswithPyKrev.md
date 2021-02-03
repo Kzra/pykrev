@@ -15,9 +15,9 @@ import pykrev as pk
 
 
 ```python
-A_formula, A_peak_intensity, [], [] = pk.read_formularity('example_data/formularity_example_A.csv',pi_col = 'peak_intensity',pi = True, mz=False,cclass = False) 
-B_formula,B_peak_intensity, [], [] = pk.read_formularity('example_data/formularity_example_B.csv',pi_col = 'peak_intensity',pi = True, mz=False,cclass = False)
-C_formula,C_peak_intensity, [], [] = pk.read_formularity('example_data/formularity_example_C.csv',pi_col = 'peak_intensity',pi = True, mz=False,cclass = False)
+A_formula, A_peak_intensity, A_mass, A_mass_error, A_cclass = pk.read_formularity('../example_data/formularity_example_A.csv',pi_col = 'peak_intensity') 
+B_formula,B_peak_intensity, B_mass, B_mass_error, B_cclass = pk.read_formularity('../example_data/formularity_example_B.csv',pi_col = 'peak_intensity')
+C_formula,C_peak_intensity, C_mass, C_mass_error, C_cclass = pk.read_formularity('../example_data/formularity_example_C.csv',pi_col = 'peak_intensity')
 ```
 
 * There are two ways in which we can use PyKrev with UpSetPlot to produce upset plots based on our data. <br> Method 1 is simpler, but does not allow us to customise the plots as much.
@@ -92,7 +92,7 @@ upset = upsetplot.UpSet(re_upset,show_counts = True, show_percentages = False,so
 
 #add catplots corresponding to the calculated values, violin plots for distributions 
 upset.add_catplot(value='Oxygen', kind='violin', color='red',elements = 4)
-upset.add_catplot(value='DBE', kind='violin', color='blue',ci = None,elements = 4)
+upset.add_catplot(value='DBE', kind='violin', color='magenta',ci = None,elements = 4)
 #bar plots for compound class counts 
 upset.add_catplot(value='Polycyclic Aromatics', kind='bar', color='green',ci = None)
 upset.add_catplot(value='Aliphatics', kind='bar', color='green',ci = None)
@@ -106,7 +106,7 @@ title = plt.title('Method 2')
 
 #label the axis of the catplots 
 upset_returns['extra1'].set_ylabel('Oxygen count', fontsize = 9.4) # Y label
-upset_returns['extra2'].set_ylabel('Double bond \nequivalence', fontsize = 9.4) # Y label
+upset_returns['extra2'].set_ylabel('Double bond \nequivalent', fontsize = 9.4) # Y label
 
 #set y lims between 0 and 1 
 upset_returns['extra3'].set_ylim(0,1)
@@ -120,22 +120,18 @@ upset_returns['extra5'].set_ylabel('Plant-derived \nphenolics', fontsize = 9.4) 
 
 upset_returns['extra6'].set_ylim(0,1)
 upset_returns['extra6'].set_ylabel('Unsaturated \nphenolic \ncompounds', fontsize = 9.4) # Y label
+
+upset_returns['totals'].set_xlabel('Total formula')
+upset_returns['shading'].set_xlabel('                    Intersections')
+upset_returns['shading'].set_ylabel('Sample', labelpad = 28)
 ```
 
-    Warning: negative dbe counts detected and set to zero.
     Warning: negative ai counts detected and set to zero.
     
 
 
-
-
-    Text(0, 0.5, 'Unsaturated \nphenolic \ncompounds')
-
-
-
-
     
-![png](output_8_2.png)
+![png](output_8_1.png)
     
 
 

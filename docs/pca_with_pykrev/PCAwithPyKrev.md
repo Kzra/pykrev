@@ -13,6 +13,7 @@ from sklearn.decomposition import PCA #if you do not already have the library in
 import pykrev as pk
 import numpy as np
 from matplotlib import pyplot as plt
+from matplotlib.lines import Line2D
 import pandas as pd
 ```
 
@@ -22,11 +23,11 @@ np.random.seed(87) ## seed the RNG (for reproducible figures)
 ```
 
 * First we need to load in our dataset. In this example we are going to load in a batch aligned dataset. ```read_batch_formularity``` can then compute an ordination matrix directly on the data.
-  * The dataset was taken from [Kew, Will, et al. (2018)](https://pubs.acs.org/doi/10.1021/acs.analchem.8b01446) and consists of four whisky samples (samples A - D) analysed using ESI mode FT-MS with formula assignment rules of O>0, N<2, S<=2, P<1.
+  * The dataset was taken from [Kew, Will, et al. (2018)](https://pubs.acs.org/doi/10.1021/acs.analchem.8b01446) and consists of four whisky samples (W1 - W4) analysed using four complementary ionisation techniques (ESI, LDI, APCI, APPI) through FT-ICR-MS with formula assignment rules of O>0, N<2, S<=2, P<1.
 
 
 ```python
-fdata, fordination = pk.read_batch_formularity('example_data/batch_formularity.csv', impute_value = 0)
+fdata, fordination = pk.read_batch_formularity('../example_data/mixed_batch.csv', impute_value = 0)
 nsample, nformula = fordination.shape #the ordination matrix has samples in rows and formula in columns
 ```
 
@@ -125,37 +126,54 @@ fig, ax = variance_plot(pca)
     
 
 
-* So the first principal component explains ~94% of variation in the dataset, and the second ~5%. Let's plot the data, to do this we will use the ```pca_plot``` function which is defined below.
+* So the first principal component explains ~45% of variation in the dataset, and the second ~36%. Let's plot the data, to do this we will use the ```pca_plot``` function which is defined below.
 
 
 ```python
-def pca_plot(pca_result, pca_instance, group_names, text_offset = 0.002, text = False, **kwargs):
+def pca_plot(pca_result, pca_instance, group_names, group_colours, text_offset = 0.002, text = False, **kwargs):
     """ This function creates a 2D PCA plot on the results of the sklearn implementation of PCA."""
     assert len(group_names)==len(pca_result[:,1])
     varExplained = pca_instance.explained_variance_ratio_
     for i in range(0,len(group_names)):
-        # scatter points with default pyplot colour scheme
-        plt.scatter(pca_result[i,0],pca_result[i,1], **kwargs)
-        # add text labels to scatter points 
-        if text == True:
-             plt.text(pca_result[i,0] + text_offset,pca_result[i,1], group_names[i])
+        # scatter points with text labels
+        plt.scatter(pca_result[i,0],pca_result[i,1], s=0) #use invisible scatter points to set appropriate axis lim
+        plt.text(pca_result[i,0],pca_result[i,1], s = group_names[i], c = group_colours[i])
     #label axes
-    plt.xlabel(f"PC 1 {str(varExplained[0]*100)[:4]}%")
-    plt.ylabel(f"PC 2 {str(varExplained[1]*100)[:4]}%")
-    plt.legend(group_names)
+    plt.xlabel(f"PC 1 ({str(varExplained[0]*100)[:4]}%)")
+    plt.ylabel(f"PC 2 ({str(varExplained[1]*100)[:4]}%)")
     ## add axis lines (like abline in r)
     plt.axhline(0, color='k', linestyle = '--', alpha = 0.5)
     plt.axvline(0, color='k', linestyle = '--', alpha = 0.5)
-
     return plt.gcf(), plt.gca() 
 
-fig, ax = pca_plot(pca_result = pca_result, pca_instance = pca, text = False,
-         group_names = ['Sample A', 'Sample B', 'Sample C', 'Sample D'])
+sample_names = ['W1','W2','W3','W4'] * 4 
+sample_colours = ['#a6cee3'] * 4 + ['#1f78b4'] * 4 + ['#b2df8a'] * 4 + ['#33a02c'] * 4 #colour blind safe! 
+
+fig, ax = pca_plot(pca_result = pca_result, pca_instance = pca, text = True,
+         group_names = sample_names, group_colours = sample_colours)
+
+#set a custom legend 
+legend_elements = [Line2D([0], [0], marker='o', color='w', label='ESI',
+                      markerfacecolor='#a6cee3', markersize=8),
+               Line2D([0], [0], marker='o', color='w', label='LDI',
+                      markerfacecolor='#1f78b4', markersize=8),
+               Line2D([0], [0], marker='o', color='w', label='APCI',
+                      markerfacecolor='#b2df8a', markersize=8),
+               Line2D([0], [0], marker='o', color='w', label='APPI',
+                      markerfacecolor='#33a02c', markersize=8)] 
+plt.legend(handles = legend_elements, loc = 'lower right')
 ```
 
 
+
+
+    <matplotlib.legend.Legend at 0x19786a826d0>
+
+
+
+
     
-![png](output_18_0.png)
+![png](output_18_1.png)
     
 
 
@@ -170,6 +188,22 @@ loadingDF= pd.DataFrame(loadings,formula) #this constructs a dataframe with the 
 loadingDF.head()
 ```
 
+
+
+
+<div>
+<style scoped>
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
 </style>
 <table border="1" class="dataframe">
   <thead>
@@ -179,43 +213,115 @@ loadingDF.head()
       <th>1</th>
       <th>2</th>
       <th>3</th>
+      <th>4</th>
+      <th>5</th>
+      <th>6</th>
+      <th>7</th>
+      <th>8</th>
+      <th>9</th>
+      <th>10</th>
+      <th>11</th>
+      <th>12</th>
+      <th>13</th>
+      <th>14</th>
+      <th>15</th>
     </tr>
   </thead>
   <tbody>
     <tr>
-      <th>C22H12O2S2</th>
-      <td>-0.000696</td>
-      <td>0.001101</td>
-      <td>0.013782</td>
-      <td>0.977792</td>
+      <th>C14H15N1O6</th>
+      <td>-0.000064</td>
+      <td>0.000039</td>
+      <td>-0.000072</td>
+      <td>0.001191</td>
+      <td>0.000924</td>
+      <td>0.000601</td>
+      <td>0.001323</td>
+      <td>0.004281</td>
+      <td>-0.001293</td>
+      <td>0.008417</td>
+      <td>0.000168</td>
+      <td>0.004704</td>
+      <td>0.009031</td>
+      <td>-0.001719</td>
+      <td>0.001572</td>
+      <td>0.346590</td>
     </tr>
     <tr>
-      <th>C15H14O6</th>
-      <td>0.001697</td>
-      <td>0.009655</td>
-      <td>-0.001565</td>
-      <td>-0.015297</td>
+      <th>C18H36O5</th>
+      <td>-0.006745</td>
+      <td>0.010820</td>
+      <td>0.001375</td>
+      <td>0.025134</td>
+      <td>0.008579</td>
+      <td>0.001431</td>
+      <td>0.003055</td>
+      <td>0.011041</td>
+      <td>-0.005575</td>
+      <td>0.059674</td>
+      <td>0.025558</td>
+      <td>0.004751</td>
+      <td>-0.001970</td>
+      <td>0.000469</td>
+      <td>0.000036</td>
+      <td>0.354563</td>
     </tr>
     <tr>
-      <th>C21H14O11</th>
-      <td>-0.000889</td>
-      <td>-0.003127</td>
-      <td>-0.005893</td>
-      <td>-0.185827</td>
+      <th>C20H24O9</th>
+      <td>-0.002994</td>
+      <td>-0.000729</td>
+      <td>0.009015</td>
+      <td>-0.007659</td>
+      <td>0.013476</td>
+      <td>0.006956</td>
+      <td>0.019508</td>
+      <td>0.004900</td>
+      <td>-0.017191</td>
+      <td>0.007329</td>
+      <td>-0.004133</td>
+      <td>0.018738</td>
+      <td>0.011791</td>
+      <td>0.012690</td>
+      <td>0.007493</td>
+      <td>0.231216</td>
     </tr>
     <tr>
-      <th>C10H18O3</th>
-      <td>-0.000488</td>
-      <td>0.001787</td>
-      <td>0.004227</td>
-      <td>0.000866</td>
+      <th>C30H32O8</th>
+      <td>-0.000246</td>
+      <td>-0.001878</td>
+      <td>-0.002233</td>
+      <td>0.002014</td>
+      <td>-0.009942</td>
+      <td>-0.002956</td>
+      <td>-0.010375</td>
+      <td>-0.000042</td>
+      <td>-0.013370</td>
+      <td>-0.000871</td>
+      <td>0.000366</td>
+      <td>-0.003036</td>
+      <td>-0.001173</td>
+      <td>0.020365</td>
+      <td>-0.033132</td>
+      <td>-0.384191</td>
     </tr>
     <tr>
-      <th>C17H12O10</th>
-      <td>-0.002741</td>
-      <td>-0.014004</td>
-      <td>0.000492</td>
-      <td>0.000241</td>
+      <th>C41H29N1O4S1</th>
+      <td>0.000070</td>
+      <td>-0.000155</td>
+      <td>-0.000453</td>
+      <td>-0.000362</td>
+      <td>0.000276</td>
+      <td>0.000202</td>
+      <td>0.007032</td>
+      <td>0.002361</td>
+      <td>-0.001036</td>
+      <td>-0.001664</td>
+      <td>-0.001207</td>
+      <td>-0.001125</td>
+      <td>0.001521</td>
+      <td>-0.001678</td>
+      <td>0.001619</td>
+      <td>-0.296924</td>
     </tr>
   </tbody>
 </table>
@@ -346,30 +452,45 @@ def oxygen_loading_plot(loadingDF):
 ```python
 ## MASS LOADINGS 
 varExplained = pca.explained_variance_ratio_ #variance explained in your PCA results
-group_names = ['A','B','C','D'] # sample names
+sample_name = ['W1','W2','W3','W4'] * 4 
+whisky_type = ['ESI'] * 4 + ['LDI'] * 4 + ['APCI'] * 4 + ['APPI'] * 4
+group_colours = ['#a6cee3'] * 4 + ['#1f78b4'] * 4 + ['#b2df8a'] * 4 + ['#33a02c'] * 4
+
 plt.figure(figsize=(10, 4)) # create the overall figure
 plt.subplot(1,4,(1,2)) #take the first two panels of the subplot for the loading plot
 mass_loading_plot(loadingDF)
 plt.ylim(-1,1) # centre the y axis
+plt.xlabel('Average atomic mass (Da)')
 plt.subplot(1,4,3) #take the third panel for the PC1 plot
-for i in range(0,4):
+for i in range(0,16):
     ## the np.random function shudders the x coordinates of the points, which is necessary to prevent overlap
-    plt.scatter(np.random.uniform(-.1,.1, 1),pca_result[i,0])
+    plt.text(np.random.uniform(-.1,.1, 1),pca_result[i,0],s = sample_name[i],color = group_colours[i])
 plt.title(f'PC1 ({str(varExplained[0]*100)[:4]}%)') #include the % variance explained in the 
-plt.ylim(-.1,.1)
+plt.ylim(-.2,.2)
+plt.xlim(-.15,.15)
 plt.xticks([])
-plt.yticks([-.08,0,.08])
+plt.yticks([-.15,.15])
 plt.axhline(0, color='k', linestyle = '--', alpha = 0.5)
 plt.subplot(1,4,4) #take the final panel for the PC2 plot
-for i in range(0,4):
-    plt.scatter(np.random.uniform(-.1,.1, 1),pca_result[i,1]) 
+for i in range(0,16):
+        plt.text(np.random.uniform(-.1,.1, 1),pca_result[i,1],s = sample_name[i],color = group_colours[i])
 plt.title(f'PC2 ({str(varExplained[1]*100)[:4]}%)')
-plt.ylim(-.1,.1)
+plt.ylim(-.2,.2)
+plt.xlim(-.15,.15)
 plt.xticks([])
-plt.yticks([-.08,0,.08])
-plt.legend(group_names, loc = 'lower right')
+plt.yticks([-.15,0,.15])
 plt.axhline(0, color='k', linestyle = '--', alpha = 0.5)
+legend_elements = [Line2D([0], [0], marker='o', color='w', label='ESI',
+                          markerfacecolor='#a6cee3', markersize=8),
+                   Line2D([0], [0], marker='o', color='w', label='LDI',
+                          markerfacecolor='#1f78b4', markersize=8),
+                   Line2D([0], [0], marker='o', color='w', label='APCI',
+                          markerfacecolor='#b2df8a', markersize=8),
+                   Line2D([0], [0], marker='o', color='w', label='APPI',
+                          markerfacecolor='#33a02c', markersize=8)                  ]
+plt.legend(handles = legend_elements, loc = 'lower right')
 plt.tight_layout()
+plt.savefig('Whisky_mass_pca.png',dpi = 300)
 plt.show()
 ```
 
@@ -383,38 +504,50 @@ plt.show()
 ```python
 ## COMPOUND CLASS LOADINGS 
 varExplained = pca.explained_variance_ratio_ #variance explained in your PCA results
-group_names = ['A','B','C','D']
+#group_names = ['A','B','C','D']
 custom_classes = ['Amino\nSugar','Carb','Con\nHC','Lignin','Lipid','NA','Protein','Tannin','Unsat\nHC']
 plt.figure(figsize=(10, 4)) # create the overall figure
 plt.subplot(1,4,(1,2)) #take two panels of the subplot for the loading plot
 fig, ax, xrange = cclass_loading_plot(loadingDF)
-plt.ylim(-2,2) #centre the y axis
+plt.ylim(-3,3) #centre the y axis
 ## Important!! If you are copying this code, first check the order of your xticks before manually setting them
 plt.xticks(xrange,custom_classes, rotation = 'horizontal') #Set custom xticks to save space
-plt.subplot(1,4,3) #take one panel for the PC1 plot
-for i in range(0,4):
-    plt.scatter(np.random.uniform(-.1,.1, 1),pca_result[i,0]) #shudder the points to avoid overlap 
+plt.subplot(1,4,3) #take the third panel for the PC1 plot
+for i in range(0,16):
+    ## the np.random function shudders the x coordinates of the points, which is necessary to prevent overlap
+    plt.text(np.random.uniform(-.1,.1, 1),pca_result[i,0],s = sample_name[i],color = group_colours[i])
 plt.title(f'PC1 ({str(varExplained[0]*100)[:4]}%)') #include the % variance explained in the 
-plt.ylim(-.1,.1)
+plt.ylim(-.2,.2)
+plt.xlim(-.15,.15)
 plt.xticks([])
-plt.yticks([-.08,0,.08])
+plt.yticks([-.15,.15])
 plt.axhline(0, color='k', linestyle = '--', alpha = 0.5)
 plt.subplot(1,4,4) #take the final panel for the PC2 plot
-for i in range(0,4):
-    plt.scatter(np.random.uniform(-.1,.1, 1),pca_result[i,1]) 
-plt.title(f'PC2 ({str(varExplained[1]*100)[:4]}%)') #include the % variance explained in the 
-plt.ylim(-.1,.1)
+for i in range(0,16):
+        plt.text(np.random.uniform(-.1,.1, 1),pca_result[i,1],s = sample_name[i],color = group_colours[i])
+plt.title(f'PC2 ({str(varExplained[1]*100)[:4]}%)')
+plt.ylim(-.2,.2)
+plt.xlim(-.15,.15)
 plt.xticks([])
-plt.yticks([-.08,0,.08])
-plt.legend(group_names, loc = 'lower right')
+plt.yticks([-.15,0,.15])
 plt.axhline(0, color='k', linestyle = '--', alpha = 0.5)
+from matplotlib.lines import Line2D
+legend_elements = [Line2D([0], [0], marker='o', color='w', label='ESI',
+                          markerfacecolor='#a6cee3', markersize=8),
+                   Line2D([0], [0], marker='o', color='w', label='LDI',
+                          markerfacecolor='#1f78b4', markersize=8),
+                   Line2D([0], [0], marker='o', color='w', label='APCI',
+                          markerfacecolor='#b2df8a', markersize=8),
+                   Line2D([0], [0], marker='o', color='w', label='APPI',
+                          markerfacecolor='#33a02c', markersize=8)                  ]
+plt.legend(handles = legend_elements, loc = 'lower right')
 plt.tight_layout()
 plt.show()
 ```
 
 
     
-![png](output_27b_0.png)
+![png](output_27_0.png)
     
 
 
@@ -422,28 +555,40 @@ plt.show()
 ```python
 ## OXYGEN CLASS LOADINGS 
 varExplained = pca.explained_variance_ratio_ #variance explained in your PCA results
-group_names = ['A','B','C','D']
+group_names = ['W1','W2','W3','W4']
 plt.figure(figsize=(10, 4)) # create the overall figure
 plt.subplot(1,4,(1,2)) #take two panels of the subplot for the loading plot
 oxygen_loading_plot(loadingDF)
-plt.ylim(-2,2) #centre the y axis
-plt.subplot(1,4,3) #take one panel for the PC1 plot
-for i in range(0,4):
-    plt.scatter(np.random.uniform(-.1,.1, 1),pca_result[i,0]) #shudder the points to avoid overlap 
+plt.ylim(-1.5,1.5) #centre the y axis
+plt.subplot(1,4,3) #take the third panel for the PC1 plot
+for i in range(0,16):
+    ## the np.random function shudders the x coordinates of the points, which is necessary to prevent overlap
+    plt.text(np.random.uniform(-.1,.1, 1),pca_result[i,0],s = sample_name[i],color = group_colours[i])
 plt.title(f'PC1 ({str(varExplained[0]*100)[:4]}%)') #include the % variance explained in the 
-plt.ylim(-.1,.1)
+plt.ylim(-.2,.2)
+plt.xlim(-.15,.15)
 plt.xticks([])
-plt.yticks([-.08,0,.08])
+plt.yticks([-.15,.15])
 plt.axhline(0, color='k', linestyle = '--', alpha = 0.5)
 plt.subplot(1,4,4) #take the final panel for the PC2 plot
-for i in range(0,4):
-    plt.scatter(np.random.uniform(-.1,.1, 1),pca_result[i,1]) 
-plt.title(f'PC2 ({str(varExplained[1]*100)[:4]}%)') #include the % variance explained in the 
-plt.ylim(-.1,.1)
+for i in range(0,16):
+        plt.text(np.random.uniform(-.1,.1, 1),pca_result[i,1],s = sample_name[i],color = group_colours[i])
+plt.title(f'PC2 ({str(varExplained[1]*100)[:4]}%)')
+plt.ylim(-.2,.2)
+plt.xlim(-.15,.15)
 plt.xticks([])
-plt.yticks([-.08,0,.08])
-plt.legend(group_names, loc = 'lower right')
+plt.yticks([-.15,0,.15])
 plt.axhline(0, color='k', linestyle = '--', alpha = 0.5)
+from matplotlib.lines import Line2D
+legend_elements = [Line2D([0], [0], marker='o', color='w', label='ESI',
+                          markerfacecolor='#a6cee3', markersize=8),
+                   Line2D([0], [0], marker='o', color='w', label='LDI',
+                          markerfacecolor='#1f78b4', markersize=8),
+                   Line2D([0], [0], marker='o', color='w', label='APCI',
+                          markerfacecolor='#b2df8a', markersize=8),
+                   Line2D([0], [0], marker='o', color='w', label='APPI',
+                          markerfacecolor='#33a02c', markersize=8)                  ]
+plt.legend(handles = legend_elements, loc = 'lower right')
 plt.tight_layout()
 plt.show()
 ```
@@ -454,8 +599,8 @@ plt.show()
     
 
 
-* Analysing the above graphics we can see that in the first principal component, that accounts for ~95% of variation in the dataset, both whisky sample B and D have positive scores, although sample D has a notably higher score. From the loading plots we can say that these samples are  correlated  with two masses, one at ~ 180 Da and one ~ 200 Da, and with formula assigned to the lipid compound class, and with formula that have < 5 oxygen atoms. Whisky sample A and C have negative scores on PC1, and are correlated with two masses ~300 Da and ~500 Da, formula assigned to condensed hydrocarbon and lignin compound classes, and formula with oxygen counts > 15.
+* Analysing the above graphics we can see that in the first principal component, that accounts for ~45% of variation in the dataset, W1 and W3 analysed by APPI have visibly more positive scores. These samples are positively correlated with a formula at ~ 300 Da, the condensed hydrocarbon compound class and formula with > 7 oxygen atoms. W4 analysed by ESI has a negative score and is positively correlated with formula at ~ 150 Da and ~ 200 Da, Lipid and lignin compound classes and formula with < 7 oxygen atoms, in particular formula with 2 oxygen atoms. The other samples are tightly clustered around 0 on PC 1, in particular whiskies analysed by APCI and LDI are almost indistinguishable from one another.
 
 **That's the end of the guide.** Hopefully you are now more comfortable using sklearn and PyKrev to perform dimensionality reduction on your FT-MS data and interpret the results. One of the main advantages of doing your data analysis in Python is being able to use the powerful machine learning libraries Python has to offer. sklearn has many capabilities beyond PCA - ... discriminant analysis, k-means clustering, neural networks, random forest classifiers and  support vector machines to name just a few -  that will enable you to ask new and interesting questions with your data. [ You can learn more about them here.](https://scikit-learn.org/stable/)
   * Contact : ezra.kitson@ed.ac.uk
-  * Last Updated: 12/01/2021
+  * Last Updated: 03/02/2021

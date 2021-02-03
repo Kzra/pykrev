@@ -1,4 +1,12 @@
-## [1.0.1] -15-01-20201
+## [1.0.2] -03-02-2021
+
+### Changed
+- docs organisation: each md and ipynb file is in its own folder. this makes saving the output much easier 
+- pca with pykrev doc has been updated to analyse a larger dataset
+- upsetplots with pykrev edited to reflect v1.0 formularity parsing 
+- user guide edited with new links 
+
+## [1.0.1] -15-01-2021
 
 ### Changed
 - compound_class 'FORM' method patched so that non-assignments are appended to list and counted
@@ -6,7 +14,7 @@
 - reformatted upsetplot docs
 - short description in setup.py
 
-## [1.0.0] -11-01-20201
+## [1.0.0] -11-01-2021
 
 ### Added
 - a changelog

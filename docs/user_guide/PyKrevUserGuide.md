@@ -3,7 +3,7 @@
 **Hello:** Welcome to the Pykrev user guide. In this document we will explore how to set up and use PyKrev in the analysis of FT-MS data. <br> <br>
 **What is Pykrev?** Pykrev is a python package containing functions that make it easier to process and visualise FT-MS data in python. PyKrev is intended to be used in the final part of mass spectrometry data analysis, after the spectra have been calibrated and peaks have been assigned to molecular formula. <br> <br>
 **What data do I need to use PyKrev?** PyKrev was designed to analyse low weight molecular formula uncovered from high resolution mass spectra. The core data sets needed to use PyKrev are lists of molecular formula strings and corresponding numpy arrays of peak intensities and mz values. PyKrev can parse an output .csv file from PNNL's formularity software to generate these datasets for you. <br> <br>
-**PyKrev dependencies:** PyKrev is written in Python 3. To use PyKrev you must have the matplotlib, numpy and pandas packages installed. For additional functionality such as gaussian density estimation and multivariate analysis, you will also need to install SciPy. <br> <br>
+**PyKrev dependencies:** PyKrev is written in Python 3. To use PyKrev you must have the matplotlib (version >= 3.3.3), numpy (>= 1.19.3) and pandas (>= 1.1.5) libraries installed. For additional functionality such as gaussian density estimation and multivariate analysis, you will also need to install SciPy (>=1.5.4). <br> <br>
 **Installing PyKrev:** To install pykrev use ``` pip install pykrev ```.
 
 
@@ -37,11 +37,11 @@ import pykrev as pk
 ```python
 #METHOD 1: READ IN A SINGLE SPECTRA FORMULARITY FILE
 #read a formularity file, and extract formula, peak intensities, mass charge ratios, and compound classes. 
-formularity_A = pk.read_formularity('example_data/formularity_example_A.csv',pi_col = 'peak_intensity') #pi_col provides the column name for peak intensities.
+formularity_A = pk.read_formularity('../example_data/formularity_example_A.csv',pi_col = 'peak_intensity') #pi_col provides the column name for peak intensities.
 A_formula, A_peak_intensity, A_mass_charge, A_mass_error, A_compound_class = formularity_A #unpack the tuple, note the order
 #unpack the tuple directly into separate variables
-B_formula,B_peak_intensity, B_mass_charge, B_mass_error, B_compound_class = pk.read_formularity('example_data/formularity_example_B.csv',pi_col = 'peak_intensity')
-C_formula,C_peak_intensity, C_mass_charge, C_mass_error,C_compound_class = pk.read_formularity('example_data/formularity_example_C.csv',pi_col = 'peak_intensity')
+B_formula,B_peak_intensity, B_mass_charge, B_mass_error, B_compound_class = pk.read_formularity('../example_data/formularity_example_B.csv',pi_col = 'peak_intensity')
+C_formula,C_peak_intensity, C_mass_charge, C_mass_error,C_compound_class = pk.read_formularity('../example_data/formularity_example_C.csv',pi_col = 'peak_intensity')
 #A_formula is a list
 assert type(A_formula) == list
 #A_peak_intensity, A_mass_charge and A_mass_error are nd.arrays
@@ -52,7 +52,7 @@ assert type(A_peak_intensity) == np.ndarray
 ```python
 #METHOD 2: READ IN A BATCH SPECTRA FORMULARITY FILE
 #read in a batch alignment formularity file using read_batch_formularity
-batch_data, [] = pk.read_batch_formularity('example_data/batch_formularity.csv', ordination = False)
+batch_data, [] = pk.read_batch_formularity('../example_data/batch_formularity.csv', ordination = False)
 #this creates a pandas dataframe with the formula in a column alongside chemical parameters and the sample peak intensities
 assert type(batch_data) == pd.DataFrame
 # to extract formula and other parameters from batch data using boolean indexing 
@@ -67,7 +67,7 @@ D_compound_class = batch_data['cclass'][batch_data['SAMPLE D'] > 0]
 
 ```python
 #METHOD 3: LOAD IN YOUR DATA MANUALLY
-brite_df = pd.read_csv('example_data/Brite_DF.csv',index_col = 0) #Load the BRITE Biological molecules excel file
+brite_df = pd.read_csv('../example_data/Brite_DF.csv',index_col = 0) #Load the BRITE Biological molecules excel file
 brite_formula = brite_df['F'].to_list() #extract the formula
 brite_intensities = np.random.rand(len(brite_formula)) #generate a random array of peak intensities
 ```
@@ -219,13 +219,11 @@ plt.figure()
 fig, ax, d_index = pk.van_krevelen_histogram(A_formula,bins = [10,10],cmap = 'viridis') # van_krevelen_histogram takes any key word argument that can be passed to pyplot.hist2d
 cbar = plt.colorbar()
 cbar.set_label('Counts')
-
 #a histogram can also be made with a range of values for bins
 plt.figure()
 fig, ax, d_index = pk.van_krevelen_histogram(A_formula,bins = [np.linspace(0,1,5),np.linspace(0,2,5)],cmap = 'cividis') # van_krevelen_histogram takes any key word argument that can be passed to pyplot.hist2d
 cbar = plt.colorbar()
 cbar.set_label('Counts')
-
 ```
 
 
@@ -289,7 +287,6 @@ plt.figure(figsize = (6,4))
 fig, ax, unique_formula = pk.unique_plot(A_formula,B_formula,C_formula,s = 13,group_labels = ['A','B','C'],alphas = [1,1,1],symbols = ['x','s','o'], y_ratio = 'HC')
 plt.title('Unique formula')
 plt.legend()
-
 plt.figure(figsize = (6,4))
 fig, ax, missing_formula = pk.missing_plot(A_formula,B_formula,C_formula,s = 13,group_labels = ['A','B','C'],alphas = [0.7,1,0.7],symbols = ['x','s','o'])
 plt.title('Missing formula')
@@ -299,7 +296,7 @@ plt.legend()
 
 
 
-    <matplotlib.legend.Legend at 0x1fcbaae9550>
+    <matplotlib.legend.Legend at 0x1f4240b1d60>
 
 
 
@@ -364,8 +361,10 @@ fig, ax, (compounds, counts) = pk.compound_class_plot(A_formula,A_mass_charge, c
 
 ```python
 plt.figure()
-fig, ax, (mean,median,sigma) = pk.mass_histogram(A_formula, method = 'monoisotopic', mz_list = A_mass_charge, bin_width = 40, summary_statistics=True, 
-                                                 color = 'blue', alpha = 0.5, kde = True, kde_color = 'blue')
+fig, ax, (mean,median,sigma) = pk.mass_histogram(A_formula, method = 'monoisotopic', mz_list = A_mass_charge, bin_width = 20, summary_statistics=True, 
+                                                 color = 'blue', alpha = 0.5, kde = True, kde_color = 'blue', density = False)
+plt.xlabel('Monoisotopic atomic mass (Da)')
+
 plt.figure()
 fig,ax, (mean,median,sigma) = pk.mass_histogram(A_formula, method = 'me', me_list = A_mass_error, kde = True, hist = False, kde_color = 'red', summary_statistics=True)
 ```
@@ -389,7 +388,6 @@ fig,ax, (mean,median,sigma) = pk.mass_histogram(A_formula, method = 'me', me_lis
 plt.figure()
 fig, ax = pk.mass_spectrum(A_formula,A_peak_intensity, method = 'monoisotopic',normalise = True, color = 'g',linewidth = 2)
 plt.xlim(150,1000)
-
 ```
 
 
@@ -405,7 +403,7 @@ plt.xlim(150,1000)
     
 
 
-* 2.11: **Finally, PyKrev can be used alongside UpSetPlot to make Upset plots, but that is covered in a [separate user guide](https://github.com/Kzra/pykrev/blob/master/docs/UpSetplotswithPyKrev.md)**
+* 2.11: **Finally, PyKrev can be used alongside UpSetPlot to make Upset plots, but that is covered in a [separate user guide](https://github.com/Kzra/pykrev/blob/master/docs/upset_plots_with_pykrev/UpSetplotswithPyKrev.md)**
 
 * 2.12: Matplotlib offers a range of customisation options to change the appearance of plots. Be sure to play around with key word arguments to get the plots just how you like them. In addition it's possible to [change the appearance of the text](https://matplotlib.org/tutorials/introductory/customizing.html) and [the overall style of the plot.](https://matplotlib.org/3.1.1/gallery/style_sheets/style_sheets_reference.html) Personally, I like the ggplot style sheet... but maybe that's just me. 
 
@@ -434,7 +432,7 @@ print(counts)
     {'Combustion-derived polycyclic aromatics': 113, 'Vascular plant-derived polyphenols': 101, 'Highly unsaturated and phenolic compounds': 3131, 'Aliphatic compounds': 1147}
     
     
-    {'Not Matched': 4262, 'Hormones and transmitters': 0, 'Steroids': 16, 'Organic acids': 6, 'Polyketides': 42, 'SP  Sphingolipids': 0, 'Fatty acids related compounds': 1, 'Phytotoxins': 6, 'Flavonoids': 0, 'Carbohydrates': 10, 'Phenylpropanoids': 14, 'Marine biotoxins': 0, 'Lipids': 23, 'Shikimate / acetate-malonate pathway derived compounds': 2, 'GP  Glycerophospholipids': 0, 'Cyanotoxins': 0, 'Alkaloids': 0, 'ST  Sterol lipids': 10, 'Terpenoids': 60, 'Fungal toxins': 11, 'Antibiotics': 1, 'SL  Saccharolipids': 0, 'PK  Polyketides': 1, 'Peptides': 0, 'Nucleic acids': 0, 'Others': 2, 'Venoms': 0, 'GL  Glycerolipids': 0, 'FA  Fatty acyls': 22, 'Vitamins and Cofactors': 1, 'PR  Prenol lipids': 0, 'Amino acid related compounds': 2}
+    {'Not Matched': 4262, 'Terpenoids': 60, 'PK  Polyketides': 1, 'Organic acids': 6, 'Steroids': 16, 'GP  Glycerophospholipids': 0, 'Polyketides': 42, 'Carbohydrates': 10, 'ST  Sterol lipids': 10, 'SL  Saccharolipids': 0, 'Lipids': 23, 'Antibiotics': 1, 'FA  Fatty acyls': 22, 'Hormones and transmitters': 0, 'Fatty acids related compounds': 1, 'SP  Sphingolipids': 0, 'Nucleic acids': 0, 'Others': 2, 'Marine biotoxins': 0, 'Peptides': 0, 'Fungal toxins': 11, 'Phenylpropanoids': 14, 'GL  Glycerolipids': 0, 'Amino acid related compounds': 2, 'Vitamins and Cofactors': 1, 'Phytotoxins': 6, 'Alkaloids': 0, 'PR  Prenol lipids': 0, 'Cyanotoxins': 0, 'Venoms': 0, 'Flavonoids': 0, 'Shikimate / acetate-malonate pathway derived compounds': 2}
     
 
 * 3.3: To compute diversity metrics we can use **```diversity_indices```**. **```Diversity_indices```** requires a list of molecular formula, and a corresponding list of peak intensities. Based on these datasets the function calculates molecular richness, abundance-based ([Shannon-wiener](https://en.wikipedia.org/wiki/Diversity_index#Shannon_index) and [Gini-simpson](https://en.wikipedia.org/wiki/Diversity_index#Gini%E2%80%93Simpson_index) and functional-based ([using rao's quadratic entropy](https://www.sciencedirect.com/science/article/pii/S0040580909001117)) diversity values for the sample. [Tanentzap et al. (2019)](https://www.pnas.org/content/116/49/24689) shows how these measurements can be applied in chemical analysis.
@@ -478,58 +476,71 @@ sample_data_matrix.iloc[:,1:10]
 
 
 
+<div>
+<style scoped>
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
 </style>
 <table border="1" class="dataframe">
   <thead>
     <tr style="text-align: right;">
       <th></th>
-      <th>C17H31N1O10</th>
-      <th>C43H26N2O12</th>
-      <th>C46H14N6O6</th>
-      <th>C11H13N1O9</th>
-      <th>C17H12N6O11</th>
-      <th>C7H6N6O3</th>
-      <th>C23H28O15</th>
-      <th>C31H26O15</th>
-      <th>C88H156O3</th>
+      <th>C47H48O10</th>
+      <th>C23H28O16</th>
+      <th>C31H34O16</th>
+      <th>C17H24O8</th>
+      <th>C14H22O5</th>
+      <th>C26H25N1O13</th>
+      <th>C26H34N2O17</th>
+      <th>C57H28N6O8</th>
+      <th>C19H18O8</th>
     </tr>
   </thead>
   <tbody>
     <tr>
       <th>A</th>
-      <td>1.29775e+06</td>
       <td>0</td>
-      <td>0</td>
-      <td>905806</td>
-      <td>7.49521e+06</td>
-      <td>1.9305e+06</td>
-      <td>2.20263e+06</td>
-      <td>1.10703e+07</td>
-      <td>0</td>
+      <td>4.43708e+06</td>
+      <td>5.02314e+06</td>
+      <td>7.62898e+06</td>
+      <td>4.48869e+06</td>
+      <td>1.41274e+06</td>
+      <td>4.75153e+06</td>
+      <td>2.95862e+06</td>
+      <td>3.20862e+06</td>
     </tr>
     <tr>
       <th>B</th>
       <td>0</td>
+      <td>3.799e+06</td>
+      <td>5.22578e+06</td>
+      <td>3.68405e+06</td>
+      <td>4.24141e+06</td>
       <td>0</td>
-      <td>8.68334e+06</td>
-      <td>0</td>
-      <td>3.52697e+06</td>
       <td>0</td>
       <td>0</td>
-      <td>8.73531e+06</td>
-      <td>3.06943e+06</td>
+      <td>0</td>
     </tr>
     <tr>
       <th>C</th>
-      <td>6.60775e+06</td>
-      <td>5.62352e+06</td>
+      <td>3.82554e+06</td>
+      <td>2.43993e+06</td>
+      <td>5.91182e+06</td>
+      <td>1.99592e+07</td>
+      <td>2.59918e+07</td>
+      <td>2.44358e+06</td>
       <td>0</td>
-      <td>3.58187e+06</td>
       <td>0</td>
-      <td>0</td>
-      <td>3.3494e+06</td>
-      <td>1.23539e+07</td>
-      <td>0</td>
+      <td>1.01776e+07</td>
     </tr>
   </tbody>
 </table>
@@ -553,8 +564,8 @@ assert sum(ri_matrix[0,:]) > .99 and sum(ri_matrix[0,:]) < 1.01 #rows sum to 1
 bray_curtis = pk.bray_curtis_matrix(ri_matrix) #note bray_curtis_matrix requires a numpy.array so won't work directly on sample_data_matrix
 ```
 
-* 3.7: Our data is now ready for dimensionality reduction. [Click here for a guide on how to do PCA with PyKrev.](https://github.com/Kzra/pykrev/blob/master/docs/PCAwithPyKrev.md)
+* 3.7: Our data is now ready for dimensionality reduction. [Click here for a guide on how to do PCA with PyKrev.](https://github.com/Kzra/pykrev/blob/master/docs/pca_with_pykrev/PCAwithPyKrev.md)
 
-**That's the end of the user guide.** Thanks for reading and good luck! The package is still indevelopment and i'd greatly appreciate any feedback. If you'd like to contribute code or feature ideas, that'd be awesome too. 
+**That's the end of the user guide.** Thanks for reading and good luck! The package is still in development and i'd greatly appreciate any feedback. If you'd like to contribute code or feature ideas, that'd be awesome too. 
 * You can can contact me at ezra.kitson@ed.ac.uk. 
 * Last update:  11/01/2020
