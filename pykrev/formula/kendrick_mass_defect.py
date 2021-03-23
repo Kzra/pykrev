@@ -9,7 +9,7 @@ def kendrick_mass_defect(formula_list,mz_list,base = ['CH2']):
     
 	Use
 	----
-	approximate mass(Y,X)
+	kendrick_mass_defect(Y,X)
     
 	Returns a tuple contains two numpy arrays of len(Y). The first contains the kendrickMass and the second contains the kendrickMassDefect.
     

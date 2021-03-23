@@ -1,4 +1,4 @@
-from ..diversity import relative_intensity
+from ..diversity import normalise_intensity
 from ..formula import calculate_mass
 from matplotlib import pyplot as plt
 import pandas as pd
@@ -52,7 +52,7 @@ def mass_spectrum(formula_list,
     assert len(peak_intensities) == len(formula_list), 'peak_intensities and formula list must be the same length'
     assert method in ['monoisotopic','average','nominal','mz'], 'Provide a valid method. See docstring for info.'
     if normalise:
-        peak_intensities = relative_intensity(peak_intensities)
+        peak_intensities = normalise_intensity(peak_intensities)
     if method == 'mz':
         assert len(mz_list) > 1, 'provide a list of mz values'
         mass = mz_list

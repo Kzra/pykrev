@@ -1,5 +1,5 @@
 from ..formula import *
-from .relative_intensity import relative_intensity
+from .normalise_intensity import normalise_intensity
 import numpy as np
 
 def diversity_indices (formula_list,intensity_list,mz_list = [],indices = ['r','GS','SW','C','O','NOSC','DBE','rAI','HC','OC'],verbose = True):
@@ -85,7 +85,7 @@ def diversity_indices (formula_list,intensity_list,mz_list = [],indices = ['r','
     diversity_indices = dict()
     
     #Firstly normalise the intensity_list
-    rel_abundance = np.array(relative_intensity(intensity_list))
+    rel_abundance = np.array(normalise_intensity(intensity_list))
     
     #Molecular richness is just the count of molecular formula
     if 'r' in indices: 

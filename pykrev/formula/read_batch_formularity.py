@@ -1,7 +1,7 @@
 import pandas as pd
 import numpy as np 
 from ..diversity import ordination_matrix
-def read_batch_formularity(report_name, ordination =True, impute_value =0):
+def read_batch_formularity(report_name, ordination =True, impute_value = 'nan'):
     """ 
 	Docstring for function PyKrev.read_batch_formularity
 	====================

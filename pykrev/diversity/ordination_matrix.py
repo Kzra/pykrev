@@ -1,6 +1,6 @@
 import pandas as pd
 import numpy as np
-def ordination_matrix(molecular_formulas = [],peak_intensities=[],group_names = [], impute_value = 0):
+def ordination_matrix(molecular_formulas = [],peak_intensities=[],group_names = [], impute_value = 'nan'):
     """ 
 	Docstring for function pyKrev.ordination_matrix
 	====================

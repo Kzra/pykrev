@@ -1,3 +1,14 @@
+## [1.1.0] - 23-03-2021
+
+### Changed
+- replaced relative_intensity with normalise_intensity, a more powerful normalisation function
+- replaced code using relative_intensity in calculate diversity and mass spectrum plot 
+- updated the docs to include a section on how to use PyKrev if you don't have Python installed 
+- updated the user guide docs to show normalise_intensity
+- updated the PCA with PyKrev guide to reflect changes to normalise_intensity
+- removed all markdown documentation! Documentation is now viewed using NB viewer. This means updates to ipynb files are updated in the static docs instantly. 
+- added a requirements.txt file in the root to better list dependencies (this is required by binder, but it hasn't been linked with setup.py yet.). 
+
 ## [1.0.2] -03-02-2021
 
 ### Changed
