@@ -1,3 +1,14 @@
+## [1.1.1] - 28-04-2021
+
+### Added
+- PyKrev is now published in JASMS. Added a link to the citation in read me. 
+
+### Changed
+- updated kendrick_mass_defect to support two types of rounding calculation. 
+- updated tests module to test both types of kmd rounding calculation. 
+- updated user guide to demonstrate both types of kmd rounding calculation. 
+- updated user guide  to remove error message from bray curtis matrix section. 
+
 ## [1.1.0] - 23-03-2021
 
 ### Changed

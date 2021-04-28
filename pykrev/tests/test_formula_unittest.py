@@ -76,7 +76,14 @@ class TestFORMULA(unittest.TestCase):
         x = [ 'C23H43O2','C30H57O2','C34H65O2']
         z = np.array([351.3269,449.4364,505.4989])
         correct = np.array([0.065,0.065,0.066])
-        res, res2 =kendrick_mass_defect(x,mz_list = z,base = ['CH2'])
+        res, res2 =kendrick_mass_defect(x,mz_list = z,base = ['CH2'], rounding = 'even')
+        self.assertIsNone(np.testing.assert_array_equal(np.round(res2,3),np.round(correct,3)))
+
+    def test_kendrick_mass_defect_integer(self):
+        x = [ 'C23H43O2','C30H57O2','C34H65O2']
+        z = np.array([351.3269,449.4364,505.4989])
+        correct = np.array([0.065,0.065,0.066])
+        res, res2 =kendrick_mass_defect(x,mz_list = z,base = ['CH2'], rounding = 'integer')
         self.assertIsNone(np.testing.assert_array_equal(np.round(res2,3),np.round(correct,3)))
 
     def test_find_intersections(self):
