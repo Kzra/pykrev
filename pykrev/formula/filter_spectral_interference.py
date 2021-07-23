@@ -1,5 +1,5 @@
 import numpy as np
-def filter_spectral_interference(mass_list,formula_list,peak_intensities,tol = 2,verbose = True):
+def filter_spectral_interference(formula_list,peak_intensities,mass_list,tol = 2,verbose = True):
     """ 
 	Docstring for function pykrev.filter_spectral_interference
 	====================
@@ -17,9 +17,9 @@ def filter_spectral_interference(mass_list,formula_list,peak_intensities,tol = 2
     
 	Parameters
 	----------
-	Y: A list or numpy array of masses.
-    X: A list of molecular formula strings.
-    Z: A list or numpy array of peak intensities.
+	Z: A list or numpy array of masses.
+    Y: A list of molecular formula strings.
+    X: A list or numpy array of peak intensities.
     tol: Integer of float,the tolerance (in ppm) used to identify monoisotopic 
     verbose: Booloean, print text to the console.
     
@@ -49,6 +49,6 @@ def filter_spectral_interference(mass_list,formula_list,peak_intensities,tol = 2
     filter_peak_intensities = peak_intensities[spectralFilter]
     
     if verbose == True:
-        print(f"{len(mass_list)-len(filter_mass)} masses removed.")
-    
-    return filter_mass, filter_formula, filter_peak_intensities
+        print(f"{len(mass_list)-len(filter_mass)} interferences removed.")
+    filter_formula = list(filter_formula) #reconvert filter_formula to list to sort out data type issue
+    return filter_formula, filter_peak_intensities, filter_mass

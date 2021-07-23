@@ -14,7 +14,8 @@ def element_counts(formula_list):
 	Parameters
 	----------
     
-	Y: A list of elemental formula strings. All integers must be standard script (e.g. CH2O5). 
+	Y: A list of elemental formula strings. All integers must be standard script (e.g. C6H8O7). 
+       The list should not contain isotopologues (e.g. C9H12O6 13C1) and should only contain C,H,N,O,P and S atoms.
     
     """
     

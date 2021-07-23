@@ -53,6 +53,12 @@ class TestFORMULA(unittest.TestCase):
         res = calculate_mass(x,method = 'monoisotopic')
         self.assertIsNone(np.testing.assert_array_equal(np.round(res,3),np.round(correct,3)))
 
+    def test_mass_mono_analyte(self):
+        x = ['C46H43N1O35','C41H25N1O39','C36H62O40']
+        correct = np.array([1168.154286,1153.993093,1133.274460])
+        res = calculate_mass(x,method = 'monoisotopic', protonated = True, ion_charge = -1)
+        self.assertIsNone(np.testing.assert_array_equal(np.round(res,3),np.round(correct,3)))
+
     def test_mass_nominal(self):
         x = ['C3H7N1O2','C5H11N1O2','C5H11N1O2P1S2']
         correct = np.array([89,117,212])
@@ -66,24 +72,33 @@ class TestFORMULA(unittest.TestCase):
         self.assertIsNone(np.testing.assert_array_equal(np.round(res,3),np.round(correct,3)))
 
     def test_kendrick_mass(self):
-        x = [ 'C23H43O2','C30H57O2','C34H65O2']
         z = np.array([351.3269,449.4364,505.4989])
         correct = np.array([350.9346,448.9346,504.9345])
-        res, res2 =kendrick_mass_defect(x,mz_list = z,base = ['CH2'])
+        res, res2 =kendrick_mass_defect(mz_list = z,base = ['CH2'])
         self.assertIsNone(np.testing.assert_array_equal(np.round(res,3),np.round(correct,3)))
 
     def test_kendrick_mass_defect(self):
-        x = [ 'C23H43O2','C30H57O2','C34H65O2']
         z = np.array([351.3269,449.4364,505.4989])
         correct = np.array([0.065,0.065,0.066])
-        res, res2 =kendrick_mass_defect(x,mz_list = z,base = ['CH2'], rounding = 'even')
+        res, res2 =kendrick_mass_defect(mz_list = z,base = ['CH2'], rounding = 'even')
         self.assertIsNone(np.testing.assert_array_equal(np.round(res2,3),np.round(correct,3)))
 
     def test_kendrick_mass_defect_integer(self):
-        x = [ 'C23H43O2','C30H57O2','C34H65O2']
         z = np.array([351.3269,449.4364,505.4989])
         correct = np.array([0.065,0.065,0.066])
-        res, res2 =kendrick_mass_defect(x,mz_list = z,base = ['CH2'], rounding = 'integer')
+        res, res2 =kendrick_mass_defect(mz_list = z,base = ['CH2'], rounding = 'rint')
+        self.assertIsNone(np.testing.assert_array_equal(np.round(res2,3),np.round(correct,3)))
+
+    def test_kendrick_mass_defect_floor(self):
+        z = np.array([351.3269,449.4364,505.4989])
+        correct = np.array([-0.935,-0.935,-0.934])
+        res, res2 =kendrick_mass_defect(mz_list = z,base = ['CH2'], rounding = 'floor')
+        self.assertIsNone(np.testing.assert_array_equal(np.round(res2,3),np.round(correct,3)))
+
+    def test_kendrick_mass_defect_ceil(self):
+        z = np.array([351.3269,449.4364,505.4989])
+        correct = np.array([0.065,0.065,0.066])
+        res, res2 =kendrick_mass_defect(mz_list = z,base = ['CH2'], rounding = 'ceil')
         self.assertIsNone(np.testing.assert_array_equal(np.round(res2,3),np.round(correct,3)))
 
     def test_find_intersections(self):
@@ -111,11 +126,11 @@ class TestFORMULA(unittest.TestCase):
         self.assertEqual(res['x2'],[])
     
     def test_filter_si(self):
-        x = [98.4096,98.8121,136.2304]
+        x3 = [98.4096,98.8121,136.2304]
         x2 = ["","",""]
-        x3 = [14982198,1195016,1039854]
+        x = [14982198,1195016,1039854]
         res1, res2, res3 = filter_spectral_interference(x,x2,x3)
-        self.assertIsNone(np.testing.assert_array_equal(res1,np.array([98.8121,136.2304])))
+        self.assertIsNone(np.testing.assert_array_equal(res3,np.array([98.8121,136.2304])))
 
         
 if __name__ == '__main__':

@@ -21,11 +21,15 @@ def read_batch_formularity(report_name, ordination =True, impute_value = 'nan'):
 	report_name: name of csv file that the formularity report to be read is saved as. 
 	impute_value: value to impute for 0 peak intensities in the output ordination matrix (default 0), see pk.Ordination_matrix)
     ordination: boolean, compute an ordination matrix using pk.ordination_matrix?
+    
+    Note: PyKrev will filter out formula with 13C assignments
     """
     #read in csv to pandas
     report = pd.read_csv(report_name)
-    #sum C and C13 to get total C number
-    C = report['C'] + report['C13']
+    notIsotopologue = report['C13'] == 0 # boolean array of only non isotopologues
+    report = report[notIsotopologue]
+    report.reset_index(drop = True, inplace = True) #reset the index to account for the removed isotopologues]
+    C = report['C']
     H = report['H']
     O = report['O']
     N = report['N'] 

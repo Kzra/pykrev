@@ -1,3 +1,29 @@
+## [1.1.2] - 19-07-2021 
+
+### Added
+- Added __version__ to root directory init.py
+- Added read_corems.py function to pykrev/formula 
+- Added corems_with_pykrev user guide
+
+### Changed
+- kendrick_mass_defect doesn't require a formula list anymore 
+- added two extra rounding methods for calculating nominal mass in kendrick mass defect. 
+	'floor' - always round down to nearest integer, and 'ceil' always round up to nearest integer. 
+- renamed the integer rounding method in kendrick mass defect from 'integer' to 'rint' to avoid confusion.
+- removed requirement for formula list from kendrick mass defect plot
+- made changes to tests to reflect this 
+- changed readme to reflect new user guide
+- changed read_formularity and read_batch_formularity to automatically exclude all formula with C13 assignments 
+- changed the user guide to clarify on PyKrev's formula handling, including isotopologues and valid elements.
+- changed the input and return order of filter_spectral_interference
+- filter_spectral_interference now returns filter_formula as a list, not a numpy array
+- monoisotopic masses in calculate_mass made more precise
+- monoisotopic masses now allows you to calculate the mass of charged ions and deprotonated ions
+- updated the user guide to show how mass error can be calculated using calculate mass
+- read_formularity now only returns formula, intensity and mass .Note all functions should input/return in this order.
+- normalise_intensity now includes pareto scaling
+- addede a test case for calculate_mass to test_formularity_unittest
+
 ## [1.1.1] - 28-04-2021
 
 ### Added

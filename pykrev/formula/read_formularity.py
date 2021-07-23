@@ -12,25 +12,24 @@ def read_formularity(report_name,pi_col = []):
 	----
 	read_formularity(report_name)
     
-	Returns a list of formula, a numpy array of peak intensities, a numpy array of mz ratios, a numpy of mass errors and a list of compound class assignments. 
-    
+	Returns a list of formula, a numpy array of peak intensities and  a numpy array of mz ratios 
 	Parameters
 	----------
 	report_name: name of csv file that the formularity report to be read is saved as. 
 	pi_col: name of the column in that file that peak intensities are found in. If not given the last column is used. 
+    Note: PyKrev will filter out formula with 13C assignments
     """
-        
     report = pd.read_csv(report_name)
-    
-    #sum C and C13 atoms
-    C = report['C'] + report['C13']
+    notIsotopologue = report['C13'] == 0 # boolean array of only non isotopologues
+    report = report[notIsotopologue]
+    report.reset_index(drop = True, inplace = True) #reset the index to account for the removed isotopologues
+    C = report['C']
     H = report['H']
     O = report['O']
     N = report['N'] 
     S = report['S']
     P = report['P']
 
- 
     if not pi_col: 
         I = report.iloc[:,-1] #take the final column of the report file to contain peak intensities. Not sure how stable this is.
     else:
@@ -66,4 +65,4 @@ def read_formularity(report_name,pi_col = []):
             mass_error = np.append(mass_error,ME[n])
             compound_class.append(G[n])
        
-    return molecular_formula, peak_intensities, mass_charge, mass_error, compound_class #return as a tuple, that can be unpacked if necessary
+    return molecular_formula, peak_intensities, mass_charge #return as a tuple, that can be unpacked if necessary

@@ -20,22 +20,23 @@ def normalise_intensity(input_matrix, norm_method = 'sum', norm_subset =  'ALL',
 	----------
 	Y: A numpy array of shape Y[samples,formula] containing peak intensities OR an ordination matrix produced by pk.ordination matrix 
 	method: A string decribing the relative intensity metric to be used. One of:
-	    - 'zscore': zscore normalisation i.e. mean(Y[i,:]) == 0, sd(Y[i,:]) == 1
+            - 'zscore': zscore normalisation i.e. mean(Y[i,:]) == 0, sd(Y[i,:]) == 1
+            - 'pareto': pareto normalisation i.e. mean(Y[i,:]) == 0 [similar to z-score, but divide by the square root of the sd]
             - 'minmax': min max normalisation i.e. min(Y[i,:] == 0, max(Y[i,:] == 1
-            - 'mean': mean normalization i.e. mean(Y[i,:]) == 0, min(Y[i,:]) >= -1, max(Y[i,subset]) <= 1
-            - 'median': median normalisation i.e. median(Y[i,:]) == 0, min(Y[i,:]) >= -1, max(Y[i,subset]) <= 1
+            - 'mean': mean normalization i.e. mean(Y[i,:]) == 0, min(Y[i,:]) >= -1, max(Y[i,:]) <= 1
+            - 'median': median normalisation i.e. median(Y[i,:]) == 0, min(Y[i,:]) >= -1, max(Y[i,:]) <= 1
             - 'sum': sum relative intensity (sum(Y[i,:]) == 1)
             - 'max': max relative intensity (max(Y[i,:]) == 1)
             - 'unit_vector': unit vector sum relative intensity (sum(Y[i,:].^2) == 1)
             - 'binary': create a presence/absence matrix of formula, ignoring peak intensity.
             - 'none': do not do normalise, return the original, or log(original) input matrix.
 	norm_subset: A string decribing the subset method to be used to generate the normalisation factors (tgnf). One of:
-            - 'ALL': Use all formula in the dataset to generate normalisation factors tgnf. 
+            - 'ALL': Use all formula in the dataset tgnf. 
             - 'LOS': take the top L order formula (ranked by intensity) from each sample tgnf, where p_L is the number of formula to take (default 500). 
             - 'PPP': take the proportion of peaks with a minimum percentage of observed values tgnf, where p_P defines the minimum percentage (default 0.5 (50%)). 
-        p_L: parameter L in LOS subset, i.e. the number of top formula to take form each sample
-        p_P: parameter P in PPP subset, i.e. the minimum percentage of observed intensities required to maintain a formula
-        log: boolean, if true perform log transformation on peak intensities before subset and normalisation. if true, input_matrix should not contain zero values.
+    p_L: parameter L in LOS subset, i.e. the number of top formula to take from each sample
+    p_P: parameter P in PPP subset, i.e. the minimum percentage of observed intensities required to maintain a formula
+    log: boolean, if true perform log transformation on peak intensities before subset and normalisation. if true, input_matrix should not contain zero values.
         
 	Info
 	----------
@@ -47,7 +48,7 @@ def normalise_intensity(input_matrix, norm_method = 'sum', norm_subset =  'ALL',
     """
     
     ## CHECK THE INPUT METHODS
-    assert norm_method in ['zscore','minmax','mean','median','sum','max','unit_vector','binary','none'], "method not recognised"
+    assert norm_method in ['zscore','minmax','mean','median','sum','max','unit_vector','binary','none', 'pareto'], "method not recognised"
     assert norm_subset in ['ALL','LOS','PPP'], "subset method not recognised"
 
     ## TRANSFORM THE INPUT DATA
@@ -114,6 +115,9 @@ def normalise_intensity(input_matrix, norm_method = 'sum', norm_subset =  'ALL',
             elif norm_method == 'zscore':
                   for x in range(0,cols):
                         transformed_matrix[i,x] = (input_matrix[i,x] - row_mean)/ row_std
+            elif norm_method == 'pareto':
+                  for x in range(0,cols):
+                        transformed_matrix[i,x] = (input_matrix[i,x] - row_mean)/ np.sqrt(row_std)
             elif norm_method == 'minmax':
                   for x in range(0,cols):
                         transformed_matrix[i,x] = (input_matrix[i,x] - row_min)/ (row_max - row_min)

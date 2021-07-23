@@ -38,10 +38,11 @@ class TestPLOTTING(unittest.TestCase):
        unique_plot(x,x2,y_ratio = 'SC',group_labels = ['Group_1','Group_2'])
 
     def test_kmd_plot(self):
-       x = ['C13H14O5','C13H14N2O4S2','C36H45ClN6O12','C9H11NO2', 'C9H11NO3', 'C11H12N2O2', 'C5H7NO3', 'C5H9NO3', 'C6H12N2O4S2','C6H11NO3S']
        z = np.array([1000,2432,3000,4201,2000,5990,1000,6520,8000,9001])
-       kendrick_mass_defect_plot(x,z, base = ['CO'], rounding = 'even')
-       kendrick_mass_defect_plot(x,z, base = ['CO'], rounding = 'integer')
+       kendrick_mass_defect_plot(z, base = ['CO'], rounding = 'even')
+       kendrick_mass_defect_plot(z, base = ['CO'], rounding = 'rint')
+       kendrick_mass_defect_plot(z, base = ['CO'], rounding = 'ceil')
+       kendrick_mass_defect_plot(z, base = ['CO'], rounding = 'floor')
 
     def test_van_krevelen_histogram(self):
        x = ['C13H14O5','C13H14N2O4S2','C36H45ClN6O12','C9H11NO2', 'C9H11NO3', 'C11H12N2O2', 'C5H7NO3', 'C5H9NO3', 'C6H12N2O4S2','C6H11NO3S']

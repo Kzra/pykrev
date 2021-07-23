@@ -14,11 +14,11 @@ def bray_curtis_matrix(matrix):
     
 	Parameters
 	----------
-	Y: A numpy array containing peak intensities - for example the matrix produced by pk.relative_intensity.
+	Y: A numpy array containing peak intensities - where rows correspond to samples and columns correspond to molecular formula
     
 	Info
 	----------
-	The Bray-Curtis dissimilarity is always a number between 0 and 1. If 0, the two sites share all the same formula; if 1, they don’t share any formula. 
+	The Bray-Curtis dissimilarity is always a number between 0 and 1. If 0, the two samples share all the same formula; if 1, they don’t share any formula. 
         
     """  
     assert(isinstance(matrix,np.ndarray)), 'must provide a numpy array'
