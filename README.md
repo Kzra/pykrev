@@ -8,13 +8,13 @@ To install use:
 pip install pykrev
 ```
 
-[**The User Guide can be accessed here**](https://nbviewer.jupyter.org/github/Kzra/pykrev/blob/master/docs/user_guide/PyKrevUserGuide.ipynb)
+* [**PyKrev User Guide**](https://nbviewer.jupyter.org/github/Kzra/pykrev/blob/master/docs/user_guide/PyKrevUserGuide.ipynb)
 
 * [Making UpSet plots with PyKrev and UpSetPlot](https://nbviewer.jupyter.org/github/Kzra/pykrev/blob/master/docs/upset_plots_with_pykrev/UpSetplotswithPyKrev.ipynb)
 
 * [Performing PCA with PyKrev and scikit-learn](https://nbviewer.jupyter.org/github/Kzra/pykrev/blob/master/docs/pca_with_pykrev/PCAwithPyKrev.ipynb)
 
-* [Raw FTMS data processing with Pykrev and CoreMS](https://nbviewer.jupyter.org/github/Kzra/pykrev/blob/master/docs/corems_with_pykrev/CoreMsWithPykrev.ipynb)
+* [Raw FTMS data processing with PyKrev and CoreMS](https://nbviewer.jupyter.org/github/Kzra/pykrev/blob/master/docs/corems_with_pykrev/CoreMsWithPykrev.ipynb)
 
 Version 1.1.2 [*Changelog*](https://github.com/Kzra/pykrev/blob/master/CHANGELOG.md)
 
