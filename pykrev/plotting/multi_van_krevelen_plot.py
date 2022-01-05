@@ -1,10 +1,8 @@
 from matplotlib import pyplot as plt
-from ..formula import element_ratios 
-from ..formula import element_counts
+from ..formula.element_ratios import element_ratios 
+from ..formula.element_counts import element_counts
 from matplotlib.patches import Rectangle
-
-def multi_van_krevelen_plot(*formula_lists,
-                            group_labels = [],
+def multi_van_krevelen_plot(msTupleDict,
                             colours=[],
                             symbols=[], 
                             alphas = [],
@@ -16,33 +14,30 @@ def multi_van_krevelen_plot(*formula_lists,
                             patch_colors = ['#762a83','#9970ab','#c2a5cf','#e7d4e8','#d9f0d3','#a6dba0','#5aae61','#1b7837'],
                             patch_text = True,
                             **kwargs):
-
     """ 
-	Docstring for function PyKrev.multi_van_krevelen_plot
+	Docstring for function pykrev.multi_van_krevelen_plot
 	====================
-	This function takes multiple lists of molecula formula strings and plots a van Krevelen diagram. 
+	This function takes multiple msTuples and plots a van Krevelen diagram. 
     
 	Use
 	----
-	multi_van_krevelen_plot(*Y)
+	multi_van_krevelen_plot(Y)
     
 	Returns tuple containing figure and axes handles 
     
 	Parameters
 	----------
-	*Y: multiple lists of molecular formula strings.
-    
-	group_labels: A list of strings corresponding to each formula_list in Y to be displayed in the legend. 
-    
-	colours: A list of strings providing marker colours corresponding to each formula_list in Y. 
+	Y: an msTupleDict
+        
+	colours: A list of strings providing marker colours corresponding to each msTuple in *Y. 
 	See: https://matplotlib.org/2.1.1/api/_as_gen/matplotlib.pyplot.plot.html
     
-	symbol: A list of scatter plot symbols to use corresponding to each formula_list in Y. 
+	symbol: A list of scatter plot symbols to use corresponding to each msTuple in *Y. 
 	See: https://matplotlib.org/3.2.1/api/markers_api.html
     
-	edge_colours: a list of strings providing marker edge colours corresponding to each formula_list in Y.
+	edge_colours: a list of strings providing marker edge colours corresponding to each msTuple in *Y.
         
-	alphas: list of floats providing transparency of the marker points corresponding to each formula_list in Y.
+	alphas: list of floats providing transparency of the marker points corresponding to each msTuple in *Y.
     x_ratio: element ratio to plot on x axis, given numerator denominator e.g. 'OC'
     y_ratio: element ratio to plot on y axis, given numerator denominator e.g. 'HC'
 
@@ -59,54 +54,41 @@ def multi_van_krevelen_plot(*formula_lists,
     patch_colors: hex values for the colors of each class in patch_classes 
     patch_text: boolean, include text labels on the compound class patches 
     
-    
     **kwargs: other key word arguments to pass to plt.scatter()
-      
     """ 
-    if len(formula_lists) == 1: formula_lists = formula_lists[0] #this enables the user to pass a nested set of lists
+    #Tests
     assert 'alpha' not in kwargs, 'provide a list of alpha values, alphas = ...'
     assert 'c' not in kwargs, 'provide a list of colour values, colours = ...'
     assert 'color' not in kwargs, 'provide a list of color values, colours = ...'
     assert 'marker' not in kwargs, 'provide a list of marker values, symbols = ...'
     assert 'edgecolors' not in kwargs, 'provide a list of edgecolors, edge_colours = ...'
     assert 'label' not in kwargs, 'provide a list of labels, group_labels = ...'
-    
-    #apply colour blind safe colors taken from https://colorbrewer2.org/ 
+    #Setup
+    ##apply colour blind safe colors taken from https://colorbrewer2.org/ 
     cols = ['#7fc97f','#beaed4','#fdc086','#74add1','#fdae61','#abd9e9','#fee090','#e0f3f8','#ffffbf']
     sybls = ['o','X','s','D','+','1','^','v','8']
-    
-    
-    if not group_labels: 
-        group_labels = ['NA'] * len(formula_lists)
+    group_labels = list(msTupleDict.keys())
     if not colours:
-        colours = [cols[i] for i in range(0,len(formula_lists))]
+        colours = [cols[i] for i in range(0,len(msTupleDict))]
     if not symbols: 
-        symbols = [sybls[i] for i in range(0,len(formula_lists))]
+        symbols = [sybls[i] for i in range(0,len(msTupleDict))]
     if not alphas:
-        alphas = [0.5] * len(formula_lists)
+        alphas = [0.5] * len(msTupleDict)
     if not edge_colours:
-        edge_colours = ['None'] * len(formula_lists)
-    
-    assert len(formula_lists) == len(group_labels) == len(colours) == len(symbols) == len(alphas) == len(edge_colours), 'Input variables must all be the same length'
-
+        edge_colours = ['None'] * len(msTupleDict)
+    assert len(msTupleDict) == len(group_labels) == len(colours) == len(symbols) == len(alphas) == len(edge_colours), 'Input variables must all be the same length'
     i = 0 
-    for formula_list in formula_lists: 
-
+    for msTuple in msTupleDict.values(): 
         x_axis = []
         y_axis = []
-
-        ratio_list = element_ratios(formula_list, ratios = [x_ratio,y_ratio])
-
+        ratio_list = element_ratios(msTuple, ratios = [x_ratio,y_ratio])
         for ratios in ratio_list:
                 x_axis.append(ratios[x_ratio])
                 y_axis.append(ratios[y_ratio])
-
         plt.scatter(x_axis, y_axis, alpha=alphas[i], edgecolors=edge_colours[i],c=colours[i], marker = symbols[i], label = group_labels[i], **kwargs)
         i += 1 
-        
     #apply grid lines 
     plt.grid(True) 
-
     #add on chemical class patches
     #boundaries taken from formularity software
     assert len(patch_colors) >= len(patch_classes), "Provide at least as many colors as classes"
@@ -142,12 +124,10 @@ def multi_van_krevelen_plot(*formula_lists,
     if 'protein-like' in patch_classes:
         plt.gca().add_patch(Rectangle((0.3,1.5),0.3,0.8,linewidth=2,edgecolor =patch_colors[cindx],facecolor=patch_colors[cindx],alpha = patch_alpha))
         if patch_text: plt.text(0.302,2.24,'Protein',fontsize=11,alpha=1, color = 'k')
-        cindx += 1
-        
+        cindx += 1  
     #label axis
     plt.xlabel(f"Atomic ratio of {x_ratio[0]}/{x_ratio[1]}")
     plt.ylabel(f"Atomic ratio of {y_ratio[0]}/{y_ratio[1]}")
-    
     fig = plt.gcf()
     ax = plt.gca()
     return fig,ax

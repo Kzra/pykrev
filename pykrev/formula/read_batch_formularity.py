@@ -1,7 +1,9 @@
 import pandas as pd
 import numpy as np 
-from ..diversity import ordination_matrix
-def read_batch_formularity(report_name, ordination =True, impute_value = 'nan'):
+from .msTuple import msTuple
+from .msTupleDict import msTupleDict
+from ..diversity.ordination_matrix import ordination_matrix
+def read_batch_formularity(report_name):
     """ 
 	Docstring for function PyKrev.read_batch_formularity
 	====================
@@ -12,19 +14,18 @@ def read_batch_formularity(report_name, ordination =True, impute_value = 'nan'):
 	----
 	read_batch_formularity(report_name)
     
-	Returns a dataframe with the formula strings, masses, compound classes and mass errors of the overall alignment and their corresponding peak 
-    intensities in each spectra, and an ordination matrix of type pd.Dataframe with formula strings as column headers and spectra as rows (see 
-    pk.ordination_matrix) (optional) 
+	Returns an msTupleDict contaning sample names as keys and corresponding msTuples as values 
+
     
 	Parameters
 	----------
 	report_name: name of csv file that the formularity report to be read is saved as. 
-	impute_value: value to impute for 0 peak intensities in the output ordination matrix (default 0), see pk.Ordination_matrix)
-    ordination: boolean, compute an ordination matrix using pk.ordination_matrix?
     
-    Note: PyKrev will filter out formula with 13C assignments
+    Info
+    -----------
+    PyKrev will filter out formula with 13C assignments
     """
-    #read in csv to pandas
+    #Main
     report = pd.read_csv(report_name)
     notIsotopologue = report['C13'] == 0 # boolean array of only non isotopologues
     report = report[notIsotopologue]
@@ -53,9 +54,7 @@ def read_batch_formularity(report_name, ordination =True, impute_value = 'nan'):
                 temp_formula = temp_formula + 'P' + str(P[n])
             if S[n] > 0:
                 temp_formula = temp_formula + 'S' + str(S[n])
-            
         molecular_formula.append(temp_formula)
-    
     #convert to numpy array so we can use boolean indexing
     molecular_formula = np.array(molecular_formula)
     #remove nan values
@@ -69,7 +68,6 @@ def read_batch_formularity(report_name, ordination =True, impute_value = 'nan'):
     formulaData['mass'] = report['Mass'][molecular_formula != 'nan']
     formulaData['cclass'] = report['Class'][molecular_formula != 'nan']
     formulaData['massError'] = report['Error_ppm'][molecular_formula != 'nan']
-    
     spectraNames = []
     spectraFormula = []
     spectraIntensities = []
@@ -81,11 +79,10 @@ def read_batch_formularity(report_name, ordination =True, impute_value = 'nan'):
         spectraNames.append(report.columns[i])
         spectraIntensities.append(np.array(intensity[intensity > 0]))
         spectraFormula.append(list(filter_formula[intensity > 0]))
-    
-    ordinationMat = []
-    if ordination == True:
-        ordinationMat = ordination_matrix(molecular_formulas = spectraFormula,peak_intensities = spectraIntensities, group_names = spectraNames, impute_value = impute_value)
-        #This will happen if there are identical formula in the molecular formula list
-        if ordinationMat.shape[1] != formulaData.shape[0]:
-            print('Warning, duplicate formula assignments detected. Ordination matrix will report values for first formula it encounters.')
-    return formulaData, ordinationMat
+    #Now process the formulaData into an msTuple dictionary 
+    batchDict = msTupleDict()
+    x,y = formulaData.shape
+    sampleNames = formulaData.columns[4::]
+    for name in sampleNames:
+        batchDict[name] = msTuple(list(formulaData['formula'][formulaData[name] > 0]), np.array(formulaData[name][formulaData[name] > 0]), np.array(formulaData['mass'][formulaData[name] > 0]))
+    return batchDict

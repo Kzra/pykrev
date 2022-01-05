@@ -1,16 +1,16 @@
-from ..formula import element_counts
+from ..formula.element_counts import element_counts
 from matplotlib import pyplot as plt
 import pandas as pd
 import numpy as np
 
-def atomic_class_plot(formula_list,
+def atomic_class_plot(msTuple,
                       element = 'O',
                       summary_statistics = False,
                       **kwargs):
     """ 
 	Docstring for function PyKrev.atomic_class_plot
 	====================
-	This function takes a list of molecular formula strings and plots a histogram of the atomic classes based on element.  
+	This function takes an msTuple and plots a histogram of the atomic classes based on element.  
     
 	Use
 	----
@@ -21,18 +21,21 @@ def atomic_class_plot(formula_list,
 	Parameters
 	----------
 	Y: A list of molecular formula strings.
-	element: the element to determine the atomic class. One of: C,H,N,O,S or P.
+
+	element: String, the element to determine the atomic class. One of: C,H,N,O,S or P.
+
     summary_statistics: boolean, if true print the mean, median and standard deviation on the chart.
+
     **kwargs: key word arguments to plt.hist
-    
     """
-    
-    count_list = element_counts(formula_list)
+    #Setup
+    count_list = element_counts(msTuple)
     countDF = pd.DataFrame(count_list)
     atom = np.array(countDF[element])
     atom_mean = np.mean(atom)
     atom_median = np.median(atom)
     atom_std = np.std(atom)
+    #Main
     plt.hist(x=atom, **kwargs)
     plt.grid(axis='y', alpha=0.75)
     plt.xlabel(f"{element} atom class")

@@ -1,32 +1,30 @@
 import itertools
 import numpy as np
 import pandas as pd
-
-def find_intersections(formula_lists,group_labels,exclusive = True):
+def find_intersections(msTupleDict, exclusive = True):
     """   
-	Docstring for function pyKrev.find_intersections
+	Docstring for function pykrev.find_intersections
     
 	====================
-	This function compares n lists of molecular formula and outputs a dictionary containing the intersections between each list.
+	This function compares n msTuples inside an msTupleDict and outputs a dictionary containing the intersections between each msTuple.
     
 	Use
 	----
-	find_intersections([list_1,..,list_n],['group_1',...,'group_n'])
+	find_intersections(Y)
     
-	Returns a dictionary in which each key corresponds to a combination of group labels 
+	Returns a dictionary in which each key corresponds to a combination of sample names 
 	and the corresponding value is a set containing the intersections between the groups in that combination.  
     
 	Parameters
 	----------
-	formula_lists: a list containing n lists of molecular formula. Each item in the sub list should be a formula string.
-	group_labels: a list containing n strings of corresponding group labels.
-	exclusive: True or False, depending on whether you want the intersections to contain only unique values.
-    
-    
+	Y: msTupleDict
+	exclusive: Boolean, True or False, depending on whether you want the intersections to contain only unique values.
     """
-    
-    if len(formula_lists) != len(group_labels):
-        raise InputError('formula_lists and group_labels must be of equal length')
+    #Setup
+    formula_lists = []
+    group_labels = msTupleDict.keys()
+    for msTuple in msTupleDict.values():
+        formula_lists.append(msTuple.formula)
     combinations = [seq for i in range(0,len(group_labels)+1) for seq in itertools.combinations(group_labels,i) if len(seq) > 0]
     combinations = sorted(combinations,key = lambda c : len(c),reverse = True) # sort combinations by length
     if exclusive == True:
@@ -34,6 +32,7 @@ def find_intersections(formula_lists,group_labels,exclusive = True):
     amb = pd.DataFrame(data = formula_lists).T
     amb.columns = group_labels
     intersections = dict() 
+    #Main
     for combo in combinations:         
             queries = [] 
             for c in combo:
@@ -56,16 +55,12 @@ def find_intersections(formula_lists,group_labels,exclusive = True):
                     intersections[combo] = q_intersect - assigned_formula #remove any elements from q_intersect that have already been assigned
                     assigned_formula.update(q_intersect) #update the assigned_set with q_intersect
                 else:
-                    intersections[combo] = intersect(queries)
-                
+                    intersections[combo] = intersect(queries)  
     return intersections
-                
-
-def intersect(samples,counter=0):
     
+def intersect(samples,counter=0):
     """ This command uses recursion to find the intersections between a variable number of sets given in samples. 
         Where samples = [set_1,set_2,...,set_n] """
-    
     if len(samples) == 1: 
         return samples[0]
     a = samples[counter]

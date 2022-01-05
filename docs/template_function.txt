@@ -1,0 +1,35 @@
+def template_function(Y, example_parameter = 'example'):
+    """ 
+    Docstring for function pykrev.template_function
+    ==========
+    A one line description of the function.
+    
+    Use 
+    ----------
+    ???(Y) #The example usage should be minimal - only give required positional arguments. Y should be an msTuple or an msTupleDict.
+    
+    A precise description of what is returned by the function. Can be 'None'.
+    
+    Parameters 
+    ----------
+    Y: An msTuple 
+    
+    Give a description of all possible input parameters and their type, starting with positional arguments. 
+
+    example_parameter: string, one of: 
+        'example' - an explanation of the example string
+        'test' - an explanation of the test string
+        'teample' - an explanation of the teample string
+
+    Info
+    ----------
+    Give more information on how the function works and/or provide references.
+    """
+    #Tests
+    assert example_parameter in ['example','test','temaple'], "You must provide a valid example parameter"
+    #Setup
+    template_array = []
+    #Main
+    for 
+        ...
+    return 

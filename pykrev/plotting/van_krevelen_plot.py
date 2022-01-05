@@ -1,11 +1,11 @@
 import numpy as np
 from matplotlib import pyplot as plt
 from scipy.stats import gaussian_kde
-from ..formula import element_ratios 
+from ..formula.element_ratios import element_ratios 
 from matplotlib.patches import Rectangle
 
 
-def van_krevelen_plot(formula_list,
+def van_krevelen_plot(msTuple,
                       x_ratio = 'OC',
                       y_ratio = 'HC',
                       patch_classes = [],
@@ -17,7 +17,7 @@ def van_krevelen_plot(formula_list,
     """ 
 	Docstring for function PyKrev.van_krevelen_plot
 	====================
-	This function takes a list of molecular formula strings and plots a van Krevelen diagram. 
+	This function takes an msTuple and plots a van Krevelen diagram. 
     
 	Use
 	----
@@ -27,8 +27,8 @@ def van_krevelen_plot(formula_list,
     
 	Parameters
 	----------
-	Y: A list of molecular formula strings.
-	colour: A list or numpy array of floats or integers of len(Y) or
+	Y: msTuple
+	colour: A list or numpy array of floats or integers of len(Y[0]) or
         'density' : kernel density see https://docs.scipy.org/doc/scipy/reference/generated/scipy.stats.gaussian_kde.html
     x_ratio: element ratio to plot on x axis, given numerator denominator e.g. 'OC'
     y_ratio: element ratio to plot on y axis, given numerator denominator e.g. 'HC'
@@ -52,36 +52,31 @@ def van_krevelen_plot(formula_list,
 	Kim, Sunghwan, Robert W. Kramer, and Patrick G. Hatcher. 
 	"Graphical method for analysis of ultrahigh-resolution broadband mass spectra of natural organic matter, 
 	the van Krevelen diagram."  
-	 Analytical Chemistry 75.20 (2003): 5336-5344. 
-
+	Analytical Chemistry 75.20 (2003): 5336-5344. 
     """
-    ratio_list = element_ratios(formula_list,ratios=[x_ratio,y_ratio])
+    #Tests
     #check that color is provided as 'c'
     assert 'color' not in kwargs, 'supply key word color as c'
-        
+    ratio_list = element_ratios(msTuple,ratios=[x_ratio,y_ratio])
     if 'c' not in kwargs: 
         kwargs['c'] = ['blue'] * len(ratio_list)
     elif isinstance(kwargs['c'],str) and kwargs['c'] == 'density':
         kwargs['c'] = kernel_density(ratio_list)
     elif len(kwargs['c']) != len(ratio_list):
         raise ValueError('colour list and ratio list must be the same length.')
-
+    assert len(patch_colors) >= len(patch_classes), "Provide at least as many colors as classes"
+    #Setup
     x_axis = []
     y_axis = []
-
     for ratios in ratio_list:
             x_axis.append(ratios[x_ratio])
             y_axis.append(ratios[y_ratio])
-            
-            
+    #Main
     plt.scatter(x_axis, y_axis, **kwargs)
-    
     #apply grid lines 
     plt.grid(True) 
-        
     #add on chemical class patches
     #boundaries taken from formularity software
-    assert len(patch_colors) >= len(patch_classes), "Provide at least as many colors as classes"
     cindx = 0 #index for the patch colours 
     if 'lipid-like' in patch_classes:
         plt.gca().add_patch(Rectangle((0.01,1.5),0.29,0.7,linewidth=2,edgecolor =patch_colors[cindx],facecolor=patch_colors[cindx],alpha = patch_alpha))
@@ -115,7 +110,6 @@ def van_krevelen_plot(formula_list,
         plt.gca().add_patch(Rectangle((0.3,1.5),0.3,0.8,linewidth=2,edgecolor =patch_colors[cindx],facecolor=patch_colors[cindx],alpha = patch_alpha))
         if patch_text: plt.text(0.302,2.24,'Protein',fontsize=11,alpha=1, color = 'k')
         cindx += 1
-        
     #add on chemical reaction lines 
     #slopes are taken from Hatcher et al. (2003) Graphical method for analysis...
     #if 'hydrogenation' in plot_reactions: 
@@ -134,29 +128,21 @@ def van_krevelen_plot(formula_list,
     #if 'carboxylation' in plot_reactions:
         #plt.plot((0.1,0.8),(2,2),"--",alpha=1,color='#2c7bb6')
         #plt.text(0.82,2.02,'Cbx',fontsize=10,alpha=1,color='#2c7bb6')
-        
-
     plt.xlabel(f"Atomic ratio of {x_ratio[0]}/{x_ratio[1]}")
     plt.ylabel(f"Atomic ratio of {y_ratio[0]}/{y_ratio[1]}")
-    
     fig = plt.gcf()
     ax = plt.gca()
-    
     return fig, ax 
 
 def kernel_density(ratio_list): 
     """This function computes the kernel density of a list of molecular formula 'OC' and 'HC ratios using gaussian kernels.
        It returns a list containing the corresponding density values. For information on this function see 
        https://docs.scipy.org/doc/scipy/reference/generated/scipy.stats.gaussian_kde.html                        """ 
-
     x = []
     y = []
-    
     for ratios in ratio_list:
         x.append(ratios['OC'])
         y.append(ratios['HC'])
-    
     xy =  np.vstack([x,y])
     kd = gaussian_kde(xy)(xy) #calling the inner function on (xy) and then the result on (xy)
-    
     return list(kd)

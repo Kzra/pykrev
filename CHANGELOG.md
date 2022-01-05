@@ -1,3 +1,33 @@
+## [1.2.0] - 05-01-2022 
+
+### Added
+- template function with function docstring in docs
+- reaction_network and page_rank functions 
+- network visualisation notebook in docs
+- batch analysis notebook in docs
+- msTuple and msTupleDict classes
+
+### Changed
+- all fuction docstrings edited to match the template function docstring
+- all functions now take either msTuple or msTupleDict as primary input, with exception of calculate_mass which retains legacy compatibility
+- aromaticity index now allowed to return negative values
+- double_bond_equivalent now allowed to return negative values
+- read_corems now supports P assignments 
+- read_corems now checks if C,H,N,O,S,P assignments are present 
+- read_corems now returns an msTuple
+- git ignore now ignores windows batch commands 
+- changed all relative module imports to specify the exact path
+	i.e. instead of from ..formula import calculate_mass , we write from ..formula.calculate_mass import calculate_mass
+- kendrick mass defect now takes string (as opposed to list) for atom_group
+- no more *msTuple as a function input, replaced by msTuple_list, which is clearer and cleaner to work with
+- read_batch_formularity now results in an msTuple dictionary instead of a formulaDf
+- corems, upsetplot, pca and user guide notebooks to reflect 1.2.0 changes
+
+### Deleted
+- standardize_formula function as it wasn't used
+- unique_formula and missing_formula, as their functionality is just a part of find_intersections and the input syntax was confusing
+- unique_plot and missing_plot as they are a type of multi_van_krevelen_plot and the syntax was confusing
+
 ## [1.1.2] - 19-07-2021 
 
 ### Added

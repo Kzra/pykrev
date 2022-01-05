@@ -1,45 +1,40 @@
 from .element_counts import element_counts
 import numpy as np
-def aromaticity_index(formula_list, index_type = 'rAI'):
-    
-          
+def aromaticity_index(msTuple, index_type = 'rAI'):     
     """ 
-	Docstring for function pyKrev.aromaticity_index
-	====================
-	This function takes a list of molecular formula strings and returns the aromaticity index.
+    Docstring for function pykrev.aromaticity_index
+    ==========
+    This function takes an msTuple and returns the aromaticity index of each formula in the formula list.
     
-	Use
-	----
-	aromaticity_index(Y)
+    Use
+    ----------
+    aromaticity_index(Y)
     
-	Returns a numpy array of len(Y) in which each item is the aromaticity index.  
+    Returns a numpy.ndarray of len(Y[0]) in which each item, i ,is the aromaticity index corresponding to Y[0][i].  
     
-	Parameters
-	----------
-	Y: A list of molecular formula strings. 
+    Parameters
+    ----------
+    Y: msTuple OR a list of molecular formula strings
     
-	index_type: One of the following strings:
+    index_type: String, one of:
         -'rAI' - reformulated aromaticity index see Mendelez-Perez et al. (2016)
         -'rAImod'- reformulated aromaticity index with modified oxygen coefficient 
         -'AI' - aromaticity index see Koch and Dittmar (2006) 
         -'AImod'- aromaticity index with modified oxygen coefficient see Koch and Dittmar (2006)
     
-	Info
-	----------
-	Reformulated aromaticity index see Mendelez-Perez et al. (2016),
-	"A reformulated aromaticity index equation under consideration for non-aromatic 
-	and non-condensed aromatic cyclic carbonyl compounds."
-    Aromaticity index see Koch and Dittmar (2006)
-    "From mass to structure: an aromaticity index for
-     high-resolution mass data of natural organic matter"
-
-    """    
     
-    count_list = element_counts(formula_list)
+    Info
+    ----------
+    Reformulated aromaticity index see Mendelez-Perez et al. (2016): 
+    "A reformulated aromaticity index equation under consideration for non-aromatic and non-condensed aromatic cyclic carbonyl compounds."
+    Aromaticity index see Koch and Dittmar (2006): From mass to structure: an aromaticity index for high-resolution mass data of natural organic matter"
+    """ 
+    # Tests   
     assert index_type in ['rAI','rAImod','AI','AImod'], 'supply a valid index type, read doc string for more info'
+    # Setup
+    count_list = element_counts(msTuple)
     AI_array = np.array([])
-    warning = 0 
-    
+    # Main
     for count in count_list: 
         try:
             if index_type == 'rAImod':
@@ -53,13 +48,5 @@ def aromaticity_index(formula_list, index_type = 'rAI'):
         except ZeroDivisionError:
             AI_counts = np.nan
             print(f"Warning Zero Division Encountered, NaN value returned. {count}")
-        if AI_counts < 0: 
-            warning = 1 
-            AI_counts = 0
-            
         AI_array = np.append(AI_array,AI_counts)
-        
-    if warning == 1:
-        print('Warning: negative ai counts detected and set to zero.')
-        
     return AI_array

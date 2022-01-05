@@ -1,17 +1,15 @@
 import numpy as np
 import pandas as pd
 def normalise_intensity(input_matrix, norm_method = 'sum', norm_subset =  'ALL', p_L = 500, p_P = 0.5, log = False):
-    
-    
     """ 
-	Docstring for function pyKrev.normalise_intensity 
+	Docstring for function pykrev.normalise_intensity 
 	====================
 	This function takes an intensity data matrix and applies a normalisation method on the rows of the data.
 	Normalisation consists of two processes: (1) applying a subset method to the data, (2) generating normalisation factors (e.g. mean, median, zscore)
 	based on that subset which are then applied to the entire dataset.
 
 	Use
-	----
+	----------
 	normalise_intensity(Y)
     
 	Returns a numpy array or pd.dataframe of shape(Y) in which each value corresponds to the row normalised intensity.  
@@ -46,11 +44,11 @@ def normalise_intensity(input_matrix, norm_method = 'sum', norm_subset =  'ALL',
 	"FT-ICR-MS Peak Intensity Normalization for Complex Mixture Analyses" Thompson et al. 2021.
         and "pmartR: Quality Control and Statistics for Mass Spectrometry-Based Biological Data", Stratton et al. 2019"
     """
-    
+    #Tests
     ## CHECK THE INPUT METHODS
     assert norm_method in ['zscore','minmax','mean','median','sum','max','unit_vector','binary','none', 'pareto'], "method not recognised"
     assert norm_subset in ['ALL','LOS','PPP'], "subset method not recognised"
-
+    #Setup
     ## TRANSFORM THE INPUT DATA
     ordination_supplied = False
     if isinstance(input_matrix,pd.DataFrame): #if the user has supplied a dataframe e.g. produced by ordination_matrix
@@ -64,11 +62,10 @@ def normalise_intensity(input_matrix, norm_method = 'sum', norm_subset =  'ALL',
     if log == True: #log transform the data
         assert 0 not in input_matrix, "log 0 undefined, consider imputing 0 values as 1"
         input_matrix = np.log(input_matrix)
-    
     ##CREATE THE TRANSFORMED MATRIX 
     rows,cols = np.shape(input_matrix)
     transformed_matrix = np.zeros((rows,cols))
-
+    #Main
     ## POPULATE THE TRANSFORMED MATRIX
     if norm_method == 'none':
         transformed_matrix = input_matrix
@@ -130,7 +127,6 @@ def normalise_intensity(input_matrix, norm_method = 'sum', norm_subset =  'ALL',
             elif norm_method == 'binary':
                     row_binary = input_matrix[i,:] > 0 
                     transformed_matrix[i,row_binary] = 1
-
     ## RETRANSFORM THE DATA AND RETURN
     if oneDreshape == True: #if input_matrix provided as 1D
         transformed_matrix = np.reshape(transformed_matrix,(transformed_matrix.shape[1],)) #reshape back to 1D

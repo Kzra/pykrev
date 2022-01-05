@@ -1,26 +1,35 @@
-def element_counts(formula_list):
-    
+def element_counts(msTuple):
     """ 
-	Docstring for function pyKrev.element_counts
+	Docstring for function pykrev.element_counts
 	====================
-	This function takes a list of formula strings and gives atomic counts for C,H,N,O,P & S.
+	This function takes an msTuple and gives atomic counts for C,H,N,O,P & S for each formula in the formula list.
     
 	Use
 	----
 	element_counts(Y)
     
-	Returns a list of len(Y) in which each element is a dictionary containing the atomic counts. 
+	Returns a list of len(Y) in which each element, i , is a dictionary containing the atomic counts of Y[0][i]. 
     
 	Parameters
 	----------
+	Y: msTuple OR a list of elemental formula strings. 
     
-	Y: A list of elemental formula strings. All integers must be standard script (e.g. C6H8O7). 
-       The list should not contain isotopologues (e.g. C9H12O6 13C1) and should only contain C,H,N,O,P and S atoms.
-    
+    Info
+    ----------
+    For formula strings:
+        All integers must be standard script (e.g. C6H8O7). 
+        Formula strings should not contain isotopologues (e.g. C9H12O6 13C1) 
+        Formula strings should only contain C,H,N,O,P and S atoms.
     """
-    
+    #Tests
+    if type(msTuple) == list:
+        formula_list = msTuple
+    else:
+        formula_list = msTuple[0]
+    #Setup
     elements=['C','H','N','O','P','S']
     count_list = []
+    #Main
     for formula in formula_list:
         element_numbers = dict()
         for element in elements:

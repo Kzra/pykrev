@@ -1,6 +1,6 @@
 import unittest
 import numpy as np
-from pykrev import diversity_indices, ordination_matrix, bray_curtis_matrix, compound_class, normalise_intensity
+from pykrev import diversity_indices, ordination_matrix, bray_curtis_matrix, compound_class, normalise_intensity, page_rank, msTuple, msTupleDict
 
 class TestDIVERSITY(unittest.TestCase):
 
@@ -52,96 +52,113 @@ class TestDIVERSITY(unittest.TestCase):
         self.assertEqual(sum(res),6)
         
     def test_richness(self):
-        x = ['C13H14O5','C13H14N2O4S2','C36H45ClN6O12','C9H11NO2', 'C9H11NO3', 'C11H12N2O2', 'C5H7NO3', 'C5H9NO3', 'C6H12N2O4S2','C6H11NO3S']
+        y = ['C13H14O5','C13H14N2O4S2','C36H45ClN6O12','C9H11NO2', 'C9H11NO3', 'C11H12N2O2', 'C5H7NO3', 'C5H9NO3', 'C6H12N2O4S2','C6H11NO3S']
         z = np.array([1000,2432,3000,4201,2000,5990,1000,6520,8000,9001])
+        x = (y,z,[])
         correct = {'D_r':10}
-        res = diversity_indices(x,z, indices = ['r'])
+        res = diversity_indices(x, indices = ['r'])
         self.assertEqual(res, correct)
 
     def test_GS(self):
-        x = ['C13H14O5','C13H14N2O4S2','C36H45ClN6O12','C9H11NO2', 'C9H11NO3', 'C11H12N2O2', 'C5H7NO3', 'C5H9NO3', 'C6H12N2O4S2','C6H11NO3S']
+        y = ['C13H14O5','C13H14N2O4S2','C36H45ClN6O12','C9H11NO2', 'C9H11NO3', 'C11H12N2O2', 'C5H7NO3', 'C5H9NO3', 'C6H12N2O4S2','C6H11NO3S']
         z = np.array([1000,2432,3000,4201,2000,5990,1000,6520,8000,9001])
+        x = (y,z,[])
         correct = {'D_a_GS':0.8593}
-        res = diversity_indices(x,z, indices = ['GS'])
+        res = diversity_indices(x, indices = ['GS'])
         self.assertEqual(np.around(res['D_a_GS'],3), np.around(correct['D_a_GS'],3))
 
     def test_SW(self):
-        x = ['C13H14O5','C13H14N2O4S2','C36H45ClN6O12','C9H11NO2', 'C9H11NO3', 'C11H12N2O2', 'C5H7NO3', 'C5H9NO3', 'C6H12N2O4S2','C6H11NO3S']
+        y = ['C13H14O5','C13H14N2O4S2','C36H45ClN6O12','C9H11NO2', 'C9H11NO3', 'C11H12N2O2', 'C5H7NO3', 'C5H9NO3', 'C6H12N2O4S2','C6H11NO3S']
         z = np.array([1000,2432,3000,4201,2000,5990,1000,6520,8000,9001])
+        x = (y,z,[])
         correct = {'D_a_SW':2.09}
-        res = diversity_indices(x,z, indices = ['SW'])
+        res = diversity_indices(x, indices = ['SW'])
         self.assertEqual(np.around(res['D_a_SW'],3), np.around(correct['D_a_SW'],3))
 
     def test_functionalC(self):
-        x = ['C13H14O5','C13H14N2O4S2','C36H45ClN6O12','C9H11NO2', 'C9H11NO3', 'C11H12N2O2', 'C5H7NO3', 'C5H9NO3', 'C6H12N2O4S2','C6H11NO3S']
+        y = ['C13H14O5','C13H14N2O4S2','C36H45ClN6O12','C9H11NO2', 'C9H11NO3', 'C11H12N2O2', 'C5H7NO3', 'C5H9NO3', 'C6H12N2O4S2','C6H11NO3S']
         z = np.array([1000,2432,3000,4201,2000,5990,1000,6520,8000,9001])
-        res = diversity_indices(x,z, indices = ['N'])
+        x = (y,z,[])
+        res = diversity_indices(x, indices = ['N'])
 
     def test_functionalNC(self):
-        x = ['C13H14O5','C13H14N2O4S2','C36H45ClN6O12','C9H11NO2', 'C9H11NO3', 'C11H12N2O2', 'C5H7NO3', 'C5H9NO3', 'C6H12N2O4S2','C6H11NO3S']
+        y = ['C13H14O5','C13H14N2O4S2','C36H45ClN6O12','C9H11NO2', 'C9H11NO3', 'C11H12N2O2', 'C5H7NO3', 'C5H9NO3', 'C6H12N2O4S2','C6H11NO3S']
         z = np.array([1000,2432,3000,4201,2000,5990,1000,6520,8000,9001])
-        res = diversity_indices(x,z, indices = ['NC'])
+        x = (y,z,[])
+        res = diversity_indices(x, indices = ['NC'])
 
     def test_functionalrAI(self):
-        x = ['C13H14O5','C13H14N2O4S2','C36H45ClN6O12','C9H11NO2', 'C9H11NO3', 'C11H12N2O2', 'C5H7NO3', 'C5H9NO3', 'C6H12N2O4S2','C6H11NO3S']
+        y = ['C13H14O5','C13H14N2O4S2','C36H45ClN6O12','C9H11NO2', 'C9H11NO3', 'C11H12N2O2', 'C5H7NO3', 'C5H9NO3', 'C6H12N2O4S2','C6H11NO3S']
         z = np.array([1000,2432,3000,4201,2000,5990,1000,6520,8000,9001])
-        res = diversity_indices(x,z, indices = ['rAI'])
+        x = (y,z,[])
+        res = diversity_indices(x, indices = ['rAI'])
 
     def test_functionalmz(self):
-        x = ['C13H14O5','C13H14N2O4S2','C36H45ClN6O12','C9H11NO2', 'C9H11NO3', 'C11H12N2O2', 'C5H7NO3', 'C5H9NO3', 'C6H12N2O4S2','C6H11NO3S']
+        y = ['C13H14O5','C13H14N2O4S2','C36H45ClN6O12','C9H11NO2', 'C9H11NO3', 'C11H12N2O2', 'C5H7NO3', 'C5H9NO3', 'C6H12N2O4S2','C6H11NO3S']
         z = np.array([1000,2432,3000,4201,2000,5990,1000,6520,8000,9001])
         mz = np.array([232,340,132,904,321,431,3424,200,3204,1000])
-        res = diversity_indices(x,z, mz_list = mz, indices = ['mz'])
+        x = (y,z,mz)
+        res = diversity_indices(x, indices = ['mz'])
 
     def test_ordination_matrix(self):
-        x = ['C13H14O5','C13H14N2O4S2','C36H45ClN6O12','C9H11NO2', 'C9H11NO3', 'C11H12N2O2', 'C5H7NO3', 'C5H9NO3', 'C6H12N2O4S2','C6H11NO3S']
-        x2 = ['C13H14O5','C13H14N2O4S2','C36H45ClN6O12','C9H11NO2', 'C9H31NO3', 'C11H12N1O2', 'C5H73O3', 'C5H9NO3', 'C6H12N2O4S2','C6H11NO3S']
-        z = np.array([1000,2432,3000,4201,2000,5990,1000,6520,8000,9001])
-        z2 = np.array([1000,2432,3000,4201,2000,5990,1000,6520,8000,9001])
-        ores = ordination_matrix(molecular_formulas = [x,x2],peak_intensities = [z,z2])
+        x = msTuple(['A','B','C','D'],np.array([1,2,3,4]),np.array([1,2,3,4]))
+        x2 = msTuple(['A','B','D','E','F'],np.array([1,2,3,4,5]),np.array([1,2,3,4,5]))
+        x3 = msTuple(['A','D','E','F'],np.array([1,2,3,4]),np.array([1,2,3,4]))
+        R = msTupleDict()
+        ores = ordination_matrix(R)
 
     def test_normalise_ordination(self):
-        x = ['C13H14O5','C13H14N2O4S2','C36H45ClN6O12','C9H11NO2', 'C9H11NO3', 'C11H12N2O2', 'C5H7NO3', 'C5H9NO3', 'C6H12N2O4S2','C6H11NO3S']
-        x2 = ['C13H14O5','C13H14N2O4S2','C36H45ClN6O12','C9H11NO2', 'C9H31NO3', 'C11H12N1O2', 'C5H73O3', 'C5H9NO3', 'C6H12N2O4S2','C6H11NO3S']
-        z = np.array([1000,2432,3000,4201,2000,5990,1000,6520,8000,9001])
-        z2 = np.array([1000,2432,3000,4201,2000,5990,1000,6520,8000,9001])
-        ores = ordination_matrix(molecular_formulas = [x,x2],peak_intensities = [z,z2])
-        n1res = normalise_intensity(ores)
-        n2res = normalise_intensity(ores, norm_subset = 'PPP', norm_method = 'binary')
-        n3res = normalise_intensity(ores, norm_subset = 'LOS', p_L = 3, norm_method = 'minmax')
-        n4res = normalise_intensity(ores, norm_subset = 'PPP', p_P = 0.73, norm_method = 'zscore')
-        n5res = normalise_intensity(ores, norm_subset = 'PPP', p_P = 0.02, norm_method = 'mean')
-        n6res = normalise_intensity(ores, norm_subset = 'LOS', p_P = 0.02, norm_method = 'mean', p_L = 1000)
-        n7res = normalise_intensity(ores, norm_subset = 'LOS', p_P = 0.02, norm_method = 'mean', p_L = 1000, log = True)
-        n8res = normalise_intensity(ores, norm_subset = 'ALL', p_P = 0.02, norm_method = 'none', p_L = 1000, log = True)
+        x = msTuple(['A','B','C','D'],np.array([1,2,3,4]),np.array([1,2,3,4]))
+        x2 = msTuple(['A','B','D','E','F'],np.array([1,2,3,4,5]),np.array([1,2,3,4,5]))
+        x3 = msTuple(['A','D','E','F'],np.array([1,2,3,4]),np.array([1,2,3,4]))
+        R = msTupleDict()
+        ores = ordination_matrix(R)
+        #n1res = normalise_intensity(ores)
+        #n2res = normalise_intensity(ores, norm_subset = 'PPP', norm_method = 'binary')
+        #n3res = normalise_intensity(ores, norm_subset = 'LOS', p_L = 3, norm_method = 'minmax')
+        #n4res = normalise_intensity(ores, norm_subset = 'PPP', p_P = 0.73, norm_method = 'zscore')
+        #n5res = normalise_intensity(ores, norm_subset = 'PPP', p_P = 0.02, norm_method = 'mean')
+        #n6res = normalise_intensity(ores, norm_subset = 'LOS', p_P = 0.02, norm_method = 'mean', p_L = 1000)
+        #n7res = normalise_intensity(ores, norm_subset = 'LOS', p_P = 0.02, norm_method = 'mean', p_L = 1000, log = True)
+        #n8res = normalise_intensity(ores, norm_subset = 'ALL', p_P = 0.02, norm_method = 'none', p_L = 1000, log = True)
         
     def test_bray_curtis_matrix(self):
-        x = ['C13H14O5','C13H14N2O4S2','C36H45ClN6O12','C9H11NO2', 'C9H11NO3', 'C11H12N2O2', 'C5H7NO3', 'C5H9NO3', 'C6H12N2O4S2','C6H11NO3S']
-        x2 = ['C13H14O5','C13H14N2O4S2','C36H45ClN6O12','C9H11NO2', 'C9H31NO3', 'C11H12N1O2', 'C5H73O3', 'C5H9NO3', 'C6H12N2O4S2','C6H11NO3S']
-        z = np.array([1000,2432,3000,4201,2000,5990,1000,6520,8000,9001])
-        z2 = np.array([1000,2432,3000,4201,2000,5990,1000,6520,8000,9001])
-        ores = ordination_matrix(molecular_formulas = [x,x2],peak_intensities = [z,z2])
+        x = msTuple(['A','B','C','D'],np.array([1,2,3,4]),np.array([1,2,3,4]))
+        x2 = msTuple(['A','B','D','E','F'],np.array([1,2,3,4,5]),np.array([1,2,3,4,5]))
+        x3 = msTuple(['A','D','E','F'],np.array([1,2,3,4]),np.array([1,2,3,4]))
+        R = msTupleDict()
+        ores = ordination_matrix(R)
         bres = bray_curtis_matrix(np.array(ores))
 
     def test_compound_class_MSCC(self):
-        x = ['C13H14O5','C13H14N2O4S2','C36H45ClN6O12','C9H11NO2', 'C9H11NO3', 'C11H12N2O2', 'C5H7NO3', 'C5H9NO3', 'C6H12N2O4S2','C6H11NO3S']
+        y = ['C13H14O5','C13H14N2O4S2','C36H45ClN6O12','C9H11NO2', 'C9H11NO3', 'C11H12N2O2', 'C5H7NO3', 'C5H9NO3', 'C6H12N2O4S2','C6H11NO3S']
         z = np.array([1000,2432,3000,4201,2000,5990,1000,6520,8000,9001])
-        res = compound_class(x,mass_list =z, method = 'MSCC')
+        x = (y,[],z)
+        res = compound_class(x, method = 'MSCC')
 
     def test_compound_class_KELL(self):
-        x = ['C13H14O5','C13H14N2O4S2','C36H45ClN6O12','C9H11NO2', 'C9H11NO3', 'C11H12N2O2', 'C5H7NO3', 'C5H9NO3', 'C6H12N2O4S2','C6H11NO3S']
+        y = ['C13H14O5','C13H14N2O4S2','C36H45ClN6O12','C9H11NO2', 'C9H11NO3', 'C11H12N2O2', 'C5H7NO3', 'C5H9NO3', 'C6H12N2O4S2','C6H11NO3S']
         z = np.array([1000,2432,3000,4201,2000,5990,1000,6520,8000,9001])
+        x = (y,[],z)
         res = compound_class(x, method = 'KELL')
 
     def test_compound_class_FORM(self):
-        x = ['C13H14O5','C13H14N2O4S2','C36H45ClN6O12','C9H11NO2', 'C9H11NO3', 'C11H12N2O2', 'C5H7NO3', 'C5H9NO3', 'C6H12N2O4S2','C6H11NO3S']
+        y = ['C13H14O5','C13H14N2O4S2','C36H45ClN6O12','C9H11NO2', 'C9H11NO3', 'C11H12N2O2', 'C5H7NO3', 'C5H9NO3', 'C6H12N2O4S2','C6H11NO3S']
         z = np.array([1000,2432,3000,4201,2000,5990,1000,6520,8000,9001])
+        x = (y,[],z)
         res = compound_class(x, method = 'FORM')
 
     def test_compound_class_KEGG(self):
-        x = ['C13H14O5','C13H14N2O4S2','C36H45ClN6O12','C9H11NO2', 'C9H11NO3', 'C11H12N2O2', 'C5H7NO3', 'C5H9NO3', 'C6H12N2O4S2','C6H11NO3S']
+        y = ['C13H14O5','C13H14N2O4S2','C36H45ClN6O12','C9H11NO2', 'C9H11NO3', 'C11H12N2O2', 'C5H7NO3', 'C5H9NO3', 'C6H12N2O4S2','C6H11NO3S']
         z = np.array([1000,2432,3000,4201,2000,5990,1000,6520,8000,9001])
+        x = msTuple(y,[],z)
         res = compound_class(x, method = 'KEGG_All')
+     
+    def test_page_rank(self):
+        x = (['C13H14O5','C13H14N2O4S2','C36H45ClN6O12','C9H11NO2', 'C9H11NO3', 'C11H12N2O2', 'C5H7NO3', 'C5H9NO3', 'C6H12N2O4S2','C6H11NO3S'],[],[])
+        correct = np.array([ 2.17651119,  2.17651119,  2.17651119, 21.73523322, 21.73523322, 2.17651119, 21.73523322, 21.73523322,  2.17651119,  2.17651119])
+        res = page_rank(x)
+        self.assertIsNone(np.testing.assert_array_equal(np.round(res,3),np.round(correct,3)))
 
 if __name__ == '__main__':
     unittest.main()

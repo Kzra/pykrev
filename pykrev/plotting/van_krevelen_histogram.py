@@ -1,16 +1,14 @@
 from matplotlib import pyplot as plt
 from scipy.stats import binned_statistic_2d
-from ..formula import element_ratios 
-from ..formula import element_counts
+from ..formula.element_ratios import element_ratios 
+from ..formula.element_counts import element_counts
 
 
-def van_krevelen_histogram (formula_list, x_ratio = 'OC', y_ratio ='HC', **kwargs): 
-    
-    
+def van_krevelen_histogram (msTuple, x_ratio = 'OC', y_ratio ='HC', **kwargs): 
     """ 
 	Docstring for function PyKrev.van_krevelen_histogram
 	====================
-	This function takes a list of molecular formula strings and plots a van Krevelen histogram. 
+	This function takes an msTuple and plots a van Krevelen histogram. 
     
 	Use
 	----
@@ -20,14 +18,12 @@ def van_krevelen_histogram (formula_list, x_ratio = 'OC', y_ratio ='HC', **kwarg
     
 	Parameters
 	----------
-	Y: A list of molecular formula strings.
-    x_ratio: element ratio to plot on x axis, given numerator denominator e.g. 'OC'
-    y_ratio: element ratio to plot on y axis, given numerator denominator e.g. 'HC'
+	Y: msTuple
+    x_ratio: string, element ratio to plot on x axis, given numerator denominator e.g. 'OC'
+    y_ratio: string, element ratio to plot on y axis, given numerator denominator e.g. 'HC'
 	**kwargs for pyplot.hist2d() See: https://matplotlib.org/api/_as_gen/matplotlib.pyplot.hist2d.html.
-    
     """
-    ratio_list = element_ratios(formula_list,ratios=[x_ratio,y_ratio])
-        
+    ratio_list = element_ratios(msTuple,ratios=[x_ratio,y_ratio])
     if 'bins' not in kwargs: 
         kwargs['bins'] = 20
         xbins = 20
@@ -42,23 +38,16 @@ def van_krevelen_histogram (formula_list, x_ratio = 'OC', y_ratio ='HC', **kwarg
         ybins = kwargs['bins'][1]
         d_index = density_index(ratio_list,xbins,ybins)
     else: d_index = None
-
-     
     x_axis = []
     y_axis = []
-    
     for ratios in ratio_list:
         x_axis.append(ratios['OC'])
         y_axis.append(ratios['HC'])
-   
     plt.hist2d(x_axis,y_axis,**kwargs)
-    
     plt.xlabel('Atomic ratio of O/C')
     plt.ylabel('Atomic ratio of H/C')
-    
     fig = plt.gcf()
     ax = plt.gca()
-    
     return fig, ax, d_index
         
     
@@ -81,17 +70,12 @@ def density_index (ratio_list,xbins=20,ybins=20):
 	Parameters
 	----------
 	Y: A list of atom ratios (must contain H/C and O/C). See PyKrev.element_ratios.
-    
-    
     """
-    
     x = []
     y = []
-    
     for ratios in ratio_list:
         x.append(ratios['OC'])
         y.append(ratios['HC'])
-        
     #count the number of points that fall into each of our pre-defined bins
     bin_results = binned_statistic_2d(x,y,None,'count',bins = (xbins,ybins))
     bin_counts = bin_results.statistic
@@ -100,6 +84,5 @@ def density_index (ratio_list,xbins=20,ybins=20):
     #compute the max bin density 
     max_bin_density = bin_counts.max()
     #compute the density distribution 
-    d_index = average_bin_density/max_bin_density
-          
+    d_index = average_bin_density/max_bin_density   
     return d_index

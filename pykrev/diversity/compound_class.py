@@ -1,32 +1,31 @@
-from ..formula import element_ratios 
-from ..formula import aromaticity_index
-from ..formula import element_counts
+from ..formula.element_ratios import element_ratios
+from ..formula.aromaticity_index import aromaticity_index
+from ..formula.element_counts import element_counts
 import pandas as pd
 import os
-
-def compound_class(formula_list, mass_list = [], method = 'MSCC'):
+def compound_class(msTuple, method = 'MSCC'):
     """ 
 	Docstring for function pyKrev.compound_class
 	====================
-	This function takes a list of formula and calculates compound class categories based on the method give in method. 
+	This function takes an msTuple and calculates compound class categories based on the method give in method. 
     
 	Use
 	----
 	compound_class(Y)
     
-	Returns two items. The first is a list of len(Y) in which each item is the compound class associated with the ith element of Y. 
+	Returns two items. The first is a list of len(Y[0]) in which each item is the compound class associated with the ith element of Y[0]. 
     The second is a dictionary containing the compound class counts. 
     
 	Parameters
 	----------
-	Y: A list of molecular formula strings 
-    
-	mass_list: A list of formula masses corresponding to the counts in element_counts. Required by MSCC method. 
-    
-	method: the method to use, one of:
+	Y: msTuple 
+        
+	method: String, the method to use, one of:
         'MSCC' - Multi-dimensional stoiochiometric compound classification.  See: Albert Rivas-Ubach, Yina Liu, Thomas Stephen Bianchi, Nikola Tolic, Christer Jansson, and Ljiljana Paša-Tolic. (2018)
         Moving beyond the van Krevelen diagram: A new stoichiometric approach for compound classification in organisms. Analytical Chemistry, DOI: 10.1021/acs.analchem.8b00529
-        'KELL' - Compound classification based on aromaticity index. See: Kellerman, A., Dittmar, T., Kothawala, D. et al. Chemodiversity of dissolved organic matter in lakes driven by climate and hydrology. Nat Commun 5, 3804 (2014).          https://doi.org/10.1038/ncomms4804
+        'KELL' - Compound classification based on aromaticity index. 
+        See: Kellerman, A., Dittmar, T., Kothawala, D. et al. Chemodiversity of dissolved organic matter in lakes driven by climate and hydrology. Nat Commun 5, 3804 (2014).
+        https://doi.org/10.1038/ncomms4804
         'FORM' - Compound classification based on the formularity algorithm. 
         'KEGG_BioMol' - Match molecular formula to those listed in 'compounds with biological roles' KEGG BRITE Pathways (databases located in ./compound_data).
         'KEGG_Phyto' - Match molecular formula to those listed in the 'phytochemicals' KEGG BRITE Heirarchy (databases located in ./compound_data). 
@@ -34,18 +33,20 @@ def compound_class(formula_list, mass_list = [], method = 'MSCC'):
         'KEGG_Pesticide' - Match molecular formula to those listed in the 'pesticides' KEGG BRITE Heirarchy (databases located in ./compound_data). 
         'KEGG_Toxin' - Match molecular formula to those listed in the 'toxin' KEGG BRITE Heirarchy (databases located in ./compound_data). 
         'KEGG_All' - Match molecular formula to all of the possible categories.
-        
-    Notes: Please refer to the KEGG website for information on BRITE heirarchies. https://www.genome.jp/kegg/brite.html
-        
+    
+    Info
+    ----------
+    Please refer to the KEGG website for information on BRITE heirarchies. https://www.genome.jp/kegg/brite.html 
     """
-    count_list = element_counts(formula_list)
+    #Setup
+    count_list = element_counts(msTuple)
+    mass_list = msTuple[2]
     cclassCounts = dict()
     compound_class = []
-    
-    #Retrieve the path to the diversity directory that this script is in, needed to retrieve compound class databases
+    ##Retrieve the path to the diversity directory that this script is in, needed to retrieve compound class databases
     functionPath = os.path.realpath(__file__)
     functionDirectory = os.path.dirname(functionPath)
-    
+    #Main
     if method == 'MSCC':
         ## assert that the same number of elements in mass and count list
         assert len(mass_list) == len(count_list), 'to perform MSCC you must provide a mass list'
@@ -59,7 +60,7 @@ def compound_class(formula_list, mass_list = [], method = 'MSCC'):
         cclassCounts['Not matched'] = 0
         cclassCounts['Double matched'] = 0
         ## initialise ratio list 
-        cRatios = element_ratios(formula_list,ratios = ['OC','HC','NC','PC','NP'])
+        cRatios = element_ratios(msTuple,ratios = ['OC','HC','NC','PC','NP'])
         for c,m,ratios in zip(count_list,mass_list,cRatios):
             ## a list that temporarily holds assigned categories
             cClass = []
@@ -90,8 +91,8 @@ def compound_class(formula_list, mass_list = [], method = 'MSCC'):
                     compound_class.append(cClass[0])
                     cclassCounts[cClass[0]] += 1 
     if method == 'KELL':
-        cRatios = element_ratios(formula_list)
-        aindex = aromaticity_index(formula_list, index_type = 'rAI')
+        cRatios = element_ratios(msTuple)
+        aindex = aromaticity_index(msTuple, index_type = 'rAI')
         cclassCounts['Combustion-derived polycyclic aromatics'] = 0
         cclassCounts['Vascular plant-derived polyphenols'] = 0
         cclassCounts['Highly unsaturated and phenolic compounds'] = 0
@@ -109,9 +110,8 @@ def compound_class(formula_list, mass_list = [], method = 'MSCC'):
             elif ai <= 0.5 and ratio['HC'] >= 1.5:
                 compound_class.append('Aliphatic compounds')
                 cclassCounts['Aliphatic compounds'] += 1     
-    
     if method == 'FORM':
-        cRatios = element_ratios(formula_list)
+        cRatios = element_ratios(msTuple)
         cclassCounts['Lipid-like'] = 0
         cclassCounts['Carbohydrate-like'] = 0
         cclassCounts['Unsaturated hydrocarbons'] = 0
@@ -149,7 +149,6 @@ def compound_class(formula_list, mass_list = [], method = 'MSCC'):
             else:
                 compound_class.append('Not assigned')
                 cclassCounts['Not assigned'] += 1
-        
     if 'KEGG' in method:
         if method == 'KEGG_BioMol':
             BRITE = pd.read_csv(f"{functionDirectory}\compound_data\Brite_BioMol_DF.csv")
@@ -171,7 +170,7 @@ def compound_class(formula_list, mass_list = [], method = 'MSCC'):
         cclassCounts['Not Matched'] = 0
         for c in KEGGCats:
             cclassCounts[c] = 0
-        for f in formula_list:
+        for f in msTuple.formula:
             try:
                 idx = BriteFormula.index(f)
                 compound_class.append(BriteCatA[idx])
@@ -179,5 +178,4 @@ def compound_class(formula_list, mass_list = [], method = 'MSCC'):
             except ValueError:
                 cclassCounts['Not Matched'] += 1
                 compound_class.append('Not Matched')
-
     return compound_class,cclassCounts

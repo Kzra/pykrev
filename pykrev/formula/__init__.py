@@ -2,10 +2,7 @@ from .aromaticity_index import aromaticity_index
 from .double_bond_equivalent import double_bond_equivalent 
 from .element_counts import element_counts
 from .element_ratios import element_ratios
-from .missing_formula import missing_formula 
 from .nominal_oxidation_state import nominal_oxidation_state
-from .standardize_formula import standardize_formula 
-from .unique_formula import unique_formula 
 from .find_intersections import find_intersections
 from .read_formularity import read_formularity
 from .read_batch_formularity import read_batch_formularity
@@ -13,3 +10,5 @@ from .calculate_mass import calculate_mass
 from .kendrick_mass_defect import kendrick_mass_defect
 from .filter_spectral_interference import filter_spectral_interference
 from .read_corems import read_corems
+from .msTuple import msTuple
+from .msTupleDict import msTupleDict
