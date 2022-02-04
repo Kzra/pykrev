@@ -24,7 +24,7 @@ Other tutorials:
 
 * [Raw FT-MS data processing with PyKrev and CoreMS](https://nbviewer.jupyter.org/github/Kzra/pykrev/blob/master/docs/corems_with_pykrev/CoreMsWithPykrev.ipynb)
 
-Version 1.2.0 [*Changelog*](https://github.com/Kzra/pykrev/blob/master/CHANGELOG.md)
+Version 1.2.1 [*Changelog*](https://github.com/Kzra/pykrev/blob/master/CHANGELOG.md)
 
 Citation: Kitson, E., Kew, W., Ding, W. & Bell, N. G. A. PyKrev: A Python Library for the Analysis of Complex Mixture FT-MS Data. J. Am. Soc. Mass Spectrom. jasms.1c00064 (2021) [doi:10.1021/jasms.1c00064](https://pubs.acs.org/doi/10.1021/jasms.1c00064)
 
