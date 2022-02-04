@@ -1,4 +1,4 @@
-numpy==1.19.3
+numpy==1.21.0
 pandas==1.1.5
 pykrev==1.1.0
 scikit-learn==0.23.2
