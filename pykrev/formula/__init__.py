@@ -12,3 +12,4 @@ from .filter_spectral_interference import filter_spectral_interference
 from .read_corems import read_corems
 from .msTuple import msTuple
 from .msTupleDict import msTupleDict
+from .average_mstuple import average_mstuple

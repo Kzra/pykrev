@@ -2,6 +2,7 @@ import pandas as pd
 import numpy as np
 from ..diversity.ordination_matrix import ordination_matrix
 from .find_intersections import find_intersections
+from .average_mstuple import average_mstuple
 
 class msTupleDict(dict):
     """ 
@@ -21,6 +22,10 @@ class msTupleDict(dict):
     msTupleDict.validate(): validate all of the msTuples stored in the dictionary.
 
     msTupleDict.summary(): summarise all of the msTuples stored in the dictionary.
+
+    msTupleDict.subset(subsetList = []): subset the dictionary based on the keys found in subsetList
+
+    msTupleDict.average(intensityMethod = 'mean', mzMethod = 'mean', minOccurrence = 1, zeroValues = True, stdDev = False): return an average msTuple 
 
     msTupleDict.intersections(exclusive = True): return a dictionary contanining all intersections between the formula in msTupleDict. See pk.find_intersections.
 
@@ -42,9 +47,17 @@ class msTupleDict(dict):
             v.summary()
             print()
 
+    def subset(self, subsetList = []):
+        self.validate()
+        return msTupleDict({key: value for key, value in self.items() if key in subsetList})
+
+    def average(self, intensityMethod = 'mean', mzMethod = 'mean', minOccurrence = 1, zeroValues = True, stdDev = False):
+        self.validate()
+        return average_mstuple(self, intensityMethod = intensityMethod, mzMethod = mzMethod, minOccurrence = minOccurrence, zeroValues = zeroValues, stdDev = stdDev)
+
     def intersections(self, exclusive = True):
         self.validate()
-        return find_intersections(self,exclusive = True)
+        return find_intersections(self,exclusive = exclusive)
     
     def to_DataFrame(self):
         self.validate()

@@ -1,3 +1,18 @@
+## [1.2.1]
+
+### Added
+- average_mstuple() function
+
+### Changed
+- mass_spectrum now supports an inverted axis
+- mass_spectum now plots onto a number line defined by step size
+- added subset and average methods to msTupleDict 
+- updated the batch analysis and user guide docs to reflect new msTupleDict and mass_spectrum behaviour
+- added test for average_mstuple()
+- normalise_intensity now supports row or column wise normalisation
+- normalise_intensity now supports a range of transformation options, log, power2, and power3
+- normalise_intensity now supports centering as a normalisation method 
+
 ## [1.2.0] - 05-01-2022 
 
 ### Added
