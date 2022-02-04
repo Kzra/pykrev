@@ -1,4 +1,4 @@
-## [1.2.1]
+## [1.2.1] - 04-02-2022
 
 ### Added
 - average_mstuple() function
