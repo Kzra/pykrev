@@ -1,3 +1,15 @@
+## [1.2.2] - 20-09-2022
+
+### Added
+- read_csv() function
+- added a to_csv() method to the msTuple class
+
+### Changed
+- msTuple.summarise() now gives min and max intensity and std mz in scientific units
+- compound_class now supports elemental classification (e.g. CHO, CHON, ...)
+- changed the UpSetPlot gude to be up to date with the new version of UpSetPlot.
+- made small changes to the bath analysis, PCA and corems with PyKrev guides
+
 ## [1.2.1] - 04-02-2022
 
 ### Added

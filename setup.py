@@ -5,7 +5,7 @@ with open("README.md", "r") as fh:
 
 setuptools.setup(
     name="pykrev", 
-    version="1.2.1",
+    version="1.2.2",
     author="Ezra Kitson",
     author_email="ezrakitson@ed.ac.uk",
     description="FT-MS data analysis in Python",

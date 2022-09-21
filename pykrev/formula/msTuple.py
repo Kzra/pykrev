@@ -1,5 +1,6 @@
 from typing import NamedTuple
 import numpy as np
+import pandas as pd
 class msTuple(NamedTuple):
     """ 
     Docstring for class pykrev.msTuple
@@ -32,6 +33,8 @@ class msTuple(NamedTuple):
     msTuple.filter_intensity(low,high): returns a new msTuple filtered between low and high intensity
 
     msTuple.filter_spectral_interference(): returns a new msTuple which has been filtered of spectral interference by doubley charged molecular ions (see pykrev.filter_spectral_interference)
+
+    msTuple.to_csv(): writes the msTuple to a .csv file
     """
     
     formula: list
@@ -51,10 +54,10 @@ class msTuple(NamedTuple):
     def summary(self):
         self.validate()
         print(f'assigned formula = {len(self.formula)} ')
-        print(f'min intensity = {np.min(self.intensity)}')
-        print(f'max intensity = {np.max(self.intensity)}')
+        print(f'min intensity = {np.min(self.intensity):.1E}')
+        print(f'max intensity = {np.max(self.intensity):.1E}')
         print(f'mean mz = {np.mean(self.mz)} ')
-        print(f'std mz = {np.std(self.mz)} ')
+        print(f'std mz = {np.std(self.mz):.1E}')
     
     def filter_spectral_interference(self, tol = 2, verbose = True):
         #Setup
@@ -106,4 +109,11 @@ class msTuple(NamedTuple):
         filterformula = list(fArray[bandpassBool])
         return self._replace(formula = filterformula, intensity = filterintensity, mz = filtermz)
 
-
+    def to_csv(self, path):
+        self.validate()
+        csv = pd.DataFrame()
+        csv['formula'] = self.formula
+        csv['intensity'] = self.intensity
+        csv['m/z'] = self.mz
+        csv.to_csv(path, index= False)
+        print(f'msTuple written to {path}')

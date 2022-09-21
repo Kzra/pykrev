@@ -33,6 +33,7 @@ def compound_class(msTuple, method = 'MSCC'):
         'KEGG_Pesticide' - Match molecular formula to those listed in the 'pesticides' KEGG BRITE Heirarchy (databases located in ./compound_data). 
         'KEGG_Toxin' - Match molecular formula to those listed in the 'toxin' KEGG BRITE Heirarchy (databases located in ./compound_data). 
         'KEGG_All' - Match molecular formula to all of the possible categories.
+        'ELEM' - Compound classification based on elemental composition. 
     
     Info
     ----------
@@ -178,4 +179,16 @@ def compound_class(msTuple, method = 'MSCC'):
             except ValueError:
                 cclassCounts['Not Matched'] += 1
                 compound_class.append('Not Matched')
+    if 'ELEM' in method:
+        for d in count_list:
+            elemclass = []
+            for k,v in zip(d.keys(), d.values()):
+                if v > 0:
+                    elemclass.append(k)
+            elemclass = ''.join(elemclass)
+            if elemclass in cclassCounts.keys():
+                cclassCounts[elemclass] += 1
+            else:
+                cclassCounts[elemclass] = 1
+            compound_class.append(elemclass)
     return compound_class,cclassCounts
