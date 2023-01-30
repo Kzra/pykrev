@@ -44,7 +44,11 @@ def read_corems(corems_df, mass_type = 'calibrated'):
     if 'S' not in assignedDf.columns:
         assignedDf['S'] = [""] * N       
     if 'P' not in assignedDf.columns:
-        assignedDf['P'] = [""] * N      
+        assignedDf['P'] = [""] * N    
+    if 'Cl' not in assignedDf.columns:
+        assignedDf['Cl'] = [""] * N       
+    if 'F' not in assignedDf.columns:
+        assignedDf['F'] = [""] * N  
     Cstring = []
     for cnumber in assignedDf['C']:
         try: 
@@ -99,7 +103,25 @@ def read_corems(corems_df, mass_type = 'calibrated'):
                 Sstring.append(str(f"S{int(snumber)}"))
         except ValueError:
             Sstring.append("")
-    pykrev_formula = [c + h + n + o + p + s for c, h, n, o, p, s in zip(Cstring, Hstring, Nstring, Ostring, Pstring, Sstring)]
+    Clstring = []
+    for clnumber in assignedDf['Cl']:
+        try:
+            if int(clnumber) == 0:
+                Clstring.append("")
+            else: 
+                Clstring.append(str(f"Cl{int(clnumber)}"))
+        except ValueError:
+            Clstring.append("")
+    Fstring = [] 
+    for fnumber in assignedDf['F']:
+         try:
+             if int(fnumber) == 0:
+                 Fstring.append("")
+             else: 
+                 Fstring.append(str(f"F{int(fnumber)}"))
+         except ValueError:
+             Fstring.append("")
+    pykrev_formula = [c + h + n + o + p + s + f + cl for c, h, n, o, p, s, f, cl in zip(Cstring, Hstring, Nstring, Ostring, Pstring, Sstring, Fstring, Clstring)]
     pykrev_abundance = assignedDf['Peak Height']
     if mass_type == 'calibrated':
         pykrev_mass = assignedDf['Calibrated m/z']
