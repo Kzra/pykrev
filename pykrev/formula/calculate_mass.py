@@ -38,7 +38,7 @@ def calculate_mass(msTuple, method = 'monoisotopic', protonated = False, ion_cha
     elif method == 'nominal':
         element_masses = {'C': 12, 'H': 1, 'O':16,'N': 14,'S': 32, 'P': 31, 'Cl':35, 'F':19}
     elif method == 'average':
-        element_masses = {'C': 12.010736, 'H': 1.007941, 'O':15.999405,'N': 14.006743,'S': 32.066085, 'P': 30.973762, 'Cl': 35.446, 'F': 18.998403}
+        element_masses = {'C': 12.010736, 'H': 1.007941, 'O':15.999405,'N': 14.006743,'S': 32.066085, 'P': 30.973762, 'Cl': 35.452938, 'F': 18.998403}
     else:
         raise Exception("Method not recognised.")
     mass_list = np.empty(len(count_list))
