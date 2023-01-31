@@ -44,7 +44,7 @@ def calculate_mass(msTuple, method = 'monoisotopic', protonated = False, ion_cha
     mass_list = np.empty(len(count_list))
     #Main
     for i in range(0,len(count_list)):
-        mass_list[i] = count_list[i]['C'] * element_masses['C'] + count_list[i]['H'] * element_masses['H'] + count_list[i]['N'] * element_masses['N'] + count_list[i]['O'] * element_masses['O'] + count_list[i]['P'] * element_masses['P'] + count_list[i]['S'] * element_masses['S']
+        mass_list[i] = count_list[i]['C'] * element_masses['C'] + count_list[i]['H'] * element_masses['H'] + count_list[i]['N'] * element_masses['N'] + count_list[i]['O'] * element_masses['O'] + count_list[i]['P'] * element_masses['P'] + count_list[i]['S'] * element_masses['S'] + count_list[i]['Cl'] * element_masses['Cl'] + count_list[i]['F'] * element_masses['F']
         if ion_charge != 0: 
             mass_list[i] += (ion_charge * -1 * electron_mass)
             if protonated == True:
