@@ -21,7 +21,7 @@ class TestFORMULA(unittest.TestCase):
 
     def test_double_bond_equivalent(self):
         x = msTuple(['C13H14O5','C13H14N2O4S2','C36H45ClN6O12','C32H34O8'],[],[])
-        correct = np.array([7,8,17.5,16])
+        correct = np.array([7,8,17,16])
         res = double_bond_equivalent(x)
         self.assertIsNone(np.testing.assert_array_equal(res, correct))# returns None if the arrays are equal
 
