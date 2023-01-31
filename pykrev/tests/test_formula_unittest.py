@@ -8,8 +8,8 @@ class TestFORMULA(unittest.TestCase):
         pass
 
     def test_element_counts(self):
-        x = msTuple(['C13H14O5','C13H14N2O4S2','C36H45ClN6O12'],[],[])
-        correct = [{'C':13,'H':14,'N':0,'O':5,'P':0,'S':0},{'C':13,'H':14,'N':2,'O':4,'P':0,'S':2},{'C':36,'H':45,'N':6,'O':12,'P':0,'S':0}]
+        x = msTuple(['C13H14O5','C13H14N2O4S2','C36H45ClN6O12','C10H4Cl2F3NO3'],[],[])
+        correct = [{'C':13,'H':14,'N':0,'O':5,'P':0,'S':0,'Cl':0,'F':0},{'C':13,'H':14,'N':2,'O':4,'P':0,'S':2,'Cl':0,'F':0},{'C':36,'H':45,'N':6,'O':12,'P':0,'S':0,'Cl':1,'F':0},{'C':10,'H':4,'N':1,'O':3,'P':0,'S':0,'Cl':2,'F':3}]
         res = element_counts(x)
         self.assertEqual(res, correct)
 
@@ -32,8 +32,8 @@ class TestFORMULA(unittest.TestCase):
         self.assertIsNone(np.testing.assert_array_equal(np.round(res,2), np.round(correct,2)))
 
     def test_rai(self):
-        x = msTuple(['C11H11N1','C11H10O1','C27H14O6'],[],[])
-        correct = np.array([0.545,0.545,0.56])
+        x = msTuple(['C11H11N1','C11H10O1','C27H14O6','C7H4ClFO3'],[],[])
+        correct = np.array([0.545,0.545,0.56,0.2857])
         res = aromaticity_index(x,index_type = 'rAI')
         self.assertIsNone(np.testing.assert_array_equal(np.round(res,2),np.round(correct,2)))
 
@@ -44,26 +44,26 @@ class TestFORMULA(unittest.TestCase):
         self.assertIsNone(np.testing.assert_array_equal(np.round(res,3),np.round(correct,3)))
 
     def test_mass_mono(self):
-        x = msTuple(['C3H7N1O2','C5H11N1O2','C5H11N1O2P1S2'],[],[])
-        correct = np.array([89.04768,117.0790,211.9969])
+        x = msTuple(['C3H7N1O2','C5H11N1O2','C5H11N1O2P1S2','C7H4ClFO3'],[],[])
+        correct = np.array([89.04768,117.0790,211.9969,189.98330])
         res = calculate_mass(x,method = 'monoisotopic')
         self.assertIsNone(np.testing.assert_array_equal(np.round(res,3),np.round(correct,3)))
 
     def test_mass_mono_analyte(self):
-        x = msTuple(['C46H43N1O35','C41H25N1O39','C36H62O40'],[],[])
-        correct = np.array([1168.154286,1153.993093,1133.274460])
+        x = msTuple(['C46H43N1O35','C41H25N1O39','C36H62O40','C7H4ClFO3'],[],[])
+        correct = np.array([1168.154286,1153.993093,1133.274460,188.97602])
         res = calculate_mass(x,method = 'monoisotopic', protonated = True, ion_charge = -1)
         self.assertIsNone(np.testing.assert_array_equal(np.round(res,3),np.round(correct,3)))
 
     def test_mass_nominal(self):
-        x = msTuple(['C3H7N1O2','C5H11N1O2','C5H11N1O2P1S2'],[],[])
-        correct = np.array([89,117,212])
+        x = msTuple(['C3H7N1O2','C5H11N1O2','C5H11N1O2P1S2','C7H4ClFO3'],[],[])
+        correct = np.array([89,117,212,190])
         res = calculate_mass(x,method = 'nominal')
         self.assertIsNone(np.testing.assert_array_equal(np.round(res,3),np.round(correct,3)))
 
     def test_mass_average(self):
-        x = msTuple(['C3H7N1O2','C5H11N1O2','C5H11N1O2P1S2'],[],[])
-        correct = np.array([89.09332,117.1466,212.252512])
+        x = msTuple(['C3H7N1O2','C5H11N1O2','C5H11N1O2P1S2','C7H4ClFO3'],[],[])
+        correct = np.array([89.09332,117.1466,212.252512,190.55607])
         res =calculate_mass(x,method = 'average')
         self.assertIsNone(np.testing.assert_array_equal(np.round(res,3),np.round(correct,3)))
 
