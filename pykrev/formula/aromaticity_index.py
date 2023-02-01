@@ -38,13 +38,13 @@ def aromaticity_index(msTuple, index_type = 'rAI'):
     for count in count_list: 
         try:
             if index_type == 'rAImod':
-                AI_counts = (1 + 1/2*((count['C']*2)-count['H']-(count['O']*1)-(count['S']*2)-count['N']-count['P']))/count['C']
+                AI_counts = (1 + 1/2*((count['C']*2)-count['H']-count['Cl']-count['F']-(count['O']*1)-(count['S']*2)-count['N']-count['P']))/count['C']
             elif index_type == 'rAI':
-                AI_counts = (1 + 1/2*((count['C']*2)-count['H']-(count['O']*2)-(count['S']*2)-count['N']-count['P']))/count['C']
+                AI_counts = (1 + 1/2*((count['C']*2)-count['H']-count['Cl']-count['F']-(count['O']*2)-(count['S']*2)-count['N']-count['P']))/count['C']
             elif index_type == 'AImod':
-                AI_counts = (1 + count['C'] - (count['H']*0.5)-(count['O']*0.5)- count['S'])/(count['C'] - (count['O']*0.5) - count['N'] - count['S'] - count['P'])
+                AI_counts = (1 + count['C']-(count['Cl']*0.5)-(count['F']*0.5)-(count['H']*0.5)-(count['O']*0.5)-count['S'])/(count['C'] - (count['O']*0.5) - count['N'] - count['S'] - count['P'])
             elif index_type == 'AI':
-                AI_counts = (1 + count['C'] -count['O']- count['S'] - (0.5*count['H']))/(count['C'] - count['O'] - count['N'] - count['S'] - count['P'])
+                AI_counts = (1 + count['C']-count['O']-count['S']-(count['Cl']*0.5)-(count['F']*0.5)-(count['H']*0.5))/(count['C'] - count['O'] - count['N'] - count['S'] - count['P'])
         except ZeroDivisionError:
             AI_counts = np.nan
             print(f"Warning Zero Division Encountered, NaN value returned. {count}")

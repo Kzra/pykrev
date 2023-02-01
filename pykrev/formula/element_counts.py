@@ -27,7 +27,7 @@ def element_counts(msTuple):
     else:
         formula_list = msTuple[0]
     #Setup
-    elements=['C','H','N','O','P','S']
+    elements=['C','H','N','O','P','S','Cl','F']
     count_list = []
     #Main
     for formula in formula_list:
@@ -38,9 +38,9 @@ def element_counts(msTuple):
                                            #it won't work. In theory this shouldn't happen because formulas should be listed alphabetically, therefore single character names will come before two character names. 
             if alpha_idx > -1: # if the element was found in the formula   
                 element_numbers[element] = 1 #it must have at least 1 atom 
-                for i in range(alpha_idx+2,(len(formula)+1)):
+                for i in range(alpha_idx+len(element)+1,(len(formula)+1)):
                     try:
-                        element_numbers[element] = int(formula[alpha_idx+1:i]) #Count the number of atoms belonging to this element starting with the next character, and progressively making the character window bigger
+                        element_numbers[element] = int(formula[alpha_idx+len(element):i]) #Count the number of atoms belonging to this element starting with the next character, and progressively making the character window bigger
                     except ValueError: # this occurs when you have reached the next element name
                         break
         count_list.append(element_numbers)
