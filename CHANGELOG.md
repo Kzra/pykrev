@@ -1,3 +1,15 @@
+## [1.2.3] - 01-02-2022
+
+### Added
+- msTuple.filter_bool() method
+
+### Changed
+- numpy 1.22.0 and networkx 2.5 in requirements 
+- calculate_mass, aromaticity_index, element_counts, element_ratios and nominal_oxidation_state now support Cl and F (double_bond_equivalent already did)
+- user_guide now lists Cl and F support and boolean indexing
+- element_ratios no longer includes an optional argument for handling zero ratios (if the denominator is zero, np.nan is now returned)
+
+
 ## [1.2.2] - 20-09-2022
 
 ### Added

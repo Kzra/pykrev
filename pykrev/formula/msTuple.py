@@ -34,6 +34,8 @@ class msTuple(NamedTuple):
 
     msTuple.filter_spectral_interference(): returns a new msTuple which has been filtered of spectral interference by doubley charged molecular ions (see pykrev.filter_spectral_interference)
 
+    msTuple.filter_bool(boolArray): returns a new msTuple which is filtered by a boolean array
+
     msTuple.to_csv(): writes the msTuple to a .csv file
     """
     
@@ -107,6 +109,14 @@ class msTuple(NamedTuple):
         filtermz = self.mz[bandpassBool]
         filterintensity = self.intensity[bandpassBool]
         filterformula = list(fArray[bandpassBool])
+        return self._replace(formula = filterformula, intensity = filterintensity, mz = filtermz)
+
+    def filter_bool(self,boolArray):
+        self.validate()
+        filtermz = self.mz[boolArray]
+        filterintensity = self.intensity[boolArray]
+        fArray = np.array(self.formula)
+        filterformula = list(fArray[boolArray])
         return self._replace(formula = filterformula, intensity = filterintensity, mz = filtermz)
 
     def to_csv(self, path):

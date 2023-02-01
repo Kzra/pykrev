@@ -6,3 +6,4 @@ scipy==1.5.4
 UpSetPlot==0.4.1
 matplotlib==3.3.3
 seaborn==0.11.1
+networkx==2.5

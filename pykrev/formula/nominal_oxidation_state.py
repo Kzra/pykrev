@@ -23,7 +23,7 @@ def nominal_oxidation_state(msTuple):
 	"Degradation of natural organic matter: a thermodynamic analysis." 
 	Geochimica et Cosmochimica Acta 75.8 (2011): 2030-2042.       
 
-	NOSC = -((-Z + 4a + b - 3c - 2d + 5e - 2f)/a) + 4 
+	NOSC = -((-Z + 4a + b - 3c - 2d + 5e - 2f - g - h)/a) + 4 
 	where Z = charge and 
 	a = C
 	b = H
@@ -31,6 +31,8 @@ def nominal_oxidation_state(msTuple):
 	d = O
 	e = P
  	f = S
+	g = Cl
+	h = F
         
     """      
 	#Setup
@@ -38,5 +40,5 @@ def nominal_oxidation_state(msTuple):
     NOSCs = np.array([])
     #Main
     for i in count_list:
-        NOSCs = np.append(NOSCs,-((4*i['C'] + i['H'] - 3 * i['N'] - 2 * i['O'] + 5 * i['P'] - 2 * i['S'])/i['C']) + 4) 
+        NOSCs = np.append(NOSCs,-((4*i['C'] + i['H'] - 3 * i['N'] - 2 * i['O'] + 5 * i['P'] - 2 * i['S'] - i['Cl'] - i['F'])/i['C']) + 4) 
     return NOSCs

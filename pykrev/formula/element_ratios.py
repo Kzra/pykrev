@@ -1,6 +1,6 @@
 import numpy as np
 from .element_counts import element_counts
-def element_ratios(msTuple, ratios = ['OC','HC'], zero_ratio = True):
+def element_ratios(msTuple, ratios = ['OC','HC'], zero_ratio = False):
         
     """ 
 	Docstring for function pyKrev.element_ratios
@@ -19,24 +19,28 @@ def element_ratios(msTuple, ratios = ['OC','HC'], zero_ratio = True):
 	----------
 	Y: msTuple OR a list of molecular formula strings
     
-	ratios: List, atomic ratios to compute, calculated as first element divided by second element. Only C,H,N,O,P & S can be used. 
-    
-    zero_ratio: Boolean, behaviour for if a zero ratio is encountered (i.e. the denominator is zero), if true a zero value is returned. 
-    
+	ratios: list, atomic ratios to compute, calculated as first element divided by second element. 
+        
     """
+    #Tests
+    for ratio in ratios:
+        assert len(ratio) < 4 and len(ratio) > 1, 'Too many or too few characters in the ratio'
+    #Setup
     count_list = element_counts(msTuple)
     ratio_list = []
+    #Main
     for count in count_list:
         ratio_counts = dict()
-        for atom in ratios:
-            if len(atom) > 2:
-                raise Exception('Only C,H,N,O,P & S can be used. ')
-            if count[atom[1]] == 0:
-                if zero_ratio == True:
-                    ratio_counts[atom] = 0
-                else:
-                    ratio_counts[atom] = np.nan
+        for ratio in ratios:
+            # we need to set the second index to 2 if chlorine is the first element in the ratio  as it has two characters in the element name
+            if 'Cl' in ratio and ratio.index('Cl') == 0:
+                sidx = 2
             else:
-                ratio_counts[atom] = count[atom[0]]/count[atom[1]]
+                sidx = 1
+            # this if statement checks for division by zero and sets value to nan if so
+            if count[ratio[sidx]] == 0:
+                    ratio_counts[ratio] = np.nan
+            else:
+                ratio_counts[ratio] = count[ratio[0:sidx]]/count[ratio[sidx::]]
         ratio_list.append(ratio_counts)    
     return ratio_list

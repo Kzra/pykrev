@@ -1,4 +1,4 @@
-__version__ = '1.2.1'
+__version__ = '1.2.3'
 
 from .formula import *
 from .plotting import *
