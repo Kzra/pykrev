@@ -1,7 +1,7 @@
 import pandas as pd
 import numpy as np 
 from .msTuple import msTuple
-def read_corems(corems_df, mass_type = 'calibrated'):
+def read_corems(corems_df, mass_type = 'calibrated', remove_multiply_assigned_peaks = True, verbose = False):
     """ 
     Docstring for function PyKrev.read_corems
     ====================
@@ -15,24 +15,47 @@ def read_corems(corems_df, mass_type = 'calibrated'):
     
     Parameters
     ----------
-    mass_type: String, What form to read the mass from the dataframe in. One of: 
+    mass_type: String, what form to read the mass from the dataframe in. One of: 
         'calculated' (i.e. exact formula mass),
         'calibrated' (experimental mass after calibration)
         'experimental' (raw mass from spectrum).
+    remove_multiply_assigned_peaks: bool, if True remove peaks that have multiple formulae assigned to them. 
+        if False msTuple will contain multiple formulae assignments
+    verbose: bool, if True print number of assigned peaks and generated formulae to output
 
     Info
     -----------    
     Corems returns isotope assignments that pykrev cannot parse. 
-    PyKrev will filter out formula with isotopes assigned.
+    PyKrev will filter out formulae with isotopes assigned.
     """
     #Tests
     assert(mass_type in ['calculated','calibrated','experimental']), 'incorrect mass_type given'
+    assert(type(remove_multiply_assigned_peaks) == bool), 'provide a boolean'
     #Setup
     assigned = corems_df['Is Isotopologue'] == 0
     assignedDf = corems_df[assigned].copy()
+    total_peak_number = len(set(corems_df['Index']))
+    assigned_peak_number = len(set(assignedDf['Index']))
+    generated_formulae_number = assignedDf.shape[0]
+    if verbose == True:
+        print(f'total peaks: {total_peak_number}')
+        print(f'assigned peaks: {assigned_peak_number}')
+        print(f'generated formulae: {generated_formulae_number}')
+        print('**************************************************')
+    #deal with multiple assignments
+    if generated_formulae_number > assigned_peak_number:
+        if remove_multiply_assigned_peaks == True:
+            didx = pd.Index([])
+            for i in assignedDf['Index']:
+                if len(assignedDf[assignedDf['Index'] == i]) > 1: 
+                    didx = didx.union(assignedDf[assignedDf['Index'] == i].index)
+            assignedDf = assignedDf.drop(index = didx)
     N = assignedDf.shape[0]
+    if verbose == True and remove_multiply_assigned_peaks == True:
+        print(f'{assigned_peak_number - N} multiply assigned peaks removed')
+        print('----------------------------------------------------')
     #Main
-    ## first check that there are columns in the dataframe corresponding to C,H,N,O,P,S if there aren't, we make them!
+    ## first check that there are columns in the dataframe corresponding to C,H,N,O,P,S,Cl and F if there aren't, we make them!
     if 'C' not in assignedDf.columns:
         assignedDf['C'] = [""] * N
     if 'H' not in assignedDf.columns:

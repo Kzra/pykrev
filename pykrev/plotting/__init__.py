@@ -7,3 +7,4 @@ from .compound_class_plot import compound_class_plot
 from .mass_histogram import mass_histogram
 from .mass_spectrum import mass_spectrum
 from .reaction_network import reaction_network
+from .spiral_plot import spiral_plot

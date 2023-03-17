@@ -1,4 +1,19 @@
-## [1.2.3] - 01-02-2022
+## [1.2.4] - 17-03-2023
+
+### Added
+- spiral_plot function 
+
+### Changed
+- removed zero_ratio argument from formula_definition of element_ratios since it was not used
+- updated doc_string for element_counts to include Cl and F
+- changed 'Protein' to 'Peptide' and 'Protein-like' to 'Peptide-like' in MSCC and FORM compound class algorithms
+- changed 'Phytochemical' to 'Oxy-aromatic phytochemical' in MSCC compound class algorithm
+- set nan NP ratios to 0 during MSCC compound class assignment 
+- updated read_corems to allow removal of peaks with multiple formulae assignments
+- updated read_corems to provide verbose output
+- updated user_guide and coremswithpykrev example notebooks
+
+## [1.2.3] - 01-02-2023
 
 ### Added
 - msTuple.filter_bool() method

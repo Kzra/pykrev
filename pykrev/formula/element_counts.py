@@ -2,7 +2,7 @@ def element_counts(msTuple):
     """ 
 	Docstring for function pykrev.element_counts
 	====================
-	This function takes an msTuple and gives atomic counts for C,H,N,O,P & S for each formula in the formula list.
+	This function takes an msTuple and gives atomic counts for C,H,N,O,P,S,Cl & F for each formula in the formula list.
     
 	Use
 	----
@@ -19,7 +19,7 @@ def element_counts(msTuple):
     For formula strings:
         All integers must be standard script (e.g. C6H8O7). 
         Formula strings should not contain isotopologues (e.g. C9H12O6 13C1) 
-        Formula strings should only contain C,H,N,O,P and S atoms.
+        Formula strings should only contain C,H,N,O,P,S,Cl and F atoms.
     """
     #Tests
     if type(msTuple) == list:

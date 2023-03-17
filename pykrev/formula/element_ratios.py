@@ -1,6 +1,6 @@
 import numpy as np
 from .element_counts import element_counts
-def element_ratios(msTuple, ratios = ['OC','HC'], zero_ratio = False):
+def element_ratios(msTuple, ratios = ['OC','HC']):
         
     """ 
 	Docstring for function pyKrev.element_ratios

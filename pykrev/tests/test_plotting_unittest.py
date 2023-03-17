@@ -68,6 +68,13 @@ class TestPLOTTING(unittest.TestCase):
        x = (['C13H14O5','C13H14N2O4S2','C36H45ClN6O12','C9H11NO2', 'C9H11NO3', 'C11H12N2O2', 'C5H7NO3', 'C5H9NO3', 'C6H12N2O4S2','C6H11NO3S'],y,[])
        reaction_network(x)
        reaction_network(x, nodeAnnotations = {'Peak Intensity' : y})
+
+   def test_spiral_plot(self):
+       y = np.array([3210,43,432,423,42,10,103,305,2054,1388])
+       x = msTuple(['C13H14O5','C13H14N2O4S2','C36H45ClN6O12','C9H11NO2', 'C9H11NO3', 'C11H12N2O2', 'C5H7NO3', 'C5H9NO3', 'C6H12N2O4S2','C6H11NO3S'],y,[])
+       mass_spectrum(x)
+       mass_spectrum(x, method = 'nominal')
+
    
 if __name__ == '__main__':
     unittest.main()

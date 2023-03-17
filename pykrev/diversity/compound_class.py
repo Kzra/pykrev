@@ -3,6 +3,7 @@ from ..formula.aromaticity_index import aromaticity_index
 from ..formula.element_counts import element_counts
 import pandas as pd
 import os
+import numpy as np
 def compound_class(msTuple, method = 'MSCC'):
     """ 
 	Docstring for function pyKrev.compound_class
@@ -55,14 +56,17 @@ def compound_class(msTuple, method = 'MSCC'):
         cclassCounts['Lipid'] = 0
         cclassCounts['Carbohydrate'] = 0
         cclassCounts['Amino-sugar'] = 0
-        cclassCounts['Protein'] = 0
-        cclassCounts['Phytochemical'] = 0
+        cclassCounts['Peptide'] = 0
+        cclassCounts['Oxy-aromatic phytochemical'] = 0
         cclassCounts['Nucleotide'] = 0
         cclassCounts['Not matched'] = 0
         cclassCounts['Double matched'] = 0
         ## initialise ratio list 
         cRatios = element_ratios(msTuple,ratios = ['OC','HC','NC','PC','NP'])
         for c,m,ratios in zip(count_list,mass_list,cRatios):
+            # set NP nan ratios (i.e. if P wasn't assigned) to zero to pass the if statements
+            if np.isnan(ratios['NP']):
+                ratios['NP'] = 0
             ## a list that temporarily holds assigned categories
             cClass = []
             ## nucleotides cannot be double matched
@@ -77,11 +81,11 @@ def compound_class(msTuple, method = 'MSCC'):
                 if ratios['OC'] >= 0.61 and ratios['HC'] >= 1.45 and ratios['NC'] <= 0.2 and ratios['NC'] > 0.07 and ratios['PC'] < 0.3 and ratios['NP'] <= 2 and c['O'] >= 3 and c['N'] >= 1:
                     cClass.append('Amino-sugar')
                 if ratios['OC'] <= 1.15 and ratios['HC'] < 1.32 and ratios['NC'] < 0.126 and ratios['PC'] <= 0.2 and ratios['NP'] <= 3:
-                    cClass.append('Phytochemical')
+                    cClass.append('Oxy-aromatic phytochemical')
                 if ratios['OC'] > 0.12 and ratios['OC'] <= 0.6 and ratios['HC'] > 0.9 and ratios['HC'] < 2.5 and ratios['NC'] >= 0.126 and ratios['NC'] <= 0.7  and ratios['PC'] < 0.17 and c['N'] >= 1:
-                    cClass.append('Protein')
+                    cClass.append('Peptide')
                 elif ratios['OC'] > 0.6 and ratios['OC'] <= 1 and ratios['HC'] > 1.2 and ratios['HC'] < 2.5 and ratios['NC'] > 0.2 and ratios['NC'] <= 0.7 and ratios['PC'] < 0.17 and c['N'] >= 1: 
-                    cClass.append('Protein')
+                    cClass.append('Peptide')
                 if len(cClass) > 1: 
                     compound_class.append(f"Double matched: {cClass[0]} {cClass[1]}")
                     cclassCounts['Double matched'] += 1
@@ -120,7 +124,7 @@ def compound_class(msTuple, method = 'MSCC'):
         cclassCounts['Lignin-like'] = 0
         cclassCounts['Tannin-like'] = 0
         cclassCounts['Amino Sugar-like'] = 0
-        cclassCounts['Protein-like'] = 0
+        cclassCounts['Peptide-like'] = 0
         cclassCounts['Not assigned'] = 0
         for ratio in cRatios:
             if ratio['OC'] >= 0.01 and ratio['OC'] <= 0.3 and ratio['HC'] >= 1.5 and ratio['HC'] <= 2.2:
@@ -145,8 +149,8 @@ def compound_class(msTuple, method = 'MSCC'):
                 compound_class.append('Amino Sugar-like')
                 cclassCounts['Tannin-like'] += 1
             elif ratio['OC'] >= 0.3 and ratio['OC'] <= 0.6 and ratio['HC'] >= 1.5 and ratio['HC'] <= 2.3:
-                compound_class.append('Protein-like')
-                cclassCounts['Protein-like'] += 1
+                compound_class.append('Peptide-like')
+                cclassCounts['Peptide-like'] += 1
             else:
                 compound_class.append('Not assigned')
                 cclassCounts['Not assigned'] += 1
