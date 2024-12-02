@@ -2,7 +2,7 @@ numpy==1.22.0
 pandas==1.1.5
 pykrev==1.1.0
 scikit-learn==0.23.2
-scipy==1.5.4
+scipy==1.10.0
 UpSetPlot==0.4.1
 matplotlib==3.3.3
 seaborn==0.11.1
